@@ -31904,6 +31904,14 @@ video {
           backdrop-filter: blur(200px);
 }
 
+.bg--gray-light{
+  background: #FCFCFC;
+}
+
+.bg--gray-input{
+  background: #D1D1D1;
+}
+
 .bg--green-blur{
   background: conic-gradient(from 180deg at 50% 50%, #020031 0deg, #090035 22.31deg, #2B045E 31.32deg, #290454 37.59deg, #3F0571 49.46deg, #5C068B 67.67deg, #8B0A9A 108.66deg, #9E0B8D 135.48deg, #F01866 159.09deg, #FD5554 168.49deg, #FF7153 179.41deg, #FF6B45 180.25deg, #F86225 185.2deg, #FE7940 189.94deg, #EC8D39 206.51deg, #CC7945 219.96deg, #B8B2B4 226.27deg, #B5B8C7 236.05deg, #9FADD0 269.42deg, #88A0CE 277.72deg, #0064BE 306.42deg, #005EB6 306.9deg, #02205D 321.45deg, #020031 360deg);
 }

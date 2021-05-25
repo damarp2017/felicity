@@ -227,11 +227,60 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-36" style="height: 1000px">
-		
+	<section class="bg--gray-light w-full overflow-x-hidden py-36">
 		<div class="mx-36">
+
+			<div class="flex items-center -mr-36">
+				<div class="w-1/3 mr-20">
+					<div class="text-7xl font-semibold mb-4">Insights</div>
+					<div class="mb-7 text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+					<button class="bg--pink text-white py-3 px-6 rounded-full"> See More Insights </button>
+				</div>
+				@for ($i = 0; $i < 2; $i++)
+					<div class="w-1/4 p-3 bg-white rounded-lg mr-10">
+						<img class="mb-4 h-52 w-full object-cover object-center" src="https://s3-alpha-sig.figma.com/img/e20d/80e1/d6f3696bbae0db1c3de0f0504b41f55d?Expires=1623024000&Signature=IznfXignsEomsP2xFY6MX3f9jzLqLQTlkver8Zt-usqAYKeN8ovNdHKllgWi-UPdU1BNAfUZCNCcNnWI28gbYTQG5FgMwFUwKY-FFoizpedQvncDrq9GRynGJnFm~EMdpFdZ7gb4ET0ZdoG7xepXLeJTs5Fqhvsul8PUNoCHSBPIF-jOAZTHALDIBkHSZUxh~4bQ0ZgOYU46Sz5hxV5BOockbe13Lrgjd8BavdKeZpx0n1FAujFEN04VCqypM7SuSluI3mP5EcScU3ziG5RnVGUw4G3bfuT0mbWNGfMK5GoQc8jjQry1PsXehmPAQ9FaNFDOzqpmrJ4Nwll64NRYqg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+						<div class="font-semibold text-xl">Design process we have is unexpectional</div>
+						<div class="text--grey-transparent mb-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor a urna vel orci interdum amet, natoque id. Egestas sed adipiscing .</div>
+						<a href="" class="text--pink  font-semibold">Learn More</a>
+					</div>	
+				@endfor
+				
+			</div>
 
 		</div>
 	</section>
+
+	<section  class="bg-white w-full overflow-x-hidden py-36" style="height: 1000px">
+		<div class="mx-36">
+			<div class="w-3/4 mb-10">
+				<div class="text-7xl font-semibold mb-4">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+			</div>
+
+			<form action="">
+				<div class="flex mb-5">
+					<div class="w-1/2">
+						<div class="m-3">
+							<input type="text" class="w-full p-3 bg-gray-100 focus:outline-none" placeholder="Email Address">
+						</div>
+						<div class="m-3">
+							<input type="text" class="w-full p-3 bg-gray-100 focus:outline-none" placeholder="Full Name">
+						</div>
+						
+					</div>
+					<div class="w-1/2">
+						<div class="m-3">
+							<input type="text" class="w-full p-3 bg-gray-100 focus:outline-none" placeholder="Phone Number">
+						</div>
+						<div class="m-3">
+							<input type="text" class="w-full p-3 bg-gray-100 focus:outline-none" placeholder="Reason to contact">
+						</div>
+					</div>
+				</div>
+				<button class="w-full py-3 text-white text-center rounded bg--pink">Send</button>
+			</form>
+		</div>
+	</section>
+
 
 @endsection
