@@ -15,7 +15,7 @@
 		<div class="mx-36">
 			<div class="flex mb-10 flex-col text-center justify-center">
 				<div class="mb-6 text-7xl font-semibold">About Us</div>
-				<div class="text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="text-xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
 
@@ -200,7 +200,7 @@
 			</div>
 
 			<div class="bg-white rounded-b-lg mb-10">
-				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="https://s3-alpha-sig.figma.com/img/24fe/1650/b71b410d0d2bb173b2996c8468ca4656?Expires=1623024000&Signature=KgPy-0Q7d1VHn0k256IxfL4FU2FKrsZQTkH9DK8d46S357iJ00WkLc22q8fArYXRqaSna-3ILK-SKH6Uu9SF9VaAlxTs8Ma4zJ39SPz5cJy1hmBSljZVtjYZ62nPwzieoUnji2lwduuiTI2chEIJA1SLctQ6inb8Yodo5xxnSBceJlm0BkngKJ6tA~GJhmuzods3PF~4alUPLEB5RxmHaXMf1Hz~mun7DKaM0iB3rsiiOxOd6d75JSkzTkMfpKKTleOg1o~v-ldSoMvIsHvzN7gv4uMmzgBd1Gxtx-36e0LrGLZKZbc8oCXrKZYanhet5bafQ1osx2f09x9Q9BrP3Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
 					<div class="flex justify-between mb-3">
 						<div class="text-2xl font-semibold">Roady V3.0 Ilustration</div>
@@ -213,7 +213,7 @@
 			</div>
 
 			<div class="bg-white rounded-b-lg  mb-10">
-				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="https://s3-alpha-sig.figma.com/img/24fe/1650/b71b410d0d2bb173b2996c8468ca4656?Expires=1623024000&Signature=KgPy-0Q7d1VHn0k256IxfL4FU2FKrsZQTkH9DK8d46S357iJ00WkLc22q8fArYXRqaSna-3ILK-SKH6Uu9SF9VaAlxTs8Ma4zJ39SPz5cJy1hmBSljZVtjYZ62nPwzieoUnji2lwduuiTI2chEIJA1SLctQ6inb8Yodo5xxnSBceJlm0BkngKJ6tA~GJhmuzods3PF~4alUPLEB5RxmHaXMf1Hz~mun7DKaM0iB3rsiiOxOd6d75JSkzTkMfpKKTleOg1o~v-ldSoMvIsHvzN7gv4uMmzgBd1Gxtx-36e0LrGLZKZbc8oCXrKZYanhet5bafQ1osx2f09x9Q9BrP3Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
 					<div class="flex justify-between mb-3">
 						<div class="text-2xl font-semibold">Roady V3.0 Ilustration</div>
@@ -250,7 +250,7 @@
 		</div>
 	</section>
 
-	<section  class="bg-white w-full overflow-x-hidden py-36" style="height: 1000px">
+	<section  class="bg-white w-full overflow-x-hidden py-36">
 		<div class="mx-36">
 			<div class="w-3/4 mb-10">
 				<div class="text-7xl font-semibold mb-4">Have a <span class="text--pink">Project</span> Idea ?</div>
@@ -282,5 +282,36 @@
 		</div>
 	</section>
 
+
+	<section class="bg--section w-full overflow-x-hidden py-36">
+		<div class="mx-36">
+			<div class="flex items-center">
+				<div class="w-1/2">
+					<img src="{{ asset('images/home/join.png') }}" alt="">
+				</div>
+				<div class="w-1/2">
+					<div class="text-7xl font-semibold mb-4">Join the <span class="text--pink">Team</span></div>
+					<div class="text--grey-transparent mb-3">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<button class="bg--pink rounded-full text-white py-3 px-10">Explore Profiles</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mx-36 -mb-32 z-10 relative overflow-x-hidden rounded-lg">
+		<div class="bg--pink p-10">
+			<div class="text-3xl font-semibold text-white mb-3">Learn Something New</div>
+			<div class="text-white opacity-50 mb-4">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live .</div>
+			<div class="flex gap-x-4">
+				<div class="flex-1"><input type="text" 
+					class="w-full placeholder-white bg-red-400 rounded p-4 outline-none focus:outline-none text-white"
+					placeholder="Email Address"></div>
+				<div class="flex-1"><input type="text" 
+					class="w-full placeholder-white bg-red-400 rounded p-4 outline-none focus:outline-none text-white"
+					placeholder="Full Name"></div>
+				<button class="bg-white text--pink rounded p-4 outline-none focus:outline-none">Subscribe</button>
+			</div>
+		</div>
+	</section>
 
 @endsection

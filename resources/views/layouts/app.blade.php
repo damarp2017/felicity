@@ -14,5 +14,7 @@
 </head>
 <body>
 	@yield('content')
+
+	@include('layouts.__footer')
 </body>
 </html>

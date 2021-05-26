@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route::view('home', 'home');
+Route::view('capabilities', 'capabilities');
+Route::view('capabilities-inside', 'capabilities_inside');
