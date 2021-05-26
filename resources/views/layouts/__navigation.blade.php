@@ -1,4 +1,4 @@
-<nav class="fixed p-8 w-full flex items-center justify-between z-10">
+<nav class="navbar fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out flex items-center justify-between">
 	<img src="{{ asset('images/logo/logo.png') }}">
 	<div class="flex gap-x-10 items-center">
 		<a href="#" class="text-white text-2xl"> Our Process </a>
@@ -11,3 +11,14 @@
 		</div>
 	</div>
 </nav>
+
+<script>
+	const navbar = document.querySelector('.navbar');
+	window.onscroll = () => {
+		if (window.scrollY > 300) {
+			navbar.classList.add('bg--header-gradient');
+		} else {
+			navbar.classList.remove('bg--header-gradient');
+		}
+	};
+</script>

@@ -12,7 +12,6 @@
 
 	<section class="bg-white w-full overflow-x-hidden pt-36">
 		<div class="mx-36">
-		
 			<div class="flex items-center mb-20">
 				<div class="w-1/2">
 					<div class="text-7xl font-bold mb-3">Branding</div>
