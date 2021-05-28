@@ -11,9 +11,10 @@
 		<div class="grid grid-cols-2 md:grid-cols-3 gap-x-5 md:gap-x-28 mb-6 md:mb-20 ">
 			<div class="flex flex-col mb-8 md:mb-0">
 				<div class="text-gray-50 mb-2 uppercase">quick links</div>
-				<a href="#" class="text-white mb-2">Home</a>
+				<a href="{{ url('/') }}" class="text-white mb-2">Home</a>
 				<a href="#" class="text-white mb-2">Career</a>
 				<a href="#" class="text-white mb-2">Contact Us</a>
+				<a href="{{ url('our-clients') }}" class="text-white mb-2">Our Client</a>
 			</div>
 			<div class="flex flex-col mb-8 md:mb-0">
 				<div class="text-gray-50 mb-2 uppercase">Social Media</div>
@@ -23,8 +24,9 @@
 			</div>
 			<div class="flex flex-col mb-8 md:mb-0">
 				<div class="text-gray-50 mb-2 uppercase">About</div>
-				<a href="#" class="text-white mb-2">Terms</a>
+				<a href="{{ url('terms-and-conditions') }}" class="text-white mb-2">Terms</a>
 				<a href="#" class="text-white mb-2">Privacy</a>
+				<a href="{{ url('press-release') }}" class="text-white mb-2">Press Release</a>
 			</div>
 		</div>
 

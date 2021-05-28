@@ -12,7 +12,7 @@
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-36">
 		<div class="mx-4 md:mx-36">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-20">
-				<div class="bg-white rounded-b-lg">
+				<a href="{{ url('insights-inside') }}" class="bg-white rounded-b-lg">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/insights/1.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -26,9 +26,9 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>	
+				</a>	
 
-				<div class="bg-white rounded-b-lg">
+				<a href="{{ url('insights-inside') }}" class="bg-white rounded-b-lg">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/insights/2.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -42,9 +42,9 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>
+				</a>
 
-				<div class="bg-white rounded-b-lg">
+				<a href="{{ url('insights-inside') }}" class="bg-white rounded-b-lg">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/insights/4.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -58,8 +58,8 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>
-				<div class="bg-white rounded-b-lg">
+				</a>
+				<a href="{{ url('insights-inside') }}" class="bg-white rounded-b-lg">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/insights/3.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -73,9 +73,9 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>
+				</a>
 
-				<div class="bg-white rounded-b-lg">
+				<a href="{{ url('insights-inside') }}" class="bg-white rounded-b-lg">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/insights/6.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -89,9 +89,9 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>	
+				</a>	
 
-				<div class="bg-white rounded-b-lg">
+				<a href="{{ url('insights-inside') }}" class="bg-white rounded-b-lg">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/insights/5.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -105,7 +105,7 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>

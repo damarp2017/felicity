@@ -100,7 +100,7 @@
 			</div>
 
 			<div class="flex justify-center gap-x-4 mb-20">
-				<button class="bg--gradient-black py-3 px-5 text-white text-base md:text-xl rounded-full"> Know More </button>
+				<a href="{{ url('about-us') }}" class="bg--gradient-black py-3 px-5 text-white text-base md:text-xl rounded-full"> Know More </a>
 				<button class="bg--gradient-black py-3 px-5 text-white text-base md:text-xl rounded-full"> Download Company Deck </button>
 			</div>
 			 
@@ -127,7 +127,7 @@
 						<div class="text--pink">Strategy</div>
 					</div>
 					<div class="text-base md:text-xl text--grey-transparent mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<button class="text-white rounded-full py-3 md:py-4 px-7 md:px-20 bg--pink">See More</button>
+					<a href="{{ url('capabilities') }}" class="text-white rounded-full py-3 md:py-4 px-7 md:px-20 bg--pink">See More</a>
 				</div>
 			</div>
 
@@ -238,7 +238,7 @@
 				<div class="w-full md:w-1/3 mr-20">
 					<div class="text-3xl md:text-7xl font-semibold mb-4">Insights</div>
 					<div class="mb-7 text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-					<button class="text-sm md:text-base bg--pink text-white py-3 px-10 md:px-6 rounded-full"> See More Insights </button>
+					<a href="{{ url('insights') }}" class="text-sm md:text-base bg--pink text-white py-3 px-10 md:px-6 rounded-full"> See More Insights </a>
 				</div>
 				@for ($i = 0; $i < 2; $i++)
 					<div class="w-full md:w-1/4 p-3 bg-white rounded-lg mr-10">
@@ -294,7 +294,7 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-5xl md:text-7xl font-semibold mb-4">Join the <span class="text--pink">Team</span></div>
 					<div class="text--grey-transparent mb-3">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<button class="bg--pink rounded-full text-sm md:text-base text-white py-3 px-8 md:px-10">Explore Profiles</button>
+					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:text-base text-white py-3 px-8 md:px-10">Explore Profiles</a>
 				</div>
 			</div>
 		</div>

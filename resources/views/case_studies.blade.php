@@ -20,7 +20,7 @@
 	<div class="-mt-40 md:-mt-48">
 		<div class="mx-4 md:mx-36">
 			@for ($i = 0; $i < 3; $i++) 
-				<div class="bg-white rounded-b-lg mb-10">
+				<a href="{{ url('case-studies-2') }}" class="bg-white rounded-b-lg mb-10">
 					<img class="h-72 w-full object-cover object-center rounded-t-lg"
 						src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
@@ -34,7 +34,7 @@
 							world-class brands to make your products to live for world-class brands to make your products to
 						</div>
 					</div>
-				</div>
+				</a>
 			@endfor
 		</div>
 	</div>

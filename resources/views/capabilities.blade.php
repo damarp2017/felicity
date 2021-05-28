@@ -18,7 +18,7 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-5xl md:text-7xl font-bold mb-3">Branding</div>
 					<div class="text-gray-600 mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<button class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</button>
+					<a href="{{ url('capabilities-inside') }}" class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2"><img src="{{ asset('images/capabilities/brand.png') }}"></div>
 			</div>
@@ -31,7 +31,7 @@
 						<div class="text--pink">Strategy</div>	
 					</div>
 					<div class="text-gray-600 mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<button class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</button>
+					<a href="{{ url('capabilities-inside') }}" class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 			</div>
 
@@ -43,7 +43,7 @@
 						<div class="text--pink">Production</div>	
 					</div>
 					<div class="text-gray-600 mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<button class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</button>
+					<a href="{{ url('capabilities-inside') }}" class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2"><img src="{{ asset('images/capabilities/content.png') }}"></div>
 			</div>
@@ -56,7 +56,7 @@
 						<div class="text--pink">Outreach</div>	
 					</div>
 					<div class="text-gray-600 mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<button class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</button>
+					<a href="{{ url('capabilities-inside') }}" class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 			</div>
 
@@ -68,7 +68,7 @@
 						<div class="text--pink">and Design</div>	
 					</div>
 					<div class="text-gray-600 mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<button class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</button>
+					<a href="{{ url('capabilities-inside') }}" class="bg--pink py-3 text-white px-10 rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 				<div class="w-full  md:w-1/2"><img src="{{ asset('images/capabilities/tech.png') }}"></div>
 			</div>
