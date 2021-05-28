@@ -1,11 +1,13 @@
 <nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out ">
-	<img src="{{ asset('images/logo/logo.png') }}">
+	<a href="{{ url('/') }}">
+		<img src="{{ asset('images/logo/logo.png') }}">
+	</a>
 	<div class="flex gap-x-10 items-center">
 		<a href="#" class="text-white hover:text-gray-200 text-2xl"> Our Process </a>
-		<a href="#" class="text-white hover:text-gray-200 text-2xl"> Opportunities </a>
-		<a href="#" class="text-white hover:text-gray-200 text-2xl"> Case Studies </a>
-		<a href="#" class="text-white hover:text-gray-200 text-2xl"> Insights </a>
-		<a href="#" class="text-white hover:text-gray-200 text-2xl"> Contact Us </a>
+		<a href="{{ url('opportunities') }}" class="text-white hover:text-gray-200 text-2xl"> Opportunities </a>
+		<a href="{{ url('case-studies') }}" class="text-white hover:text-gray-200 text-2xl"> Case Studies </a>
+		<a href="{{ url('insights') }}" class="text-white hover:text-gray-200 text-2xl"> Insights </a>
+		<a href="{{ url('contact-us') }}" class="text-white hover:text-gray-200 text-2xl"> Contact Us </a>
 		<div class="bg--gradient-black py-5 px-8 text-2xl rounded-full text-white">
 			Book A Free Consultation Call
 		</div>
@@ -15,8 +17,10 @@
 <div x-data="{ open: false }">
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
-			<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
-			<img class="logo-black h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
+			<a href="{{ url('/') }}">
+				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
+				<img class="logo-black h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
+			</a>
 			<button @click="open = !open" class="menu focus:outline-none w-10 h-10 flex justify-center items-center bg-white rounded-full">
 				<svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path x-show="!open" class="text--pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -26,10 +30,10 @@
 		</div>
 		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out ">
 			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Our Process </a>
-			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
-			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
-			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
-			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
+			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
+			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
+			<a href="{{ url('insights') }}" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
+			<a href="{{ url('contact-us') }}" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
 			<div class="flex justify-center items-center w-72 bg--gradient-black py-3 px-2 text-lg rounded-full text-white">
 				Book A Free Consultation Call
 			</div>

@@ -2,11 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::view('home', 'home'); //responsive
+Route::view('', 'home'); //responsive
 Route::view('capabilities', 'capabilities'); //responsive
 Route::view('capabilities-inside', 'capabilities_inside'); //responsive
 Route::view('opportunities', 'opportunities'); //responsive
