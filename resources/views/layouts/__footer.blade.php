@@ -13,7 +13,7 @@
 				<div class="text-gray-50 mb-2 uppercase">quick links</div>
 				<a href="{{ url('/') }}" class="text-white mb-2">Home</a>
 				<a href="#" class="text-white mb-2">Career</a>
-				<a href="#" class="text-white mb-2">Contact Us</a>
+				<a href="{{ url('contact-us') }}" class="text-white mb-2">Contact Us</a>
 				<a href="{{ url('our-clients') }}" class="text-white mb-2">Our Client</a>
 			</div>
 			<div class="flex flex-col mb-8 md:mb-0">
