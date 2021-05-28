@@ -100,8 +100,8 @@
 			</div>
 
 			<div class="flex justify-center gap-x-4 mb-20">
-				<button class="bg--gradient-black py-4 px-6 text-white text-base md:text-xl rounded-full"> Know More </button>
-				<button class="bg--gradient-black py-4 px-6 text-white text-base md:text-xl rounded-full"> Download Company Deck </button>
+				<button class="bg--gradient-black py-3 px-5 text-white text-base md:text-xl rounded-full"> Know More </button>
+				<button class="bg--gradient-black py-3 px-5 text-white text-base md:text-xl rounded-full"> Download Company Deck </button>
 			</div>
 			 
 		</div>

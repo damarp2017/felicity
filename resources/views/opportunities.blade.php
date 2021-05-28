@@ -1,75 +1,76 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative" style="height: 999px">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative height--header">
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center">
-			<div class="text-white font-semibold text-8xl mb-5 text-center"> What's your next <br> destination?</div>
-			<div class="text-xl text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
+			<div class="text-white font-semibold text-5xl md:text-8xl mb-5 text-center"> What's your next <br> destination?</div>
+			<div class="text-base text-center md:text-xl text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
 	</header>
 
-	<section class="bg-white w-full overflow-x-hidden py-28">
-		<div class="mx-36">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-28">
+		<div class="mx-4 md:mx-36">
 			<div class="flex items-center justify-center mb-20">
-				<div class="mr-4 "><img class="w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
+				<div class="mr-4"><img class="w-8 md:w-24 h-1 md:h-2" src="{{ asset('images/utilities/hr.png') }}"></div>
 				<div class="text--pink text-3xl font-bold">Vision</div>
 			</div>
 	
-			<div class="flex mb-24">
-				<div class="w-1/2">
+			<div class="block md:flex mb-24">
+				<div class="w-full md:w-1/2">
 					<img src="{{ asset('images/opportunities/2.png') }}">
 				</div>
-				<div class="w-1/2">
+				<div class="w-full md:w-1/2">
 					<div class="mb-3 text-black ">
 						<div class="flex gap-x-4 items-center">
 							<div class="text-3xl">01</div>
 							<div class="w-48"><hr></div>
 						</div>
-						<div class=" text-7xl font-bold">Champion the mission</div>
+						<div class=" text-5xl md:text-7xl font-bold">Champion the mission</div>
 					</div>
-					<div class="text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
-					<div class="bg--pink w-10 h-2 rounded-full"></div>
-					<div class="bg-gray-300 w-5 h-2 rounded-full"></div>
-					<div class="bg-gray-300 w-5 h-2 rounded-full"></div>
+					<div class="bg--pink w-10 h-1 md:h-2 rounded-full"></div>
+					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
+					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
 				<div class="flex gap-x-4 items-center">
 					<div class="bg-gray-200 w-10 flex items-center justify-center h-10 rounded-full">
-						<img src="{{ asset('images/utilities/prev.png') }}">
+						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
 					<div class="bg-gray-200 w-10 flex items-center justify-center h-10 rounded-full">
-						<img src="{{ asset('images/utilities/next.png') }}">
+						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="bg--gray-light w-full overflow-x-hidden py-28">
-		<div class="mx-36">
+	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-28">
+		<div class="mx-4 md:mx-36">
 			<div class="flex flex-col items-center justify-center text-center mb-20">
-				<div class="text-5xl font-bold mb-3">Live your best life , <span class="text--pink">Benifits</span> to <br> work with us .</div>
+				<div class="text-3xl md:text-5xl font-bold mb-3">Live your best life , <span class="text--pink">Benifits</span> to <br> work with us .</div>
 				<div class="text-gray-400">for world-class brands to make your products to live for world-class brands to make <br> your products to live for world-class brands to make your products to</div>
 			</div>
 	
-			<div class="flex mb-7">
-				<div class="w-1/3 bg-white rounded-xl mx-7 py-8">
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+				<div class="bg-white rounded-xl p-3 md:p-4">
 					<div class="flex items-center justify-center">
-						<img class="mb-9" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
+						<img class="mb-9 h-14 md:h-20" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
 					</div>
 					<div class="text--pink text-xl text-center">
 						<div class="font-semibold">Flexible</div>
 						<div>Time Schedule</div>
-					</div>
+					</div>	
 				</div>
-				<div class="w-1/3 bg-white rounded-xl mx-7 py-8">
+
+				<div class="bg-white rounded-xl p-3 md:p-4">
 					<div class="flex items-center justify-center">
-						<img class="mb-9" src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
+						<img class="mb-9 h-14 md:h-20" src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
 					</div>
 					<div class="text--pink text-xl text-center">
 						<div class="font-semibold">Learing and </div>
@@ -77,9 +78,9 @@
 					</div>
 				</div>
 
-				<div class="w-1/3 bg-white rounded-xl mx-7 py-8">
+				<div class="bg-white rounded-xl p-3 md:p-4">
 					<div class="flex items-center justify-center">
-						<img class="mb-9" src="{{ asset('images/opportunities/items/love.png') }}" alt="">
+						<img class="mb-9 h-14 md:h-20" src="{{ asset('images/opportunities/items/love.png') }}" alt="">
 					</div>
 					<div class="text--pink text-xl text-center">
 						<div class="font-semibold">Generous Parental  </div>
@@ -87,21 +88,18 @@
 					</div>
 				</div>
 
-			</div>
-
-			<div class="flex mb-7">
-				<div class="w-1/3 bg-white rounded-xl mx-7 py-8">
+				<div class="bg-white rounded-xl p-3 md:p-4">
 					<div class="flex items-center justify-center">
-						<img class="mb-9" src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
+						<img class="mb-9 h-14 md:h-20" src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
 					</div>
 					<div class="text--pink text-xl text-center">
 						<div class="font-semibold">Headspace</div>
 						<div>Membership</div>
 					</div>
 				</div>
-				<div class="w-1/3 bg-white rounded-xl mx-7 py-8">
+				<div class="bg-white rounded-xl p-3 md:p-4">
 					<div class="flex items-center justify-center">
-						<img class="mb-9" src="{{ asset('images/opportunities/items/book.png') }}" alt="">
+						<img class="mb-9 h-14 md:h-20" src="{{ asset('images/opportunities/items/book.png') }}" alt="">
 					</div>
 					<div class="text--pink text-xl text-center">
 						<div class="font-semibold">Book</div>
@@ -109,53 +107,54 @@
 					</div>
 				</div>
 
-				<div class="w-1/3 bg-white rounded-xl mx-7 py-8">
+				<div class="bg-white rounded-xl p-3 md:p-4">
 					<div class="flex items-center justify-center">
-						<img class="mb-9" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
+						<img class="mb-9 h-14 md:h-20" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
 					</div>
 					<div class="text--pink text-xl text-center">
 						<div class="font-semibold">Paid Volunteer </div>
 						<div>Time</div>
 					</div>
 				</div>
-
 			</div>
-
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-28">
-		<div class="mx-36">
-			<div class="flex items-center justify-between mb-20">
-				<div class="w-1/2">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-28">
+		<div class="mx-4 md:mx-36">
+			<div class="block md:flex items-center justify-between mb-20">
+				<div class="w-full md:w-1/2">
 					<img class="w-3/4" src="{{ asset('images/opportunities/1.png') }}" alt="">
 				</div>
-				<div class="w-1/2">
+				<div class="w-full md:w-1/2">
 					<div class="mb-7 font-semibold text-3xl">Create a world where anyone <br> can belong anywhere</div>
-					<div class="text-gray-400 text-xl w-3/4">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
+					<div class="text-gray-400 text-base md:text-xl w-full md:w-3/4">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
 				</div>
 			</div>	
 
-			<div class="flex items-center justify-between mb-20">
-				<div class="w-1/2">
-					<div class="mb-7 font-semibold text-3xl">Create a world where anyone <br> can belong anywhere</div>
-					<div class="text-gray-400 text-xl w-3/4">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
+			<div class="block md:flex items-center justify-between mb-20">
+				<div class="block md:hidden w-full md:w-1/2">
+					<img class="w-3/4" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
-				<div class="w-1/2">
+				<div class="w-full md:w-1/2">
+					<div class="mb-7 font-semibold text-3xl">Create a world where anyone <br> can belong anywhere</div>
+					<div class="text-gray-400 text-base md:text-xl w-full md:w-3/4">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
+				</div>
+				<div class="hidden md:block w-full md:w-1/2">
 					<img class="w-3/4" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
 			</div>	
 		</div>
 	</section>
 
-	<section class="bg--section w-full overflow-x-hidden py-28">
-		<div class="mx-36">
-			<div class="mb-5">
+	<section class="bg--section w-full overflow-x-hidden py-10 md:py-28">
+		<div class="mx-4 md:mx-36">
+			<div class="mb-0 md:mb-5">
 				<div class="text-4xl mb-3 font-bold">Oppurtunities , Small teams, <br> <span class="text--pink">global mission</span> </div>
 				<div class="text-gray-400">for world-class brands to make your products to live for world-class brands to make your products to <br> live for world-class brands to make your products to</div>
 			</div>
 
-			<div class="relative mr-6 my-2 w-full">
+			<div class="relative mr-6 my-10 md:my-2 w-full">
 				<input type="text" class="bg-white w-full focus:outline-none rounded-xl border-0 p-3" placeholder="Search Any Position . . .">
 				<div class="absolute top-0 right-0 transform translate-y-1/2 pin-r pin-t mt-3 mr-4 text-purple-lighter">
 					<svg version="1.1" class="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve"> <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21 c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279 C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19 S32.459,40,21.983,40z"/></svg>
@@ -164,24 +163,23 @@
 
 			<div>
 				<div class="uppercase my-4 text-sm">Filters</div>
-				<div class="flex gap-x-5 mb-10">
+				<div class="grid grid-flow-col auto-cols-max gap-x-5 mb-10 overflow-x-auto md:overflow-x-hidden ">
 					<a href="#" class="filter-link rounded-lg py-3 px-5 focus:bg--pink focus:text-white">UI/UX Designer</a>
+					
 					<a href="#" class="filter-link rounded-lg py-3 px-5 focus:bg--pink focus:text-white">Web Designer</a>
 					<a href="#" class="filter-link rounded-lg py-3 px-5 focus:bg--pink focus:text-white">Graphic Designer</a>
 					<a href="#" class="filter-link rounded-lg py-3 px-5 focus:bg--pink focus:text-white">Content writer</a>
 				</div>
 
 				<div class="uppercase mb-6 text-sm">AVAILABLE POSITIONS</div>
-				<div class="flex mb-10 flex-wrap gap-y-10">
+				<div class="grid grid-cols-1 md:grid-cols-3 mb-10 flex-wrap gap-6 md:gap-10">
 					@for ($i = 0; $i < 6; $i++)
-					<div class="w-1/3">
-						<div class="bg-white p-6 mx-5">
-							<div class="font-semibold mb-2 text-xl">Senior UI/UX Designer</div>
-							<div class="text-gray-400 mb-6">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-							<a href="" class="flex justify-end">
-								<img class="h-4" src="{{ asset('images/utilities/next.png') }}" alt="">
-							</a>
-						</div>
+					<div class="bg-white p-6">
+						<div class="font-semibold mb-2 text-xl">Senior UI/UX Designer</div>
+						<div class="text-gray-400 mb-6">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+						<a href="" class="flex justify-end">
+							<img class="h-4" src="{{ asset('images/utilities/next.png') }}" alt="">
+						</a>
 					</div>
 					@endfor
 				</div>
@@ -196,8 +194,12 @@
 
 @push('scripts')
 	<script>
-		$('.filter-link').on('click', function (e) {  
-			e.preventDefault()
+		const links = document.querySelectorAll('.filter-link')
+		Array.from(links).forEach(link => {
+			link.addEventListener('click', function (e) {
+				e.preventDefault()
+			})
 		})
+		
 	</script>
 @endpush

@@ -1,50 +1,48 @@
 @extends('layouts.app')
 @section('content')
 	<section class="bg--gray-light pb-20">
-		<header class="w-full overflow-x-hidden bg--header-gradient relative" style="height: 999px">
+		<header class="w-full overflow-x-hidden bg--header-gradient relative height--header">
 			@include('layouts.__navigation')
 			<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
-			<div class="flex flex-col h-full justify-center items-center">
-				<div class="mx-0 md:mx-36">
-					<div class="text-white font-semibold mb-3 text-6xl md:text-9xl">Our Clients</div>
-					<div class="text-xl text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
-				</div>
+			<div class="mx-4 h-full md:mx-36">
+				<div class="flex flex-col justify-center items-center md:items-start h-full ">
+					<div class="text-white font-semibold mb-3 text-5xl md:text-9xl">Our Clients</div>
+					<div class="text-base text-center md:text-left md:text-xl w-9/12 md:w-full text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+			   </div>
 			</div>
 		</header>
 	
-		<div class="mx-36">
+		<div class="mx-4 md:mx-36">
 			<div class="bg-white mb-16 -mt-36 relative z-10 rounded-3xl">
-				<div class="flex">
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-r border-gray-200">
-						<img src="{{ asset('images/clients/1.png') }}" alt="">
+				<div class="grid grid-cols-3">
+					<div class="flex justify-center items-center py-20 border-b border-r border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/1.png') }}" alt="">
 					</div>
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-r border-gray-200">
-						<img src="{{ asset('images/clients/2.png') }}" alt="">
+					<div class="flex justify-center items-center py-20 border-b border-r border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/2.png') }}" alt="">
 					</div>
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-gray-200">
-						<img src="{{ asset('images/clients/3.png') }}" alt="">
+					<div class="flex justify-center items-center py-20 border-b border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/3.png') }}" alt="">
 					</div>
-				</div>
-				<div class="flex">
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-r border-gray-200">
-						<img src="{{ asset('images/clients/4.png') }}" alt="">
+
+					<div class="flex justify-center items-center py-20 border-b border-r border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/4.png') }}" alt="">
 					</div>
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-r border-gray-200">
-						<img src="{{ asset('images/clients/5.png') }}" alt="">
+					<div class="flex justify-center items-center py-20 border-b border-r border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/5.png') }}" alt="">
 					</div>
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-gray-200">
-						<img src="{{ asset('images/clients/6.png') }}" alt="">
+					<div class="flex justify-center items-center py-20 border-b border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/6.png') }}" alt="">
 					</div>
-				</div>
-				<div class="flex">
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-r border-gray-200">
-						<img src="{{ asset('images/clients/7.png') }}" alt="">
+
+					<div class="flex justify-center items-center py-20 border-b border-r border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/7.png') }}" alt="">
 					</div>
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-r border-gray-200">
-						<img src="{{ asset('images/clients/8.png') }}" alt="">
+					<div class="flex justify-center items-center py-20 border-b border-r border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/8.png') }}" alt="">
 					</div>
-					<div class="flex-1 flex justify-center items-center py-20 border-b border-gray-200">
-						<img src="{{ asset('images/clients/9.png') }}" alt="">
+					<div class="flex justify-center items-center py-20 border-b border-gray-200">
+						<img class="h-8 md:h-auto" src="{{ asset('images/clients/9.png') }}" alt="">
 					</div>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 	@include('layouts.__navigation_light')
 
 	<section class="bg-white w-full overflow-x-hidden pt-32 pb-10">
-		<div class="mx-20">
+		<div class="mx-0 md:mx-20">
 			<div class="bg-gray-200 w-full mb-20" style="height: 3732px"></div>
 
 			<div class="flex gap-x-7 items-center justify-center mb-20">
