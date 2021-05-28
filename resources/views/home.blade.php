@@ -149,44 +149,42 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden pt-20 md:pt-36">
+	<section class="bg-white w-full pt-20 md:pt-36">
 		<div class="mx-4 md:mx-36">
 			<div class="flex mb-10 flex-col">
 				<div class="mb-6 text-4xl md:text-7xl font-semibold">Team That Makes It Possible</div>
 				<div class="text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 			</div>
 
-			<div class="flex flex-nowrap gap-x-8" style="overflow-x: auto">
-				<div class="w-1/3">
-					<div class="bg--blue-blur rounded-lg h-4/5 mb-10">
-						<img src="https://s3-alpha-sig.figma.com/img/e7e7/bc4d/d67f7fa0b95a95c3efb257620ff61574?Expires=1623024000&Signature=H6HIZne26MbOiU~DkUpTz5spNRU4~46nweuQcGcJMQWQwBbvMr7CUviiTxFxum-Ae~LcdG-7Bw9Dn~NGTa8nrWgOxOuKPYfC57xQsToA41Ok4e3DlLN8Hp1BHclzojnTzq07MdO-gNdYAk5QZS8kew7ChovgiUQ~eJNSEtb-R9y9agEUvogbFm3xITDKc83HRLT7KsKlAv9PYWX7UFK0~v3lSErQGN0N4HgxhLnxVyWtTRGta0enSru6WfK0Rthmh11bzwfP2lusJqw1K6mUlqXaMTWwkMLilOf1YfoIBehItkKCWX3M0pEXNlRBXvqCpb7Gi-WWgR1~u1ANqtrSaw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
-					</div>
-					<div class="text-gray-900 text-2xl font-semibold">Bruce Wayne</div>
-					<div class="text-gray-900 text-md uppercase">WEB DEVELOPER</div>
+			<div class="grid -mr-4 md:-mr-36 grid-flow-col auto-cols-max gap-x-8 overflow-x-auto">
+				<div class="w-full">
+					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/1.png') }}" alt="">
+					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Bruce Wayne</div>
+					<div class="text-gray-900 text-sm md:text-base uppercase">WEB DEVELOPER</div>
 				</div>
 
-				<div class="w-1/3">
-					<div class="bg--green-blur rounded-lg h-4/5 mb-10">
-						<img src="https://s3-alpha-sig.figma.com/img/efab/4d18/9a5bb1887d28292ef5a72ebbaeb10718?Expires=1623024000&Signature=L2VqZPK5jUU1R1jIRordr4VOPlfnKqF0R-uHAAwsJpPTHymYYW9PY3f1~cmvW-eD09i6Ay8eDKt-R4qJNEVnYRS2dQMHX2ULVA61oEeMeSJapwRVj8dWFE6ZqS3lEvGgmlyIaDSksUNihpgUkfyWMXs8FM7C7f2RRNSqe17zT8zE6DonhrJKJ8V6kPDW3fFMn-abVSf5vLfbokFIUj~15oTUMiJhMPaRcXjBLVmILvsjxO7j6BBBMF24PYMVkfeaxLu5nhHO6q9JJg09d-bNkSedAkmYKYwA94R7oj~F9Rt2rCdziBgUvRURGHtAxBnX2iWdQyXsgtCEAAigue4CIg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
-					</div>
-					<div class="text-gray-900 text-2xl font-semibold">Diana Prince</div>
-					<div class="text-gray-900 text-md uppercase">GRAPHIC DESIGNER</div>
+				<div class="w-full">
+					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/2.png') }}" alt="">
+					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Diana Prince</div>
+					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
-				<div class="w-1/3">
-					<div class="bg--yellow-blur rounded-lg h-4/5 mb-10">
-						<img src="https://s3-alpha-sig.figma.com/img/e5ce/ac9a/514aa35d51f436f80d7f8bb89ce2247f?Expires=1623024000&Signature=LTl9RJNrjdtSJqq4VlfRU8kDxlKyuREmtBP8DNxaIBKn8CYK9140Jhk4EBlkOU0MAhERgXH2OYdI-hAIlDUF3mcLpRRYVOBstQXqk82dBxhNgzYaffyojdOAjv2LDGM~J0MyD8Klf0739NbIuz-sXRbyfYxBrWWWqBOJQStbR3v3JzhSZGhhItxH45AMPYlkJrPxIOsfX9ddWJoq2pjcQFkk2oGXgB0YK5wAFtmctsgMe1C1p2bKoxEEilbVJy5np~X3bnr9PReHTzZrLhaWla-waTWUYl1Htf74pTb0U1FBQlYIpz1gE-Uv4HggLnJXWbAZvDUoS4L7H1fc-YTl7g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
-					</div>
-					<div class="text-gray-900 text-2xl font-semibold">Clark Kent</div>
-					<div class="text-gray-900 text-md uppercase">GRAPHIC DESIGNER</div>
+				<div class="w-full">
+					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/3.png') }}" alt="">
+					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Clark Kent</div>
+					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
-				<div class="w-1/3">
-					<div class="bg--red-blur rounded-lg h-4/5 mb-10">
-						<img src="https://s3-alpha-sig.figma.com/img/e5ce/ac9a/514aa35d51f436f80d7f8bb89ce2247f?Expires=1623024000&Signature=LTl9RJNrjdtSJqq4VlfRU8kDxlKyuREmtBP8DNxaIBKn8CYK9140Jhk4EBlkOU0MAhERgXH2OYdI-hAIlDUF3mcLpRRYVOBstQXqk82dBxhNgzYaffyojdOAjv2LDGM~J0MyD8Klf0739NbIuz-sXRbyfYxBrWWWqBOJQStbR3v3JzhSZGhhItxH45AMPYlkJrPxIOsfX9ddWJoq2pjcQFkk2oGXgB0YK5wAFtmctsgMe1C1p2bKoxEEilbVJy5np~X3bnr9PReHTzZrLhaWla-waTWUYl1Htf74pTb0U1FBQlYIpz1gE-Uv4HggLnJXWbAZvDUoS4L7H1fc-YTl7g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
-					</div>
-					<div class="text-gray-900 text-2xl font-semibold">Diana Prince</div>
-					<div class="text-gray-900 text-md uppercase">GRAPHIC DESIGNER</div>
+				<div class="w-full">
+					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/3.png') }}" alt="">
+					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Clark Kent</div>
+					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
+				</div>
+
+				<div class="w-full">
+					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/3.png') }}" alt="">
+					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Clark Kent</div>
+					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
 				</div>
 			</div>
 		</div>
@@ -244,7 +242,7 @@
 				</div>
 				@for ($i = 0; $i < 2; $i++)
 					<div class="w-full md:w-1/4 p-3 bg-white rounded-lg mr-10">
-						<img class="mb-4 h-52 w-full object-cover object-center" src="https://s3-alpha-sig.figma.com/img/e20d/80e1/d6f3696bbae0db1c3de0f0504b41f55d?Expires=1623024000&Signature=IznfXignsEomsP2xFY6MX3f9jzLqLQTlkver8Zt-usqAYKeN8ovNdHKllgWi-UPdU1BNAfUZCNCcNnWI28gbYTQG5FgMwFUwKY-FFoizpedQvncDrq9GRynGJnFm~EMdpFdZ7gb4ET0ZdoG7xepXLeJTs5Fqhvsul8PUNoCHSBPIF-jOAZTHALDIBkHSZUxh~4bQ0ZgOYU46Sz5hxV5BOockbe13Lrgjd8BavdKeZpx0n1FAujFEN04VCqypM7SuSluI3mP5EcScU3ziG5RnVGUw4G3bfuT0mbWNGfMK5GoQc8jjQry1PsXehmPAQ9FaNFDOzqpmrJ4Nwll64NRYqg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+						<img class="mb-4 h-52 w-full object-cover object-center rounded" src="{{ asset('images/home/insights.png') }}">
 						<div class="font-semibold text-xl">Design process we have is unexpectional</div>
 						<div class="text--grey-transparent mb-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor a urna vel orci interdum amet, natoque id. Egestas sed adipiscing .</div>
 						<a href="" class="text--pink  font-semibold">Learn More</a>
