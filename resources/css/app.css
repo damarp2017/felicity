@@ -45,6 +45,17 @@
 	background: linear-gradient(121.44deg, #DE4045 -2.03%, rgba(222, 64, 69, 0.71) 79.87%);
 }
 
+.height--header{
+	height: 80vh;
+}
+
+@media (min-width: 768px){
+	.height--header {
+		height: 999px;
+	}
+}
+	
+
 .text--grey-transparent{
 	color: rgba(100, 100, 100, 0.72);
 }

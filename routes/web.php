@@ -6,8 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('home', 'home');
-Route::view('capabilities', 'capabilities');
+Route::view('home', 'home'); //responsive
+Route::view('capabilities', 'capabilities'); //responsive
 Route::view('capabilities-inside', 'capabilities_inside');
 Route::view('opportunities', 'opportunities');
 Route::view('about-us', 'about_us');

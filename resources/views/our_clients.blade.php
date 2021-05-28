@@ -5,8 +5,8 @@
 			@include('layouts.__navigation')
 			<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 			<div class="flex flex-col h-full justify-center items-center">
-				<div class="mx-36">
-					<div class="text-white font-semibold mb-3 text-9xl">Our Clients</div>
+				<div class="mx-0 md:mx-36">
+					<div class="text-white font-semibold mb-3 text-6xl md:text-9xl">Our Clients</div>
 					<div class="text-xl text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 				</div>
 			</div>
