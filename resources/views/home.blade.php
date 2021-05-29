@@ -4,96 +4,96 @@
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center">
-			<div class="text-lg md:text-2xl text-white uppercase">We design the</div>
-			<div class="text-white font-semibold text-7xl md:text-9xl"> Future</div>
-			<div class="text-lg md:text-2xl text-white uppercase mb-3">that next generation will witness</div>
+			<div class="text-xl text-white uppercase">We design the</div>
+			<div class="text-white font-semibold text-7xl md:text-7xl"> Future</div>
+			<div class="text-xl text-white uppercase mb-3">that next generation will witness</div>
 			<div class="text-base md:text-xl text-white text-center w-9/12 md:w-full opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
 	</header>
 
-	<section class="bg--section w-full overflow-x-hidden pt-10 md:pt-36">
+	<section class="bg--section w-full overflow-x-hidden pt-10 md:pt-20">
 		<div class="mx-4 md:mx-36">
 			<div class="flex mb-10 flex-col text-center justify-center">
-				<div class="mb-6 text-3xl md:text-7xl font-semibold">About Us</div>
-				<div class="text-base md:text-xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="mb-6 text-3xl md:text-5xl font-semibold">About Us</div>
+				<div class="text-base text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
 
 			<div class="mb-5">
 				<div class="flex items-center mb-3">
-					<div class="mr-4"><img class="w-8 md:w-24 h-1 md:h-2" src="{{ asset('images/utilities/hr.png') }}"></div>
-					<div class="text--pink text-3xl md:text-7xl font-bold">Our Vision</div>
+					<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
+					<div class="text--pink text-3xl md:text-5xl font-bold">Our Vision</div>
 				</div>
-				<div class="text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
+				<div class="text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
 			</div>
 
 			<div class="block md:flex items-center mb-20">
 				<div class="w-full md:w-1/2">
 					<div class="flex items-center mb-3">
-						<div class="mr-4 "><img class="w-8 md:w-24 h-1 md:h-2" src="{{ asset('images/utilities/hr.png') }}"></div>
-						<div class="text--pink  text-3xl md:text-7xl font-bold">Our Manifestos</div>
+						<div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
+						<div class="text--pink text-3xl md:text-5xl font-bold">Our Manifestos</div>
 					</div>
-					<div class="text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
+					<div class="text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
 				</div>
-				<div class="w-full md:w-1/2"><img src="{{ asset('images/home/our_manifestos.png') }}"></div>
+				<div class="w-full md:w-1/2"><img class="h-auto md:h-96" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-8 mb-6 md:mb-10">
 				<div class="w-full">
-					<div class="bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
+					<div class="h-48 bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
 						<div>
-							<div class="text-lg md:text-2xl mb-2 font-semibold text--pink">We Win Together</div>
-							<div class="text-base md:text-xl">When your business wins, we win.</div>
+							<div class="text-lg md:text-xl mb-2 font-semibold text--pink">We Win Together</div>
+							<div class="text-base">When your business wins, we win.</div>
 						</div>
 					</div>
 				</div>
 				<div class="w-full">
-					<div class="bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
+					<div class="h-48 bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
 						<div>
-							<div class="text-lg md:text-2xl mb-2 font-semibold text--pink">We Solve Your Problems</div>
-							<div class="text-base md:text-xl">We simplify technology so you can focus on your brand.</div>
+							<div class="text-lg md:text-xl mb-2 font-semibold text--pink">We Solve Your Problems</div>
+							<div class="text-base">We simplify technology so you can focus on your brand.</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="w-full">
-					<div class="bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
+					<div class="h-48 bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
 						<div>
-							<div class="text-lg md:text-2xl mb-2 font-semibold text--pink">We Worship Data </div>
-							<div class="text-base md:text-xl">Our creativity is driven by data and human experiences.</div>
+							<div class="text-lg md:text-xl mb-2 font-semibold text--pink">We Worship Data </div>
+							<div class="text-base">Our creativity is driven by data and human experiences.</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="w-full">
-					<div class="bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
+					<div class="h-48 bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
 						<div>
-							<div class="text-lg md:text-2xl mb-2 font-semibold text--pink">We Are Bold</div>
-							<div class="text-base md:text-xl">We dare to dream, and we get it done.</div>
+							<div class="text-lg md:text-xl mb-2 font-semibold text--pink">We Are Bold</div>
+							<div class="text-base">We dare to dream, and we get it done.</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="w-full">
-					<div class="bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
+					<div class="h-48 bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
 						<div>
-							<div class="text-lg md:text-2xl mb-2 font-semibold text--pink">We Move Fast</div>
-							<div class="text-base md:text-xl">Quicker decision and patience, win us games.</div>
+							<div class="text-lg md:text-xl mb-2 font-semibold text--pink">We Move Fast</div>
+							<div class="text-base">Quicker decision and patience, win us games.</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="w-full">
-					<div class="bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
+					<div class="h-48 bg-white rounded-lg flex p-8 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
 						<div>
-							<div class="text-lg md:text-2xl mb-2 font-semibold text--pink">We Know Your Consumer</div>
-							<div class="text-base md:text-xl">We know how to make your consumer, your customer.</div>
+							<div class="text-lg md:text-xl mb-2 font-semibold text--pink">We Know Your Consumer</div>
+							<div class="text-base">We know how to make your consumer, your customer.</div>
 						</div>
 					</div>
 				</div>
@@ -113,21 +113,21 @@
 	<section class="bg-white min-h-screen w-full overflow-x-hidden mt:10 md:pt-32">
 		<div class="mx-4 md:mx-36">
 			<div class="flex items-center mb-20">
-				<div class="mr-4"><img class="w-8 md:w-24 h-1 md:h-2" src="{{ asset('images/utilities/hr.png') }}"></div>
-				<div class="text--pink text-3xl md:text-7xl font-bold">Our Capabilities</div>
+				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
+				<div class="text--pink text-3xl md:text-5xl font-bold">Our Capabilities</div>
 			</div>
 	
 			<div class="block md:flex mb-24">
 				<div class="w-full md:w-1/2">
-					<img src="{{ asset('images/home/capabilities.png') }}">
+					<img class="h-auto md:h-96" src="{{ asset('images/home/capabilities.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-black text-5xl md:text-7xl font-bold mb-3">
+					<div class="text-black text-3xl md:text-5xl font-bold mb-3">
 						<div >Marketing</div>
 						<div class="text--pink">Strategy</div>
 					</div>
-					<div class="text-base md:text-xl text--grey-transparent mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities') }}" class="text-white rounded-full py-3 md:py-4 px-7 md:px-20 bg--pink">See More</a>
+					<div class="text-base md:text-lg text--grey-transparent mb-4">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
+					<a href="{{ url('capabilities') }}" class="text-white rounded-full py-3 px-7 md:px-10 bg--pink">See More</a>
 				</div>
 			</div>
 
@@ -149,52 +149,52 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full pt-20 md:pt-36">
+	<section class="bg-white w-full py-10">
 		<div class="mx-4 md:mx-36">
 			<div class="flex mb-10 flex-col">
-				<div class="mb-6 text-4xl md:text-7xl font-semibold">Team That Makes It Possible</div>
-				<div class="text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+				<div class="mb-6 text-3xl md:text-5xl font-semibold">Team That Makes It Possible</div>
+				<div class="text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 			</div>
 
 			<div class="grid -mr-4 md:-mr-36 grid-flow-col auto-cols-max gap-x-8 overflow-x-auto">
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/1.png') }}" alt="">
-					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Bruce Wayne</div>
-					<div class="text-gray-900 text-sm md:text-base uppercase">WEB DEVELOPER</div>
+					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/1.png') }}" alt="">
+					<div class="text-gray-900 text-lg font-semibold">Bruce Wayne</div>
+					<div class="text-gray-900 text-sm uppercase">WEB DEVELOPER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/2.png') }}" alt="">
-					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Diana Prince</div>
-					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
+					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/2.png') }}" alt="">
+					<div class="text-gray-900 text-lg font-semibold">Diana Prince</div>
+					<div class="text-gray-900 text-sm uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/3.png') }}" alt="">
-					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Clark Kent</div>
-					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
+					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/3.png') }}" alt="">
+					<div class="text-gray-900 text-lg font-semibold">Clark Kent</div>
+					<div class="text-gray-900 text-sm uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/3.png') }}" alt="">
-					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Clark Kent</div>
-					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
+					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/3.png') }}" alt="">
+					<div class="text-gray-900 text-lg font-semibold">Clark Kent</div>
+					<div class="text-gray-900 text-sm uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-auto" src="{{ asset('images/person/3.png') }}" alt="">
-					<div class="text-gray-900 text-xl md:text-2xl font-semibold">Clark Kent</div>
-					<div class="text-gray-900 text-sm md:text-base uppercase">GRAPHIC DESIGNER</div>
+					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/3.png') }}" alt="">
+					<div class="text-gray-900 text-lg font-semibold">Clark Kent</div>
+					<div class="text-gray-900 text-sm uppercase">GRAPHIC DESIGNER</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="bg--section w-full overflow-x-hidden pt-20 md:pt-36">
+	<section class="bg--section w-full overflow-x-hidden pt-20">
 		<div class="mx-4 md:mx-36">
 			<div class="flex mb-10 flex-col">
-				<div class="mb-6 text-3xl md:text-7xl font-semibold">Case Studies</div>
-				<div class="text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="mb-6 text-3xl md:text-5xl font-semibold">Case Studies</div>
+				<div class="text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
 
@@ -203,41 +203,30 @@
 				<button class="bg--gradient-pink py-3 px-10 text-sm md:text-base text-white rounded-full"> Work With Us </button>
 			</div>
 
-			<div class="bg-white rounded-b-lg mb-10">
+			@for ($i = 0; $i < 2; $i++)
+			<a href="{{ url('case-studies-2') }}" class="bg-white rounded-b-lg mb-10">
 				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
 					<div class="flex justify-between mb-3">
-						<div class="text-2xl font-semibold">Roady V3.0 Ilustration</div>
-						<div class="text-lg">FEATURED</div>
+						<div class="text-xl font-semibold">Roady V3.0 Ilustration</div>
+						<div class="text-base">FEATURED</div>
 					</div>
 					
 					<div class="text--pink font-semibold mb-3">ILLUSTTRATION DESIGN</div>
-					<div class="text-xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+					<div class="text-base text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 				</div>
-			</div>
-
-			<div class="bg-white rounded-b-lg  mb-10">
-				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
-				<div class="p-5 rounded-b-lg">
-					<div class="flex justify-between mb-3">
-						<div class="text-2xl font-semibold">Roady V3.0 Ilustration</div>
-						<div class="text-lg">FEATURED</div>
-					</div>
-					
-					<div class="text--pink font-semibold mb-3">ILLUSTTRATION DESIGN</div>
-					<div class="text-xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-				</div>
-			</div>
+			</a>
+			@endfor
 		</div>
 	</section>
 
-	<section class="bg--gray-light w-full overflow-x-hidden pt-20 md:pt-36">
+	<section class="bg--gray-light w-full overflow-x-hidden pt-10">
 		<div class="mx-4 md:mx-36">
 
 			<div class="block md:flex items-center -mr-0 md:-mr-36">
-				<div class="w-full md:w-1/3 mr-20">
-					<div class="text-3xl md:text-7xl font-semibold mb-4">Insights</div>
-					<div class="mb-7 text-base md:text-2xl text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+				<div class="w-full md:w-1/3 mr-0 md:mr-20 mb-3 md:mb-0">
+					<div class="text-3xl md:text-5xl font-semibold mb-4">Insights</div>
+					<div class="mb-7 text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 					<a href="{{ url('insights') }}" class="text-sm md:text-base bg--pink text-white py-3 px-10 md:px-6 rounded-full"> See More Insights </a>
 				</div>
 				@for ($i = 0; $i < 2; $i++)
@@ -252,29 +241,29 @@
 		</div>
 	</section>
 
-	<section  class="bg-white w-full overflow-x-hidden pt-20 md:pt-36">
+	<section  class="bg-white w-full overflow-x-hidden py-20">
 		<div class="mx-4 md:mx-36">
-			<div class="w-3/4 mb-10">
-				<div class="text-3xl md:text-7xl w-9/12 md:w-full font-semibold mb-4">Have a <span class="text--pink">Project</span> Idea ?</div>
-				<div class="text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+			<div class="w-full md:w-3/4 mb-10">
+				<div class="text-3xl md:text-5xl  w-8/12 md:w-full font-semibold mb-4">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="text-base md:text-lg text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			</div>
 
 			<form action="">
 				<div class="block md:flex mb-5">
 					<div class="w-full md:w-1/2">
-						<div class="m-3">
+						<div class="m-0 md:m-3 mb-3 md:mb-0">
 							<input type="text" class="w-full p-3 rounded-xl bg-gray-100 focus:outline-none" placeholder="Email Address">
 						</div>
-						<div class="m-3">
+						<div class="m-0 md:m-3 mb-3 md:mb-0">
 							<input type="text" class="w-full p-3 rounded-xl bg-gray-100 focus:outline-none" placeholder="Full Name">
 						</div>
 						
 					</div>
 					<div class="w-full md:w-1/2">
-						<div class="m-3">
+						<div class="m-0 md:m-3 mb-3 md:mb-0">
 							<input type="text" class="w-full p-3 rounded-xl bg-gray-100 focus:outline-none" placeholder="Phone Number">
 						</div>
-						<div class="m-3">
+						<div class="m-0 md:m-3 mb-3 md:mb-0">
 							<input type="text" class="w-full p-3 rounded-xl bg-gray-100 focus:outline-none" placeholder="Reason to contact">
 						</div>
 					</div>
@@ -285,15 +274,15 @@
 	</section>
 
 
-	<section class="bg--section w-full overflow-x-hidden py-36">
+	<section class="bg--section w-full overflow-x-hidden py-20">
 		<div class="mx-4 md:mx-36">
 			<div class="blcok md:flex items-center">
 				<div class="w-full md:w-1/2">
-					<img src="{{ asset('images/home/join.png') }}" alt="">
+					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-5xl md:text-7xl font-semibold mb-4">Join the <span class="text--pink">Team</span></div>
-					<div class="text--grey-transparent mb-3">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<div class="text-3xl md:text-5xl font-semibold mb-4">Join the <span class="text--pink">Team</span></div>
+					<div class="text-base md:text-lg text--grey-transparent mb-3">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
 					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:text-base text-white py-3 px-8 md:px-10">Explore Profiles</a>
 				</div>
 			</div>

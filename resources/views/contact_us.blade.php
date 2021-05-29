@@ -2,11 +2,11 @@
 @section('content')
 	@include('layouts.__navigation_light')
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-32">
+	<section class="bg-white w-full overflow-x-hidden py-20 md:py-32">
 		<div class="mx-4 md:mx-36">
 			<div class="mb-24">
-				<div class="mb-3 font-semibold text-4xl md:text-7xl">Have a <span class="text--pink">Project</span> Idea ?</div>
-				<div class="text-gray-400 mb-8">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+				<div class="mb-3 font-semibold text-4xl md:text-5xl">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="text-gray-400 mb-8 text-base md:text-lg">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 				<div class="flex gap-x-4">
 					<button class="py-2 md:py-3 px-8 bg--green text-white rounded-full">Mumbai</button>
 					<button class="py-2 md:py-3 px-8 bg-gray-200 text-white rounded-full">Jaipur</button>

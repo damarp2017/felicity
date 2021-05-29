@@ -49,11 +49,11 @@
 	height: 80vh;
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
 	.height--header {
 		height: 999px;
 	}
-}
+} */
 	
 
 .text--grey-transparent{

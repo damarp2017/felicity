@@ -1,13 +1,13 @@
-<nav class="navbar hidden md:flex bg-white fixed px-12 py-3 z-20 w-full transition duration-300 ease-in-out items-center justify-between">
+<nav class="navbar hidden md:flex border-b bg-white fixed px-12 py-3 z-20 w-full transition duration-300 ease-in-out items-center justify-between">
 	<a href="{{ url('/') }}">
-		<img src="{{ asset('images/logo/black.png') }}">
+		<img class="h-8" src="{{ asset('images/logo/black.png') }}">
 	</a>
 	<div class="flex items-center gap-x-8">
-		<a class="hover:text-gray-500 text-xl"> Our Process </a>
-		<a href="{{ url('opportunities') }}" class="hover:text-gray-500 text-xl"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="hover:text-gray-500 text-xl"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="hover:text-gray-500 text-xl"> Insights </a>
-		<a href="{{ url('contact-us') }}" class="hover:text-gray-500 text-xl"> Contact Us </a>
+		<a class="hover:text-gray-500 text-lg"> Our Process </a>
+		<a href="{{ url('opportunities') }}" class="hover:text-gray-500 text-lg"> Opportunities </a>
+		<a href="{{ url('case-studies') }}" class="hover:text-gray-500 text-lg"> Case Studies </a>
+		<a href="{{ url('insights') }}" class="hover:text-gray-500 text-lg"> Insights </a>
+		<a href="{{ url('contact-us') }}" class="hover:text-gray-500 text-lg"> Contact Us </a>
 	</div>
 </nav>
 
@@ -24,13 +24,13 @@
 				</svg>
 			</button>
 		</div>
-		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out ">
+		<div x-show="open" class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out ">
 			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Our Process </a>
 			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
 			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
 			<a href="{{ url('insights') }}" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
-			<div class="flex justify-center items-center w-72 bg--gradient-black py-3 px-2 text-lg rounded-full text-white">
+			<div class="flex justify-center items-center w-72 bg--gradient-black p-2 text-lg rounded-full text-white">
 				Book A Free Consultation Call
 			</div>
 		</div>

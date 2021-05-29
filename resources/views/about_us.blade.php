@@ -4,49 +4,43 @@
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center text-center">
-			<div class="text-white font-semibold text-5xl md:text-9xl mb-5 text-center"> About Us</div>
-			<div class="text-base md:text-xl text-white opacity-50 w-1/2">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy .</div>
+			<div class="text-white font-semibold text-5xl md:text-7xl mb-5 text-center"> About Us</div>
+			<div class="text-base md:text-lg text-white opacity-50 w-1/2">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy .</div>
 		</div>
 	</header>
 
-	<section class="bg-white w-full overflow-x-hidden pt-10 md:pt-36">
+	<section class="bg-white w-full overflow-x-hidden pt-10 ">
 		<div class="mx-4 md:mx-36">
 			<div class="block md:flex mb-10 flex-col">
-				<div class="mb-6 text-4xl md:text-7xl font-semibold">Vision</div>
-				<div class="text-base md:text-xl text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
+				<div class="mb-6 text-3xl font-semibold">Vision</div>
+				<div class="text-base md:text-lg text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-28">
+	<section class="bg-white w-full overflow-x-hidden py-10">
 		<div class="mx-4 md:mx-36">
 			<div class="block md:flex mb-10 md:mb-24 items-center">
 				<div class="w-full md:w-1/2">
-					<img src="{{ asset('images/about_us/1.png') }}">
+					<img class="h-auto md:h-96" src="{{ asset('images/about_us/1.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-3 text-black ">
-						<div class="flex gap-x-4 items-center">
-							<div class="w-48"><hr></div>
-						</div>
-						<div class="text-5xl md:text-7xl font-bold">For Company</div>
+						<div class="text-3xl font-bold">For Company</div>
 					</div>
-					<div class="text-base md:text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:text-lg text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
-			<div class="block md:flex mb-10 md:mb-24 items-center">
+			<div class="block md:flex mb-10 items-center">
 				<div class="block md:hidden w-full md:w-1/2">
-					<img src="{{ asset('images/about_us/2.png') }}">
+					<img class="h-auto md:h-96" src="{{ asset('images/about_us/2.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-3 text-black ">
-						<div class="flex gap-x-4 items-center">
-							<div class="w-48"><hr></div>
-						</div>
-						<div class="text-5xl md:text-7xl font-bold">For Team</div>
+						<div class="text-3xl font-bold">For Team</div>
 					</div>
-					<div class="text-base md:text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:text-lg text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2">
 					<img src="{{ asset('images/about_us/2.png') }}">
@@ -55,26 +49,26 @@
 		</div>
 	</section>
 
-	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-28">
+	<section class="bg--gray-light w-full overflow-x-hidden py-10 ">
 		<div class="mx-4 md:mx-36">
 			<div class="flex items-center mb-10 md:mb-20">
-				<div class="mr-4"><img class="w-8 md:w-24 h-1 md:h-2" src="{{ asset('images/utilities/hr.png') }}"></div>
+				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 				<div class="text--pink text-2xl md:text-3xl font-bold">Values</div>
 			</div>
 	
 			<div class="block md:flex mb-24 items-center">
 				<div class="w-full md:w-1/2">
-					<img src="{{ asset('images/about_us/3.png') }}">
+					<img class="h-auto md:h-96" src="{{ asset('images/about_us/3.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-3 text-black ">
 						<div class="flex gap-x-4 items-center">
-							<div class="text-3xl">01</div>
+							<div class="text-2xl">01</div>
 							<div class="w-48"><hr></div>
 						</div>
-						<div class="text-5xl md:text-7xl font-bold">Vision</div>
+						<div class="text-3xl font-bold">Vision</div>
 					</div>
-					<div class="text-base md:text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:text-lg text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -96,20 +90,17 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-28">
+	<section class="bg-white w-full overflow-x-hidden py-10">
 		<div class="mx-4 md:mx-36">
 			<div class="block md:flex mb-24 items-center">
 				<div class="block md:hidden w-full md:w-1/2">
-					<img src="{{ asset('images/about_us/4.png') }}">
+					<img class="h-auto md:h-96" src="{{ asset('images/about_us/4.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-3 text-black ">
-						<div class="flex gap-x-4 items-center">
-							<div class="w-48"><hr></div>
-						</div>
-						<div class=" text-5xl md:text-7xl font-bold">Conscious Advertising Network</div>
+						<div class=" text-3xl font-bold">Conscious Advertising Network</div>
 					</div>
-					<div class="text-base md:text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:text-lg text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2">
 					<img src="{{ asset('images/about_us/4.png') }}">
@@ -118,16 +109,13 @@
 
 			<div class="block md:flex mb-24 items-center">
 				<div class="w-full md:w-1/2">
-					<img src="{{ asset('images/about_us/5.png') }}">
+					<img class="h-auto md:h-96" src="{{ asset('images/about_us/5.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-3 text-black ">
-						<div class="flex gap-x-4 items-center">
-							<div class="w-48"><hr></div>
-						</div>
-						<div class="text-5xl md:text-7xl font-bold">Mentored By Schbang</div>
+						<div class="text-3xl font-bold">Mentored By Schbang</div>
 					</div>
-					<div class="text-base md:text-xl text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:text-lg text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -135,16 +123,16 @@
 		</div>
 	</section>
 
-	<section class="bg--section w-full overflow-x-hidden py-36">
+	<section class="bg--section w-full overflow-x-hidden py-10">
 		<div class="mx-4 md:mx-36">
-			<div class="block md:flex items-center">
+			<div class="blcok md:flex items-center">
 				<div class="w-full md:w-1/2">
-					<img src="{{ asset('images/home/join.png') }}" alt="">
+					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-5xl md:text-7xl font-semibold mb-4">Join the <span class="text--pink">Team</span></div>
-					<div class="text--grey-transparent mb-3">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<button class="bg--pink rounded-full text-white py-3 px-10">Explore Profiles</button>
+					<div class="text-3xl md:text-5xl font-semibold mb-4">Join the <span class="text--pink">Team</span></div>
+					<div class="text-base md:text-lg text--grey-transparent mb-3">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:text-base text-white py-3 px-8 md:px-10">Explore Profiles</a>
 				</div>
 			</div>
 		</div>

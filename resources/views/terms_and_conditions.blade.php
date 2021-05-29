@@ -2,11 +2,11 @@
 @section('content')
 	@include('layouts.__navigation_light')
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-32">
+	<section class="bg-white w-full overflow-x-hidden py-20 md:py-32">
 		<div class="mx-4 md:mx-36">
 			<div class="mb-10">
-				<div class="mb-3 font-semibold text-4xl md:text-7xl">Terms and Conditions</div>
-				<div class="text-gray-400">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+				<div class="mb-3 font-semibold text-4xl md:text-5xl">Terms and Conditions</div>
+				<div class="text-gray-400 text-base md:text-lg">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 			</div>
 
 			<div>

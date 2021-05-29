@@ -13,5 +13,5 @@ Route::view('our-clients', 'our_clients');
 Route::view('press-release', 'press_release');  //responsive
 Route::view('contact-us', 'contact_us'); //responsive
 Route::view('terms-and-conditions', 'terms_and_conditions'); //responsive
-Route::view('insights-inside', 'capabilities_2'); //responsive
+Route::view('insights-inside', 'insights_inside'); //responsive
 Route::view('case-studies-2', 'case_studies_2'); //responsive

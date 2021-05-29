@@ -31884,11 +31884,11 @@ video {
   height: 80vh;
 }
 
-@media (min-width: 768px){
-  .height--header {
-    height: 999px;
-  }
-}
+/* @media (min-width: 768px){
+	.height--header {
+		height: 999px;
+	}
+} */
 
 .text--grey-transparent{
   color: rgba(100, 100, 100, 0.72);
