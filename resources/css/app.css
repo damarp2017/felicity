@@ -43,18 +43,7 @@
 
 .bg--gradient-pink{
 	background: linear-gradient(121.44deg, #DE4045 -2.03%, rgba(222, 64, 69, 0.71) 79.87%);
-}
-
-.height--header{
-	height: 80vh;
-}
-
-/* @media (min-width: 768px){
-	.height--header {
-		height: 999px;
-	}
-} */
-	
+}	
 
 .text--grey-transparent{
 	color: rgba(100, 100, 100, 0.72);
@@ -103,3 +92,251 @@
 .bg--green{
 	background: #008049;
 }
+
+
+@layer utilities {
+	.height--60vh{
+		height: 60vh;
+	}
+
+	.height--80vh{
+		height: 80vh;
+	}
+	@variants responsive {
+		.height--90vh{
+			height: 90vh;
+		}
+
+		.height--50vh{
+			height: 50vh;
+		}
+
+		.line--height-88c84{
+			line-height: 88.84%;
+		}
+
+		.line--height-97{
+			line-height: 97%;
+		}
+
+		.line--height-99c34{
+			line-height: 99.34%;
+		}
+		
+
+		.line--height-124c34{
+			line-height: 124.34%;
+		}
+
+		.font--size-13{
+			font-size: 13px;
+		}
+
+		.font--size-14{
+			font-size: 14px;
+		}
+
+		.font--size-15{
+			font-size: 15px;
+		}
+		
+		.font--size-16{
+			font-size: 16px;
+		}
+
+		.font--size-17{
+			font-size: 17px;
+		}
+
+		.font--size-18{
+			font-size: 18px;
+		}
+
+		.font--size-19{
+			font-size: 19px;
+		}
+
+		.font--size-20{
+			font-size: 20px;
+		}
+		
+		.font--size-21{
+			font-size: 21px;
+		}
+
+		.font--size-22{
+			font-size: 22px;
+		}
+		
+		.font--size-24{
+			font-size: 24px;
+		}
+
+		.font--size-26{
+			font-size: 26px;
+		}
+
+		.font--size-27{
+			font-size: 27px;
+		}
+
+		.font--size-28{
+			font-size: 28px;
+		}
+
+		.font--size-30{
+			font-size: 30px;
+		}
+
+		.font--size-35{
+			font-size: 35px;
+		}
+
+		.font--size-38{
+			font-size: 38px;
+		}
+
+		.font--size-39{
+			font-size: 39px;
+		}
+
+		.font--size-42{
+			font-size: 42px;
+		}
+
+		.font--size-52{
+			font-size: 52px;
+		}
+
+		.font--size-55{
+			font-size: 55px;
+		}
+		
+		.font--size-65{
+			font-size: 65px;
+		}
+
+		.font--size-75{
+			font-size: 75px;
+		}
+
+		.font--size-80{
+			font-size: 80px;
+		}
+
+		.font--size-85{
+			font-size: 85px;
+		}
+
+		.font--size-95{
+			font-size: 95px;
+		}
+
+		.font--size-100{
+			font-size: 100px;
+		}
+
+		.font--size-150{
+			font-size: 150px;
+		}
+		
+		.font--size-190{
+			font-size: 190px;
+		}
+	}
+}
+
+
+/* .height--header{
+	height: 80vh;
+} */
+
+/* @media (min-width: 768px){
+	.height--header{
+		height: 90vh;
+	}
+	
+	.font--size-header-title {
+		font-size: 190px;
+	}
+	
+	.font--size-sub-header {
+		font-size: 24px;
+	}
+	
+	.font--size-header-description{
+		font-size: 22px;
+	}
+
+	.font--size-section-title {
+		font-size: 65px;
+	}
+
+	.font--size-section-description{
+		font-size: 22px;
+	}
+
+	.font--size-title-with-hr{
+		font-size: 52px;
+	}
+
+	.font--size-description{
+		font-size: 22px;
+	}
+
+	.font--size-button{
+		font-size: 17px;
+	}
+
+	
+	.font--size-inner-section-title{
+		font-size: 85px;
+	}
+
+	.card--about-us-title{
+		font-size: 21px;
+		font-weight: bold;
+	}
+
+	.card--about-us-description {
+		font-size: 20px;
+	}
+
+	.font--title-teams{
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.font-description-teams{
+		font-size: 17px;
+	}
+
+	.font--size-16{
+		font-size: 16px;
+	}
+
+	.font--size-17{
+		font-size: 17px;
+	}
+
+	.font--size-42{
+		font-size: 42px;
+	}
+	.font--size-65{
+		font-size: 65px;
+	}
+
+	.font--case-studies-title{
+		font-size: 42px;
+	}
+
+	.font--case-studies-subtitle{
+		font-size: 17px;
+	}
+	.font--case-studies-featured{
+		font-size: 16px;
+	}
+	.font--case-studies-description{
+		font-size: 17px;
+	}
+} */

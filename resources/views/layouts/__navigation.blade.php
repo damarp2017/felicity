@@ -1,14 +1,14 @@
-<nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-2 z-20 w-full transition duration-300 ease-in-out ">
+<nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out ">
 	<a href="{{ url('/') }}">
 		<img class="h-8" src="{{ asset('images/logo/logo.png') }}">
 	</a>
 	<div class="flex gap-x-10 items-center">
-		<a href="#" class="text-white hover:text-gray-200 text-lg"> Our Process </a>
-		<a href="{{ url('opportunities') }}" class="text-white hover:text-gray-200 text-lg"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="text-white hover:text-gray-200 text-lg"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="text-white hover:text-gray-200 text-lg"> Insights </a>
-		<a href="{{ url('contact-us') }}" class="text-white hover:text-gray-200 text-lg"> Contact Us </a>
-		<div class="bg--gradient-black py-3 px-8 text-lg rounded-full text-white">
+		<a href="#" class="text-white hover:text-gray-200 font--size-15"> Our Process </a>
+		<a href="{{ url('opportunities') }}" class="text-white hover:text-gray-200 font--size-15"> Opportunities </a>
+		<a href="{{ url('case-studies') }}" class="text-white hover:text-gray-200 font--size-15"> Case Studies </a>
+		<a href="{{ url('insights') }}" class="text-white hover:text-gray-200 font--size-15"> Insights </a>
+		<a href="{{ url('contact-us') }}" class="text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+		<div class="bg--gradient-black py-3 px-8 rounded-full text-white font--size-15">
 			Book A Free Consultation Call
 		</div>
 	</div>

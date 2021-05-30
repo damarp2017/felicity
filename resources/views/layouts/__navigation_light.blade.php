@@ -3,11 +3,11 @@
 		<img class="h-8" src="{{ asset('images/logo/black.png') }}">
 	</a>
 	<div class="flex items-center gap-x-8">
-		<a class="hover:text-gray-500 text-lg"> Our Process </a>
-		<a href="{{ url('opportunities') }}" class="hover:text-gray-500 text-lg"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="hover:text-gray-500 text-lg"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="hover:text-gray-500 text-lg"> Insights </a>
-		<a href="{{ url('contact-us') }}" class="hover:text-gray-500 text-lg"> Contact Us </a>
+		<a class="hover:text-gray-500 font--size-15"> Our Process </a>
+		<a href="{{ url('opportunities') }}" class="hover:text-gray-500 font--size-15"> Opportunities </a>
+		<a href="{{ url('case-studies') }}" class="hover:text-gray-500 font--size-15"> Case Studies </a>
+		<a href="{{ url('insights') }}" class="hover:text-gray-500 font--size-15"> Insights </a>
+		<a href="{{ url('contact-us') }}" class="hover:text-gray-500 font--size-15"> Contact Us </a>
 	</div>
 </nav>
 

@@ -31844,6 +31844,154 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.height--60vh{
+  height: 60vh;
+}
+
+.height--80vh{
+  height: 80vh;
+}
+
+.height--90vh{
+  height: 90vh;
+}
+
+.height--50vh{
+  height: 50vh;
+}
+
+.line--height-88c84{
+  line-height: 88.84%;
+}
+
+.line--height-97{
+  line-height: 97%;
+}
+
+.line--height-99c34{
+  line-height: 99.34%;
+}
+
+.line--height-124c34{
+  line-height: 124.34%;
+}
+
+.font--size-13{
+  font-size: 13px;
+}
+
+.font--size-14{
+  font-size: 14px;
+}
+
+.font--size-15{
+  font-size: 15px;
+}
+
+.font--size-16{
+  font-size: 16px;
+}
+
+.font--size-17{
+  font-size: 17px;
+}
+
+.font--size-18{
+  font-size: 18px;
+}
+
+.font--size-19{
+  font-size: 19px;
+}
+
+.font--size-20{
+  font-size: 20px;
+}
+
+.font--size-21{
+  font-size: 21px;
+}
+
+.font--size-22{
+  font-size: 22px;
+}
+
+.font--size-24{
+  font-size: 24px;
+}
+
+.font--size-26{
+  font-size: 26px;
+}
+
+.font--size-27{
+  font-size: 27px;
+}
+
+.font--size-28{
+  font-size: 28px;
+}
+
+.font--size-30{
+  font-size: 30px;
+}
+
+.font--size-35{
+  font-size: 35px;
+}
+
+.font--size-38{
+  font-size: 38px;
+}
+
+.font--size-39{
+  font-size: 39px;
+}
+
+.font--size-42{
+  font-size: 42px;
+}
+
+.font--size-52{
+  font-size: 52px;
+}
+
+.font--size-55{
+  font-size: 55px;
+}
+
+.font--size-65{
+  font-size: 65px;
+}
+
+.font--size-75{
+  font-size: 75px;
+}
+
+.font--size-80{
+  font-size: 80px;
+}
+
+.font--size-85{
+  font-size: 85px;
+}
+
+.font--size-95{
+  font-size: 95px;
+}
+
+.font--size-100{
+  font-size: 100px;
+}
+
+.font--size-150{
+  font-size: 150px;
+}
+
+.font--size-190{
+  font-size: 190px;
+}
+
 .bg--pink{
   background: #DE4045;
 }
@@ -31879,16 +32027,6 @@ video {
 .bg--gradient-pink{
   background: linear-gradient(121.44deg, #DE4045 -2.03%, rgba(222, 64, 69, 0.71) 79.87%);
 }
-
-.height--header{
-  height: 80vh;
-}
-
-/* @media (min-width: 768px){
-	.height--header {
-		height: 999px;
-	}
-} */
 
 .text--grey-transparent{
   color: rgba(100, 100, 100, 0.72);
@@ -31941,6 +32079,100 @@ video {
 .bg--green{
   background: #008049;
 }
+
+/* .height--header{
+	height: 80vh;
+} */
+
+/* @media (min-width: 768px){
+	.height--header{
+		height: 90vh;
+	}
+	
+	.font--size-header-title {
+		font-size: 190px;
+	}
+	
+	.font--size-sub-header {
+		font-size: 24px;
+	}
+	
+	.font--size-header-description{
+		font-size: 22px;
+	}
+
+	.font--size-section-title {
+		font-size: 65px;
+	}
+
+	.font--size-section-description{
+		font-size: 22px;
+	}
+
+	.font--size-title-with-hr{
+		font-size: 52px;
+	}
+
+	.font--size-description{
+		font-size: 22px;
+	}
+
+	.font--size-button{
+		font-size: 17px;
+	}
+
+	
+	.font--size-inner-section-title{
+		font-size: 85px;
+	}
+
+	.card--about-us-title{
+		font-size: 21px;
+		font-weight: bold;
+	}
+
+	.card--about-us-description {
+		font-size: 20px;
+	}
+
+	.font--title-teams{
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.font-description-teams{
+		font-size: 17px;
+	}
+
+	.font--size-16{
+		font-size: 16px;
+	}
+
+	.font--size-17{
+		font-size: 17px;
+	}
+
+	.font--size-42{
+		font-size: 42px;
+	}
+	.font--size-65{
+		font-size: 65px;
+	}
+
+	.font--case-studies-title{
+		font-size: 42px;
+	}
+
+	.font--case-studies-subtitle{
+		font-size: 17px;
+	}
+	.font--case-studies-featured{
+		font-size: 16px;
+	}
+	.font--case-studies-description{
+		font-size: 17px;
+	}
+} */
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -63051,6 +63283,146 @@ video {
 
   .sm\:backdrop-sepia {
     --tw-backdrop-sepia: sepia(100%);
+  }
+
+  .sm\:height--90vh{
+    height: 90vh;
+  }
+
+  .sm\:height--50vh{
+    height: 50vh;
+  }
+
+  .sm\:line--height-88c84{
+    line-height: 88.84%;
+  }
+
+  .sm\:line--height-97{
+    line-height: 97%;
+  }
+
+  .sm\:line--height-99c34{
+    line-height: 99.34%;
+  }
+
+  .sm\:line--height-124c34{
+    line-height: 124.34%;
+  }
+
+  .sm\:font--size-13{
+    font-size: 13px;
+  }
+
+  .sm\:font--size-14{
+    font-size: 14px;
+  }
+
+  .sm\:font--size-15{
+    font-size: 15px;
+  }
+
+  .sm\:font--size-16{
+    font-size: 16px;
+  }
+
+  .sm\:font--size-17{
+    font-size: 17px;
+  }
+
+  .sm\:font--size-18{
+    font-size: 18px;
+  }
+
+  .sm\:font--size-19{
+    font-size: 19px;
+  }
+
+  .sm\:font--size-20{
+    font-size: 20px;
+  }
+
+  .sm\:font--size-21{
+    font-size: 21px;
+  }
+
+  .sm\:font--size-22{
+    font-size: 22px;
+  }
+
+  .sm\:font--size-24{
+    font-size: 24px;
+  }
+
+  .sm\:font--size-26{
+    font-size: 26px;
+  }
+
+  .sm\:font--size-27{
+    font-size: 27px;
+  }
+
+  .sm\:font--size-28{
+    font-size: 28px;
+  }
+
+  .sm\:font--size-30{
+    font-size: 30px;
+  }
+
+  .sm\:font--size-35{
+    font-size: 35px;
+  }
+
+  .sm\:font--size-38{
+    font-size: 38px;
+  }
+
+  .sm\:font--size-39{
+    font-size: 39px;
+  }
+
+  .sm\:font--size-42{
+    font-size: 42px;
+  }
+
+  .sm\:font--size-52{
+    font-size: 52px;
+  }
+
+  .sm\:font--size-55{
+    font-size: 55px;
+  }
+
+  .sm\:font--size-65{
+    font-size: 65px;
+  }
+
+  .sm\:font--size-75{
+    font-size: 75px;
+  }
+
+  .sm\:font--size-80{
+    font-size: 80px;
+  }
+
+  .sm\:font--size-85{
+    font-size: 85px;
+  }
+
+  .sm\:font--size-95{
+    font-size: 95px;
+  }
+
+  .sm\:font--size-100{
+    font-size: 100px;
+  }
+
+  .sm\:font--size-150{
+    font-size: 150px;
+  }
+
+  .sm\:font--size-190{
+    font-size: 190px;
   }
 }
 
@@ -94164,6 +94536,146 @@ video {
   .md\:backdrop-sepia {
     --tw-backdrop-sepia: sepia(100%);
   }
+
+  .md\:height--90vh{
+    height: 90vh;
+  }
+
+  .md\:height--50vh{
+    height: 50vh;
+  }
+
+  .md\:line--height-88c84{
+    line-height: 88.84%;
+  }
+
+  .md\:line--height-97{
+    line-height: 97%;
+  }
+
+  .md\:line--height-99c34{
+    line-height: 99.34%;
+  }
+
+  .md\:line--height-124c34{
+    line-height: 124.34%;
+  }
+
+  .md\:font--size-13{
+    font-size: 13px;
+  }
+
+  .md\:font--size-14{
+    font-size: 14px;
+  }
+
+  .md\:font--size-15{
+    font-size: 15px;
+  }
+
+  .md\:font--size-16{
+    font-size: 16px;
+  }
+
+  .md\:font--size-17{
+    font-size: 17px;
+  }
+
+  .md\:font--size-18{
+    font-size: 18px;
+  }
+
+  .md\:font--size-19{
+    font-size: 19px;
+  }
+
+  .md\:font--size-20{
+    font-size: 20px;
+  }
+
+  .md\:font--size-21{
+    font-size: 21px;
+  }
+
+  .md\:font--size-22{
+    font-size: 22px;
+  }
+
+  .md\:font--size-24{
+    font-size: 24px;
+  }
+
+  .md\:font--size-26{
+    font-size: 26px;
+  }
+
+  .md\:font--size-27{
+    font-size: 27px;
+  }
+
+  .md\:font--size-28{
+    font-size: 28px;
+  }
+
+  .md\:font--size-30{
+    font-size: 30px;
+  }
+
+  .md\:font--size-35{
+    font-size: 35px;
+  }
+
+  .md\:font--size-38{
+    font-size: 38px;
+  }
+
+  .md\:font--size-39{
+    font-size: 39px;
+  }
+
+  .md\:font--size-42{
+    font-size: 42px;
+  }
+
+  .md\:font--size-52{
+    font-size: 52px;
+  }
+
+  .md\:font--size-55{
+    font-size: 55px;
+  }
+
+  .md\:font--size-65{
+    font-size: 65px;
+  }
+
+  .md\:font--size-75{
+    font-size: 75px;
+  }
+
+  .md\:font--size-80{
+    font-size: 80px;
+  }
+
+  .md\:font--size-85{
+    font-size: 85px;
+  }
+
+  .md\:font--size-95{
+    font-size: 95px;
+  }
+
+  .md\:font--size-100{
+    font-size: 100px;
+  }
+
+  .md\:font--size-150{
+    font-size: 150px;
+  }
+
+  .md\:font--size-190{
+    font-size: 190px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -125275,6 +125787,146 @@ video {
 
   .lg\:backdrop-sepia {
     --tw-backdrop-sepia: sepia(100%);
+  }
+
+  .lg\:height--90vh{
+    height: 90vh;
+  }
+
+  .lg\:height--50vh{
+    height: 50vh;
+  }
+
+  .lg\:line--height-88c84{
+    line-height: 88.84%;
+  }
+
+  .lg\:line--height-97{
+    line-height: 97%;
+  }
+
+  .lg\:line--height-99c34{
+    line-height: 99.34%;
+  }
+
+  .lg\:line--height-124c34{
+    line-height: 124.34%;
+  }
+
+  .lg\:font--size-13{
+    font-size: 13px;
+  }
+
+  .lg\:font--size-14{
+    font-size: 14px;
+  }
+
+  .lg\:font--size-15{
+    font-size: 15px;
+  }
+
+  .lg\:font--size-16{
+    font-size: 16px;
+  }
+
+  .lg\:font--size-17{
+    font-size: 17px;
+  }
+
+  .lg\:font--size-18{
+    font-size: 18px;
+  }
+
+  .lg\:font--size-19{
+    font-size: 19px;
+  }
+
+  .lg\:font--size-20{
+    font-size: 20px;
+  }
+
+  .lg\:font--size-21{
+    font-size: 21px;
+  }
+
+  .lg\:font--size-22{
+    font-size: 22px;
+  }
+
+  .lg\:font--size-24{
+    font-size: 24px;
+  }
+
+  .lg\:font--size-26{
+    font-size: 26px;
+  }
+
+  .lg\:font--size-27{
+    font-size: 27px;
+  }
+
+  .lg\:font--size-28{
+    font-size: 28px;
+  }
+
+  .lg\:font--size-30{
+    font-size: 30px;
+  }
+
+  .lg\:font--size-35{
+    font-size: 35px;
+  }
+
+  .lg\:font--size-38{
+    font-size: 38px;
+  }
+
+  .lg\:font--size-39{
+    font-size: 39px;
+  }
+
+  .lg\:font--size-42{
+    font-size: 42px;
+  }
+
+  .lg\:font--size-52{
+    font-size: 52px;
+  }
+
+  .lg\:font--size-55{
+    font-size: 55px;
+  }
+
+  .lg\:font--size-65{
+    font-size: 65px;
+  }
+
+  .lg\:font--size-75{
+    font-size: 75px;
+  }
+
+  .lg\:font--size-80{
+    font-size: 80px;
+  }
+
+  .lg\:font--size-85{
+    font-size: 85px;
+  }
+
+  .lg\:font--size-95{
+    font-size: 95px;
+  }
+
+  .lg\:font--size-100{
+    font-size: 100px;
+  }
+
+  .lg\:font--size-150{
+    font-size: 150px;
+  }
+
+  .lg\:font--size-190{
+    font-size: 190px;
   }
 }
 
@@ -156388,6 +157040,146 @@ video {
   .xl\:backdrop-sepia {
     --tw-backdrop-sepia: sepia(100%);
   }
+
+  .xl\:height--90vh{
+    height: 90vh;
+  }
+
+  .xl\:height--50vh{
+    height: 50vh;
+  }
+
+  .xl\:line--height-88c84{
+    line-height: 88.84%;
+  }
+
+  .xl\:line--height-97{
+    line-height: 97%;
+  }
+
+  .xl\:line--height-99c34{
+    line-height: 99.34%;
+  }
+
+  .xl\:line--height-124c34{
+    line-height: 124.34%;
+  }
+
+  .xl\:font--size-13{
+    font-size: 13px;
+  }
+
+  .xl\:font--size-14{
+    font-size: 14px;
+  }
+
+  .xl\:font--size-15{
+    font-size: 15px;
+  }
+
+  .xl\:font--size-16{
+    font-size: 16px;
+  }
+
+  .xl\:font--size-17{
+    font-size: 17px;
+  }
+
+  .xl\:font--size-18{
+    font-size: 18px;
+  }
+
+  .xl\:font--size-19{
+    font-size: 19px;
+  }
+
+  .xl\:font--size-20{
+    font-size: 20px;
+  }
+
+  .xl\:font--size-21{
+    font-size: 21px;
+  }
+
+  .xl\:font--size-22{
+    font-size: 22px;
+  }
+
+  .xl\:font--size-24{
+    font-size: 24px;
+  }
+
+  .xl\:font--size-26{
+    font-size: 26px;
+  }
+
+  .xl\:font--size-27{
+    font-size: 27px;
+  }
+
+  .xl\:font--size-28{
+    font-size: 28px;
+  }
+
+  .xl\:font--size-30{
+    font-size: 30px;
+  }
+
+  .xl\:font--size-35{
+    font-size: 35px;
+  }
+
+  .xl\:font--size-38{
+    font-size: 38px;
+  }
+
+  .xl\:font--size-39{
+    font-size: 39px;
+  }
+
+  .xl\:font--size-42{
+    font-size: 42px;
+  }
+
+  .xl\:font--size-52{
+    font-size: 52px;
+  }
+
+  .xl\:font--size-55{
+    font-size: 55px;
+  }
+
+  .xl\:font--size-65{
+    font-size: 65px;
+  }
+
+  .xl\:font--size-75{
+    font-size: 75px;
+  }
+
+  .xl\:font--size-80{
+    font-size: 80px;
+  }
+
+  .xl\:font--size-85{
+    font-size: 85px;
+  }
+
+  .xl\:font--size-95{
+    font-size: 95px;
+  }
+
+  .xl\:font--size-100{
+    font-size: 100px;
+  }
+
+  .xl\:font--size-150{
+    font-size: 150px;
+  }
+
+  .xl\:font--size-190{
+    font-size: 190px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -187499,5 +188291,145 @@ video {
 
   .\32xl\:backdrop-sepia {
     --tw-backdrop-sepia: sepia(100%);
+  }
+
+  .\32xl\:height--90vh{
+    height: 90vh;
+  }
+
+  .\32xl\:height--50vh{
+    height: 50vh;
+  }
+
+  .\32xl\:line--height-88c84{
+    line-height: 88.84%;
+  }
+
+  .\32xl\:line--height-97{
+    line-height: 97%;
+  }
+
+  .\32xl\:line--height-99c34{
+    line-height: 99.34%;
+  }
+
+  .\32xl\:line--height-124c34{
+    line-height: 124.34%;
+  }
+
+  .\32xl\:font--size-13{
+    font-size: 13px;
+  }
+
+  .\32xl\:font--size-14{
+    font-size: 14px;
+  }
+
+  .\32xl\:font--size-15{
+    font-size: 15px;
+  }
+
+  .\32xl\:font--size-16{
+    font-size: 16px;
+  }
+
+  .\32xl\:font--size-17{
+    font-size: 17px;
+  }
+
+  .\32xl\:font--size-18{
+    font-size: 18px;
+  }
+
+  .\32xl\:font--size-19{
+    font-size: 19px;
+  }
+
+  .\32xl\:font--size-20{
+    font-size: 20px;
+  }
+
+  .\32xl\:font--size-21{
+    font-size: 21px;
+  }
+
+  .\32xl\:font--size-22{
+    font-size: 22px;
+  }
+
+  .\32xl\:font--size-24{
+    font-size: 24px;
+  }
+
+  .\32xl\:font--size-26{
+    font-size: 26px;
+  }
+
+  .\32xl\:font--size-27{
+    font-size: 27px;
+  }
+
+  .\32xl\:font--size-28{
+    font-size: 28px;
+  }
+
+  .\32xl\:font--size-30{
+    font-size: 30px;
+  }
+
+  .\32xl\:font--size-35{
+    font-size: 35px;
+  }
+
+  .\32xl\:font--size-38{
+    font-size: 38px;
+  }
+
+  .\32xl\:font--size-39{
+    font-size: 39px;
+  }
+
+  .\32xl\:font--size-42{
+    font-size: 42px;
+  }
+
+  .\32xl\:font--size-52{
+    font-size: 52px;
+  }
+
+  .\32xl\:font--size-55{
+    font-size: 55px;
+  }
+
+  .\32xl\:font--size-65{
+    font-size: 65px;
+  }
+
+  .\32xl\:font--size-75{
+    font-size: 75px;
+  }
+
+  .\32xl\:font--size-80{
+    font-size: 80px;
+  }
+
+  .\32xl\:font--size-85{
+    font-size: 85px;
+  }
+
+  .\32xl\:font--size-95{
+    font-size: 95px;
+  }
+
+  .\32xl\:font--size-100{
+    font-size: 100px;
+  }
+
+  .\32xl\:font--size-150{
+    font-size: 150px;
+  }
+
+  .\32xl\:font--size-190{
+    font-size: 190px;
   }
 }

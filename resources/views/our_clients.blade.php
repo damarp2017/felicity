@@ -1,19 +1,19 @@
 @extends('layouts.app')
 @section('content')
 	<section class="bg--gray-light pb-20">
-		<header class="w-full overflow-x-hidden bg--header-gradient relative " style="height: 50vh">
+		<header class="w-full overflow-x-hidden bg--header-gradient relative height--60vh md:height--50vh">
 			@include('layouts.__navigation')
 			<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 			<div class="mx-4 h-full md:mx-36">
 				<div class="flex flex-col justify-center items-center md:items-start h-full ">
-					<div class="text-white font-semibold mb-3 text-5xl md:text-7xl">Our Clients</div>
-					<div class="text-base md:text-lg text-center md:text-left w-9/12 md:w-full text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+					<div class="text-white font-semibold mb-3 text-5xl md:font--size-95">Our Clients</div>
+					<div class="text-base md:font--size-22 text-center md:text-left w-9/12 md:w-full text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			   </div>
 			</div>
 		</header>
 	
 		<div class="mx-4 md:mx-36">
-			<div class="bg-white mb-16 -mt-16 md:-mt-24 relative z-10 rounded-3xl">
+			<div class="bg-white mb-16 -mt-16 md:-mt-24 relative z-10 rounded-3xl shadow-lg">
 				<div class="grid grid-cols-3">
 					<div class="flex justify-center items-center py-16 border-b border-r border-gray-100">
 						<img class="h-8 md:h-auto" src="{{ asset('images/clients/1.png') }}" alt="">
@@ -50,9 +50,9 @@
 
 			<div class="bg-white p-10 relative z-10 rounded-3xl">
 				<div class="flex flex-col justify-center items-center text-center">
-					<div class="font-bold text-3xl mb-4">Want to join the list by <br> becoming a client</div>
-					<div class="mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis <br> diam elementum arcu eu cras egestas ac adipiscing.</div>
-					<button class="text-white bg--gradient-black rounded-full py-3 px-10">Book A Free Consultation Call</button>
+					<div class="font-bold text-3xl md:font--size-45 mb-4">Want to join the list by <br> becoming a client</div>
+					<div class="mb-3 md:font--size-22 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis <br> diam elementum arcu eu cras egestas ac adipiscing.</div>
+					<button class="text-white md:font--size-15 bg--gradient-black rounded-full py-3 px-10">Book A Free Consultation Call</button>
 				</div>
 			</div>
 		</div>
