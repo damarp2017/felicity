@@ -24,7 +24,7 @@
 				<img class="h-72 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
 					<div class="flex justify-between mb-3">
-						<div class="text-xl md:font--size-42 font-semibold">Roady V3.0 Ilustration</div>
+						<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						<div class="text-base md:font--size-16">FEATURED</div>
 					</div>
 					
@@ -41,7 +41,7 @@
 <section  class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 	<div class="mx-4 md:mx-36">
 		<div class="w-full md:w-3/4 mb-10">
-			<div class="text-3xl md:font--size-85  w-8/12 md:w-full font-semibold mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
+			<div class="text-3xl md:font--size-80  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
 			<div class="text-base md:font--size-17 text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 		</div>
 

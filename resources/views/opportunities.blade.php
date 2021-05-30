@@ -26,7 +26,7 @@
 							<div class="text-2xl md:font--size-30">01</div>
 							<div class="w-48"><hr></div>
 						</div>
-						<div class=" text-3xl md:font--size-100 font-bold md:line--height-88c84">Champion the mission</div>
+						<div class=" text-3xl mt-3 md:mt-5 mb-6 md:mb-10 md:font--size-100 font-bold md:line--height-88c84">Champion the mission</div>
 					</div>
 					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
@@ -53,7 +53,7 @@
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
 			<div class="flex flex-col items-center justify-center text-center mb-20">
-				<div class="text-3xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Live your best life , <span class="text--pink">Benifits</span> to <br> work with us .</div>
+				<div class="text-3xl md:font--size-55 font-bold mb-3 md:mb-10 md:line--height-99c34">Live your best life , <span class="text--pink">Benifits</span> to <br> work with us .</div>
 				<div class="text-base md:font--size-18 text-gray-400">for world-class brands to make your products to live for world-class brands to make <br> your products to live for world-class brands to make your products to</div>
 			</div>
 	
@@ -150,7 +150,7 @@
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
 			<div class="mb-0 md:mb-5">
-				<div class="text-3xl md:font--size-55 mb-3 font-bold md:line--height-99c34">Oppurtunities , Small teams, <br> <span class="text--pink">global mission</span> </div>
+				<div class="text-3xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Oppurtunities , Small teams, <br> <span class="text--pink">global mission</span> </div>
 				<div class=" text-base md:font--size-22 text-gray-400">for world-class brands to make your products to live for world-class brands to make your products to <br> live for world-class brands to make your products to</div>
 			</div>
 

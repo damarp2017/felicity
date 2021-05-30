@@ -22,7 +22,7 @@
 			<div class="mb-5">
 				<div class="flex items-center mb-3">
 					<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-					<div class="text--pink text-3xl md:font--size-52 font-bold">Our Vision</div>
+					<div class="text--pink md:mb-10 text-3xl md:font--size-52 font-bold">Our Vision</div>
 				</div>
 				<div class="text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
 			</div>
@@ -31,7 +31,7 @@
 				<div class="w-full md:w-1/2">
 					<div class="flex items-center mb-3">
 						<div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-						<div class="text--pink text-3xl md:font--size-52 font-bold">Our Manifestos</div>
+						<div class="text--pink md:mb-10 text-3xl md:font--size-52 font-bold">Our Manifestos</div>
 					</div>
 					<div class="text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
 				</div>
@@ -122,7 +122,7 @@
 					<img class="h-auto md:h-96" src="{{ asset('images/home/capabilities.png') }}">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-black text-3xl md:font--size-85 font-bold mb-10">
+					<div class="text-black text-3xl md:font--size-85 font-bold mb-4 md:mb-10">
 						<div class="md:mb-11">Marketing</div>
 						<div class="text--pink">Strategy</div>
 					</div>
@@ -151,38 +151,38 @@
 
 	<section class="bg-white w-full py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
-			<div class="flex mb-10 flex-col">
-				<div class="mb-6 text-3xl md:font--size-85 font-semibold">Team That Makes It Possible</div>
+			<div class="flex mb-4 md:mb-10 flex-col">
+				<div class="mb-4 md:mb-10 text-3xl md:font--size-85 font-semibold">Team That Makes It Possible</div>
 				<div class="text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 			</div>
 
 			<div class="grid -mr-4 md:-mr-36 grid-flow-col auto-cols-max gap-x-8 overflow-x-auto">
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/1.png') }}" alt="">
+					<img class="mb-4 h-48 md:h-72" src="{{ asset('images/person/1.png') }}" alt="">
 					<div class="text-gray-900 md:font--size-30 font-semibold">Bruce Wayne</div>
 					<div class="text-gray-900 md:font--size-17 uppercase">WEB DEVELOPER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/2.png') }}" alt="">
+					<img class="mb-4 h-48 md:h-72" src="{{ asset('images/person/2.png') }}" alt="">
 					<div class="text-gray-900 md:font--size-30 font-semibold">Diana Prince</div>
 					<div class="text-gray-900 md:font--size-17 uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/3.png') }}" alt="">
+					<img class="mb-4 h-48 md:h-72" src="{{ asset('images/person/3.png') }}" alt="">
 					<div class="text-gray-900 md:font--size-30 font-semibold">Clark Kent</div>
 					<div class="text-gray-900 md:font--size-17 uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/3.png') }}" alt="">
+					<img class="mb-4 h-48 md:h-72" src="{{ asset('images/person/3.png') }}" alt="">
 					<div class="text-gray-900 md:font--size-30 font-semibold">Clark Kent</div>
 					<div class="text-gray-900 md:font--size-17 uppercase">GRAPHIC DESIGNER</div>
 				</div>
 
 				<div class="w-full">
-					<img class="mb-4 h-48 md:h-64" src="{{ asset('images/person/3.png') }}" alt="">
+					<img class="mb-4 h-48 md:h-72" src="{{ asset('images/person/3.png') }}" alt="">
 					<div class="text-gray-900 md:font--size-30 font-semibold">Clark Kent</div>
 					<div class="text-gray-900 md:font--size-17 uppercase">GRAPHIC DESIGNER</div>
 				</div>
@@ -192,8 +192,8 @@
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
-			<div class="flex mb-10 flex-col">
-				<div class="mb-6 text-3xl md:font--size-85 font-semibold">Case Studies</div>
+			<div class="flex mb-4 md:mb-10 flex-col">
+				<div class="mb-4 md:mb-10 text-3xl md:font--size-85 font-semibold">Case Studies</div>
 				<div class="text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
@@ -208,7 +208,7 @@
 				<img class="h-48 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
 					<div class="flex justify-between mb-3">
-						<div class="text-xl md:font--size-42 font-semibold">Roady V3.0 Ilustration</div>
+						<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						<div class="text-base md:font--size-16">FEATURED</div>
 					</div>
 					
@@ -225,8 +225,8 @@
 
 			<div class="block md:flex items-center -mr-0 md:-mr-36">
 				<div class="w-full md:w-1/3 mr-0 md:mr-20 mb-3 md:mb-0">
-					<div class="text-3xl md:font--size-85 font-semibold mb-10">Insights</div>
-					<div class="mb-10 text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+					<div class="text-3xl md:font--size-85 font-semibold mb-4 md:mb-10">Insights</div>
+					<div class="mb-4 md:mb-10 text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 					<a href="{{ url('insights') }}" class="text-sm md:font--size-20 bg--pink text-white py-3 md:py-5 px-10 md:px-6 rounded-full"> See More Insights </a>
 				</div>
 				@for ($i = 0; $i < 2; $i++)
@@ -244,7 +244,7 @@
 	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
 			<div class="w-full md:w-3/4 mb-10">
-				<div class="text-3xl md:font--size-85  w-8/12 md:w-full font-semibold mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="text-3xl md:font--size-80  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
 				<div class="text-base md:font--size-17 text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			</div>
 
@@ -281,7 +281,7 @@
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-3xl md:font--size-75 font-semibold mb-10">Join the <span class="text--pink">Team</span></div>
+					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
 					<div class="text-base md:font--size-22 text--grey-transparent mb-10">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
 					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-10">Explore Profiles</a>
 				</div>
@@ -291,7 +291,7 @@
 
 	<section class="mx-4 md:mx-36 -mb-32 z-10 relative overflow-x-hidden rounded-lg">
 		<div class="bg--pink p-10">
-			<div class="text-3xl md:font--size-55 font-semibold text-white mb-3">Learn Something New</div>
+			<div class="text-3xl md:font--size-50 font-semibold text-white mb-3 md:mb-10">Learn Something New</div>
 			<div class="text-white opacity-50 mb-4 md:font--size-22">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live .</div>
 			<div class="block md:flex gap-x-4">
 				<div class="flex-1 mb-5 md:mb-0">

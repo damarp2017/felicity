@@ -1,13 +1,14 @@
 <nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out ">
 	<a href="{{ url('/') }}">
-		<img class="h-8" src="{{ asset('images/logo/logo.png') }}">
+		<img class="logo-white h-8" src="{{ asset('images/logo/logo.png') }}">
+		<img class="logo-black hidden h-8" src="{{ asset('images/logo/black.png') }}">
 	</a>
 	<div class="flex gap-x-10 items-center">
-		<a href="#" class="text-white hover:text-gray-200 font--size-15"> Our Process </a>
-		<a href="{{ url('opportunities') }}" class="text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="text-white hover:text-gray-200 font--size-15"> Insights </a>
-		<a href="{{ url('contact-us') }}" class="text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+		<a href="#" class="navlink text-white hover:text-gray-200 font--size-15"> Our Process </a>
+		<a href="{{ url('opportunities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Opportunities </a>
+		<a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
+		<a href="{{ url('insights') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
+		<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
 		<div class="bg--gradient-black py-3 px-8 rounded-full text-white font--size-15">
 			Book A Free Consultation Call
 		</div>
@@ -19,7 +20,8 @@
 		<div class="flex items-center justify-between">
 			<a href="{{ url('/') }}">
 				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
-				<img class="logo-black h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
+				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
+				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png') }}">
 			</a>
 			<button @click="open = !open" class="menu focus:outline-none w-10 h-10 flex justify-center items-center bg-white rounded-full">
 				<svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,20 +46,42 @@
 
 <script>
 	const navbar = document.querySelector('.navbar');
+	const navlinks = document.querySelectorAll('.navlink');
 	const logoBlack = document.querySelector('.logo-black')
-	const logoWhite = document.querySelector('.logo-white')
+	const logoBlackHeader = document.querySelector('.logo-black-header')
+	const logoWhite = document.querySelectorAll('.logo-white')
 	const menu = document.querySelector('.menu')
 
 	window.onscroll = () => {
 		if (window.scrollY > 300) {
-			navbar.classList.add('bg--header-gradient');
-			logoBlack.style.display = ''
-			logoWhite.style.display = 'none'
+			navbar.classList.add('bg-white');
+			navbar.classList.add('shadow-lg');
+
+			Array.from(navlinks).forEach((navlink, index) => {
+				navlink.classList.remove('text-white', 'hover:text-gray-200');
+			});
+
+			Array.from(logoWhite).forEach((logo, index) => {
+				logo.classList.add('hidden')
+			})
+			logoBlack.classList.remove('hidden')
+			logoBlackHeader.classList.remove('hidden')
+			
 			menu.classList.add('border', 'border-red-500')
 		} else {
-			navbar.classList.remove('bg--header-gradient');
-			logoBlack.style.display = 'none'
-			logoWhite.style.display = ''
+			navbar.classList.remove('bg-white');
+			navbar.classList.remove('shadow-lg');
+
+			Array.from(navlinks).forEach((navlink, index) => {
+				navlink.classList.add('text-white', 'hover:text-gray-200');
+			});
+
+			Array.from(logoWhite).forEach((logo, index) => {
+				logo.classList.remove('hidden')
+			})
+			logoBlack.classList.add('hidden')
+			logoBlackHeader.classList.add('hidden')
+
 			menu.classList.remove('border', 'border-red-500')
 		}
 	};

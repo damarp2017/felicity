@@ -563,6 +563,12 @@ video {
   src: url(/font/kollektif/Kollektif.ttf)
 }
 
+@font-face {
+  font-family: 'Poppins';
+
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
+}
+
 .container {
   width: 100%;
 }
@@ -31936,6 +31942,10 @@ video {
   font-size: 30px;
 }
 
+.font--size-32{
+  font-size: 32px;
+}
+
 .font--size-35{
   font-size: 35px;
 }
@@ -31950,6 +31960,10 @@ video {
 
 .font--size-42{
   font-size: 42px;
+}
+
+.font--size-50{
+  font-size: 50px;
 }
 
 .font--size-52{
@@ -32010,6 +32024,12 @@ video {
 
 .font--kollektif-bold {
   font-family: Kollektif-Bold;
+}
+
+.text--typography{
+  font-family: 'Poppins', sans-serif;
+  line-height: 192.8%;
+  letter-spacing: 0.02rem;
 }
 
 .bg--header-gradient {
@@ -63369,6 +63389,10 @@ video {
     font-size: 30px;
   }
 
+  .sm\:font--size-32{
+    font-size: 32px;
+  }
+
   .sm\:font--size-35{
     font-size: 35px;
   }
@@ -63383,6 +63407,10 @@ video {
 
   .sm\:font--size-42{
     font-size: 42px;
+  }
+
+  .sm\:font--size-50{
+    font-size: 50px;
   }
 
   .sm\:font--size-52{
@@ -94621,6 +94649,10 @@ video {
     font-size: 30px;
   }
 
+  .md\:font--size-32{
+    font-size: 32px;
+  }
+
   .md\:font--size-35{
     font-size: 35px;
   }
@@ -94635,6 +94667,10 @@ video {
 
   .md\:font--size-42{
     font-size: 42px;
+  }
+
+  .md\:font--size-50{
+    font-size: 50px;
   }
 
   .md\:font--size-52{
@@ -125873,6 +125909,10 @@ video {
     font-size: 30px;
   }
 
+  .lg\:font--size-32{
+    font-size: 32px;
+  }
+
   .lg\:font--size-35{
     font-size: 35px;
   }
@@ -125887,6 +125927,10 @@ video {
 
   .lg\:font--size-42{
     font-size: 42px;
+  }
+
+  .lg\:font--size-50{
+    font-size: 50px;
   }
 
   .lg\:font--size-52{
@@ -157125,6 +157169,10 @@ video {
     font-size: 30px;
   }
 
+  .xl\:font--size-32{
+    font-size: 32px;
+  }
+
   .xl\:font--size-35{
     font-size: 35px;
   }
@@ -157139,6 +157187,10 @@ video {
 
   .xl\:font--size-42{
     font-size: 42px;
+  }
+
+  .xl\:font--size-50{
+    font-size: 50px;
   }
 
   .xl\:font--size-52{
@@ -188377,6 +188429,10 @@ video {
     font-size: 30px;
   }
 
+  .\32xl\:font--size-32{
+    font-size: 32px;
+  }
+
   .\32xl\:font--size-35{
     font-size: 35px;
   }
@@ -188391,6 +188447,10 @@ video {
 
   .\32xl\:font--size-42{
     font-size: 42px;
+  }
+
+  .\32xl\:font--size-50{
+    font-size: 50px;
   }
 
   .\32xl\:font--size-52{

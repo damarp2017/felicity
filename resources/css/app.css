@@ -12,6 +12,11 @@
         font-family: Kollektif;
         src: url(/font/kollektif/Kollektif.ttf)
 	}
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
+	  }
 }
 
 @variants focus, hover {
@@ -26,6 +31,13 @@
 
 .font--kollektif-bold {
 	font-family: Kollektif-Bold;
+}
+
+.text--typography{
+	font-family: 'Poppins', sans-serif;
+	line-height: 192.8%;
+	letter-spacing: 0.02rem;
+
 }
 
 .bg--header-gradient {
@@ -188,6 +200,10 @@
 			font-size: 30px;
 		}
 
+		.font--size-32{
+			font-size: 32px;
+		}
+
 		.font--size-35{
 			font-size: 35px;
 		}
@@ -204,6 +220,9 @@
 			font-size: 42px;
 		}
 
+		.font--size-50{
+			font-size: 50px;
+		}
 		.font--size-52{
 			font-size: 52px;
 		}

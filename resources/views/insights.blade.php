@@ -17,7 +17,7 @@
 						src="{{ asset('images/insights/1.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
 						<div class="flex justify-between mb-3">
-							<div class="text-xl md:font--size-35 font-semibold">Roady V3.0 Ilustration</div>
+							<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						</div>
 
 						<div class="md:font--size-16 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
@@ -32,7 +32,7 @@
 						src="{{ asset('images/insights/2.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
 						<div class="flex justify-between mb-3">
-							<div class="text-xl md:font--size-35 font-semibold">Roady V3.0 Ilustration</div>
+							<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						</div>
 
 						<div class="text-sm md:font--size-16 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
@@ -47,7 +47,7 @@
 						src="{{ asset('images/insights/4.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
 						<div class="flex justify-between mb-3">
-							<div class="text-xl md:font--size-35 font-semibold">Roady V3.0 Ilustration</div>
+							<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						</div>
 
 						<div class="text-sm md:font--size-16 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
@@ -61,7 +61,7 @@
 						src="{{ asset('images/insights/3.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
 						<div class="flex justify-between mb-3">
-							<div class="text-xl md:font--size-35 font-semibold">Roady V3.0 Ilustration</div>
+							<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						</div>
 
 						<div class="text-sm md:font--size-16 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
@@ -76,7 +76,7 @@
 						src="{{ asset('images/insights/6.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
 						<div class="flex justify-between mb-3">
-							<div class="text-xl md:font--size-35 font-semibold">Roady V3.0 Ilustration</div>
+							<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						</div>
 
 						<div class="text-sm md:font--size-16 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
@@ -91,7 +91,7 @@
 						src="{{ asset('images/insights/5.png') }}" alt="">
 					<div class="p-5 rounded-b-lg">
 						<div class="flex justify-between mb-3">
-							<div class="text-xl md:font--size-35 font-semibold">Roady V3.0 Ilustration</div>
+							<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						</div>
 
 						<div class="text-sm md:font--size-16 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
@@ -106,7 +106,7 @@
 
 	<section class="bg--pink w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
-			<div class="text-3xl md:font--size-55 font-semibold text-white mb-3">Learn Something New</div>
+			<div class="text-3xl md:font--size-50 font-semibold text-white mb-3 md:mb-10">Learn Something New</div>
 			<div class="text-white opacity-50 mb-4 md:font--size-22">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live .</div>
 			<div class="block md:flex gap-x-4">
 				<div class="flex-1 mb-5 md:mb-0">

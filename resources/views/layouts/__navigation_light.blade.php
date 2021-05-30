@@ -1,4 +1,4 @@
-<nav class="navbar hidden md:flex border-b bg-white fixed px-12 py-3 z-20 w-full transition duration-300 ease-in-out items-center justify-between">
+<nav class="navbar hidden md:flex shadow-lg bg-white fixed px-12 py-3 z-20 w-full transition duration-300 ease-in-out items-center justify-between">
 	<a href="{{ url('/') }}">
 		<img class="h-8" src="{{ asset('images/logo/black.png') }}">
 	</a>
