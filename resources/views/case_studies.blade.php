@@ -21,7 +21,7 @@
 		<div class="mx-4 md:mx-36">
 			@for ($i = 0; $i < 3; $i++) 
 			<a href="{{ url('case-studies-2') }}" class="bg-white rounded-b-lg mb-10 md:block md:mb-14 shadow-lg">
-				<img class="h-72 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
+				<img class="h-72 mb-4 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
 					<div class="flex justify-between mb-3">
 						<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
