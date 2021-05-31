@@ -23,12 +23,12 @@
 			<a href="{{ url('case-studies-2') }}" class="bg-white rounded-b-lg mb-10 md:block md:mb-14 shadow-lg">
 				<img class="h-72 mb-4 w-full object-cover object-center rounded-t-lg" src="{{ asset('images/case_studies/ilus.png') }}" alt="">
 				<div class="p-5 rounded-b-lg">
-					<div class="flex justify-between mb-3">
+					<div class="flex justify-between mb-2">
 						<div class="text-xl md:font--size-32 font-semibold">Roady V3.0 Ilustration</div>
 						<div class="text-base md:font--size-16">FEATURED</div>
 					</div>
 					
-					<div class="text--pink md:font--size-17 font-semibold mb-3">ILLUSTTRATION DESIGN</div>
+					<div class="text--pink md:font--size-17 font-semibold mb-1">ILLUSTTRATION DESIGN</div>
 					<div class="text-base md:font--size-17 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 				</div>
 			</a>
