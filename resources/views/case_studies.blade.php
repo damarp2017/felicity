@@ -4,7 +4,7 @@
 	@include('layouts.__navigation')
 	<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 	<div class="flex flex-col h-full justify-center items-center">
-		<div class="text-white font-semibold text-5xl md:font--size-100 mb-5 text-center"> Case Studies</div>
+		<div class="text-white font-semibold text-5xl md:font--size-100 mb-5 md:line--height-97 text-center"> Case Studies</div>
 		<div class="text-base md:font--size-22 mb-5 md:mb-0 text-center text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam
 			elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		<button class="flex md:hidden hover:bg-gray-100 p-4 justify-center items-center rounded-2xl bg-gray-50">
@@ -40,9 +40,9 @@
 
 <section  class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 	<div class="mx-4 md:mx-36">
-		<div class="w-full md:w-3/4 mb-10">
+		<div class="w-full mb-10">
 			<div class="text-3xl md:font--size-80  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
-			<div class="text-base md:font--size-17 text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+			<div class="text-base md:font--size-17 w-full md:w-3/4 text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 		</div>
 
 		<form action="">

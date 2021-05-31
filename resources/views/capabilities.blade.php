@@ -5,7 +5,7 @@
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center text-center">
 			<div class="text-xl text-white uppercase">We design the</div>
-			<div class="text-white font-semibold mb-3 text-5xl md:font--size-150">Our Capabilities</div>
+			<div class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-150">Our Capabilities</div>
 			<div class="text-xl md:font--size-35 text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div>
 			<div class="text-base md:font--size-22 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
@@ -80,9 +80,9 @@
 
 	<section  class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mx-36">
-			<div class="w-full md:w-3/4 mb-10">
+			<div class="w-full mb-10">
 				<div class="text-3xl md:font--size-80  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
-				<div class="text-base md:font--size-17 text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+				<div class="text-base md:font--size-17 w-full md:w-3/4 text--grey-transparent">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			</div>
 
 			<form action="">

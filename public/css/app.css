@@ -31878,6 +31878,10 @@ video {
   line-height: 99.34%;
 }
 
+.line--height-105c8{
+  line-height: 105.8%;
+}
+
 .line--height-124c34{
   line-height: 124.34%;
 }
@@ -63325,6 +63329,10 @@ video {
     line-height: 99.34%;
   }
 
+  .sm\:line--height-105c8{
+    line-height: 105.8%;
+  }
+
   .sm\:line--height-124c34{
     line-height: 124.34%;
   }
@@ -94583,6 +94591,10 @@ video {
 
   .md\:line--height-99c34{
     line-height: 99.34%;
+  }
+
+  .md\:line--height-105c8{
+    line-height: 105.8%;
   }
 
   .md\:line--height-124c34{
@@ -125845,6 +125857,10 @@ video {
     line-height: 99.34%;
   }
 
+  .lg\:line--height-105c8{
+    line-height: 105.8%;
+  }
+
   .lg\:line--height-124c34{
     line-height: 124.34%;
   }
@@ -157105,6 +157121,10 @@ video {
     line-height: 99.34%;
   }
 
+  .xl\:line--height-105c8{
+    line-height: 105.8%;
+  }
+
   .xl\:line--height-124c34{
     line-height: 124.34%;
   }
@@ -188363,6 +188383,10 @@ video {
 
   .\32xl\:line--height-99c34{
     line-height: 99.34%;
+  }
+
+  .\32xl\:line--height-105c8{
+    line-height: 105.8%;
   }
 
   .\32xl\:line--height-124c34{

@@ -4,7 +4,7 @@
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center text-center">
-			<div class="text-white font-semibold text-5xl md:font--size-150 mb-5 text-center"> About Us</div>
+			<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-150 mb-5 md:mb-0 text-center"> About Us</div>
 			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy .</div>
 		</div>
 	</header>

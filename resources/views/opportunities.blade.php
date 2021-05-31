@@ -4,7 +4,7 @@
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center">
-			<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center" style="line-height: 105.8%"> What's your next <br> destination?</div>
+			<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> What's your next <br> destination?</div>
 			<div class="text-base text-center md:font--size-22 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
 	</header>
