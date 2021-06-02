@@ -3,9 +3,9 @@
 	@include('layouts.__navigation_light')
 
 	<section class="bg-white w-full overflow-x-hidden py-20 md:py-32">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="mb-10">
-				<div class="mb-3 font-semibold text-4xl md:font--size-55">Terms and Conditions</div>
+				<div class="mb-3 font-semibold text-4xl md:font--size-55 font--gilroy-bold">Terms and Conditions</div>
 				<div class="text-gray-400 text--typography text-base md:font--size-18">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 			</div>
 

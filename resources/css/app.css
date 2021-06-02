@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @layer base {
+	@font-face {
+        font-family: Gilroy-Bold;
+        src: url(/font/gilroy-bold/gilroy-bold-cufonfonts-webfont/Gilroy-Bold.woff)
+            format("woff");
+    }
+    @font-face {
+        font-family: Gilroy-Medium;
+        src: url(/font/gilroy-bold/gilroy-bold-cufonfonts-webfont/Gilroy-Medium.woff)
+            format("woff");
+    }
+    @font-face {
+        font-family: Gilroy-Regular;
+        src: url(/font/gilroy-bold/gilroy-bold-cufonfonts-webfont/Gilroy-Regular.woff)
+            format("woff");
+    }
     @font-face {
         font-family: Kollektif-Bold;
         src: url(/font/kollektif/Kollektif-Bold.ttf)
@@ -25,6 +40,21 @@
 	}
 }
 
+.font--gilroy-md {
+    font-family: Gilroy-Medium;
+}
+
+.font--gilroy-bold {
+    font-family: Gilroy-Bold;
+}
+
+.font--gilroy-reg {
+    font-family: Gilroy-Regular;
+}
+
+.font--poppins{
+	font-family: 'Poppins';
+}
 .font--kollektif {
 	font-family: Kollektif;
 }
@@ -115,6 +145,11 @@
 		height: 80vh;
 	}
 	@variants responsive {
+		.app-container{
+			margin-left: 111px;
+			margin-right: 111px;
+		}
+		
 		.height--90vh{
 			height: 90vh;
 		}

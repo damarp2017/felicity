@@ -3,14 +3,14 @@
 	@include('layouts.__navigation_light')
 
 	<section class="bg-white w-full overflow-x-hidden py-32">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-0 md:gap-x-10 mb-10">
 				<div class="w-full md:w-1/2">
-					<img class="w-full rounded-xl object-cover object-center" style="height: 28rem" src="{{ asset('images/capabilities_2/1.png') }}" alt="">
+					<img class="w-full rounded-xl object-cover object-center" style="height: 40rem" src="{{ asset('images/capabilities_2/1.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="text-md ml-5 uppercase mb-5">color design</div>
-					<div class="font-semibold text-3xl md:font--size-55 mb-5 md:line--height-99c34">Build extraordinary <br> products</div>
+					<div class="font--gilroy-bold text-3xl md:font--size-55 mb-5 md:line--height-99c34">Build extraordinary <br> products</div>
 					<div class="flex mb-5 gap-x-5">
 						<div class=" rounded-xl p-2 flex justify-center items-center bg-gray-900 bg-opacity-5">
 							<img class="h-3/5" src="{{ asset('images/utilities/love.png') }}" alt="">
@@ -70,7 +70,7 @@
 					</div>
 	
 					<div>
-						<input type="text" class="bg-gray-100 md:font--size-15 placeholder-black w-full px-4 py-3 rounded-xl outline-none focus:outline-none" placeholder="Add Comment">
+						<input type="text" class="bg-gray-100 font--gilroy-md	 md:font--size-15 placeholder-black w-full px-4 py-3 rounded-xl outline-none focus:outline-none" placeholder="Add Comment">
 					</div>
 				</div>
 			</div>

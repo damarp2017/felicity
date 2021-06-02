@@ -29,7 +29,7 @@
 
 			<div class="block md:flex items-center mb-6">
 				<div class="w-full md:w-1/2">
-					<div class="flex items-center mb-3">
+					<div class="flex items-center mb-3 md:mb-10">
 						<div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 						<div class="text--pink text-3xl md:font--size-52 font-bold">Our Manifestos</div>
 					</div>
@@ -277,7 +277,7 @@
 						</div>
 					</div>
 				</div>
-				<button class="w-full py-3 md:font--size-21 text-white text-center rounded bg--pink">Send</button>
+				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--pink">Send</button>
 			</form>
 		</div>
 	</section>
@@ -305,15 +305,15 @@
 			<div class="block md:flex gap-x-4">
 				<div class="flex-1 mb-5 md:mb-0">
 					<input type="text" 
-					class="w-full md:font--size-21 placeholder-white bg-red-400 rounded-xl md:rounded p-4 outline-none focus:outline-none text-white"
+					class="w-full md:font--size-21 font--gilroy-md placeholder-white bg-red-400 rounded-xl md:rounded p-4 outline-none focus:outline-none text-white"
 					placeholder="Email Address">
 				</div>
 				<div class="flex-1 mb-5 md:mb-0">
 					<input type="text" 
-					class="w-full md:font--size-21 placeholder-white bg-red-400 rounded-xl md:rounded p-4 outline-none focus:outline-none text-white"
+					class="w-full md:font--size-21 font--gilroy-md placeholder-white bg-red-400 rounded-xl md:rounded p-4 outline-none focus:outline-none text-white"
 					placeholder="Full Name">
 				</div>
-				<button class="bg-white w-full md:font--size-21 md:w-auto text--pink rounded-xl md:rounded p-4 outline-none focus:outline-none">Subscribe</button>
+				<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--pink rounded-xl md:rounded p-4 outline-none focus:outline-none">Subscribe</button>
 			</div>
 		</div>
 	</section>
