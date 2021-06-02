@@ -24,7 +24,7 @@
 				</svg>
 			</button>
 		</div>
-		<div x-show="open" class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out ">
+		<div x-show="open" class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out py-300">
 			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Our Process </a>
 			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
 			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>

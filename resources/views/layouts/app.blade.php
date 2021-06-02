@@ -12,6 +12,20 @@
         body {
             font-family: 'Kollektif', sans-serif;
         }
+    	::-webkit-scrollbar {
+		  width: 5px;
+		  height: 5px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  background: #f1f1f1;
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: #888;
+		}
     </style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	

@@ -1,16 +1,18 @@
-<nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out ">
-	<a href="{{ url('/') }}">
-		<img class="logo-white h-8" src="{{ asset('images/logo/logo.png') }}">
-		<img class="logo-black hidden h-8" src="{{ asset('images/logo/black.png') }}">
-	</a>
-	<div class="flex gap-x-10 items-center">
-		<a href="#" class="navlink text-white hover:text-gray-200 font--size-15"> Our Process </a>
-		<a href="{{ url('opportunities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
-		<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
-		<div class="bg--gradient-black py-3 px-8 rounded-full text-white font--size-15">
-			Book A Free Consultation Call
+<nav class="navbar items-center fixed px-20 py-10 z-20 w-full transition duration-300 ease-in-out ">
+	<div class="md:flex  w-full justify-between py-4">
+		<a href="{{ url('/') }}">
+			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png') }}">
+			<img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png') }}">
+		</a>
+		<div class="flex gap-x-10 items-center">
+			<a href="#" class="navlink text-white hover:text-gray-200 font--size-15"> Our Process </a>
+			<a href="{{ url('opportunities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Opportunities </a>
+			<a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
+			<a href="{{ url('insights') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
+			<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+			<div class="bg--gradient-black py-4 px-8 rounded-full text-white font--size-15">
+				Book A Free Consultation Call
+			</div>
 		</div>
 	</div>
 </nav>
@@ -30,7 +32,7 @@
 				</svg>
 			</button>
 		</div>
-		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out ">
+		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out " >
 			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Our Process </a>
 			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
 			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
@@ -53,37 +55,42 @@
 	const menu = document.querySelector('.menu')
 
 	window.onscroll = () => {
-		if (window.scrollY > 300) {
-			navbar.classList.add('bg-white');
-			navbar.classList.add('shadow-lg');
-
-			Array.from(navlinks).forEach((navlink, index) => {
-				navlink.classList.remove('text-white', 'hover:text-gray-200');
-			});
-
-			Array.from(logoWhite).forEach((logo, index) => {
-				logo.classList.add('hidden')
-			})
-			logoBlack.classList.remove('hidden')
-			logoBlackHeader.classList.remove('hidden')
-			
-			menu.classList.add('border', 'border-red-500')
-		} else {
-			navbar.classList.remove('bg-white');
-			navbar.classList.remove('shadow-lg');
-
-			Array.from(navlinks).forEach((navlink, index) => {
-				navlink.classList.add('text-white', 'hover:text-gray-200');
-			});
-
-			Array.from(logoWhite).forEach((logo, index) => {
-				logo.classList.remove('hidden')
-			})
-			logoBlack.classList.add('hidden')
-			logoBlackHeader.classList.add('hidden')
-
-			menu.classList.remove('border', 'border-red-500')
+		if (window.scrollY > 80) {
+			navbar.classList.add('hidden');
+		}else{
+			navbar.classList.remove('hidden');
 		}
+		// if (window.scrollY > 300) {
+		// 	navbar.classList.add('bg-white');
+		// 	navbar.classList.add('shadow-lg');
+
+		// 	Array.from(navlinks).forEach((navlink, index) => {
+		// 		navlink.classList.remove('text-white', 'hover:text-gray-200');
+		// 	});
+
+		// 	Array.from(logoWhite).forEach((logo, index) => {
+		// 		logo.classList.add('hidden')
+		// 	})
+		// 	logoBlack.classList.remove('hidden')
+		// 	logoBlackHeader.classList.remove('hidden')
+			
+		// 	menu.classList.add('border', 'border-red-500')
+		// } else {
+		// 	navbar.classList.remove('bg-white');
+		// 	navbar.classList.remove('shadow-lg');
+
+		// 	Array.from(navlinks).forEach((navlink, index) => {
+		// 		navlink.classList.add('text-white', 'hover:text-gray-200');
+		// 	});
+
+		// 	Array.from(logoWhite).forEach((logo, index) => {
+		// 		logo.classList.remove('hidden')
+		// 	})
+		// 	logoBlack.classList.add('hidden')
+		// 	logoBlackHeader.classList.add('hidden')
+
+		// 	menu.classList.remove('border', 'border-red-500')
+		// }
 	};
 
 	//const navbar = document.querySelector('.navbar');
