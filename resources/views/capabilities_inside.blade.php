@@ -13,7 +13,7 @@
 	</header>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</div>
 				<div class="text-base md:font--size-22 text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
@@ -22,7 +22,7 @@
 	</section>
 
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="flex items-center mb-20">
 				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 				<div class="text--pink text-3xl md:font--size-39 font-bold">Our Process</div>
@@ -63,7 +63,7 @@
 	</section>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</div>
 				<div class="text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
@@ -117,7 +117,7 @@
 
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:text-5xl font-semibold">Case Studies</div>
 				<div class="text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
@@ -141,7 +141,7 @@
 	</section>
 
 	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="w-full mb-10">
 				<div class="text-3xl md:font--size-65 font-semibold mb-6 md:mb-10">Work with us for a <span class="text--pink">Project ?</span></div>
 				<div class="text-base md:font--size-17 w-full md:w-3/4 text-gray-400">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>

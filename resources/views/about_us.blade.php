@@ -10,7 +10,7 @@
 	</header>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20 ">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size--55 font-semibold">Vision</div>
 				<div class="text-base md:font--size-22 text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
@@ -19,7 +19,7 @@
 	</section>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 md:mb-24 items-center">
 				<div class="w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/about_us/1.png') }}">
@@ -50,7 +50,7 @@
 	</section>
 
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20 ">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="flex items-center mb-10 md:mb-20">
 				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 				<div class="text--pink text-2xl md:font--size-39 font-bold">Values</div>
@@ -91,7 +91,7 @@
 	</section>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-24 items-center">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/about_us/4.png') }}">
@@ -124,7 +124,7 @@
 	</section>
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:mx-36">
+		<div class="mx-4 md:app-container">
 			<div class="blcok md:flex items-center">
 				<div class="w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
@@ -132,7 +132,7 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
 					<div class="text-base md:font--size-22 text--grey-transparent mb-10">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-10">Explore Profiles</a>
+					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-14">Explore Profiles</a>
 				</div>
 			</div>
 		</div>
