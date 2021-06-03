@@ -10,9 +10,13 @@
 			<a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
 			<a href="{{ url('insights') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
-			{{-- <div class="bg--gradient-black py-4 px-8 rounded-full text-white font--size-15">
-				Book A Free Consultation Call
-			</div> --}}
+			@if (request()->is('insights') || request()->is('case-studies'))
+				
+			@else
+				<div class="bg--gradient-black py-4 px-8 rounded-full text-white font--size-15">
+					Book A Free Consultation Call
+				</div>
+			@endif
 		</div>
 	</div>
 </nav>
@@ -38,9 +42,9 @@
 			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
 			<a href="{{ url('insights') }}" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
-			{{-- <div class="flex justify-center items-center w-72 bg--gradient-black py-3 px-2 text-lg rounded-full text-white">
+			<div class="flex justify-center items-center w-72 bg--gradient-black py-3 px-2 text-lg rounded-full text-white">
 				Book A Free Consultation Call
-			</div> --}}
+			</div>
 		</div>
 	</nav>
 </div>
