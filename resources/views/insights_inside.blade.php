@@ -2,8 +2,8 @@
 @section('content')
 	@include('layouts.__navigation_light')
 
-	<section class="bg-white w-full overflow-x-hidden py-32">
-		<div class="mx-4 md:app-container">
+	<section class="bg-white w-full overflow-x-hidden py-10">
+		<div class="mx-4 md:container--other-layouts">
 			<div class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-0 md:gap-x-10 mb-10">
 				<div class="w-full md:w-1/2">
 					<img class="w-full rounded-xl object-cover object-center" style="height: 40rem" src="{{ asset('images/capabilities_2/1.png') }}" alt="">
@@ -22,26 +22,34 @@
 							<img class="h-3/5" src="{{ asset('images/utilities/share.png') }}" alt="">
 						</div>
 					</div>
-					<div class="text-md text-gray-400 text--typography md:font--size-18">
+					<div class="text-md text--typography md:font--size-18">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique molestie amet, sit amet. Sapien mauris elementum sapien id vitae amet, sollicitudin est id. Bibendum lacus dolor libero risus. Lectus ultricies venenatis cursus eget eleifend egestas dapibus. Scelerisque cras blandit purus amet, vitae dui vel. Cursus leo justo pulvinar aenean pharetra senectus. Suspendisse vulputate amet blandit nibh. Magna id nulla elementum eu. Amet vitae nisl tincidunt bibendum lectus id donec. Eu velit quis faucibus eget porttitor integer commodo. Porta quis proin sodales cras enim. Ultrices aliquet pellentesque id lorem nisi, pretium. Nulla sit sed auctor interdum diam ipsum, praesent mi. Pulvinar urna tincidunt ultrices consectetur ultrices. Nulla ornare quis viverra orci. Vel purus risus, turpis augue a. Arcu nisl tortor, orci, nibh non .
 					</div>
 				</div>
 			</div>
 
-			<div class="text-gray-400 text--typography md:font--size-18 mb-10">
+			<div class="text--typography md:font--size-18 mb-10">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique molestie amet, sit amet. Sapien mauris elementum sapien id vitae amet, sollicitudin est id. Bibendum lacus dolor libero risus. Lectus ultricies venenatis cursus eget eleifend egestas dapibus. Scelerisque cras blandit purus amet, vitae dui vel. Cursus leo justo pulvinar aenean pharetra senectus. Suspendisse vulputate amet blandit nibh. Magna id nulla elementum eu. Amet vitae nisl tincidunt bibendum lectus id donec. Eu velit quis faucibus eget porttitor integer commodo. Porta quis proin sodales cras enim. Ultrices aliquet pellentesque id lorem nisi, pretium. Nulla sit sed auctor interdum diam ipsum, praesent mi. Pulvinar urna tincidunt ultrices consectetur ultrices. Nulla ornare quis viverra orci. Vel purus risus, turpis augue a. Arcu nisl tortor, orci, nibh non accumsan enim. Dapibus phasellus proin sem pulvinar purus felis, aliquam. A, ac ut aliquet consectetur nec integer duis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique molestie amet, sit amet. Sapien mauris elementum sapien id vitae amet, sollicitudin est id. Bibendum lacus dolor libero risus. Lectus ultricies venenatis cursus eget eleifend egestas dapibus. Scelerisque cras blandit purus amet, vitae dui vel. Cursus leo justo pulvinar aenean pharetra senectus. Suspendisse vulputate amet blandit nibh. Magna id nulla elementum eu. Amet vitae nisl tincidunt bibendum lectus id donec. Eu velit quis faucibus eget porttitor integer commodo. Porta quis proin sodales cras enim. Ultrices aliquet pellentesque id lorem nisi, pretium. Nulla sit sed auctor interdum diam ipsum, praesent mi. Pulvinar urna tincidunt ultrices consectetur ultrices. Nulla ornare quis viverra orci. Vel purus risus, turpis augue a. Arcu nisl tortor, orci, nibh non accumsan enim. Dapibus phasellus proin sem pulvinar purus felis, aliquam. A, ac ut aliquet consectetur nec integer duis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique molestie amet, sit amet. Sapien mauris elementum sapien id vitae amet, sollicitudin est id. Bibendum lacus dolor libero risus. Lectus ultricies venenatis cursus eget eleifend egestas dapibus. Scelerisque cras blandit purus amet, vitae dui vel. Cursus leo justo pulvinar aenean pharetra senectus. Suspendisse vulputate amet blandit nibh. Magna id nulla elementum eu. Amet vitae nisl tincidunt bibendum lectus id donec. Eu velit quis faucibus eget porttitor integer commodo. Porta quis proin sodales cras enim. Ultrices aliquet pellentesque id lorem nisi, pretium. Nulla sit sed auctor interdum diam ipsum, praesent mi. Pulvinar urna tincidunt ultrices consectetur ultrices. Nulla ornare quis viverra orci. Vel purus risus, turpis augue a. Arcu nisl tortor, orci, nibh non accumsan enim. Dapibus phasellus proin sem pulvinar purus felis, aliquam. A, ac ut aliquet consectetur nec integer duis.
 			</div>
-			<div class="text-gray-400 text--typography md:font--size-18 mb-10">
+			<div class="text--typography md:font--size-18 mb-10">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique molestie amet, sit amet. Sapien mauris elementum sapien id vitae amet, sollicitudin est id. Bibendum lacus dolor libero risus. Lectus ultricies venenatis cursus eget eleifend egestas dapibus. Scelerisque cras blandit purus amet, vitae dui vel. Cursus leo justo pulvinar aenean pharetra senectus. Suspendisse vulputate amet blandit nibh. Magna id nulla elementum eu. Amet vitae nisl tincidunt bibendum lectus id donec. Eu velit quis faucibus eget porttitor integer commodo. Porta quis proin sodales cras enim. Ultrices aliquet pellentesque id lorem nisi, pretium. Nulla sit sed auctor interdum diam ipsum, praesent mi. Pulvinar urna tincidunt ultrices consectetur ultrices. Nulla ornare quis viverra orci. Vel purus risus, turpis augue a. Arcu nisl tortor, orci, nibh non accumsan enim. Dapibus phasellus proin sem pulvinar purus felis, aliquam. A, ac ut aliquet consectetur nec integer duis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique molestie amet, sit amet. Sapien mauris elementum sapien id vitae amet, sollicitudin est id. Bibendum lacus dolor libero risus. Lectus ultricies venenatis cursus eget eleifend egestas dapibus. Scelerisque cras blandit purus amet, vitae dui vel. Cursus leo justo pulvinar aenean pharetra senectus. Suspendisse vulputate amet blandit nibh. Magna id nulla elementum eu. Amet vitae nisl tincidunt bibendum lectus id donec. Eu velit quis faucibus eget porttitor integer commodo. Porta quis proin sodales cras enim. Ultrices aliquet pellentesque id lorem nisi, pretium. Nulla sit sed auctor int
 			</div>
 
 			<div class="flex gap-x-7 items-center mb-20">
-				<div class="bg-blue-700 w-20 h-20 rounded-full p-3">
+				<div class=" block md:hidden bg-blue-700 w-20 h-20 rounded-full p-3">
 					<div class="flex justify-center mb-2">
 						<img class="w-8 h-8" src="{{ asset('images/utilities/slap.png') }}" alt="">
 					</div>
 					<div class="text-white text-center">236</div>
 				</div>
+
+				<div class=" hidden md:block bg-blue-700 w-32 h-4w-32 rounded-full p-3 md:p-8">
+					<div class="flex justify-center mb-2">
+						<img class="w-8 h-8" src="{{ asset('images/utilities/slap.png') }}" alt="">
+					</div>
+					<div class="text-white text-center">236</div>
+				</div>
+
 				<div class="bg-gray-200 h-12 w-12 p-3 rounded-full">
 					<img src="{{ asset('images/utilities/sosmed/twitter-black.png') }}" alt="">
 				</div>
@@ -70,7 +78,7 @@
 					</div>
 	
 					<div>
-						<input type="text" class="bg-gray-100 font--gilroy-md	 md:font--size-15 placeholder-black w-full px-4 py-3 rounded-xl outline-none focus:outline-none" placeholder="Add Comment">
+						<input type="text" class="bg-gray-100 font--gilroy-md md:font--size-15 placeholder-black w-full px-4 py-3 md:px-4 md:py-4 rounded-xl outline-none focus:outline-none" placeholder="Add Comment">
 					</div>
 				</div>
 			</div>

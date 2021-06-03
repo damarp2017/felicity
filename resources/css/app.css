@@ -67,6 +67,7 @@
 	font-family: 'Poppins', sans-serif;
 	line-height: 192.8%;
 	letter-spacing: 0.02rem;
+	color: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -89,6 +90,10 @@
 
 .text--grey-transparent{
 	color: rgba(100, 100, 100, 0.72);
+}
+
+.text--gray{
+	color: #646464;
 }
 
 .text--pink{
@@ -146,12 +151,21 @@
 	}
 	@variants responsive {
 		.app-container{
-			margin-left: 111px;
-			margin-right: 111px;
+			margin-left: 87px;
+			margin-right: 113px;
+		}
+
+		.container--other-layouts{
+			margin-left: 58px;
+			margin-right: 58px;
 		}
 		
-		.height--90vh{
+		/* .height--90vh{
 			height: 90vh;
+		} */
+
+		.height--950{
+			height: 950px;
 		}
 
 		.height--50vh{
@@ -173,6 +187,22 @@
 			line-height: 105.8%;
 		}
 
+		.line--height-160{
+			line-height: 160%;
+		}
+
+		.line--height-190c3{
+			line-height: 190.3%;
+		}
+
+		.text--desc-jobs{
+			font-family: Gilroy-Medium;
+			font-size: 17px;
+			line-height: 185.3%;
+			letter-spacing: 0.02em;
+			color: rgba(0, 0, 0, 0.87);
+			opacity: 0.5;
+		}
 		
 		
 
@@ -260,6 +290,10 @@
 			font-size: 42px;
 		}
 
+		.font--size-45{
+			font-size: 45px;
+		}
+
 		.font--size-50{
 			font-size: 50px;
 		}
@@ -301,6 +335,10 @@
 		
 		.font--size-190{
 			font-size: 190px;
+		}
+
+		.mr--84{
+			margin-right: 84px;
 		}
 	}
 }

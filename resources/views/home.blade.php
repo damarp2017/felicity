@@ -12,7 +12,7 @@
 	</header>
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:px-20">
+		<div class="mx-4 md:app-container">
 			<div class="flex mb-20 flex-col text-center justify-center">
 				<div class="mb-6 text-3xl md:font--size-65 font-semibold">About Us</div>
 				<div class="md:font--size-20 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
@@ -33,7 +33,7 @@
 						<div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 						<div class="text--pink text-3xl md:font--size-52 font-bold">Our Manifestos</div>
 					</div>
-					<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
+					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
 				</div>
 				<div class="w-full md:w-1/2"><img class="w-full" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
@@ -46,7 +46,7 @@
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Know Your Consumer</div>
-							<div class="text-base text--grey-transparent md:font--size-20">We know how to make your consumer, your customer.</div>
+							<div class="text-base text--gray md:font--size-20">We know how to make your consumer, your customer.</div>
 						</div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Solve Your Problems</div>
-							<div class="text-base text--grey-transparent md:font--size-20">We simplify technology so you can focus on your brand.</div>
+							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand.</div>
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Are Bold</div>
-							<div class="text-base text--grey-transparent md:font--size-20">We dare to dream, and we get it done.</div>
+							<div class="text-base text--gray md:font--size-20">We dare to dream, and we get it done.</div>
 						</div>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Win Together</div>
-							<div class="text-base text--grey-transparent md:font--size-20">When your business wins, we win.</div>
+							<div class="text-base text--gray md:font--size-20">When your business wins, we win.</div>
 						</div>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Worship Data </div>
-							<div class="text-base text--grey-transparent md:font--size-20">Our creativity is driven by data and human experiences.</div>
+							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences.</div>
 						</div>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Move Fast</div>
-							<div class="text-base text--grey-transparent md:font--size-20">Quicker decision and patience, win us games.</div>
+							<div class="text-base text--gray md:font--size-20">Quicker decision and patience, win us games.</div>
 						</div>
 					</div>
 				</div>
@@ -114,7 +114,7 @@
 
 
 	<section class="bg-white min-h-screen w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:px-20">
+		<div class="mx-4 md:app-container">
 			<div class="flex items-center mb-20">
 				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 				<div class="text--pink text-3xl md:font--size-52 font-bold">Our Capabilities</div>
@@ -154,7 +154,7 @@
 	</section>
 
 	<section class="bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
-		<div class="mx-4 md:px-20 pt-20">
+		<div class="mx-4 md:app-container pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-5 text-3xl md:font--size-85 font-semibold md:line--height-99c34">Team That Makes It Possible</div>
 				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
@@ -198,7 +198,7 @@
 	</section>
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:px-20 pt-20">
+		<div class="mx-4 md:app-container pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-85 font-semibold">Case Studies</div>
 				<div class="text-base md:font--size-20 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
@@ -228,21 +228,21 @@
 	</section>
 
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:px-20">
+		<div class="mx-4 md:app-container">
 
 			<div class="block md:flex items-center -mr-0 md:-mr-36">
 				<div class="w-full md:w-1/3 mr-0 md:mr-20 mb-3 md:mb-0">
 					<div class="text-3xl md:font--size-85 font-semibold mb-4 md:mb-10">Insights</div>
 					<div class="mb-4 md:mb-10 text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-					<a href="{{ url('insights') }}" class="text-sm md:font--size-20 bg--pink text-white py-3 md:py-8 px-10 md:px-20 rounded-full"> See More Insights </a>
+					<a href="{{ url('insights') }}" class="text-sm md:font--size-20 bg--pink text-white py-3 md:py-7 px-10 md:px-20 rounded-full"> See More Insights </a>
 				</div>
 				@for ($i = 0; $i < 2; $i++)
 					<div class="w-full md:w-1/4 p-3 bg-white rounded-xl mr-10 shadow-lg">
 						<img class="mb-4 h-64 w-full object-cover object-center rounded" src="{{ asset('images/home/insights.png') }}">
 						<div class="py-5 px-2">
-							<div class="font-semibold text-xl md:font--size-24 mb-2">Design process we have is unexpectional</div>
+							<div class=" text-xl md:font--size-24 mb-2">Design process we have is unexpectional</div>
 							<div class="text--grey-transparent mb-6 md:font-size-12" style="line-height: 1.8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor a urna vel orci interdum amet, natoque id. Egestas sed adipiscing .</div>
-							<a href="" class="text--pink  font-semibold md:font--size-12">Learn More</a>
+							<a href="" class="text--pink  md:font--size-12">Learn More</a>
 						</div>
 					</div>	
 				@endfor
@@ -251,29 +251,29 @@
 	</section>
 
 	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:px-20 pt-20">
+		<div class="mx-4 md:app-container pt-20">
 			<div class="w-full mb-10">
-				<div class="text-3xl md:font--size-80  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
-				<div class="text-base md:font--size-17 w-full md:w-3/4 text--grey-transparent" style="line-height: 1.8">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="text-base md:font--size-17 w-full md:w-3/4 text-gray-400" style="line-height: 1.8">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			</div>
 
 			<form action="">
 				<div class="block md:flex mb-5">
 					<div class="w-full md:w-1/2">
-						<div class="m-0 md:mb-3 mb-3 md:mb-0 md:mr-3">
-							<input type="text" class="w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Email Address">
+						<div class="m-0 md:mb-3 mb-3 md:mr-3">
+							<input type="text" class="placeholder-gray-600 w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Email Address">
 						</div>
-						<div class="m-0 md:mb-3 mb-3 md:mb-0 md:mr-3">
-							<input type="text" class="w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Full Name">
+						<div class="m-0 md:mb-3 mb-3 md:mr-3">
+							<input type="text" class="placeholder-gray-600 w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Full Name">
 						</div>
 						
 					</div>
 					<div class="w-full md:w-1/2">
-						<div class="m-0 md:mb-3 mb-3 md:mb-0 md:ml-3">
-							<input type="text" class="w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Phone Number">
+						<div class="m-0 md:mb-3 mb-3 md:ml-3">
+							<input type="text" class="placeholder-gray-600 w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Phone Number">
 						</div>
-						<div class="m-0 md:mb-3 mb-3 md:mb-0 md:ml-3">
-							<input type="text" class="w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Reason to contact">
+						<div class="m-0 md:mb-3 mb-3 md:ml-3">
+							<input type="text" class="placeholder-gray-600 w-full p-3 rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Reason to contact">
 						</div>
 					</div>
 				</div>
@@ -284,21 +284,21 @@
 
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:px-20 pt-20">
+		<div class="mx-4 md:app-container pt-20">
 			<div class="blcok md:flex items-center">
 				<div class="w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
-					<div class="text-base md:font--size-20 text--grey-transparent mb-10">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-20">Explore Profiles</a>
+					<div class="text-base md:font--size-20 text--grey-transparent mb-10 md:mb-14">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-16">Explore Profiles</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="mx-4 md:px-20 -mb-32 z-10 relative overflow-x-hidden ">
+	<section class="mx-4 md:app-container -mb-32 z-10 relative overflow-x-hidden ">
 		<div class="bg--pink p-10 rounded-xl">
 			<div class="text-3xl md:font--size-50 font-semibold text-white mb-3 md:mb-10">Learn Something New</div>
 			<div class="text-white opacity-50 mb-4 md:font--size-20">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live .</div>

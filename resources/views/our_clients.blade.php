@@ -1,19 +1,19 @@
 @extends('layouts.app')
 @section('content')
 	<section class="bg--gray-light pb-20">
-		<header class="w-full overflow-x-hidden bg--header-gradient relative height--60vh md:height--50vh">
+		<header class="w-full overflow-x-hidden bg--header-gradient relative">
 			@include('layouts.__navigation')
 			<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
-			<div class="mx-4 h-full md:mx-36">
+			<div class="mx-4 h-full md:app-container" style="padding: 13% 0">
 				<div class="flex flex-col justify-center items-center md:items-start h-full ">
 					<div class="text-white font-semibold mb-3 text-5xl md:font--size-95">Our Clients</div>
-					<div class="text-base md:font--size-22 text-center md:text-left w-9/12 md:w-full font--poppins text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+					<div class="text-base md:font--size-17 line--height-190c3 text-center md:text-left w-9/12 md:w-full font--poppins text-white opacity-50">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			   </div>
 			</div>
 		</header>
 	
 		<div class="mx-4 md:app-container">
-			<div class="bg-white mb-16 -mt-16 md:-mt-20 relative z-10 rounded-3xl shadow-lg">
+			<div class="bg-white mb-16 -mt-10 md:-mt-20 relative z-10 rounded-3xl shadow-lg">
 				<div class="grid grid-cols-3">
 					<div class="flex justify-center items-center py-16 border-b border-r border-gray-100">
 						<img class="h-8 md:h-auto" src="{{ asset('images/clients/1.png') }}" alt="">

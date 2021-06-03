@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative height--90vh">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
-		<div class="flex flex-col h-full justify-center items-center">
+		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
 			<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> What's your next <br> destination?</div>
 			<div class="text-base text-center md:font--size-22 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
@@ -28,7 +28,7 @@
 						</div>
 						<div class=" text-3xl mt-3 md:mt-5 mb-6 md:mb-10 md:font--size-100 font-bold md:line--height-88c84">Champion the mission</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -124,24 +124,24 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex items-center justify-between mb-20">
 				<div class="w-full md:w-1/2">
-					<img class="w-3/4" src="{{ asset('images/opportunities/1.png') }}" alt="">
+					<img class="" src="{{ asset('images/opportunities/1.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-7 font-semibold text-2xl md:font--size-38">Create a world where anyone <br> can belong anywhere</div>
-					<div class="text-gray-400 text-base md:font--size-22 w-full md:w-3/4">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
+					<div class="text--gray line--height-160 text-base md:font--size-22 w-full">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
 				</div>
 			</div>	
 
 			<div class="block md:flex items-center justify-between mb-20">
 				<div class="block md:hidden w-full md:w-1/2">
-					<img class="w-3/4" src="{{ asset('images/opportunities/3.png') }}" alt="">
+					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-7 font-semibold text-2xl md:font--size-38">Create a world where anyone <br> can belong anywhere</div>
-					<div class="text-gray-400 text-base md:font--size-22 w-full md:w-3/4">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
+					<div class="text--gray line--height-160 text-base md:font--size-22 w-full">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience. We love to contribute to the community, from our work on testing React components to our new Android framework.  Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful experience.</div>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2">
-					<img class="w-3/4" src="{{ asset('images/opportunities/3.png') }}" alt="">
+					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
 			</div>	
 		</div>
@@ -151,11 +151,11 @@
 		<div class="mx-4 md:app-container">
 			<div class="mb-0 md:mb-5">
 				<div class="text-3xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Oppurtunities , Small teams, <br> <span class="text--pink">global mission</span> </div>
-				<div class=" text-base md:font--size-22 text-gray-400">for world-class brands to make your products to live for world-class brands to make your products to <br> live for world-class brands to make your products to</div>
+				<div class=" text-base md:font--size-22 text--gray line--height-160">for world-class brands to make your products to live for world-class brands to make your products to <br> live for world-class brands to make your products to</div>
 			</div>
 
 			<div class="relative mr-6 my-10 md:my-2 w-full">
-				<input type="text" class="bg-white font--poppins w-full md:font--size-16 focus:outline-none rounded-xl border-0 p-3" placeholder="Search Any Position . . .">
+				<input type="text" class="bg-white placeholder-black font--poppins w-full md:font--size-16 focus:outline-none rounded-xl border-0 px-3 py-3 md:px-7 md:py-5 " placeholder="Search Any Position . . .">
 				<div class="absolute top-0 right-0 transform translate-y-1/2 pin-r pin-t mt-3 mr-4 text-purple-lighter">
 					<svg version="1.1" class="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve"> <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21 c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279 C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19 S32.459,40,21.983,40z"/></svg>
 				</div>
@@ -176,7 +176,7 @@
 					@for ($i = 0; $i < 6; $i++)
 					<div class="bg-white p-6 shadow-lg">
 						<div class="font-semibold mb-2 text-lg md:font--size-24 font--gilroy-bold">Senior UI/UX Designer</div>
-						<div class="text-gray-400 mb-6 md:font--size-17 font--gilroy-md">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+						<div class="mb-6 text--desc-jobs">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 						<a href="" class="flex justify-end">
 							<img class="h-4" src="{{ asset('images/utilities/next.png') }}" alt="">
 						</a>

@@ -1,24 +1,24 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative height--90vh">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative">
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
-		<div class="flex flex-col h-full justify-center items-center text-center">
+		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 20% 0">
 			<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-150 mb-5 md:mb-0 text-center"> About Us</div>
-			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy .</div>
+			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
 	</header>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20 ">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<div class="mb-6 md:mb-10 text-3xl md:font--size--55 font-semibold">Vision</div>
-				<div class="text-base md:font--size-22 text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
+				<div class="mb-6 text-3xl md:font--size-55 font-semibold">Vision</div>
+				<div class="text-base md:font--size-22 line--height-160 text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy .</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
+	<section class="bg-white w-full overflow-x-hidden ">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 md:mb-24 items-center">
 				<div class="w-full md:w-1/2">
@@ -28,7 +28,7 @@
 					<div class="mb-3 text-black ">
 						<div class="text-3xl font-bold md:font--size-75 md:mb-10">For Company</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -40,7 +40,7 @@
 					<div class="mb-3 text-black ">
 						<div class="text-3xl font-bold md:font--size-75 md:mb-10">For Team</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2">
 					<img src="{{ asset('images/about_us/2.png') }}">
@@ -68,7 +68,7 @@
 						</div>
 						<div class="text-3xl md:my-10 font-bold md:font--size-100">Vision</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -100,7 +100,7 @@
 					<div class="mb-3 text-black ">
 						<div class=" text-3xl md:font--size-80 font-bold md:mb-10 md:line--height-99c34">Conscious Advertising Network</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2">
 					<img src="{{ asset('images/about_us/4.png') }}">
@@ -115,7 +115,7 @@
 					<div class="mb-3 text-black ">
 						<div class="text-3xl md:font--size-80 font-bold md:mb-10 md:line--height-99c34">Mentored By Schbang</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -131,7 +131,7 @@
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-10">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-10">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
 					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-14">Explore Profiles</a>
 				</div>
 			</div>

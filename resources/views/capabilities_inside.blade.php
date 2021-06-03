@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative height--80vh md:height--90vh">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
-		<div class="flex flex-col h-full justify-center items-center">
+		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
 			<div class="mx-4 md:mx-0 text-center">
 				<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center"> Branding at it’s <br> best at Felicity</div>
 			</div>
 			<div class="block text-center md:hidden text-lg md:text-lg text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div>
-			<div class="text-base md:font--size-22 text-center w-9/12 md:w-full text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
+			<div class="text-base md:font--size-22 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
 	</header>
 
@@ -16,7 +16,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</div>
-				<div class="text-base md:font--size-22 text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
+				<div class="text-base md:font--size-22 line--height-160 text--grey-transparent">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
 			</div>
 		</div>
 	</section>
@@ -40,7 +40,7 @@
 						</div>
 						<div class="text-3xl mb-4 md:mb-10  md:font--size-85 font-bold">Brainstroming</div>
 					</div>
-					<div class="text-base md:font--size-22 text--grey-transparent mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
 				</div>
 			</div>
 
@@ -66,7 +66,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</div>
-				<div class="text-base md:font--size-22 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+				<div class="text-base md:font--size-22 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 			</div>
 		</div>
 
@@ -79,7 +79,7 @@
 						</div>
 						<div class="flex flex-col justify-center text-center">
 							<div class="text-lg md:font--size-26 font-semibold mb-3">Branding Guide</div>
-							<div class="md:font--size-17 text-gray-500">Engineering technologies that bring people together in the real world is both inspiring and daunting. </div>
+							<div class="md:font--size-17 text--gray">Engineering technologies that bring people together in the real world is both inspiring and daunting. </div>
 						</div>
 					</div>
 	
@@ -89,7 +89,7 @@
 						</div>
 						<div class="flex flex-col justify-center text-center">
 							<div class="text-lg md:font--size-26 font-semibold mb-3">Typography</div>
-							<div class="md:font--size-17 text-gray-500">Engineering technologies that bring people together in the real world is both inspiring and daunting. </div>
+							<div class="md:font--size-17 text--gray">Engineering technologies that bring people together in the real world is both inspiring and daunting. </div>
 						</div>
 					</div>
 					
@@ -99,7 +99,7 @@
 						</div>
 						<div class="flex flex-col justify-center text-center">
 							<div class="text-lg md:font--size-26 font-semibold mb-3">Color Schemes</div>
-							<div class="md:font--size-17 text-gray-500">Engineering technologies that bring people together in the real world is both inspiring and daunting. </div>
+							<div class="md:font--size-17 text--gray">Engineering technologies that bring people together in the real world is both inspiring and daunting. </div>
 						</div>
 					</div>
 	
@@ -120,7 +120,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:text-5xl font-semibold">Case Studies</div>
-				<div class="text-base md:text-lg text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="text-base md:text-lg text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
 
@@ -144,24 +144,24 @@
 		<div class="mx-4 md:app-container">
 			<div class="w-full mb-10">
 				<div class="text-3xl md:font--size-65 font-semibold mb-6 md:mb-10">Work with us for a <span class="text--pink">Project ?</span></div>
-				<div class="text-base md:font--size-17 w-full md:w-3/4 text-gray-400">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+				<div class="text-base md:font--size-17 w-full md:w-3/4 line--height-160 text-gray-400">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
 			</div>
 
 			<form action="">
 				<div class="mb-7">
-					<input type="text" class="rounded-lg w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Email Address">
+					<input type="text" class="placeholder-black rounded-lg md:rounded-2xl w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Email Address">
 				</div>
 				<div class="mb-7">
-					<input type="text" class="rounded-lg w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Full Name">
+					<input type="text" class="placeholder-black rounded-lg md:rounded-2xl w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Full Name">
 				</div>
 				<div class="mb-7">
-					<input type="text" class="rounded-lg w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Phone Number">
+					<input type="text" class="placeholder-black rounded-lg md:rounded-2xl w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Phone Number">
 				</div>
 				<div class="mb-7">
-					<input type="text" class="rounded-lg w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Reason to contact">
+					<input type="text" class="placeholder-black rounded-lg md:rounded-2xl w-full md:font--size-19 p-3 bg--gray-light focus:outline-none" placeholder="Reason to contact">
 				</div>
 				
-				<button class="w-full py-3 text-white text-center rounded-lg bg--pink">Send</button>
+				<button class="w-full py-3 text-white text-center rounded-lg md:rounded-2xl bg--pink">Send</button>
 			</form>
 		</div>
 	</section>

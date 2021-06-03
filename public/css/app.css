@@ -31880,12 +31880,21 @@ video {
 }
 
 .app-container{
-  margin-left: 111px;
-  margin-right: 111px;
+  margin-left: 87px;
+  margin-right: 113px;
 }
 
-.height--90vh{
-  height: 90vh;
+.container--other-layouts{
+  margin-left: 58px;
+  margin-right: 58px;
+}
+
+/* .height--90vh{
+			height: 90vh;
+		} */
+
+.height--950{
+  height: 950px;
 }
 
 .height--50vh{
@@ -31906,6 +31915,23 @@ video {
 
 .line--height-105c8{
   line-height: 105.8%;
+}
+
+.line--height-160{
+  line-height: 160%;
+}
+
+.line--height-190c3{
+  line-height: 190.3%;
+}
+
+.text--desc-jobs{
+  font-family: Gilroy-Medium;
+  font-size: 17px;
+  line-height: 185.3%;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.87);
+  opacity: 0.5;
 }
 
 .line--height-124c34{
@@ -31992,6 +32018,10 @@ video {
   font-size: 42px;
 }
 
+.font--size-45{
+  font-size: 45px;
+}
+
 .font--size-50{
   font-size: 50px;
 }
@@ -32036,6 +32066,10 @@ video {
   font-size: 190px;
 }
 
+.mr--84{
+  margin-right: 84px;
+}
+
 .bg--pink{
   background: #DE4045;
 }
@@ -32076,6 +32110,7 @@ video {
   font-family: 'Poppins', sans-serif;
   line-height: 192.8%;
   letter-spacing: 0.02rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .bg--header-gradient {
@@ -32096,6 +32131,10 @@ video {
 
 .text--grey-transparent{
   color: rgba(100, 100, 100, 0.72);
+}
+
+.text--gray{
+  color: #646464;
 }
 
 .text--pink{
@@ -63352,12 +63391,21 @@ video {
   }
 
   .sm\:app-container{
-    margin-left: 111px;
-    margin-right: 111px;
+    margin-left: 87px;
+    margin-right: 113px;
   }
 
-  .sm\:height--90vh{
-    height: 90vh;
+  .sm\:container--other-layouts{
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  /* .height--90vh{
+			height: 90vh;
+		} */
+
+  .sm\:height--950{
+    height: 950px;
   }
 
   .sm\:height--50vh{
@@ -63378,6 +63426,23 @@ video {
 
   .sm\:line--height-105c8{
     line-height: 105.8%;
+  }
+
+  .sm\:line--height-160{
+    line-height: 160%;
+  }
+
+  .sm\:line--height-190c3{
+    line-height: 190.3%;
+  }
+
+  .sm\:text--desc-jobs{
+    font-family: Gilroy-Medium;
+    font-size: 17px;
+    line-height: 185.3%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.87);
+    opacity: 0.5;
   }
 
   .sm\:line--height-124c34{
@@ -63464,6 +63529,10 @@ video {
     font-size: 42px;
   }
 
+  .sm\:font--size-45{
+    font-size: 45px;
+  }
+
   .sm\:font--size-50{
     font-size: 50px;
   }
@@ -63506,6 +63575,10 @@ video {
 
   .sm\:font--size-190{
     font-size: 190px;
+  }
+
+  .sm\:mr--84{
+    margin-right: 84px;
   }
 }
 
@@ -94621,12 +94694,21 @@ video {
   }
 
   .md\:app-container{
-    margin-left: 111px;
-    margin-right: 111px;
+    margin-left: 87px;
+    margin-right: 113px;
   }
 
-  .md\:height--90vh{
-    height: 90vh;
+  .md\:container--other-layouts{
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  /* .height--90vh{
+			height: 90vh;
+		} */
+
+  .md\:height--950{
+    height: 950px;
   }
 
   .md\:height--50vh{
@@ -94647,6 +94729,23 @@ video {
 
   .md\:line--height-105c8{
     line-height: 105.8%;
+  }
+
+  .md\:line--height-160{
+    line-height: 160%;
+  }
+
+  .md\:line--height-190c3{
+    line-height: 190.3%;
+  }
+
+  .md\:text--desc-jobs{
+    font-family: Gilroy-Medium;
+    font-size: 17px;
+    line-height: 185.3%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.87);
+    opacity: 0.5;
   }
 
   .md\:line--height-124c34{
@@ -94733,6 +94832,10 @@ video {
     font-size: 42px;
   }
 
+  .md\:font--size-45{
+    font-size: 45px;
+  }
+
   .md\:font--size-50{
     font-size: 50px;
   }
@@ -94775,6 +94878,10 @@ video {
 
   .md\:font--size-190{
     font-size: 190px;
+  }
+
+  .md\:mr--84{
+    margin-right: 84px;
   }
 }
 
@@ -125890,12 +125997,21 @@ video {
   }
 
   .lg\:app-container{
-    margin-left: 111px;
-    margin-right: 111px;
+    margin-left: 87px;
+    margin-right: 113px;
   }
 
-  .lg\:height--90vh{
-    height: 90vh;
+  .lg\:container--other-layouts{
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  /* .height--90vh{
+			height: 90vh;
+		} */
+
+  .lg\:height--950{
+    height: 950px;
   }
 
   .lg\:height--50vh{
@@ -125916,6 +126032,23 @@ video {
 
   .lg\:line--height-105c8{
     line-height: 105.8%;
+  }
+
+  .lg\:line--height-160{
+    line-height: 160%;
+  }
+
+  .lg\:line--height-190c3{
+    line-height: 190.3%;
+  }
+
+  .lg\:text--desc-jobs{
+    font-family: Gilroy-Medium;
+    font-size: 17px;
+    line-height: 185.3%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.87);
+    opacity: 0.5;
   }
 
   .lg\:line--height-124c34{
@@ -126002,6 +126135,10 @@ video {
     font-size: 42px;
   }
 
+  .lg\:font--size-45{
+    font-size: 45px;
+  }
+
   .lg\:font--size-50{
     font-size: 50px;
   }
@@ -126044,6 +126181,10 @@ video {
 
   .lg\:font--size-190{
     font-size: 190px;
+  }
+
+  .lg\:mr--84{
+    margin-right: 84px;
   }
 }
 
@@ -157159,12 +157300,21 @@ video {
   }
 
   .xl\:app-container{
-    margin-left: 111px;
-    margin-right: 111px;
+    margin-left: 87px;
+    margin-right: 113px;
   }
 
-  .xl\:height--90vh{
-    height: 90vh;
+  .xl\:container--other-layouts{
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  /* .height--90vh{
+			height: 90vh;
+		} */
+
+  .xl\:height--950{
+    height: 950px;
   }
 
   .xl\:height--50vh{
@@ -157185,6 +157335,23 @@ video {
 
   .xl\:line--height-105c8{
     line-height: 105.8%;
+  }
+
+  .xl\:line--height-160{
+    line-height: 160%;
+  }
+
+  .xl\:line--height-190c3{
+    line-height: 190.3%;
+  }
+
+  .xl\:text--desc-jobs{
+    font-family: Gilroy-Medium;
+    font-size: 17px;
+    line-height: 185.3%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.87);
+    opacity: 0.5;
   }
 
   .xl\:line--height-124c34{
@@ -157271,6 +157438,10 @@ video {
     font-size: 42px;
   }
 
+  .xl\:font--size-45{
+    font-size: 45px;
+  }
+
   .xl\:font--size-50{
     font-size: 50px;
   }
@@ -157313,6 +157484,10 @@ video {
 
   .xl\:font--size-190{
     font-size: 190px;
+  }
+
+  .xl\:mr--84{
+    margin-right: 84px;
   }
 }
 
@@ -188428,12 +188603,21 @@ video {
   }
 
   .\32xl\:app-container{
-    margin-left: 111px;
-    margin-right: 111px;
+    margin-left: 87px;
+    margin-right: 113px;
   }
 
-  .\32xl\:height--90vh{
-    height: 90vh;
+  .\32xl\:container--other-layouts{
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  /* .height--90vh{
+			height: 90vh;
+		} */
+
+  .\32xl\:height--950{
+    height: 950px;
   }
 
   .\32xl\:height--50vh{
@@ -188454,6 +188638,23 @@ video {
 
   .\32xl\:line--height-105c8{
     line-height: 105.8%;
+  }
+
+  .\32xl\:line--height-160{
+    line-height: 160%;
+  }
+
+  .\32xl\:line--height-190c3{
+    line-height: 190.3%;
+  }
+
+  .\32xl\:text--desc-jobs{
+    font-family: Gilroy-Medium;
+    font-size: 17px;
+    line-height: 185.3%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.87);
+    opacity: 0.5;
   }
 
   .\32xl\:line--height-124c34{
@@ -188540,6 +188741,10 @@ video {
     font-size: 42px;
   }
 
+  .\32xl\:font--size-45{
+    font-size: 45px;
+  }
+
   .\32xl\:font--size-50{
     font-size: 50px;
   }
@@ -188582,5 +188787,9 @@ video {
 
   .\32xl\:font--size-190{
     font-size: 190px;
+  }
+
+  .\32xl\:mr--84{
+    margin-right: 84px;
   }
 }
