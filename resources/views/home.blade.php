@@ -33,16 +33,16 @@
 						<div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
 						<div class="text--pink text-3xl md:font--size-52 font-bold">Our Manifestos</div>
 					</div>
-					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
+					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class ,for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make .</div>
 				</div>
-				<div class="w-full md:w-1/2"><img class="w-full" src="{{ asset('images/home/our_manifestos.png') }}"></div>
+				<div class="w-full md:w-1/2"><img class="w-full" style="object-fit: none" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
 		</div>
-		<div class="mx-4 md:px-10">
+		<div class="mx-4 pt-0 md:pt-20 md:px-10">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-8 mb-6 md:mb-10">
 
 				<div class="w-full">
-					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8  shadow-sm">
+					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Know Your Consumer</div>
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				<div class="w-full">
-					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8  shadow-sm">
+					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Solve Your Problems</div>
@@ -62,7 +62,7 @@
 
 
 				<div class="w-full">
-					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8  shadow-sm">
+					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Are Bold</div>
@@ -72,7 +72,7 @@
 				</div>
 
 				<div class="w-full">
-					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8  shadow-sm">
+					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Win Together</div>
@@ -82,7 +82,7 @@
 				</div>
 
 				<div class="w-full">
-					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8  shadow-sm">
+					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Worship Data </div>
@@ -91,7 +91,7 @@
 					</div>
 				</div>
 				<div class="w-full">
-					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8  shadow-sm">
+					<div class="h-40 bg-white rounded-xl flex px-8 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Move Fast</div>
@@ -103,8 +103,8 @@
 			</div>
 
 			<div class="flex justify-center gap-x-4 mb-20">
-				<a href="{{ url('about-us') }}" class="bg--gradient-black py-5 px-10 text-white text-base md:font--size-17 rounded-full"> Know More </a>
-				<button class="bg--gradient-black py-5 px-10 text-white text-base md:font--size-17 rounded-full"> Download Company Deck </button>
+				<a href="{{ url('about-us') }}" class="h-auto w-auto md:w--195 md:h--68 bg--gradient-black py-5 px-10 text-white text-center text-base md:font--size-17 rounded-full"> Know More </a>
+				<button class="bg--gradient-black py-5 px-10 md:w--290 md:h--68 text-white text-base md:font--size-17 rounded-full"> Download Company Deck </button>
 			</div>
 			 
 		</div>
@@ -131,7 +131,8 @@
 						<div class="text--pink">Strategy</div>
 					</div>
 					<div class="text-base md:font--size-20 text--grey-transparent mb-10" style="line-height: 1.8">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities') }}" class="text-white md:font--size-18 rounded-full py-3 md:py-5 px-7 md:px-20 bg--pink">See More</a>
+					
+					<a href="{{ url('capabilities') }}" class="md:w--315 md:h--64 bg--pink rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
 				</div>
 			</div>
 
@@ -206,8 +207,8 @@
 			</div>
 
 			<div class="flex gap-x-4 mb-20">
-				<button class="bg--gradient-pink py-5 px-20 text-sm md:font--size-18 text-white rounded-full"> Explore Menu </button>
-				<button class="bg--gradient-pink py-5 px-20 text-sm md:font--size-18 text-white rounded-full"> Work With Us </button>
+				<button class="bg--gradient-pink md:w--244 md:h--60 text-sm md:font--size-18 text-white rounded-full"> Explore Menu </button>
+				<button class="bg--gradient-pink md:w--244 md:h--60 text-sm md:font--size-18 text-white rounded-full"> Work With Us </button>
 			</div>
 
 			@for ($i = 0; $i < 2; $i++)
@@ -234,7 +235,7 @@
 				<div class="w-full md:w-1/3 mr-0 md:mr-20 mb-3 md:mb-0">
 					<div class="text-3xl md:font--size-85 font-semibold mb-4 md:mb-10">Insights</div>
 					<div class="mb-4 md:mb-10 text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-					<a href="{{ url('insights') }}" class="text-sm md:font--size-20 bg--pink text-white py-3 md:py-7 px-10 md:px-20 rounded-full"> See More Insights </a>
+					<a href="{{ url('insights') }}" class="flex items-center justify-center text-sm md:font--size-20 bg--pink text-white md:w--328 md:h--77 rounded-full"> See More Insights </a>
 				</div>
 				@for ($i = 0; $i < 2; $i++)
 					<div class="w-full md:w-1/4 p-3 bg-white rounded-xl mr-10 shadow-lg">
@@ -292,7 +293,7 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
 					<div class="text-base md:font--size-20 text--grey-transparent mb-10 md:mb-14">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<a href="{{ url('opportunities') }}" class="bg--pink rounded-full text-sm md:font--size-18 text-white py-3 md:py-5 px-8 md:px-16">Explore Profiles</a>
+					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--pink rounded-full text-sm md:font--size-18 text-white md:w--244 md:h--60">Explore Profiles</a>
 				</div>
 			</div>
 		</div>

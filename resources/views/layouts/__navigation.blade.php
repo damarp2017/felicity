@@ -1,15 +1,15 @@
-<nav class="navbar items-center fixed px-20 py-10 z-20 w-full transition duration-300 ease-in-out ">
-	<div class=" hidden md:flex w-full justify-between py-4">
+<nav class="navbar items-center fixed padding-navbar z-20 w-full transition duration-300 ease-in-out ">
+	<div class=" hidden md:flex w-full justify-between">
 		<a href="{{ url('/') }}">
 			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png') }}">
 			<img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png') }}">
 		</a>
-		<div class="flex gap-x-10 items-center">
-			<a href="{{ url('capabilities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Capabilities </a>
-			<a href="{{ url('opportunities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-			<a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-			<a href="{{ url('insights') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
-			<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+		<div class="flex items-center">
+			<a href="{{ url('capabilities') }}" class="navlink mr--65 text-white hover:text-gray-200 font--size-15"> Capabilities </a>
+			<a href="{{ url('opportunities') }}" class="navlink mr--65 text-white hover:text-gray-200 font--size-15"> Opportunities </a>
+			<a href="{{ url('case-studies') }}" class="navlink mr--65 text-white hover:text-gray-200 font--size-15"> Case Studies </a>
+			<a href="{{ url('insights') }}" class="navlink mr--65 text-white hover:text-gray-200 font--size-15"> Insights </a>
+			<a href="{{ url('contact-us') }}" class="navlink mr--38 text-white hover:text-gray-200 font--size-15"> Contact Us </a>
 			@if (request()->is('insights') || request()->is('case-studies'))
 				
 			@else
