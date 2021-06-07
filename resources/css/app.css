@@ -32,6 +32,12 @@
 		font-family: 'Poppins';
 		src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
 	  }
+
+	@font-face {
+		font-family: "SF Pro Display"; 
+		src: url(https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot); 
+		src: url(https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot?#iefix) format("embedded-opentype"), url(https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2) format("woff2"), url(https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff) format("woff"), url(https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf) format("truetype"), url(https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display) format("svg"); 
+	}
 }
 
 @variants focus, hover {
@@ -70,6 +76,10 @@
 	font-family: Kollektif-Bold;
 }
 
+.font--sf-pro-display{
+	font-family: "SF Pro Display";
+}
+
 .text--typography{
 	font-family: 'Poppins', sans-serif;
 	line-height: 192.8%;
@@ -105,6 +115,10 @@
 
 .text--pink{
 	color: #DE4045;
+}
+
+.text--gray-insights{
+	color: #2B2B2B;
 }
 
 .text--color-team{
@@ -176,9 +190,15 @@
 }
 
 .padding-navbar{
-	padding-top: 55px;
-	padding-left: 82px;
-	padding-right: 45px;
+	padding-top: 49px;
+    padding-left: 77px;
+    padding-right: 40px;
+}
+
+.padding-navbar-light{
+	padding-top: 45px;
+    padding-left: 84px;
+    padding-right: 69px;
 }
 
 .mr--65{
@@ -215,8 +235,13 @@
 	.w--658{
 		width: 658.41px;
 	}
+
 	.h--513{
 		height: 513px;
+	}
+
+	.mr--22{
+		margin-right: 22px;
 	}
 
 	.card--insights-sm{
@@ -242,6 +267,11 @@
 
 	.mt--17{
 		margin-top: 17px;
+	}
+
+	.form--contact-us{
+		background: rgba(247, 247, 247, 0.86);
+		border-radius: 15px;
 	}
 
 	@variants responsive {
@@ -329,6 +359,10 @@
 			opacity: 0.5;
 		}
 
+
+		.font--size-12{
+			font-size: 12px;
+		}
 
 		.font--size-13{
 			font-size: 13px;
@@ -476,6 +510,11 @@
 		.mb--14{
 			margin-bottom: 14px;
 		}
+
+		.mb--15{
+			margin-bottom: 15px;
+		}
+
 		.mb--17{
 			margin-bottom: 17px;
 		}
@@ -512,6 +551,10 @@
 			margin-bottom: 34px;
 		}
 
+		.mb--38{
+			margin-bottom: 38px;
+		}
+
 		.mb--42{
 			margin-bottom: 42px;
 		}
@@ -526,6 +569,10 @@
 
 		.mb--51{
 			margin-bottom: 51px;
+		}
+
+		.mb--53{
+			margin-bottom: 53px;
 		}
 
 		.mb--55{
@@ -555,6 +602,10 @@
 		.mb--95{
 			margin-bottom: 95px;
 		}
+
+		.mb--120{
+			margin-bottom: 120px;
+		}
 		
 		.mb--140{
 			margin-bottom: 140px;
@@ -565,12 +616,48 @@
 			margin-right: 3px;
 		}
 
+		.mr--22{
+			margin-right: 22px;
+		}
+
+		.mr--26{
+			margin-right: 26px;
+		}
+
 		.mr--28{
 			margin-right: 28px;
 		}
 
+		.mr--30{
+			margin-right: 30px;
+		}
+
+		.mr--32{
+			margin-right: 32px;
+		}
+
+		.mr--36{
+			margin-right: 36px;
+		}
+
+		.mr--40{
+			margin-right: 40px;
+		}
+
 		.mr--41{
 			margin-right: 41px;
+		}
+
+		.mr--45{
+			margin-right: 45px;
+		}
+
+		.mr--46{
+			margin-right: 46px;
+		}
+
+		.mr--47{
+			margin-right: 47px;
 		}
 
 		.mr--48{
@@ -581,8 +668,20 @@
 			margin-right: 63px;
 		}
 
+		.mr--65{
+			margin-right: 65px;
+		}
+
 		.mr--67{
 			margin-right: 67px;
+		}
+
+		.mr--76{
+			margin-right: 76px;
+		}
+
+		.mr--78{
+			margin-right: 78px;
 		}
 
 		.mr--84{
@@ -622,6 +721,10 @@
 			margin-left: 24px;
 		}
 
+		.ml--54{
+			margin-left: 54px;
+		}
+
 		.ml--68{
 			margin-left: 68px;
 		}
@@ -638,6 +741,19 @@
 			margin-left: 91px;
 		}
 
+		/* margin x */
+		.mx--65{
+			margin: 0 65px; 
+		}
+		.mx--74{
+			margin: 0 74px; 
+		}
+
+		.mx--79{
+			margin-right: 79px;
+			margin-left: 79px;
+		}
+
 		/* negative margin top */
 
 		/* negative margin bottom */
@@ -651,16 +767,58 @@
 			margin-right: -68px;
 		}
 
+
 		/* negative margin left */
 
+		/* all padding */
+		.p--34{
+			padding: 34px;
+		}
 		/* padding x */
+
+		.px--26{
+			padding-left: 26px;
+			padding-right: 26px;
+		}
 		.px--31{
-			padding: 0 31px;
+			padding-right: 31px;
+			padding-left: 31px;
+		}
+
+		.px--39{
+			padding-right: 39px;
+			padding-left: 39px;
+		}
+
+		.px--112{
+			padding-right: 112px;
+			padding-left: 112px;
 		}
 
 		/* padding y */
+		.py--12{
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		.py--16{
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+
 		.py--19{
-			padding: 19px 0;
+			padding-top: 19px;
+			padding-bottom: 19px;
+		}
+
+		.py--21{
+			padding-top: 21px;
+			padding-bottom: 21px;
+		}
+
+		.py--75{
+			padding-top: 75px;
+			padding-bottom: 75px;
 		}
 
 		/* padding top */
@@ -684,6 +842,10 @@
 			padding-top: 171px;
 		}
 
+		.pt--224{
+			padding-top: 224px;
+		}
+
 		.pt--308{
 			padding-top: 308px;
 		}
@@ -699,7 +861,14 @@
 
 		/* padding right */
 
+		.pr--24{
+			padding-right: 24px;
+		}
 		/* padding left */
+
+		.pl--23{
+			padding-left: 23px;
+		}
 
 		.padding--form-we-have{
 			padding: 19px 31px;
@@ -724,15 +893,40 @@
 			padding: 17px 35px;
 		}
 
+		.w--24{
+			width: 24px;
+		}
+
 		.w--48{
 			width: 48px;
 		}
+
 		.w--64{
 			width: 64px;
 		}
 
+		.w--66{
+			width: 66px;
+		}
+
+		.w--68{
+			width: 68px;
+		}
+
 		.w--109{
 			width: 109px;
+		}
+
+		.w--123{
+			width: 123px;
+		}
+
+		.w--135{
+			width: 135px;
+		}
+
+		.w--166{
+			width: 166px;
 		}
 
 		.w--186{
@@ -806,6 +1000,18 @@
 			width: 636px;
 		}
 
+		.h--22{
+			height: 22px;
+		}
+
+		.h--39{
+			height: 39px;
+		}
+
+		.h--48{
+			height: 48px;
+		}
+
 		.h--60{
 			height: 60px;
 		}
@@ -824,6 +1030,10 @@
 
 		.h--77{
 			height: 77px;
+		}
+
+		.h--123{
+			height: 123px;
 		}
 		
 		.h--472{
