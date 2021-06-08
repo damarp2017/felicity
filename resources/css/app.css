@@ -759,10 +759,20 @@
 		/* negative margin bottom */
 
 		/* negative margin right */
+
+		.-mr--26{
+			margin-right: -26px
+		}
+
+		.-mr--27{
+			margin-right: -27px
+		}
+
 		.-mr--13{
 			margin-right: -113px
-		}	
+		}
 
+		
 		.-mr--68{
 			margin-right: -68px;
 		}

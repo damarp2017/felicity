@@ -13,14 +13,14 @@
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
-			<div class="block md:h--646 md:flex items-center mb-4 md:mb-10">
-				<div class="block md:hidden w-full md:w-1/2"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/brand.png') }}"></div>
-				<div class="w-full md:w-1/2">
+			<div class="block md:h--646 md:flex justify-between items-center mb-4 md:mb-10 ">
+				<div class="block md:hidden w-full md:w-1/2 "><img class="h-auto  md:h-96" src="{{ asset('images/capabilities/brand.png') }}"></div>
+				<div class="w-full md:w-1/2 ">
 					<div class="text-5xl md:font--size-85 font-bold mb-4 md:mb--23">Branding</div>
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
 					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64 bg--pink text-white md:font--size-18  font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
-				<div class="hidden md:block w-full md:w-1/2"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/brand.png') }}"></div>
+				<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/brand.png') }}"></div>
 			</div>
 
 			<div class="block md:h--646 md:flex justify-between items-center mb-20">
@@ -45,7 +45,7 @@
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
 					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--pink md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
-				<div class="hidden md:block w-full md:w-1/2"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/content.png') }}"></div>
+				<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/content.png') }}"></div>
 			</div>
 
 			<div class="block md:h--646 md:flex justify-between items-center mb-20">
@@ -70,7 +70,7 @@
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
 					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--pink md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
-				<div class="w-full  md:w-1/2"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/tech.png') }}"></div>
+				<div class="w-full  md:w-auto"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/tech.png') }}"></div>
 			</div>
 			 
 		</div>

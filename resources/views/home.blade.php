@@ -38,11 +38,10 @@
 				<div class="w-full md:w-1/2"><img class="w-full" style="object-fit: none" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
 		</div>
-		<div class="mx-4 pt-0 md:pt-20 md:px-10 md:-mr--68">
-			
+		<div class="mx-4 pt-0 md:pt-20 md:px-10 md:-mr--27">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-0 mb-6 md:mb-10">
 
-					<div class="card--about-home bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Know Your Consumer</div>
@@ -50,7 +49,7 @@
 						</div>
 					</div>
 					
-					<div class="card--about-home bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Solve Your Problems</div>
@@ -58,7 +57,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Are Bold</div>
@@ -66,7 +65,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Win Together</div>
@@ -74,7 +73,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Worship Data </div>
@@ -82,7 +81,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Move Fast</div>
@@ -219,9 +218,9 @@
 		</div>
 	</section>
 
-	<section class="bg--gray-light w-full py-10 md:py-20">
-		<div class="mx-4 md:app-container">
-			<div class="flex flex-col md:flex-row items-center">
+	<section class="bg--gray-light w-full overflow-x-hidden  py-10 md:py-20">
+		<div class="mx-4 md:app-container md:-mr--113 w-full">
+			<div class="flex flex-col md:flex-row items-center w-full">
 				<div class="w-full md:w-1/2 mr-0 mb-3 md:mb-0">
 					<div class="w-10/12">
 						<div class="text-3xl md:font--size-85 font-semibold mb-4 md:mb-10">Insights</div>
@@ -230,7 +229,7 @@
 					</div>
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="grid md:grid-flow-col md:auto-cols-max overflow-x-auto mr-0 md:-mr--113">
+					<div class="grid md:grid-flow-col md:auto-cols-max mr-0 ">
 						@for ($i = 0; $i < 2; $i++)
 							<div class="card--insights-sm md:card--insights shadow-2xl">
 								<img class="mb-4 h-64 w-full object-cover object-center rounded" src="{{ asset('images/home/insights.png') }}">
