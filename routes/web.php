@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('', 'home');
+Route::view('/', 'intro.index');
+Route::view('home', 'home');
 Route::view('capabilities', 'capabilities');
 Route::view('capabilities-inside', 'capabilities_inside');
 Route::view('opportunities', 'opportunities');
