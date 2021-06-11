@@ -2,9 +2,9 @@
 @section('content')
 	@include('layouts.__navigation_light')
 
-	<section class="bg-white w-full overflow-x-hidden pt-32 pb-10">
-		<div class="mx-0 md:mx-20">
-			<div class="bg-gray-200 w-full mb-20" style="height: 3732px"></div>
+	<section class="bg-white w-full overflow-x-hidden pt-5 py-10">
+		<div class="mx-0 md:mx-5">
+			<div class="bg-gray-200 rounded-xl w-full mb-20" style="height: 3732px"></div>
 
 			<div class="flex gap-x-7 items-center justify-center mb-20">
 				<div class="bg-gray-200 h-12 w-12 p-3 rounded-full -mt-9">
