@@ -77,6 +77,7 @@
 	}
 	</style>	
 
+
 </head>
 <body>
 
@@ -125,7 +126,7 @@
     	$(document).ready(function(){
     		reloadVideo()
     	})
-    	
+
       $(document).on('click', '.next', function () { 
           window.location.href = "{{ url('/home') }}"
        })
