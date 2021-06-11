@@ -225,7 +225,7 @@
 					<div class="w-10/12">
 						<div class="text-3xl md:font--size-85 font-semibold mb-4 md:mb-10">Insights</div>
 						<div class="mb-4 md:mb-10 text-base md:font--size-22 text--gray" style="line-height: 160%;">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-						<a href="{{ url('insights') }}" class="flex items-center justify-center text-sm md:font--size-20 bg--pink text-white w-44 h-12 md:w--328 md:h--77 rounded-full"> See More Insights </a>
+						<a href="//medium.com/@felicitymedia" target="_blank" class="flex items-center justify-center text-sm md:font--size-20 bg--pink text-white w-44 h-12 md:w--328 md:h--77 rounded-full"> See More Insights </a>
 					</div>
 				</div>
 				<div class="w-full md:w-1/2">

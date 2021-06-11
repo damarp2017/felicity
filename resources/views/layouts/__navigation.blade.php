@@ -9,14 +9,17 @@
 			@if (request()->is('insights') || request()->is('case-studies') || request()->is('our-clients'))
 			<a href="{{ url('capabilities') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Capabilities </a>
 			<a href="{{ url('opportunities') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-			<a href="{{ url('case-studies') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-			<a href="{{ url('insights') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Insights </a>
+			<!-- <a href="{{ url('case-studies') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Case Studies </a> -->
+
+			<!-- <a href="{{ url('insights') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Insights </a> -->
+			<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Insights </a>
 				<a href="{{ url('contact-us') }}" class="navlink mr--26 text-white hover:text-gray-200 font--size-15"> Contact Us </a>
 			@else
 				<a href="{{ url('capabilities') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Capabilities </a>
 				<a href="{{ url('opportunities') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-				<a href="{{ url('case-studies') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-				<a href="{{ url('insights') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Insights </a>
+				<!-- <a href="{{ url('case-studies') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Case Studies </a> -->
+				<!-- <a href="{{ url('insights') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Insights </a> -->
+				<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Insights </a>
 				<a href="{{ url('contact-us') }}" class="navlink mr--38 text-white hover:text-gray-200 font--size-15"> Contact Us </a>
 
 				<div class="bg--gradient-black py-4 px-8 rounded-full text-white font--size-15">
@@ -45,8 +48,8 @@
 		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out " >
 			<a href="{{ url('capabilities') }}" class="block text-black hover:text-gray-800 text-lg"> Capabilities </a>
 			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
-			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
-			<a href="{{ url('insights') }}" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
+			<!-- <a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a> -->
+			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
 			<div class="flex justify-center items-center w-72 bg--gradient-black py-3 px-2 text-lg rounded-full text-white">
 				Book A Free Consultation Call
@@ -128,8 +131,8 @@
 	<div class="flex gap-x-10 items-center">
 		<a href="#" class="navlink text-white hover:text-gray-200 font--size-15"> Our Process </a>
 		<a href="{{ url('opportunities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
+		<!-- <a href="{{ url('case-studies') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a> -->
+		<a href="//medium.com/@felicitymedia" target="_blank" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
 		<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
 		<div class="bg--gradient-black py-3 px-8 rounded-full text-white font--size-15">
 			Book A Free Consultation Call
@@ -155,8 +158,8 @@
 		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out ">
 			<a href="#" class="block text-black hover:text-gray-800 text-lg"> Our Process </a>
 			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
-			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
-			<a href="{{ url('insights') }}" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
+			<!-- <a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a> -->
+			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
 			<div class="flex justify-center items-center w-72 bg--gradient-black py-3 px-2 text-lg rounded-full text-white">
 				Book A Free Consultation Call

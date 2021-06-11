@@ -6,8 +6,8 @@ transition duration-300 ease-in-out items-start justify-between">
 	<div class="flex items-center gap-x-8">
 		<a href="{{ url('capabilities') }}" class="hover:text-gray-500 font--size-15"> Capabilities </a>
 		<a href="{{ url('opportunities') }}" class="hover:text-gray-500 font--size-15"> Opportunities </a>
-		<a href="{{ url('case-studies') }}" class="hover:text-gray-500 font--size-15"> Case Studies </a>
-		<a href="{{ url('insights') }}" class="hover:text-gray-500 font--size-15"> Insights </a>
+		<!-- <a href="{{ url('case-studies') }}" class="hover:text-gray-500 font--size-15"> Case Studies </a> -->
+		<a href="//medium.com/@felicitymedia" target="_blank" class="hover:text-gray-500 font--size-15"> Insights </a>
 		<a href="{{ url('contact-us') }}" class="hover:text-gray-500 font--size-15"> Contact Us </a>
 	</div>
 </nav>
@@ -28,8 +28,8 @@ transition duration-300 ease-in-out items-start justify-between">
 		<div x-show="open" class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out py-300">
 			<a href="{{ url('capabilities') }}" class="block text-black hover:text-gray-800 text-lg"> Capabilities </a>
 			<a href="{{ url('opportunities') }}" class="block text-black hover:text-gray-800 text-lg"> Opportunities </a>
-			<a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a>
-			<a href="{{ url('insights') }}" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
+			<!-- <a href="{{ url('case-studies') }}" class="block text-black hover:text-gray-800 text-lg"> Case Studies </a> -->
+			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-black hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-black hover:text-gray-800 text-lg"> Contact Us </a>
 			{{-- <div class="flex justify-center items-center w-72 bg--gradient-black p-2 text-lg rounded-full text-white">
 				Book A Free Consultation Call
