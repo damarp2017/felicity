@@ -2,7 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--header-gradient relative">
 		@include('layouts.__navigation')
-		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 20% 0">
 			<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-150 mb-5 md:mb-0 text-center"> About Us</div>
 			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
@@ -55,8 +55,8 @@
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20 ">
 		<div class="mx-4 md:app-container">
 			<div class="flex items-center mb-10 md:mb-20">
-				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-				<div class="text--pink text-2xl md:font--size-39 font-bold">Values</div>
+				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
+				<div class="text--blue text-2xl md:font--size-39 font-bold">Values</div>
 			</div>
 	
 			<div class="block md:flex mb-24 items-center">
@@ -77,7 +77,7 @@
 
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
-					<div class="bg--pink w-10 h-1 md:h-2 rounded-full"></div>
+					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
@@ -135,9 +135,9 @@
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
+					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--blue">Team</span></div>
 					<div class="text-base md:font--size-22 text--gray mb-10 md:mb-14" style="line-height: 160%;">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--pink rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
+					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
 				</div>
 			</div>
 		</div>

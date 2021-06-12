@@ -41,6 +41,7 @@
 }
 
 @variants focus, hover {
+
     .bg--pink{
 		background: #DE4045;
 	}
@@ -144,11 +145,15 @@
 .text--gray-dark::placeholder{
 	color: #505050;
 }
-
+.text--blue{
+  color:#3B28C2;
+}
 .bg--pink{
 	background: #DE4045;
 }
-
+.bg--blue{
+  background:#3B28C2;
+}
 .bg--blue-blur{
 	background: #3B28C2;
 	backdrop-filter: blur(200px);
@@ -215,7 +220,7 @@
 @layer utilities {
 
 	.card--about-home{
-		box-shadow: 0px 9px 35px #FFE7E7;
+		box-shadow: 0px 9px 35px #E6E2FF;
 		border-radius: 21px;
 		/* width: 408px; */
 		width: 368px;
@@ -294,7 +299,7 @@
 
 		.app-container{
 			margin-left: 87px;
-			margin-right: 113px;
+			margin-right: 87px;
 		}
 
 		.container--other-layouts{

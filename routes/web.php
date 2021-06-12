@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 	Route::view('case-studies', 'case_studies');
 	Route::view('insights', 'insights');
 	Route::view('terms-and-conditions', 'terms_and_conditions');
+	Route::view('privacy', 'privacy');
 	Route::view('contact-us', 'contact_us');
 	Route::view('press-release', 'press_release'); 
 	Route::view('insights-inside', 'insights_inside');

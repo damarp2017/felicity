@@ -26,8 +26,9 @@
 				<div class="flex flex-col mb-8 md:mb-0">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">About</div>
 					<a href="{{ url('terms-and-conditions') }}" class="text-white mb-2 md:font--size-18 font--poppins">Terms</a>
-					<a href="#" class="text-white mb-2 md:font--size-18 font--poppins">Privacy</a>
-					<a href="{{ url('press-release') }}" class="text-white mb-2 md:font--size-18 font--poppins">Press Release</a>
+					<a href="{{url('privacy')}}" class="text-white mb-2 md:font--size-18 font--poppins">Privacy</a>
+					<a href="{{url('about-us')}}" class="text-white mb-2 md:font--size-18 font--poppins">About Us</a>
+					<!-- <a href="{{ url('press-release') }}" class="text-white mb-2 md:font--size-18 font--poppins">Press Release</a> -->
 				</div>
 			</div>
 	

@@ -5,7 +5,7 @@
 	<section class="bg-white w-full overflow-x-hidden py-20 md:py-10">
 		<div class="mx-4 md:app-container">
 			<div class="mb-10 md:mb--38">
-				<div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65">Have a <span class="text--blue">Project</span> Idea ?</div>
 				<div class=" w-full md:w-9/12 mb-8 text-base md:font--size-17 font--poppins"
 				style="line-height: 192.8%;
 				letter-spacing: 0.02em;
@@ -52,7 +52,7 @@
 								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Reason to contact">
 							</div>
 							
-							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--pink" style="border-radius: 19px">Send</button>
+							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--blue" style="border-radius: 19px">Send</button>
 						</form>
 					</div>
 					<div class="hidden md:block w-full md:w-1/2">

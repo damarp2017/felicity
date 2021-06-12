@@ -2,7 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--header-gradient relative " >
 		@include('layouts.__navigation')
-		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 23% 0">
 			<div class="text-white font-semibold mb-3 text-4xl md:font--size-150 md:mb-5 md:line--height-97">Insights</div>
 			<div class="text-base md:font--size-22 text-center w-9/12 md:w-full md:text-lg text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
@@ -53,7 +53,7 @@
 					class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
 					placeholder="Full Name">
 				</div>
-				<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--pink p-4 md:padding-button-learn-something outline-none focus:outline-none"
+				<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none focus:outline-none"
 				style="border-radius: 7px;">Subscribe</button>
 			</div>
 		</div>

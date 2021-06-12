@@ -3,7 +3,7 @@
 	<section class="bg--gray-light pb-20">
 		<header class="w-full overflow-x-hidden bg--header-gradient relative">
 			@include('layouts.__navigation')
-			<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="mx-4 h-full md:app-container" style="padding: 13% 0">
 				<div class="flex flex-col justify-center items-center md:items-start h-full ">
 					<div class="text-white font-semibold mb-3 text-5xl md:font--size-95">Our Clients</div>

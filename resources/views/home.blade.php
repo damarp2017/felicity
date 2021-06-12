@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative " style="background:#3B28C2">
 		@include('layouts.__navigation')
-		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
 			<div class="mx-4 md:app-container">
 				<div class="md:font--size-24 text-xl text-white uppercase text-center mb-1 md:mb-0" style="transform: translateY(10px);letter-spacing: 3px">We design the</div>
@@ -14,17 +14,17 @@
 	</header>
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
-			<div class="flex mb-20 flex-col text-center justify-center">
+		<div class="mx-4 md:app-container pt-20">
+			<!-- <div class="flex mb-20 flex-col text-center justify-center">
 				<div class="mb-6 text-3xl md:font--size-65 font-semibold">About Us</div>
 				<div class="md:font--size-20 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
-			</div>
+			</div> -->
 
 			<div class="mb-20">
 				<div class="flex items-center mb-3 ">
-					<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-					<div class="text--pink text-3xl md:font--size-52 font-bold">Our Vision</div>
+					<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
+					<div class="text--blue text-3xl md:font--size-52 font-bold">Our Vision</div>
 				</div>
 				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
 			</div>
@@ -32,8 +32,8 @@
 			<div class="block md:flex items-center mb-6">
 				<div class="w-full md:w-1/2">
 					<div class="flex items-center mb-3 md:mb-10">
-						<div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-						<div class="text--pink text-3xl md:font--size-52 font-bold">Our Manifestos</div>
+						<!-- <div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
+						<div class="text--blue text-3xl md:font--size-52 font-bold">Our Manifestos</div>
 					</div>
 					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class ,for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make .</div>
 				</div>
@@ -46,7 +46,7 @@
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Know Your Consumer</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Know Your Consumer</div>
 							<div class="text-base font-normal text--gray md:font--size-20">We know how to make your consumer, your customer.</div>
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Solve Your Problems</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Solve Your Problems</div>
 							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand.</div>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Are Bold</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Are Bold</div>
 							<div class="text-base text--gray md:font--size-20">We dare to dream, and we get it done.</div>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Win Together</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Win Together</div>
 							<div class="text-base text--gray md:font--size-20">When your business wins, we win.</div>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Worship Data </div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Worship Data </div>
 							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences.</div>
 						</div>
 					</div>
@@ -86,7 +86,7 @@
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--pink">We Move Fast</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Move Fast</div>
 							<div class="text-base text--gray md:font--size-20">Quicker decision and patience, win us games.</div>
 						</div>
 					</div>
@@ -107,8 +107,8 @@
 	<section class="bg-white min-h-screen w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="flex items-center mb-20">
-				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-				<div class="text--pink text-3xl md:font--size-52 font-bold">Our Capabilities</div>
+				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
+				<div class="text--blue text-3xl md:font--size-52 font-bold">Our Capabilities</div>
 			</div>
 		</div>
 		<div class="mx-4 md:px-10">
@@ -119,21 +119,21 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-black text-3xl md:font--size-85 font-bold mb-4 md:mb-10">
 						<div class="md:mb-11">Marketing</div>
-						<div class="text--pink">Strategy</div>
+						<div class="text--blue">Strategy</div>
 					</div>
 					<div class="text-base md:font--size-20 text--grey-transparent mb-10" style="line-height: 1.8">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
 					
-					<a href="{{ url('capabilities') }}" class="w-32 h-12 md:w--315 md:h--64 bg--pink rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
+					<a href="{{ url('capabilities') }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
 				</div>
 			</div>
 
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
-					<div class="bg--pink w-10 h-1 md:h-2 rounded-full"></div>
+					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
-				<div class="flex gap-x-4  items-center" style="margin-right: -54px">
+				<div class="flex gap-x-4  items-center" >
 					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
@@ -188,8 +188,31 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
+	<section class="bg--section py-10 py-20 w-full">
+		<div class="mx-4 md:app-container">
+			<div class="flex">
+				<div class="px-5 w-1/2">
+					<div class="px-10 py-20 bg--blue rounded-xl">
+						<div class="text-white text-3xl md:font--size-65 mb-10">Insight </div>
+						<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
+							for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to
+						</div>
+						<a href="//medium.com/@felicitymedia" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See More Insight</a>
+					</div>
+				</div>
+				<div class="px-5 w-1/2">
+					<div class="px-10 py-20 bg--blue rounded-xl">
+						<div class="text-white text-3xl md:font--size-65 mb-10">Case Studies </div>
+						<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
+							for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to
+						</div>
+						<a href="//behance.com" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See Our Work</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:container--case-studies pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-85 font-semibold">Case Studies</div>
@@ -211,7 +234,7 @@
 						<div class="text-base text--color-team md:font--size-16 font--gilroy-md">FEATURED</div>
 					</div>
 					
-					<div class="text--pink md:font--size-17 mb-2 font-bold" 
+					<div class="text--blue md:font--size-17 mb-2 font-bold" 
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
 					<div class="text-base md:font--size-17 text--grey-transparent" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
@@ -227,7 +250,7 @@
 					<div class="w-10/12">
 						<div class="text-3xl md:font--size-85 font-semibold mb-4 md:mb-10">Insights</div>
 						<div class="mb-4 md:mb-10 text-base md:font--size-22 text--gray" style="line-height: 160%;">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
-						<a href="//medium.com/@felicitymedia" target="_blank" class="flex items-center justify-center text-sm md:font--size-20 bg--pink text-white w-44 h-12 md:w--328 md:h--77 rounded-full"> See More Insights </a>
+						<a href="//medium.com/@felicitymedia" target="_blank" class="flex items-center justify-center text-sm md:font--size-20 bg--blue text-white w-44 h-12 md:w--328 md:h--77 rounded-full"> See More Insights </a>
 					</div>
 				</div>
 				<div class="w-full md:w-1/2">
@@ -238,7 +261,7 @@
 								<div class="py-5 px-2">
 									<div class=" text-xl md:font--size-28 mb-2">Design process we have is unexpectional</div>
 									<div class=" mb-6 md:font-size-12" style="line-height: 163.5%; color: #929292">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor a urna vel orci interdum amet, natoque id. Egestas sed adipiscing .</div>
-									<a href="" class="text--pink  md:font--size-12">Learn More</a>
+									<a href="" class="text--blue  md:font--size-12">Learn More</a>
 								</div>
 							</div>	
 						@endfor
@@ -246,12 +269,12 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container md:pt-20">
 			<div class="w-full mb-10">
-				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
+				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea ?</div>
 				<div class="text-base md:font--size-17 font--poppins w-full md:w-10/12 " 
 				style="letter-spacing: 0.02em;
 				color: rgba(55, 55, 55, 0.46);
@@ -278,7 +301,7 @@
 						</div>
 					</div>
 				</div>
-				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--pink">Send</button>
+				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue">Send</button>
 			</form>
 		</div>
 	</section>
@@ -291,19 +314,18 @@
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--pink">Team</span></div>
+					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--blue">Team</span></div>
 					<div class="text-base md:font--size-22 text--gray mb-10 md:mb-14" style="line-height: 160%;">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
-					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--pink rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
+					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
 				</div>
 			</div>
 		</div>
 
 	</section>
 
-	<section class="-mb-44  overflow-x-hidden bg--section">
+	<section class="-mb-36  overflow-x-hidden bg--section">
 		<div class="z-20 relative mx-4 md:app-container ">
-			<div class=" p-10 " style="background: linear-gradient(121.44deg, #DE4045 -2.03%, #EF5E62 79.87%);
-			border-radius: 16px;">
+			<div class=" p-10 bg--blue rounded-xl" >
 				<div class="text-3xl md:font--size-50 font-semibold text-white mb--17 md:mb-10">Learn Something New</div>
 				<div class="text-white opacity-50 mb--44 md:font--size-20">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live .</div>
 				<div class="block md:flex gap-x-4">
@@ -319,7 +341,7 @@
 						class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
 						placeholder="Full Name">
 					</div>
-					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--pink p-4 md:padding-button-learn-something outline-none focus:outline-none"
+					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none focus:outline-none"
 					style="border-radius: 7px;">Subscribe</button>
 				</div>
 			</div>
