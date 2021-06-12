@@ -1,6 +1,6 @@
 <nav class="navbar items-start fixed padding-navbar z-20 w-full transition duration-300 ease-in-out ">
 	<div class=" hidden md:flex w-full justify-between">
-		<a href="{{ url('/') }}">
+		<a href="{{ url('/home') }}">
 			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png') }}">
 			<img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png') }}">
 		</a>
@@ -33,7 +33,7 @@
 <div x-data="{ open: false }">
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
-			<a href="{{ url('/') }}">
+			<a href="{{ url('/home') }}">
 				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
 				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
 				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png') }}">
@@ -124,7 +124,7 @@
 
 
 {{-- <nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out ">
-	<a href="{{ url('/') }}">
+	<a href="{{ url('/home') }}">
 		<img class="logo-white h-8" src="{{ asset('images/logo/logo.png') }}">
 		<img class="logo-black hidden h-8" src="{{ asset('images/logo/black.png') }}">
 	</a>
@@ -143,7 +143,7 @@
 <div x-data="{ open: false }">
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
-			<a href="{{ url('/') }}">
+			<a href="{{ url('/home') }}">
 				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
 				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
 				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png') }}">

@@ -1,6 +1,6 @@
 <nav class="navbar hidden md:flex shadow-lg bg-white padding-navbar-light z-20 w-full 
 transition duration-300 ease-in-out items-start justify-between">
-	<a href="{{ url('/') }}">
+	<a href="{{ url('/home') }}">
 		<img class="h-8" style="height:55px" src="{{ asset('images/logo/black.png') }}">
 	</a>
 	<div class="flex items-center gap-x-8">
@@ -15,7 +15,7 @@ transition duration-300 ease-in-out items-start justify-between">
 <div x-data="{ open: false }">
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
-			<a href="{{ url('/') }}">
+			<a href="{{ url('/home') }}">
 				<img class="h-10" src="{{ asset('images/logo/black.png') }}">
 			</a>
 			<button @click="open = !open" class="border border-red-500 focus:outline-none w-10 h-10 flex justify-center items-center bg-white rounded-full">

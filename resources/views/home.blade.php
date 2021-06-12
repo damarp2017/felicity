@@ -4,10 +4,12 @@
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
-			<div class="md:font--size-24 text-xl text-white uppercase " style="line-height: .3;transform: translateY(10px);letter-spacing: 3px">We design the</div>
-			<div class="text-white font-semibold text-5xl md:line--height-90 md:font--size-190"> Future</div>
-			<div class="md:font--size-24  text-xl text-white uppercase mb-10" style="letter-spacing: 2px">that next generation will witness</div>
-			<div class="md:font--size-20  text-base text-white text-center w-9/12 md:w-full opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
+			<div class="mx-4 md:app-container">
+				<div class="md:font--size-24 text-xl text-white uppercase text-center mb-1 md:mb-0" style="transform: translateY(10px);letter-spacing: 3px">We design the</div>
+				<div class="text-white font-semibold text-8xl md:line--height-90 md:font--size-190 text-center"> Future</div>
+				<div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div>
+				<div class="md:font--size-20  text-base text-white text-center w-full opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
+			</div>
 		</div>
 	</header>
 

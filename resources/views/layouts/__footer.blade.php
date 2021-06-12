@@ -12,7 +12,7 @@
 			<div class="grid grid-cols-2 md:flex md:flex-row mb--94">
 				<div class="flex flex-col w-auto mb-8 md:mb-0 md:mr--150">
 					<div style="color: #949494;" class="font--poppins mb-2 md:font--size-17  font--poppins uppercase">quick links</div>
-					<a href="{{ url('/') }}" class="text-white mb-2 md:font--size-18 font--poppins">Home</a>
+					<a href="{{ url('/home') }}" class="text-white mb-2 md:font--size-18 font--poppins">Home</a>
 					<a href="#" class="text-white mb-2 md:font--size-18 font--poppins">Career</a>
 					<a href="{{ url('contact-us') }}" class="text-white mb-2 md:font--size-18 font--poppins">Contact Us</a>
 					<!-- <a href="{{ url('our-clients') }}" class="text-white mb-2 md:font--size-18 font--poppins">Our Client</a> -->
