@@ -7,6 +7,7 @@
 	<title>Felicity</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
 	<link rel="stylesheet" href="{{asset('/css/app.css')}}">
 	<style>
         body {
