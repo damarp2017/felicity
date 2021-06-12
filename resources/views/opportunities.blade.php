@@ -38,7 +38,7 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
-				<div class="flex gap-x-4 items-center" style="margin-right: -54px">
+				<div class="flex gap-x-4 items-center md:-mr-54">
 					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
@@ -60,7 +60,8 @@
 				color: rgba(0, 0, 0, 0.45);">for world-class brands to make your products to live for world-class brands to make <br> your products to live for world-class brands to make your products to</div>
 			</div>
 	
-			<div class="grid grid-cols-2 md:flex md:flex-wrap gap-4 md:gap-0">
+			{{-- dekstop --}}
+			<div class="hidden md:flex md:flex-wrap gap-4 md:gap-0">
 				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mr--63 md:mb--55">
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
@@ -113,6 +114,74 @@
 				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mb--55">
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
+					</div>
+					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+						<div class="font--gilroy-bold">Paid Volunteer </div>
+						<div class="font--gilroy-reg">Time</div>
+					</div>
+				</div>
+			</div>
+
+			{{-- mobile --}}
+			<div class="grid md:hidden grid-cols-2  gap-4">
+				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;" >
+					<div class="flex items-center justify-center">
+						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
+					</div>
+					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+						<div class="font--gilroy-bold">Flexible</div>
+						<div class="font--gilroy-reg">Time Schedule</div>
+					</div>	
+				</div>
+
+				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
+					<div class="flex items-center justify-center">
+						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
+					</div>
+					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+						<div class="font--gilroy-bold">Learing and </div>
+						<div class="font--gilroy-reg">Development</div>
+					</div>
+				</div>
+
+				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
+					<div class="flex items-center justify-center">
+						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/love.png') }}" alt="">
+					</div>
+					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+						<div class="font--gilroy-bold">Generous Parental  </div>
+						<div class="font--gilroy-reg"><span class="font--gilroy-bold">and</span> Family Leaves</div>
+					</div>
+				</div>
+
+				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
+					<div class="flex items-center justify-center">
+						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
+					</div>
+					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+						<div class="font--gilroy-bold">Headspace</div>
+						<div class="font--gilroy-reg">Membership</div>
+					</div>
+				</div>
+				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
+					<div class="flex items-center justify-center">
+						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/book.png') }}" alt="">
+					</div>
+					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+						<div class="font--gilroy-bold">Book</div>
+						<div class="font--gilroy-reg">Reimbursements</div>
+					</div>
+				</div>
+
+				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
+					<div class="flex items-center justify-center">
+						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
 					</div>
 					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Paid Volunteer </div>
@@ -176,10 +245,9 @@
 				</div>
 
 				<div class="uppercase mb-6 md:mb--21 text-sm font--gilroy-md md:font--size-14 text--black-op-87">AVAILABLE POSITIONS</div>
-				<div class="grid grid-cols-1 md:flex md:flex-row mb-6 flex-wrap gap-6 md:gap-0"
-				style="margin-right: -59px;">
+				<div class="grid grid-cols-1 md:flex md:flex-row mb-6 flex-wrap gap-6 md:gap-0 md:-mr--59">
 					@for ($i = 0; $i < 6; $i++)
-					<div class="card-jobs bg-white mr--41 last:mr-0">
+					<div class="card-jobs-sm md:card-jobs bg-white md:mr--41 last:mr-0">
 						<div class="font-semibold mb-2 text-lg md:font--size-24 font--gilroy-bold">Senior UI/UX Designer</div>
 						<div class="mb-6 text--desc-jobs">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
 						<a href="" class="flex justify-end mt--17 mb--29">
@@ -190,7 +258,7 @@
 				</div>
 
 				<div class="flex justify-center">
-					<button class="bg--gradient-black rounded-full w-10 h-10 md:w--284 md:h--66 text-white md:font--size-20">Show More</button>
+					<button class="bg--gradient-black rounded-full w-40 h-14 md:w--284 md:h--66 text-white md:font--size-20">Show More</button>
 				</div>
 			</div>
 		</div>

@@ -4,9 +4,9 @@
 		@include('layouts.__navigation')
 		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
 		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 25% 0">
-			<div class="block md:hidden text-xl text-white uppercase">We design the</div>
+			<div class="block md:hidden text-lg text-white uppercase">We design the</div>
 			<div class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-150">Our Capabilities</div>
-			<div class="text-xl md:font--size-35 text-white mb-3 md:mb-11 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div>
+			<div class="text-lg md:font--size-35 text-white mb-3 md:mb-11 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div>
 			<div class="text-base md:font--size-22 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
 		</div>
 	</header>
@@ -81,8 +81,8 @@
 	
 	
 	<section  class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container pt-20">
-			<div class="w-full md:mb--140">
+		<div class="mx-4 md:app-container pt-0 md:pt-20">
+			<div class="w-full mb-3 md:mb--140">
 				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
 				<div class="text-base font--poppins md:font--size-17 w-full md:w-3/4 " 
 				style="
@@ -94,17 +94,17 @@
 
 			<form action="">
 				<div class="flex flex-col gap-y-4 md:gap-y-0 mb-5">
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Email Address" style="border-radius: 15px">
 					</div>
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Full Name" style="border-radius: 15px">
 					</div>
 
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Phone Number" style="border-radius: 15px">
 					</div>
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Reason to contact" style="border-radius: 15px">
 					</div>
 					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--pink"

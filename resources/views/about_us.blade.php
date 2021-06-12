@@ -81,7 +81,7 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
-				<div class="flex gap-x-4 items-center" style="margin-right: -54px">
+				<div class="flex gap-x-4 items-center md:-mr--54">
 					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
