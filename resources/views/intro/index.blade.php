@@ -34,7 +34,7 @@
 			width: 100vw;top:50%;transform:translateY(-50%);left: 0;
 		}
 		.vidcon.veri{
-			width: 100vw;top: 50%;transform:translateY(-50%);left: 0;
+			width: 100vw;top:0;left: 0;
 		}
 
 		.vidbg.hori{
@@ -49,7 +49,7 @@
 	    background: #842e257d;
 	    position: absolute;
 	    right: 28px;
-	    bottom: 50px;
+	    bottom: 80px;
 	    z-index: 200;
 	    width: 50px;
 	    height: 50px;
@@ -93,7 +93,7 @@
 		},1000);
 	
 </script>
-<div style="position: relative;text-align: center;overflow: hidden;height: 100vh;background: #d65244">
+<div style="position: relative;text-align: center;overflow: hidden;height: 100vh;background: #010001">
 	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;">
 	  <source src="" class="vidsource" type="video/mp4">
 	</video>
