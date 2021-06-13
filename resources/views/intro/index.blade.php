@@ -78,22 +78,32 @@
 	}
 	</style>	
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 <body>
-
+<div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;" class="bg--section" id="loading">
+	<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);display: none;" class="text-center logo" >
+		<img src="{{asset('images/logo/black.png')}}" style="max-width:100px;width: 30%;" class="mx-auto">
+	</div>
+</div>
+<script type="text/javascript">
+		setTimeout(function(){
+			$('.logo').fadeIn()
+		},1000);
+	
+</script>
 <div style="position: relative;text-align: center;overflow: hidden;height: 100vh;background: #d65244">
 	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;">
 	  <source src="" class="vidsource" type="video/mp4">
 	</video>
-	<video preload="none" class="vidbg video" muted="" style="position: absolute;z-index: 80;">
+	<!-- <video preload="none" class="vidbg video" muted="" style="position: absolute;z-index: 80;">
 	  <source src="" class="vidsource" type="video/mp4">
-	</video>
+	</video> -->
 	<div class="floating-action next text-center">
 	  <img src="{{ asset('images/icons/next.png') }}" alt="">
 	</div>
 </div>  
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	
     <script>
     	function reloadVideo(){
@@ -120,7 +130,6 @@
     		}
     		$('.vidcon, .vidbg').each(function(){
 					this.load();
-					this.play();
 				})
     	}
 
@@ -128,16 +137,26 @@
     		reloadVideo()
     	})
 
-      $(document).on('click', '.next', function () { 
-          window.location.href = "{{ url('/home') }}"
-       })
-      $(window).on('resize', function () { 
-      	reloadVideo();
-       })
+		$(document).on('click', '.next', function () { 
+		  window.location.href = "{{ url('/home') }}"
+		})
+		$(window).on('resize', function () { 
+			reloadVideo();
+		})
+
     	$('.vidcon, .vidbg')[0].onended = function() {
           window.location.href = "{{ url('/home') }}";
+		};
+		$('.vidcon, .vidbg')[0].addEventListener('loadeddata', function() {
+			setTimeout(function(){
+				$('#loading').fadeOut();
+					$('.vidcon, .vidbg')[0].play();	
+				// setTimeout(function(){
 
-			};
+				// },2000)
+			},3000)
+
+		}, false);
     </script>
 </body>
 </html>

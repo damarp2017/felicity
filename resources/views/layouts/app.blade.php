@@ -34,12 +34,90 @@
 
 </head>
 <body>
+	<div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;" class="bg--blue" id="loading">
+		<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);" class="text-center logo" >
+			<img src="{{asset('images/logo/logo.png')}}" style="max-width:100px;width: 30%;" class="mx-auto">
+		</div>
+	</div>
 	@yield('content')
 
 	@include('layouts.__footer')
 
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 	@stack('scripts')
+	<script type="text/javascript">
+		$('.space-item').each(function(){
+			width = $(this).parents('.space-area').width()/3;
+			$(this).css('min-width',width);
+		})
+		const sliders = document.querySelectorAll('.slider');
+		sliders.forEach(function(slider){
+			let isDown = false;
+			  let startX;
+			  let scrollLeft;
+			  slider.addEventListener('mousedown', (e) => {
+			  	console.log('aa')
+			    isDown = true;
+			    slider.classList.add('active');
+			    startX = e.pageX - slider.offsetLeft;
+			    scrollLeft = slider.scrollLeft;
+			    cancelMomentumTracking();
+			  });
+			  
+			  
+			  slider.addEventListener('mouseleave', () => {
+			    isDown = false;
+			    slider.classList.remove('active');
+			  });
+			  
+			  
+			  slider.addEventListener('mouseup', () => {
+			    isDown = false;
+			    slider.classList.remove('active');
+			    beginMomentumTracking();
+			  });
+			  
+			  
+			  slider.addEventListener('mousemove', (e) => {
+			    if(!isDown) return;
+			    e.preventDefault();
+			    const x = e.pageX - slider.offsetLeft;
+			    const walk = (x - startX) * 3; //scroll-fast
+			    var prevScrollLeft = slider.scrollLeft;
+			    slider.scrollLeft = scrollLeft - walk;
+			    velX = slider.scrollLeft - prevScrollLeft;
+			  });
+			  
+			  // Momentum 
+			  
+			  var velX = 0;
+			  var momentumID;
+			  
+			  slider.addEventListener('wheel', (e) => {
+			    cancelMomentumTracking();
+			  });  
+			  
+			  function beginMomentumTracking(){
+			    cancelMomentumTracking();
+			    momentumID = requestAnimationFrame(momentumLoop);
+			  }
+			  function cancelMomentumTracking(){
+			    cancelAnimationFrame(momentumID);
+			  }
+			  function momentumLoop(){
+			    slider.scrollLeft += velX;
+			    velX *= 0.95; 
+			    if (Math.abs(velX) > 0.5){
+			      momentumID = requestAnimationFrame(momentumLoop);
+			    }
+			  }	
+		})
+		setTimeout(function(){
+			$('#loading').fadeOut();
+		},500)
+		  
+	</script>
 </body>
 </html>

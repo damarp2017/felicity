@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative" style="background:#3B28C2">
+	<header class="w-full overflow-x-hidden bg--blue relative" style="background:#3B28C2">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
@@ -113,7 +113,7 @@
 				<div class="text--blue text-3xl md:font--size-52 font-bold">Our Capabilities</div>
 			</div>
 		</div>
-		<div class="flex overflow-x-auto pt-5" >
+		<div class="flex overflow-x-auto pt-5 slider" >
 			@php
 			$items = [
 				[
@@ -147,7 +147,7 @@
 			<div style="min-width: 100vw;">
 				<div class="block md:flex mx-4 md:app-container">
 					<div class="w-full md:w-1/2">
-						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/capabilities/'.$item['slug'].'.png') }}">
+						<img class="max-h-80 max-w-full" src="{{ asset('images/capabilities/'.$item['slug'].'.png') }}">
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="text-black text-3xl md:font--size-85 font-bold mb-4 md:mb-10">

@@ -1,11 +1,11 @@
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container ">
-			<div class="flex items-center justify-center mb--95">
+			<div class="flex  mb--95">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<div class="text--blue text-3xl md:font--size-39 font-bold">Values</div>
 			</div>
 		</div>
-		<div class="flex overflow-x-auto pt-5" >
+		<div class="flex overflow-x-auto pt-5 slider" >
 			@php
 				$items = [
 					[
@@ -44,7 +44,7 @@
 			<div style="min-width: 100vw;">
 				<div class="block md:flex mx-4 md:app-container">
 					<div class="w-full md:w-1/2">
-						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/opportunities/2.png') }}">
+						<img class="max-h-80 max-w-full" src="{{ asset('images/opportunities/2.png') }}">
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="mb-3 text-black ">

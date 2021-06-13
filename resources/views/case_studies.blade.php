@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <section class="bg-white pb-10">
-	<header class="w-full overflow-x-hidden bg--header-gradient">
+	<header class="w-full overflow-x-hidden bg--blue">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center md:-mt--49 py-48 md:p--20pc">

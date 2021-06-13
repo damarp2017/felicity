@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
+	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
@@ -67,7 +67,7 @@
 			<div style="min-width: 100vw;">
 				<div class="block md:flex mx-4 md:app-container">
 					<div class="w-full md:w-1/2">
-						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/opportunities/2.png') }}">
+						<img class="max-h-80 max-w-full" src="{{ asset('images/opportunities/2.png') }}">
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="mb-3 text-black ">
@@ -232,9 +232,6 @@
 
 @push('scripts')
 <script type="text/javascript">
-	$('.space-item').each(function(){
-		width = $(this).parents('.space-area').width()/3;
-		$(this).css('min-width',width);
-	})
+
 </script>
 @endpush

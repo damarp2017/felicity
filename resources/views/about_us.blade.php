@@ -1,11 +1,13 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative">
+	<header class="w-full overflow-x-hidden bg--blue relative">
 		@include('layouts.__navigation')
-		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 20% 0">
-			<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-150 mb-5 md:mb-0 text-center"> On a journey to take India to the world</div>
-			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">It is our constant endeavour to help businesses grow and evolve over time and to be able to achieve it, we want to work with people that synergise with the values that we strongly imbibe in every thing we do here at Felicity</div>
+		<div class="mx-4 md:app-container">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
+			<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 20% 0">
+				<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-100 mb-5 md:mb-0 text-center"> On a journey to take India to the world</div>
+				<div class="text-base md:font--size-22 text-white opacity-50 w-3/4">It is our constant endeavour to help businesses grow and evolve over time and to be able to achieve it, we want to work with people that synergise with the values that we strongly imbibe in every thing we do here at Felicity</div>
+			</div>
 		</div>
 	</header>
 
@@ -28,7 +30,7 @@
 
 				<div class="w-full md:w--636">
 					<div class="mb-3 text-black ">
-						<div class="text-3xl font-bold md:font--size-70 md:mb--27">Vision for the Company</div>
+						<div class="text-3xl font-bold md:font--size-67 md:mb--27" style="line-height:1">Vision for the Company</div>
 					</div>
 					<div class="text-base md:font--size-19 text--gray line--height-160 mb-4">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising.</div>
 				</div>
@@ -40,7 +42,7 @@
 				</div>
 				<div class="w-full md:w--632">
 					<div class="mb-3 text-black ">
-						<div class="text-3xl font-bold md:font--size-67 md:mb--27">Vision for the Team</div>
+						<div class="text-3xl font-bold md:font--size-67 md:mb--27" style="line-height:1">Vision for the Team</div>
 					</div>
 					<div class="text-base md:font--size-19 text--gray line--height-160 mb-4">We want to create world leaders who are willing to disrupt the Indian Advertising Industry and help our partners creatively share their products and services with the world.</div>
 				</div>

@@ -54,6 +54,19 @@
 	}
 }
 
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider{
+	 overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+          transition: all 0.2s;
+  cursor: grab;
+}
+.slider.active{
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
 .font--gilroy-md {
     font-family: Gilroy-Medium;
 }
@@ -99,7 +112,7 @@
 }
 
 .bg--section{
-	background: #FFF4F5;
+	background: #F9F9FF;
 }
 
 .bg--gradient-pink{

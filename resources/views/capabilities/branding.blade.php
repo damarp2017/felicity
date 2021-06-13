@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
+	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
@@ -28,7 +28,7 @@
 				<div class="text--blue text-3xl md:font--size-39 font-bold">Our Process</div>
 			</div>
 		</div>
-		<div class="flex overflow-x-auto pt-5" >
+		<div class="flex overflow-x-auto pt-5 slider" >
 			@php
 				$items = [
 					[
@@ -44,7 +44,7 @@
 					[
 						'no'=>'03',
 						'title'=>'Identify The Differentiators',
-						'desc'=>We then start looking for differentiators or traits that set your company apart from similar competitors. Three conditions we pay attention to: It has to be correct. It has to be relevant to your audience. It has to be demonstrable."
+						'desc'=>"We then start looking for differentiators or traits that set your company apart from similar competitors. Three conditions we pay attention to: It has to be correct. It has to be relevant to your audience. It has to be demonstrable."
 					],
 					[
 						'no'=>'04',
@@ -53,7 +53,7 @@
 					],
 					[
 						'no'=>'05',
-						'title'=>'Contextualize Messaging',
+						'title'=>'Designing The Guidelines',
 						'desc'=>"The final step is defining the Brand Guidelines that outline how the brand is put together and mention what is and isn't permitted. These standards can be extensive, specifying how the brand should be applied in every circumstance, or they can be kept basic, allowing for variation and exploration."
 					],
 				]
@@ -62,7 +62,7 @@
 			<div style="min-width: 100vw;">
 				<div class="block md:flex mx-4 md:app-container">
 					<div class="w-full md:w-1/2">
-						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/opportunities/2.png') }}">
+						<img class="max-h-80 max-w-full" src="{{ asset('images/opportunities/2.png') }}">
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="mb-3 text-black ">
@@ -140,11 +140,11 @@
 		];
 		@endphp
 		<div class="relative mx-10">
-			<div class="mx-0 md:mx-10 space-area">
-				<div class="block md:flex">
+			<div class="mx-0 md:mx-10 space-area ">
+				<div class="block md:flex slider overflow-x-auto" >
 					
 					@foreach($items as $item)
-					<div class="space-item">
+					<div class="space-item" style="min-width:50vw;">
 						<div class="border-b md:border-b-0 border-r-0 md:border-r border-gray-200 px-5 py-10">
 							<div class="flex justify-center items-start py-10">
 								<img  src="{{ asset('images/utilities/'.$item['slug'].'.png') }}" alt="">
@@ -242,9 +242,6 @@
 
 @push('scripts')
 <script type="text/javascript">
-	$('.space-item').each(function(){
-		width = $(this).parents('.space-area').width()/3;
-		$(this).css('min-width',width);
-	})
+	
 </script>
 @endpush
