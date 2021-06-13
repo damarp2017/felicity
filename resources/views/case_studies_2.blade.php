@@ -2,7 +2,7 @@
 @section('content')
 	@include('layouts.__navigation_light')
 
-	<section class="bg-white w-full overflow-x-hidden pt-5 py-10">
+	<section class="bg-white w-full overflow-x-hidden pt-20 md:pt-5 py-10">
 		<div class="mx-0 md:mx-5">
 			<div class="bg-gray-200 rounded-xl w-full mb-20" style="height: 3732px"></div>
 

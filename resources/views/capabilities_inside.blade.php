@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
@@ -50,7 +50,7 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
-				<div class="flex gap-x-4 items-center" style="margin-right: -54px">
+				<div class="flex gap-x-4 items-center md:-mr-54" >
 					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
@@ -117,7 +117,7 @@
 
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:container--case-studies pt-20">
+		<div class="mx-4 md:container--case-studies pt-0 md:pt-20">
 			<div class="flex mb-4 md:mb--89 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-75 font-semibold">Case Studies</div>
 				<div class="text-base md:font--size-22 line--height-160 text--gray">
@@ -142,7 +142,7 @@
 	</section>
 
 	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container pt-20">
+		<div class="mx-4 md:app-container pt-0 md:pt-20">
 			<div class="w-full md:mb--140">
 				<div class="text-3xl md:font--size-65 font-semibold mb-4 md:mb-10">Work with us for a <span class="text--blue">Project ?</span></div>
 				<div class="text-base font--poppins md:font--size-17 w-full md:w-3/4 " 
@@ -155,17 +155,17 @@
 
 			<form action="">
 				<div class="flex flex-col gap-y-4 md:gap-y-0 mb-5">
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Email Address" style="border-radius: 15px">
 					</div>
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Full Name" style="border-radius: 15px">
 					</div>
 
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Phone Number" style="border-radius: 15px">
 					</div>
-					<div class="mb--43">
+					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Reason to contact" style="border-radius: 15px">
 					</div>
 					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--blue"

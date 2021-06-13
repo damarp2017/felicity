@@ -258,9 +258,9 @@
 		margin-bottom: 20px;
 	}
 
-	.card-jobs{
-		margin-bottom: 49px;
-		width : 337px;
+	.card-jobs-sm{
+		margin-bottom: 10px;
+		width : 100%;
 		height : 274px;
 		border-radius: 8px;
 		padding : 31px 25px 74px 42px;
@@ -279,6 +279,46 @@
 		border-radius: 15px;
 	}
 
+	.height--950{
+		height: 950px;
+	}
+
+	.height--50vh{
+		height: 50vh;
+	}
+
+	.line--height-88c84{
+		line-height: 88.84%;
+	}
+	
+	.line--height-107c84{
+		line-height: 107.84%;
+	}
+
+	.line--height-97{
+		line-height: 97%;
+	}
+
+	.line--height-99c34{
+		line-height: 99.34%;
+	}
+
+	.line--height-105c8{
+		line-height: 105.8%;
+	}
+
+	.line--height-160{
+		line-height: 160%;
+	}
+
+	.line--height-190c3{
+		line-height: 190.3%;
+	}
+	
+	.line--height-124c34{
+		line-height: 124.34%;
+	}
+
 	@variants responsive {
 		.card--insights{
 			width: 384px;
@@ -287,6 +327,20 @@
 			border-radius: 23px;
 			padding: 21px 18px 40px 16px;
 			margin-right: 52px;
+		}
+
+		.card-jobs{
+			margin-bottom: 49px;
+			width : 337px;
+			height : 274px;
+			border-radius: 8px;
+			padding : 31px 25px 74px 42px;
+		}
+
+		.text--we-design-the{
+			line-height: .3;
+			transform: translateY(10px);
+			letter-spacing: 3px;
 		}
 
 
@@ -760,10 +814,17 @@
 		}
 
 		/* negative margin top */
-
+		.-mr--49{
+			margin-right: -49px
+		}
 		/* negative margin bottom */
 
 		/* negative margin right */
+
+
+		.-mr--13{
+			margin-right: -13px
+		}
 
 		.-mr--26{
 			margin-right: -26px
@@ -773,8 +834,16 @@
 			margin-right: -27px
 		}
 
-		.-mr--13{
-			margin-right: -113px
+		.-mr--49{
+			margin-right: -49px
+		}
+
+		.-mr--54{
+			margin-right: -54px
+		}
+
+		.-mr--59{
+			margin-right: -59px
 		}
 
 		
@@ -789,6 +858,7 @@
 		.p--34{
 			padding: 34px;
 		}
+		
 		/* padding x */
 
 		.px--26{
@@ -811,6 +881,11 @@
 		}
 
 		/* padding y */
+		.py--20pc{
+			padding-top: 20%;
+			padding-bottom: 20%;
+		}
+
 		.py--12{
 			padding-top: 12px;
 			padding-bottom: 12px;

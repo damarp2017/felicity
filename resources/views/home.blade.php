@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative " style="background:#3B28C2">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative" style="background:#3B28C2">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
 			<div class="mx-4 md:app-container">
-				<div class="md:font--size-24 text-xl text-white uppercase text-center mb-1 md:mb-0" style="transform: translateY(10px);letter-spacing: 3px">We design the</div>
+				<div class="md:font--size-24 text-lg text-white uppercase text-center mb-1 md:mb-0 md:text--we-design-the">We design the</div>
 				<div class="text-white font-semibold text-8xl md:line--height-90 md:font--size-190 text-center"> Future</div>
 				<div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div>
 				<div class="md:font--size-20  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div>
@@ -168,7 +168,7 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
-				<div class="flex gap-x-4  items-center" >
+				<div class="flex gap-x-4 items-center" >
 					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
@@ -181,15 +181,15 @@
 	</section>
 
 	<section class="bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
-		<div class="mx-4 md:app-container pt-20">
+		<div class="mx-4 md:app-container pt-0 md:pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-5 text-3xl md:font--size-85 font-semibold md:line--height-99c34">Your Brand Is In Good Hands</div>
 				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">The team that brings your ideas to life.</div>
 			</div>
 		</div>
 		<div>
-			<div style="max-width: 100%" class="px-20 pb-10 overflow-x-auto">
-				<div class="grid -mr-4 md:-mr-36 grid-flow-col auto-cols-max gap-x-20 ">
+			<div style="max-width: 100%" class="px-4 md:px-20 pb-10 overflow-x-auto">
+				<div class="grid -mr-4 md:-mr-36 grid-flow-col auto-cols-max gap-x-10 ">
 					<div class="w-full">
 						<img class="mb-4 h-48 md:h-96" src="{{ asset('images/person/1.png') }}" alt="">
 						<div class="text--color-team md:font--size-30 font--gilroy-bold" style="margin-bottom: -5px">Bruce Wayne</div>
@@ -223,10 +223,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg--section py-10 py-20 w-full">
+
+	<section class="bg--section py-10 md:py-20 w-full">
 		<div class="mx-4 md:app-container">
-			<div class="flex">
-				<div class="px-5 w-1/2">
+			<div class="flex flex-col md:flex-row gap-y-4 md:gap-y-0">
+				<div class="px-0 md:px-5 md:w-1/2">
 					<div class="px-10 py-20 bg--blue rounded-xl">
 						<div class="text-white text-3xl md:font--size-65 mb-10">Insight </div>
 						<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
@@ -235,7 +236,7 @@
 						<a href="//medium.com/@felicitymedia" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See More Insight</a>
 					</div>
 				</div>
-				<div class="px-5 w-1/2">
+				<div class="px-0 md:px-5 md:w-1/2">
 					<div class="px-10 py-20 bg--blue rounded-xl">
 						<div class="text-white text-3xl md:font--size-65 mb-10">Case Studies </div>
 						<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
@@ -279,7 +280,7 @@
 	</section>
 
 	<section class="bg--gray-light w-full overflow-x-hidden  py-10 md:py-20">
-		<div class="mx-4 md:app-container md:-mr--113 w-full">
+		<div class="mx-4 md:app-container md:-mr--113 md:w-full">
 			<div class="flex flex-col md:flex-row items-center w-full">
 				<div class="w-full md:w-1/2 mr-0 mb-3 md:mb-0">
 					<div class="w-10/12">
@@ -289,7 +290,7 @@
 					</div>
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="grid md:grid-flow-col md:auto-cols-max mr-0 ">
+					<div class="grid md:grid-flow-col md:auto-cols-max md:mr-0 ">
 						@for ($i = 0; $i < 2; $i++)
 							<div class="card--insights-sm md:card--insights shadow-2xl">
 								<img class="mb-4 h-64 w-full object-cover object-center rounded" src="{{ asset('images/home/insights.png') }}">

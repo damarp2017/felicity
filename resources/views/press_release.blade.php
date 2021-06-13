@@ -4,7 +4,7 @@
 
 	<section class="bg-white w-full overflow-x-hidden py-20 md:pb-10 md:pt--224">
 		<div class="mx-4 md:app-container">
-			<div class="mb-24 md:mb--120">
+			<div class="mb-10 md:mb--120">
 				<div class="mb-3 md:mb-10 font-semibold text-3xl md:font--size-65">Press Release</div>
 				<div class="text-base text--typography md:font--size-17"
 				style="color: rgba(55, 55, 55, 0.46);opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>

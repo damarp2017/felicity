@@ -4,7 +4,7 @@
 	<header class="w-full overflow-x-hidden bg--header-gradient">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0; margin-top: -49px;">
+		<div class="flex flex-col h-full justify-center items-center md:-mt--49 py-48 md:p--20pc">
 			<div class="text-white font-semibold text-5xl md:font--size-100 mb-5 md:line--height-97 text-center"> Case Studies</div>
 			<div class="text-base md:font--size-22 mb-5 md:mb-0 text-center text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam
 				elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
@@ -42,7 +42,7 @@
 
 
 <section  class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-	<div class="mx-4 md:app-container pt-20">
+	<div class="mx-4 md:app-container pt-0 md:pt-20">
 		<div class="w-full md:mb--140">
 			<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea ?</div>
 			<div class="text-base font--poppins md:font--size-17 w-full md:w-3/4 " 
@@ -55,17 +55,17 @@
 
 		<form action="">
 			<div class="flex flex-col gap-y-4 md:gap-y-0 mb-5">
-				<div class="mb--43">
+				<div class=" mb-1 md:b--43">
 					<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Email Address" style="border-radius: 15px">
 				</div>
-				<div class="mb--43">
+				<div class=" mb-1 md:b--43">
 					<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Full Name" style="border-radius: 15px">
 				</div>
 
-				<div class="mb--43">
+				<div class=" mb-1 md:b--43">
 					<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Phone Number" style="border-radius: 15px">
 				</div>
-				<div class="mb--43">
+				<div class=" mb-1 md:b--43">
 					<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Reason to contact" style="border-radius: 15px">
 				</div>
 				<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--blue"
