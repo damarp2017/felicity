@@ -4,8 +4,8 @@
 		@include('layouts.__navigation')
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-			<div class="flex flex-col h-screen justify-center items-center" >
-				<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking <br/>India to the world</div>
+			<div class="flex flex-col h-96 md:h-screen justify-center items-center" >
+				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking <br/>India to the world</h1>
 				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
@@ -13,10 +13,10 @@
 
 	@include('components.values-section')
 
-	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20">
+	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:ml--68 md:mr--94 " >
-			<div class="flex flex-col items-center justify-center text-center mb-20">
-				<div class="text-3xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Small initiatives to make your life <span class="text--blue">better</span>.</div>
+			<div class="flex flex-col items-center justify-center text-center md:mb-20">
+				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Small initiatives to make your life <span class="text--blue">better</span>.</div>
 				<!-- <div class="text-base md:font--size-18 font--poppins "
 				style="letter-spacing: 0.02em;
 				line-height: 185.3%;
@@ -24,74 +24,74 @@
 			</div>
 	
 			{{-- dekstop --}}
-			<div class="hidden md:flex md:flex-wrap justify-between">
-				<div class=" w-1/3  px-10 py-5">
-					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+			<div class="flex flex-wrap justify-between -mx-1">
+				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
-							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
+							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
 						</div>
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font--gilroy-bold">Flexible</div>
-							<div class="font--gilroy-reg">Time Schedule</div>
+							<div class="font-bold">Flexible</div>
+							<div >Time Schedule</div>
 						</div>	
 					</div>
 				</div>
 
-				<div class=" w-1/3  px-10 py-5">
-					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
-							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
+							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
 						</div>
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font--gilroy-bold">Learning and </div>
-							<div class="font--gilroy-reg">Development</div>
+							<div class="font-bold">Learning and </div>
+							<div >Development</div>
 						</div>
 					</div>
 				</div>
 
-				<div class=" w-1/3 px-10 py-5">
-					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
-							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/love.png') }}" alt="">
+							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/love.png') }}" alt="">
 						</div>
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font--gilroy-bold">Generous Parental  </div>
-							<div class="font--gilroy-reg"><span class="font--gilroy-bold">and</span> Family Leaves</div>
+							<div class="font-bold">Generous Parental  </div>
+							<div ><span class="font-bold">and</span> Family Leaves</div>
 						</div>
 					</div>
 				</div>
 
-				<div class=" w-1/3  px-10 py-5">
-					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
-							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
+							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
 						</div>
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font--gilroy-bold">Headspace</div>
-							<div class="font--gilroy-reg">Membership</div>
+							<div class="font-bold">Headspace</div>
+							<div >Membership</div>
 						</div>
 					</div>
 				</div>
-				<div class=" w-1/3  px-10 py-5">
-					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
-							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/book.png') }}" alt="">
+							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/book.png') }}" alt="">
 						</div>
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font--gilroy-bold">Book</div>
-							<div class="font--gilroy-reg">Reimbursements</div>
+							<div class="font-bold">Book</div>
+							<div >Reimbursements</div>
 						</div>
 					</div>
 				</div>
 
-				<div class=" w-1/3 px-10 py-5">
-					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+				<div class="w-1/2 md:w-1/3 px-2 py-2 md:px-10 md:py-5">
+					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
-							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/time.png') }}" alt="">
+							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/time.png') }}" alt="">
 						</div>
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font--gilroy-bold">Paid Volunteer </div>
-							<div class="font--gilroy-reg">Time</div>
+							<div class="font-bold">Paid Volunteer </div>
+							<div >Time</div>
 						</div>
 					</div>
 				</div>
@@ -174,19 +174,16 @@
 					<img class="w-full" src="{{ asset('images/opportunities/1.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="mb-7 font-semibold text-2xl md:font--size-38">Why should you work with us?</div>
+					<h2 class="mb-2 md:mb-10 font-semibold text-2xl md:font--size-38">Why should you work with us?</h2>
 					<div class="text--gray line--height-160 text-base md:font--size-20 w-full">Our vision is simple, yet powerful - Take India to the World. We know the immense talent India has to offer and we want to partner with individuals that share and feel strongly about where we are headed as a company. It takes courage and discipline to break through and create something that represents us at a global level. We are up for the challenge. Are you?</div>
 				</div>
 			</div>	
-		</div>
-
-		<div class="mx-4 md:app-container">
-			<div class="block md:flex items-center justify-between mb-20">
+			<div class="block md:flex items-center justify-between ">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
-					<div class="mb-7 font-semibold text-2xl md:font--size-38">Work with a team of amazing individuals</div>
+					<h2 class="mb-2 md:mb-10 font-semibold text-2xl md:font--size-38">Work with a team of amazing individuals</h2>
 					<div class="text--gray line--height-160 text-base md:font--size-20 w-full">Being a service business, we realize how important it is to assemble a team that pushes the boundaries of what seems possible. We are creating a team that thinks beyond budgets and timelines. A team that understands the power of ideas and how their contributions can change the way people perceive things. And as the saying goes - with great power comes great responsibility, every team member at Felicity is helping each other become better, and do better.</div>
 				</div>
 				<div class="hidden md:block w-full md:w-1/2">
@@ -199,7 +196,7 @@
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="mb-0 md:mb--51">
-				<div class="text-3xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Purpose driven team on a  <br> <span class="text--blue">global mission</span> </div>
+				<h2 class="text-2xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Purpose driven team on a  <br> <span class="text--blue">global mission</span> </h2>
 				<div class=" text-base md:font--size-20 text--gray line--height-160">(No open positions currently. Check again later.)</div>
 			</div>
 

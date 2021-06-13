@@ -4,10 +4,10 @@
 	@include('layouts.__navigation')
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-			<div class="flex flex-col h-screen justify-center items-center text-center">
+			<div class="flex flex-col h-96 md:h-screen justify-center items-center text-center">
 				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
 				
-				<div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65 text-white">Say hello </div>
+				<h2 class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65 text-white">Say hello </h2>
 				<!-- <div class="text-base md:font--size-20 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>

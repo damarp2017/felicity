@@ -5,13 +5,13 @@
 	<section class="bg-white w-full overflow-x-hidden py-20 md:py-10">
 		<div class="mx-4 md:app-container pt-20">
 			<div class="mb-10">
-				<div class="mb-3 md:mb-8 font-semibold text-4xl md:font--size-55 font--gilroy-bold">Terms and Conditions</div>
+				<h1 class="mb-3 md:mb-8 font-semibold text-4xl md:font--size-55 font--gilroy-bold">Terms and Conditions</h1>
 				<!-- <div class="text--typography text-base md:font--size-18">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
 			</div>
 
 			<div>
 
-				<div class="text--typography text-md mb-10 md:font--size-18">
+				<div class="text--typography text-sm mb-10 md:font--size-18">
 					Welcome to Felicity!
 					<br/>
 					These terms and conditions outline the rules and regulations for the use of Felicity Media Private Limited's Website, located at <a class="text--blue" href="//www.felicitymedia.in">www.felicitymedia.in</a>.

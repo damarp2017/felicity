@@ -7,20 +7,20 @@
 		<div class="flex items-center">
 			
 			@if (request()->is('insights') || request()->is('case-studies') || request()->is('our-clients'))
-			<a href="{{ url('capabilities') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Capabilities </a>
-			<a href="{{ url('opportunities') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-			<a href="//www.behance.net/felicityhq" target="_blank"class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Case Studies </a>
+			<a href="{{ url('capabilities') }}" class="navlink mr--32 text-white  font--size-15"> Capabilities </a>
+			<a href="{{ url('opportunities') }}" class="navlink mr--32 text-white  font--size-15"> Opportunities </a>
+			<a href="//www.behance.net/felicityhq" target="_blank"class="navlink mr--32 text-white  font--size-15"> Case Studies </a>
 
-			<!-- <a href="{{ url('insights') }}" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Insights </a> -->
-			<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--32 text-white hover:text-gray-200 font--size-15"> Insights </a>
-				<a href="{{ url('contact-us') }}" class="navlink mr--26 text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+			<!-- <a href="{{ url('insights') }}" class="navlink mr--32 text-white  font--size-15"> Insights </a> -->
+			<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--32 text-white  font--size-15"> Insights </a>
+				<a href="{{ url('contact-us') }}" class="navlink mr--26 text-white  font--size-15"> Contact Us </a>
 			@else
-				<a href="{{ url('capabilities') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Capabilities </a>
-				<a href="{{ url('opportunities') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-				<a href="//www.behance.net/felicityhq" target="_blank" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-				<!-- <a href="{{ url('insights') }}" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Insights </a> -->
-				<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--40 text-white hover:text-gray-200 font--size-15"> Insights </a>
-				<a href="{{ url('contact-us') }}" class="navlink mr--38 text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+				<a href="{{ url('capabilities') }}" class="navlink mr--40 text-white  font--size-15"> Capabilities </a>
+				<a href="{{ url('opportunities') }}" class="navlink mr--40 text-white  font--size-15"> Opportunities </a>
+				<a href="//www.behance.net/felicityhq" target="_blank" class="navlink mr--40 text-white  font--size-15"> Case Studies </a>
+				<!-- <a href="{{ url('insights') }}" class="navlink mr--40 text-white  font--size-15"> Insights </a> -->
+				<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--40 text-white  font--size-15"> Insights </a>
+				<a href="{{ url('contact-us') }}" class="navlink mr--38 text-white  font--size-15"> Contact Us </a>
 
 				<a href="//calendly.com/felicityhq/hello" target="_blank" class="bg-white py-4 px-8 rounded-full text--blue font--size-15 font-bold">
 					Book A Free Consultation Call
@@ -31,7 +31,7 @@
 </nav>
 
 <div x-data="{ open: false }">
-	<nav :class="{ 'bg--blue': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
+	<nav :class="{ 'bg--blue': open,'h-screen': open }" class="navbar-mobile block md:hidden fixed px-4 md:px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
 			<a href="{{ url('/home') }}">
 				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png?new') }}">
@@ -46,14 +46,17 @@
 			</button>
 		</div>
 		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out pb-5" >
+			<a href="{{ url('home') }}" class="block text-white hover:text-gray-800 text-lg"> Home </a>
 			<a href="{{ url('capabilities') }}" class="block text-white hover:text-gray-800 text-lg"> Capabilities </a>
 			<a href="{{ url('opportunities') }}" class="block text-white hover:text-gray-800 text-lg"> Opportunities </a>
 			<a href="//www.behance.net/felicityhq" target="_blank" class="block text-white hover:text-gray-800 text-lg"> Case Studies </a>
 			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-white hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-white hover:text-gray-800 text-lg"> Contact Us </a>
-			<a href="//calendly.com/felicityhq/hello" target="_blank" class="flex justify-center items-center w-72 bg-white py-3 px-2 text-lg rounded-full text--blue font-bold">
+			<div class="flex justify-center items-center">
+				<a href="//calendly.com/felicityhq/hello" target="_blank" class="flex justify-center items-center w-72 bg-white py-3 px-2 rounded-full text--blue font-bold">
 				Book A Free Consultation Call
 			</a>
+			</div>
 		</div>
 	</nav>
 </div>
@@ -101,7 +104,7 @@
 		// 	// navbar.classList.add('shadow-lg');
 
 		// 	Array.from(navlinks).forEach((navlink, index) => {
-		// 		navlink.classList.remove('text-white', 'hover:text-gray-200');
+		// 		navlink.classList.remove('text-white', '');
 		// 	});
 
 		// 	Array.from(logoWhite).forEach((logo, index) => {
@@ -116,7 +119,7 @@
 		// 	// navbar.classList.remove('shadow-lg');
 
 		// 	Array.from(navlinks).forEach((navlink, index) => {
-		// 		navlink.classList.add('text-white', 'hover:text-gray-200');
+		// 		navlink.classList.add('text-white', '');
 		// 	});
 
 		// 	Array.from(logoWhite).forEach((logo, index) => {
@@ -137,11 +140,11 @@
 		<img class="logo-black hidden h-8" src="{{ asset('images/logo/black.png?new') }}">
 	</a>
 	<div class="flex gap-x-10 items-center">
-		<a href="#" class="navlink text-white hover:text-gray-200 font--size-15"> Our Process </a>
-		<a href="{{ url('opportunities') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Opportunities </a>
-		<a href="//www.behance.net/felicityhq" target="_blank" class="navlink text-white hover:text-gray-200 font--size-15"> Case Studies </a>
-		<a href="//medium.com/@felicitymedia" target="_blank" class="navlink text-white hover:text-gray-200 font--size-15"> Insights </a>
-		<a href="{{ url('contact-us') }}" class="navlink text-white hover:text-gray-200 font--size-15"> Contact Us </a>
+		<a href="#" class="navlink text-white  font--size-15"> Our Process </a>
+		<a href="{{ url('opportunities') }}" class="navlink text-white  font--size-15"> Opportunities </a>
+		<a href="//www.behance.net/felicityhq" target="_blank" class="navlink text-white  font--size-15"> Case Studies </a>
+		<a href="//medium.com/@felicitymedia" target="_blank" class="navlink text-white  font--size-15"> Insights </a>
+		<a href="{{ url('contact-us') }}" class="navlink text-white  font--size-15"> Contact Us </a>
 		<a href="//calendly.com/felicityhq/hello" target="_blank" class="bg--gradient-black py-3 px-8 rounded-full text-white font--size-15">
 			Book A Free Consultation Call
 		</a>
@@ -189,7 +192,7 @@
 			navbar.classList.add('bg-white');
 			navbar.classList.add('shadow-lg');
 			Array.from(navlinks).forEach((navlink, index) => {
-				navlink.classList.remove('text-white', 'hover:text-gray-200');
+				navlink.classList.remove('text-white', '');
 			});
 			Array.from(logoWhite).forEach((logo, index) => {
 				logo.classList.add('hidden')
@@ -202,7 +205,7 @@
 			navbar.classList.remove('bg-white');
 			navbar.classList.remove('shadow-lg');
 			Array.from(navlinks).forEach((navlink, index) => {
-				navlink.classList.add('text-white', 'hover:text-gray-200');
+				navlink.classList.add('text-white', '');
 			});
 			Array.from(logoWhite).forEach((logo, index) => {
 				logo.classList.remove('hidden')

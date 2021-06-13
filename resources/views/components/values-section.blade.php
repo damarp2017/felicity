@@ -2,7 +2,7 @@
 		<div class="mx-4 md:app-container ">
 			<div class="flex ">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
-				<div class="text--blue text-3xl md:font--size-39 font-bold">Our Values</div>
+				<h1 class="text--blue text-3xl md:font--size-39 font-bold">Our Values</h1>
 			</div>
 		</div>
 		<div class="flex overflow-x-auto pt-5 slider" id="values-slider">
@@ -44,7 +44,7 @@
 			<div style="min-width: 100vw;">
 				<div class="block md:flex mx-4 md:app-container">
 					<div class="w-full md:w-1/2">
-						<img class="max-h-80 max-w-full" src="{{ asset('images/opportunities/2.png') }}">
+						<img class="max-h-80 max-w-full" src="{{ asset('images/values/'.$item['no'].'.png') }}">
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="mb-3 text-black ">
@@ -52,7 +52,7 @@
 								<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
 								<div class="w-48"><hr></div>
 							</div>
-							<div class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</div>
+							<h2 class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</h2>
 						</div>
 						<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
 					</div>

@@ -22,6 +22,7 @@
 					<a target="_blank" href="//instagram.com/felicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Instagram</a>
 					<a target="_blank" href="//fb.com/felicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Facebook</a>
 					<a target="_blank" href="//twitter.com/felicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Twitter</a>
+					<a target="_blank" href="//twitter.com/felicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Linkedin</a>
 				</div>
 				<div class="flex flex-col mb-8 md:mb-0">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">About</div>

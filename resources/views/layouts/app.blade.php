@@ -8,8 +8,11 @@
 	<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<link href="https://db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
 	<style>
+
         body {
             font-family: 'Kollektif', sans-serif;
         }
@@ -29,9 +32,11 @@
 		}
 		.navbar{
 			transition: all 200ms;
+		    border-bottom-left-radius: 20px;
+		    border-bottom-right-radius: 20px;
 		}
 		.navbar-mobile{
-
+			transition: all 200ms;
 		    border-bottom-left-radius: 20px;
 		    border-bottom-right-radius: 20px;
 		}
@@ -62,7 +67,11 @@
 		}*/
     </style>
 	<link rel="stylesheet" href="{{asset('/css/app.css?new')}}">
-	
+	<style type="text/css">
+		h1,h2{
+			font-family: "Source Serif Pro";
+		}
+	</style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	
 
@@ -84,6 +93,10 @@
 	<script type="text/javascript">
 		$('.space-item').each(function(){
 			width = $(this).parents('.space-area').width()/3;
+			$(this).css('min-width',width);
+		})
+		$('.space-item-1').each(function(){
+			width = $(this).parents('.space-area').width();
 			$(this).css('min-width',width);
 		})
 		const sliders = document.querySelectorAll('.slider');
@@ -115,10 +128,38 @@
 			  });
 			  
 			  
-			  slider.addEventListener('mouseup', () => {
+			  slider.addEventListener('mouseup', (e) => {
+			    beginMomentumTracking();
+				let pagesTotal=Math.ceil(slider.scrollWidth/slider.offsetWidth);
 			    isDown = false;
 			    slider.classList.remove('active');
-			    beginMomentumTracking();
+			    p=(slider.scrollLeft/slider.offsetWidth);
+			    endX =  e.pageX - slider.offsetLeft;
+			    posX = (startX-endX);
+			    if(posX>0){
+			    	if((endX/slider.offsetWidth)>0.25){
+				    	p = Math.ceil(p);
+				    }
+			    }else{
+			    	if((Math.abs(endX)/slider.offsetWidth)>0.25){
+				    	p = Math.floor(p);
+				    }
+			    }
+			    newP=p*slider.offsetWidth;
+			    function animate(){
+			    	if(slider.scrollLeft<newP){
+				    	slider.scrollLeft+=10;
+				    	if(slider.scrollLeft<=newP){
+				    		momentumID = requestAnimationFrame(animate);
+				    	}
+				    }else{
+				    	slider.scrollLeft-=10;
+				    	if(slider.scrollLeft>=newP){
+				    		momentumID = requestAnimationFrame(animate);
+				    	}
+				    }
+			   	}
+			   	requestAnimationFrame(animate);
 			  });
 			  
 			  
@@ -126,7 +167,7 @@
 			    if(!isDown) return;
 			    e.preventDefault();
 			    const x = e.pageX - slider.offsetLeft;
-			    const walk = (x - startX) * 3; //scroll-fast
+			    const walk = (x - startX) ; //scroll-fast
 			    var prevScrollLeft = slider.scrollLeft;
 			    slider.scrollLeft = scrollLeft - walk;
 			    velX = slider.scrollLeft - prevScrollLeft;
@@ -167,7 +208,7 @@
 				// console.log($(target));
 				width = $(target).width();
 				scroll = $(target).scrollLeft();
-				if(action=='next'){
+				if(action=='prev'){
 					$(target).animate({
 						scrollLeft:scroll-width
 					});

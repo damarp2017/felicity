@@ -14,20 +14,20 @@
 		</div>
 	</header>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--157">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
-			<div class="block md:flex mb-10 flex-col">
-				<div class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</div>
+			<div class="block md:flex flex-col">
+				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</h2>
 				<div class="text-base md:font--size-20 line--height-160 text--grey-transparent">You had an idea that you brought to life after putting hours and hours of effort into honing the product that truly benefits the customer and solves a problem. Now, It’s time for you to share it with the world and you need a partner that can help you do that. At Felicity, we understand the power of ideas but, we also understand that to succeed, efforts need a powerful push in the right direction. We help businesses with holistic marketing strategies to capitalize and win in this competitive marketplace. We know that when it comes to marketing, there is no one-size-fits-all.</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
+	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container ">
-			<div class="flex  mb--95">
+			<div class="flex  mb-20">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
-				<div class="text--blue text-3xl md:font--size-39 font-bold">Our Process</div>
+				<h2 class="text--blue text-3xl md:font--size-39 font-bold">Our Process</h2>
 			</div>
 		</div>
 			@php
@@ -118,7 +118,7 @@
 	<section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--171">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<div class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</div>
+				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</h2>
 				<!-- <div class="text-base md:font--size-20 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
 			</div>
 		</div>
@@ -186,17 +186,7 @@
 		</div>
 	</section>
 
-	<section class="bg--section py-20">
-		<div class="mx-4 md:app-container">
-			<div class="px-10 py-20 bg--blue rounded-xl">
-				<div class="text-white text-3xl md:font--size-65 mb-10">Case Studies </div>
-				<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
-					Our work that can be measured in business impact.
-				</div>
-				<a href="//www.behance.net/felicityhq" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See Our Work</a>
-			</div>
-		</div>
-	</section>
+	@include('components.case-studies-insights-section')
 	<!-- <section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:container--case-studies pt-20">
 			<div class="flex mb-4 md:mb--89 flex-col">
