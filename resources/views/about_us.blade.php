@@ -5,7 +5,7 @@
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-96 md:h-screen justify-center items-center text-center" >
-				<h1 class="text-white font-semibold text-5xl md:line--height-97 md:font--size-100 mb-5 md:mb-0 text-center"> On a journey to take India to the world</h1>
+				<h1 class="text-white font-semibold text-4xl md:line--height-97 md:font--size-100 mb-5 md:mb-0 text-center"> On a journey to take India to the world</h1>
 				<!-- <div class="text-sm md:font--size-20 text-white opacity-50 w-3/4"></div> -->
 			</div>
 		</div>
@@ -89,7 +89,7 @@
 	</section>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container pt-20">
+		<div class="mx-4 md:app-container md:pt-20">
 			<div class="block md:flex items-center">
 				<div class="w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">

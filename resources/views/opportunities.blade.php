@@ -169,7 +169,7 @@
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
-			<div class="block md:flex items-center justify-between mb-20">
+			<div class="block md:flex items-center justify-between mb-5 md:mb-20">
 				<div class="w-full md:w-1/2 md:mr--84">
 					<img class="w-full" src="{{ asset('images/opportunities/1.png') }}" alt="">
 				</div>
@@ -178,7 +178,7 @@
 					<div class="text--gray line--height-160 text-base md:font--size-20 w-full">Our vision is simple, yet powerful - Take India to the World. We know the immense talent India has to offer and we want to partner with individuals that share and feel strongly about where we are headed as a company. It takes courage and discipline to break through and create something that represents us at a global level. We are up for the challenge. Are you?</div>
 				</div>
 			</div>	
-			<div class="block md:flex items-center justify-between ">
+			<div class="block md:flex items-center justify-between mb-5 md:mb-20"">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>

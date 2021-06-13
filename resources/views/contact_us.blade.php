@@ -22,16 +22,23 @@
 				letter-spacing: 0.02em;
 				color: rgba(55, 55, 55, 0.46);
 				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div> -->
-				<div class="flex">
-					<button class="w-32 h-12 md:w--166 md:h--48 mr--22 md:font--size-16 bg--green  text-white rounded-full">Jaipur</button>
-					<button class="w-32 h-12 md:w--166 md:h--48 mr--22 md:font--size-16 bg-gray-200 text-white rounded-full">Mumbai</button>
+				<div class="">
+					<div class="jaipur flex justify-between md:justify-start cursor-pointer md:items-start">
+						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green  text-white rounded-full " onclick="jaipur()">Jaipur</button>
+						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200 text-white rounded-full " onclick="mumbai()">Mumbai</button>
+					</div>
+					<div class="mumbai flex justify-between md:justify-start cursor-pointer md:items-start" style="display: none;">
+						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200  text-white rounded-full " onclick="jaipur()">Jaipur</button>
+						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green text-white rounded-full " onclick="mumbai()">Mumbai</button>
+					</div>
 				</div>
 			</div>
 
 			<div class="flex flex-col md:flex-row items-center gap-y-10 md:gap-y-0 gap-x-0 md:gap-x-14 mb-10 md:mb--53">
 				<div class="w-full md:w-auto">
 					<div class="text-md md:font--size-14 uppercase text-gray-400 font--gilroy-md">ADDRESS</div>
-					<div class="text-md md:font--size-19 text-gray-500">Office 414, Mansarovar Plaza, Madhyam Marg, Mansarovar, Jaipur - 302020 </div>
+					<div class="text-md md:font--size-19 text-gray-500 jaipur">Office 414, Mansarovar Plaza, Madhyam Marg, Mansarovar, Jaipur - 302020 </div>
+					<div class="text-md md:font--size-19 text-gray-500 mumbai" style="display: none;">Coming soon</div>
 				</div>
 				<div class="w-full md:w-auto">
 					<div class="text-md md:font--size-14 uppercase text-gray-400 font--gilroy-md">PHONE</div>
@@ -46,7 +53,8 @@
 			<div>
 				<div class="block md:flex items-stretch gap-x-4">
 					<div class="block md:hidden w-full md:w-1/2 mb-10">
-						<img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.png') }}" alt="">
+						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank"><img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""></a>
+						<div class="text--gray text-sm" style="opacity: .5;">*Click to open maps</div>
 					</div>
 					<div class="w-full md:w-1/2">
 						<form action="">
@@ -67,7 +75,8 @@
 						</form>
 					</div>
 					<div class="hidden md:block w-full md:w-1/2">
-						<img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.png') }}" alt="">
+						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank"><img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""></a>
+						<!-- <div class="text--gray text-sm">*Click to view maps</div> -->
 					</div>
 				</div>
 			</div>
@@ -75,3 +84,15 @@
 		</div>
 	</section>
 @endsection
+@push('scripts')
+<script type="text/javascript">
+	function jaipur(){
+		$('.mumbai').hide();
+		$('.jaipur').show();
+	}
+	function mumbai(){
+		$('.jaipur').hide();
+		$('.mumbai').show();
+	}
+</script>
+@endpush
