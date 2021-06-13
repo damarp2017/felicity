@@ -113,7 +113,7 @@
 				<div class="text--blue text-3xl md:font--size-52 font-bold">Our Capabilities</div>
 			</div>
 		</div>
-		<div class="flex overflow-x-auto pt-5 slider" >
+		<div class="flex overflow-x-auto pt-5 slider" id="capabilities-slider">
 			@php
 			$items = [
 				[
@@ -161,18 +161,19 @@
 			</div>	
 			@endforeach
 		</div>
-		<div class="mx-4 md:px-10">
+		
+		<div class="mx-4 md:app-container ">
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
-				<div class="flex gap-x-4 items-center" >
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
+				<div class="flex gap-x-4 items-center">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#capabilities-slider" action="next">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#capabilities-slider" action="prev">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>

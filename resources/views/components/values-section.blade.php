@@ -5,7 +5,7 @@
 				<div class="text--blue text-3xl md:font--size-39 font-bold">Values</div>
 			</div>
 		</div>
-		<div class="flex overflow-x-auto pt-5 slider" >
+		<div class="flex overflow-x-auto pt-5 slider" id="values-slider">
 			@php
 				$items = [
 					[
@@ -68,10 +68,10 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
 				<div class="flex gap-x-4 items-center">
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#values-slider" action="next">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#values-slider" action="prev">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>

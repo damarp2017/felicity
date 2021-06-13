@@ -32,7 +32,7 @@
 			transition: all 200ms;
 		}
 		.navbar-mobile{
-			
+
 		    border-bottom-left-radius: 20px;
 		    border-bottom-right-radius: 20px;
 		}
@@ -136,6 +136,26 @@
 		setTimeout(function(){
 			$('#loading').fadeOut();
 		},500)
+
+		$('.slider-control').each(function(){
+			$(this).on('click',function(){
+				var target = $(this).attr('target');
+				var action = $(this).attr('action');
+				// console.log($(target));
+				width = $(target).width();
+				scroll = $(target).scrollLeft();
+				if(action=='next'){
+					$(target).animate({
+						scrollLeft:scroll-width
+					});
+				}else{
+					$(target).animate({
+						scrollLeft:scroll+width
+					});
+				}
+			})
+			
+		})
 		  
 	</script>
 </body>
