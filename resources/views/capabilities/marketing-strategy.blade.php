@@ -2,13 +2,15 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
-		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
-			<div class="mx-4 md:mx-0 text-center">
-				<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center"> Reach Your Audience Unmistakably </div>
+		<div class="mx-4 md:app-container">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
+			<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
+				<div class="mx-4 md:mx-0 text-center">
+					<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center"> Reach Your Audience Unmistakably </div>
+				</div>
+				<!-- <div class="block text-center md:hidden text-lg md:text-lg text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div> -->
+				<!-- <div class="text-base md:font--size-22 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
-			<!-- <div class="block text-center md:hidden text-lg md:text-lg text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div> -->
-			<!-- <div class="text-base md:font--size-22 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 		</div>
 	</header>
 

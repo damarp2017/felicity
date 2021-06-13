@@ -2,10 +2,12 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
-		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
-			<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking India to the world</div>
-			<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
+		<div class="mx-4 md:app-container">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
+			<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
+				<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking India to the world</div>
+				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
+			</div>
 		</div>
 	</header>
 

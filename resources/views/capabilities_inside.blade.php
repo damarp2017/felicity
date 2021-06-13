@@ -2,6 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative">
 		@include('layouts.__navigation')
+		
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
 			<div class="mx-4 md:mx-0 text-center">

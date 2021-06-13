@@ -2,12 +2,14 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
-		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 25% 0">
-			<div class="block md:hidden text-lg text-white uppercase">We design the</div>
-			<div class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-150">Our Capabilities</div>
-			
-			<!-- <div class="text-base md:font--size-22 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
+		<div class="mx-4 md:app-container">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
+			<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 25% 0">
+				<div class="block md:hidden text-lg text-white uppercase">We design the</div>
+				<div class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-150">Our Capabilities</div>
+				
+				<!-- <div class="text-base md:font--size-22 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
+			</div>
 		</div>
 	</header>
 
