@@ -1,16 +1,27 @@
 @extends('layouts.app')
 @section('content')
-	@include('layouts.__navigation_light')
+	<header class="w-full overflow-x-hidden bg--blue relative ">
+	@include('layouts.__navigation')
+		<div class="mx-4 md:app-container">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
+			<div class="flex flex-col h-screen justify-center items-center text-center">
+				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
+				
+				<div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65 text-white">Say hello </div>
+				<!-- <div class="text-base md:font--size-20 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
+			</div>
+		</div>
+	</header>
 
-	<section class="bg-white w-full overflow-x-hidden py-20 md:py-10">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="mb-10 md:mb--38">
-				<div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65">Say hello </div>
-				<div class=" w-full md:w-9/12 mb-8 text-base md:font--size-17 font--poppins"
+				<!-- <div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65">Say hello </div> -->
+				<!-- <div class=" w-full md:w-9/12 mb-8 text-base md:font--size-17 font--poppins"
 				style="line-height: 192.8%;
 				letter-spacing: 0.02em;
 				color: rgba(55, 55, 55, 0.46);
-				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div> -->
 				<div class="flex">
 					<button class="w-32 h-12 md:w--166 md:h--48 mr--22 md:font--size-16 bg--green  text-white rounded-full">Jaipur</button>
 					<button class="w-32 h-12 md:w--166 md:h--48 mr--22 md:font--size-16 bg-gray-200 text-white rounded-full">Mumbai</button>
@@ -33,22 +44,22 @@
 			</div>
 
 			<div>
-				<div class="block md:flex items-stretch gap-x-7">
+				<div class="block md:flex items-stretch gap-x-4">
 					<div class="block md:hidden w-full md:w-1/2 mb-10">
 						<img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.png') }}" alt="">
 					</div>
 					<div class="w-full md:w-1/2">
 						<form action="">
-							<div class="mb-8 md:mb--43">
+							<div class="mb-4 ">
 								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Email Address">
 							</div>
-							<div class="mb-8 md:mb--43">
+							<div class="mb-4 ">
 								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Full Name">
 							</div>
-							<div class="mb-8 md:mb--43">
+							<div class="mb-4 ">
 								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Phone Number">
 							</div>
-							<div class="mb-8 md:mb--43">
+							<div class="mb-4 ">
 								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Reason to contact">
 							</div>
 							

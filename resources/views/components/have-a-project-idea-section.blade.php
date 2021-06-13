@@ -1,5 +1,5 @@
 <section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container md:pt-20">
+		<div class="mx-4 md:app-container ">
 			<div class="w-full mb-10">
 				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea ?</div>
 				<div class="text-base md:font--size-17 font--poppins w-full md:w-10/12 " 

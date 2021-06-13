@@ -52,7 +52,7 @@
 			<div class="bg-white p-10 relative z-10 rounded-3xl">
 				<div class="flex flex-col justify-center items-center text-center">
 					<div class="font-bold text-3xl md:font--size-45 mb-4">Want to join the list by <br> becoming a client</div>
-					<div class="mb-3 md:font--size-22 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis <br> diam elementum arcu eu cras egestas ac adipiscing.</div>
+					<div class="mb-3 md:font--size-20 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis <br> diam elementum arcu eu cras egestas ac adipiscing.</div>
 					<a href="//calendly.com/felicityhq/hello" target="_blank" class="text-white md:font--size-15 bg--gradient-black rounded-full py-3 px-10">Book A Free Consultation Call</a>
 				</div>
 			</div>

@@ -3,13 +3,13 @@
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
 		<div class="mx-4 md:app-container">
-			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-			<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
+			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-screen"> -->
+			<div class="flex flex-col h-screen justify-center items-center" logo/black.png?new>
 				<div class="mx-4 md:mx-0 text-center">
 					<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center"> Reach Your Audience Unmistakably </div>
 				</div>
 				<!-- <div class="block text-center md:hidden text-lg md:text-lg text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div> -->
-				<!-- <div class="text-base md:font--size-22 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
+				<!-- <div class="text-base md:font--size-20 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
 	</header>
@@ -18,7 +18,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</div>
-				<div class="text-base md:font--size-22 line--height-160 text--grey-transparent">You had an idea that you brought to life after putting hours and hours of effort into honing the product that truly benefits the customer and solves a problem. Now, It’s time for you to share it with the world and you need a partner that can help you do that. At Felicity, we understand the power of ideas but, we also understand that to succeed, efforts need a powerful push in the right direction. We help businesses with holistic marketing strategies to capitalize and win in this competitive marketplace. We know that when it comes to marketing, there is no one-size-fits-all.</div>
+				<div class="text-base md:font--size-20 line--height-160 text--grey-transparent">You had an idea that you brought to life after putting hours and hours of effort into honing the product that truly benefits the customer and solves a problem. Now, It’s time for you to share it with the world and you need a partner that can help you do that. At Felicity, we understand the power of ideas but, we also understand that to succeed, efforts need a powerful push in the right direction. We help businesses with holistic marketing strategies to capitalize and win in this competitive marketplace. We know that when it comes to marketing, there is no one-size-fits-all.</div>
 			</div>
 		</div>
 	</section>
@@ -119,7 +119,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
 				<div class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</div>
-				<!-- <div class="text-base md:font--size-22 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
+				<!-- <div class="text-base md:font--size-20 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
 			</div>
 		</div>
 		@php
@@ -201,7 +201,7 @@
 		<div class="mx-4 md:container--case-studies pt-20">
 			<div class="flex mb-4 md:mb--89 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-75 font-semibold">Case Studies</div>
-				<div class="text-base md:font--size-22 line--height-160 text--gray">
+				<div class="text-base md:font--size-20 line--height-160 text--gray">
 					for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to
 				</div>
 			</div>

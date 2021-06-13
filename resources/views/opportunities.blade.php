@@ -4,8 +4,8 @@
 		@include('layouts.__navigation')
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-			<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
-				<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking India to the world</div>
+			<div class="flex flex-col h-screen justify-center items-center" >
+				<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking <br/>India to the world</div>
 				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
@@ -24,68 +24,80 @@
 			</div>
 	
 			{{-- dekstop --}}
-			<div class="hidden md:flex md:flex-wrap gap-4 md:gap-0">
-				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mr--63 md:mb--55">
-					<div class="flex items-center justify-center">
-						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
-					</div>
-					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
-						<div class="font--gilroy-bold">Flexible</div>
-						<div class="font--gilroy-reg">Time Schedule</div>
-					</div>	
-				</div>
-
-				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mr--63 md:mb--55">
-					<div class="flex items-center justify-center">
-						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
-					</div>
-					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
-						<div class="font--gilroy-bold">Learning and </div>
-						<div class="font--gilroy-reg">Development</div>
+			<div class="hidden md:flex md:flex-wrap justify-between">
+				<div class=" w-1/3  px-10 py-5">
+					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+						<div class="flex items-center justify-center">
+							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
+						</div>
+						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+							<div class="font--gilroy-bold">Flexible</div>
+							<div class="font--gilroy-reg">Time Schedule</div>
+						</div>	
 					</div>
 				</div>
 
-				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mb--55">
-					<div class="flex items-center justify-center">
-						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/love.png') }}" alt="">
-					</div>
-					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
-						<div class="font--gilroy-bold">Generous Parental  </div>
-						<div class="font--gilroy-reg"><span class="font--gilroy-bold">and</span> Family Leaves</div>
-					</div>
-				</div>
-
-				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mr--63 md:mb--55">
-					<div class="flex items-center justify-center">
-						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
-					</div>
-					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
-						<div class="font--gilroy-bold">Headspace</div>
-						<div class="font--gilroy-reg">Membership</div>
-					</div>
-				</div>
-				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mr--63 md:mb--55">
-					<div class="flex items-center justify-center">
-						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/book.png') }}" alt="">
-					</div>
-					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
-						<div class="font--gilroy-bold">Book</div>
-						<div class="font--gilroy-reg">Reimbursements</div>
+				<div class=" w-1/3  px-10 py-5">
+					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+						<div class="flex items-center justify-center">
+							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
+						</div>
+						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+							<div class="font--gilroy-bold">Learning and </div>
+							<div class="font--gilroy-reg">Development</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="bg-white card--opportunities flex flex-col items-center justify-center md:mb--55">
-					<div class="flex items-center justify-center">
-						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
+				<div class=" w-1/3 px-10 py-5">
+					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+						<div class="flex items-center justify-center">
+							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/love.png') }}" alt="">
+						</div>
+						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+							<div class="font--gilroy-bold">Generous Parental  </div>
+							<div class="font--gilroy-reg"><span class="font--gilroy-bold">and</span> Family Leaves</div>
+						</div>
 					</div>
-					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
-						<div class="font--gilroy-bold">Paid Volunteer </div>
-						<div class="font--gilroy-reg">Time</div>
+				</div>
+
+				<div class=" w-1/3  px-10 py-5">
+					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+						<div class="flex items-center justify-center">
+							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
+						</div>
+						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+							<div class="font--gilroy-bold">Headspace</div>
+							<div class="font--gilroy-reg">Membership</div>
+						</div>
+					</div>
+				</div>
+				<div class=" w-1/3  px-10 py-5">
+					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+						<div class="flex items-center justify-center">
+							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/book.png') }}" alt="">
+						</div>
+						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+							<div class="font--gilroy-bold">Book</div>
+							<div class="font--gilroy-reg">Reimbursements</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" w-1/3 px-10 py-5">
+					<div class="h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+						<div class="flex items-center justify-center">
+							<img class="mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/time.png') }}" alt="">
+						</div>
+						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+							<div class="font--gilroy-bold">Paid Volunteer </div>
+							<div class="font--gilroy-reg">Time</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			{{-- mobile --}}
+			<!-- {{-- mobile --}}
 			<div class="grid md:hidden grid-cols-2  gap-4">
 				<div class="bg-white py-8 flex flex-col items-center justify-center" 
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;" >
@@ -151,15 +163,15 @@
 						<div class="font--gilroy-reg">Time</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:ml-0 md:mr--97">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex items-center justify-between mb-20">
 				<div class="w-full md:w-1/2 md:mr--84">
-					<img class="" src="{{ asset('images/opportunities/1.png') }}" alt="">
+					<img class="w-full" src="{{ asset('images/opportunities/1.png') }}" alt="">
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="mb-7 font-semibold text-2xl md:font--size-38">Why should you work with us?</div>
@@ -168,7 +180,7 @@
 			</div>	
 		</div>
 
-		<div class="mx-4 md:ml--87 md:mr-0">
+		<div class="mx-4 md:app-container">
 			<div class="block md:flex items-center justify-between mb-20">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">

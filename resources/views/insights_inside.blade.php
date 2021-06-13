@@ -57,7 +57,7 @@
 			<div>
 				<div class="flex items-center mb-10">
 					<div class="font-bold text-2xl md:font--size-35 md:mr--30">Comments</div>
-					<div class="text-lg md:font--size-22 font--gilroy-md md:mr--45"
+					<div class="text-lg md:font--size-20 font--gilroy-md md:mr--45"
 					style="color: #616161;">23</div>
 					<div class="w-full border-gray-200 border-b md:mr--46"></div>
 					<button class="bg-white border font--size-12 border-black uppercase rounded-full md:py--12 md:pl--23 md:pr--24

@@ -237,7 +237,7 @@
 		border-radius: 21px;
 		/* width: 408px; */
 		/*width: 368px;*/
-		height: 155px;
+		/*height: 155px;*/
 		margin-right: 43px;
 		margin-bottom: 47px;
 	}
@@ -358,8 +358,8 @@
 
 
 		.card--opportunities{
-			width: 326px;
-			height: 330px;
+			/*width: 326px;*/
+			/*height: 330px;*/
 			box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25);
 			border-radius: 19px;
 		}
