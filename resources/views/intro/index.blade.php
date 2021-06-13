@@ -167,11 +167,11 @@
 						$('#loading').fadeOut();
 
 					}).catch((e)=>{
-					$('#confirm').fadeIn();
-						console.log(e)
+						$('#confirm').fadeIn();
+						// console.log(e)
 					});	
 				// }catch(err){
-					$('#confirm').fadeIn();
+					// $('#confirm').fadeIn();
 				// }
 				// setTimeout(function(){
 

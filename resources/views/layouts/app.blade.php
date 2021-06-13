@@ -70,6 +70,7 @@
 	<style type="text/css">
 		h1,h2{
 			font-family: "Source Serif Pro";
+			font-weight: 600!important;
 		}
 	</style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
