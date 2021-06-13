@@ -6,7 +6,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" logo/black.png?new>
 				<div class="mx-4 md:mx-0 text-center">
-					<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center">Leverage The Power of Influence</div>
+					<h1 class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center">Leverage The Power of Influence</h1>
 				</div>
 				<!-- <div class="block text-center md:hidden text-lg md:text-lg text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div> -->
 				<!-- <div class="text-base md:font--size-20 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="mx-4 md:app-container ">
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-2 items-center slider-dot">
