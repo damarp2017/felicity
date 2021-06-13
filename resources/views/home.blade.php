@@ -3,7 +3,7 @@
 	<header class="w-full overflow-x-hidden bg--blue relative" style="background:#3B28C2">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-		<div class="flex flex-col h-96 md:h-screen justify-center items-center">
+		<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center">
 			<div class="mx-4 md:app-container">
 				<!-- <div class="md:font--size-24 text-lg text-white uppercase text-center mb-1 md:mb-0 md:text--we-design-the">We design the</div> -->
 				<!-- <div class="text-white font-semibold text-8xl md:line--height-90 md:font--size-190 text-center">  -->
