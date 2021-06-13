@@ -79,9 +79,16 @@
 		}
 
 	}
+	.IIV::-webkit-media-controls-play-button,
+	 .IIV::-webkit-media-controls-start-playback-button {
+	     opacity: 0;
+	     pointer-events: none;
+	     width: 5px;
+	 }
 	</style>	
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="{{asset('js/iphone-inline-video.min.js')}}" ></script>
 
 </head>
 <body>
@@ -102,7 +109,7 @@
 	
 </script>
 <div style="position: relative;text-align: center;overflow: hidden;height: 100vh;background: #010001">
-	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;" >
+	<video preload="none" webkit-playsinline playsinline class="vidcon hori video" style="position: absolute;z-index: 90;" >
 	  <source src="" class="vidsource" type="video/mp4">
 	</video>
 	<!-- <video preload="none" class="vidbg video" muted="" style="position: absolute;z-index: 80;">
@@ -114,6 +121,7 @@
 </div>  
 	
     <script>
+    	enableInlineVideo($('.vidcon, .vidbg')[0]);
     	function reloadVideo(){
     		width = $(window).width();
     		height = $(window).height();
