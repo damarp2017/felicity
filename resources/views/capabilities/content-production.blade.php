@@ -4,9 +4,9 @@
 		@include('layouts.__navigation')
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-screen"> -->
-			<div class="flex flex-col h-screen justify-center items-center" logo/black.png?new>
+			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" logo/black.png?new>
 				<div class="mx-4 md:mx-0 text-center">
-					<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center">You'll Never Do Content The Same Way Again</div>
+					<div class="text-white font-semibold md:line--height-105c8 text-3xl md:font--size-95 mb-5 text-center">You'll Never Do Content The Same Way Again</div>
 				</div>
 				<!-- <div class="block text-center md:hidden text-lg md:text-lg text-white mb-3 uppercase md:normal-case">that next <span class="font-normal md:font-semibold not-italic md:italic">generation</span> will witness</div> -->
 				<!-- <div class="text-base md:font--size-20 text-center w-9/12 md:w-5/12 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
@@ -29,13 +29,13 @@
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<h2 class="text--blue text-3xl md:font--size-39 font-bold">Our Process</h2>
 			</div>
-			<div class="flex">
-				<div class="w-1/3">
+			<div class="flex flex-wrap">
+				<div class="w-full md:w-1/3">
 					<div >
 						<img class="max-h-80 max-w-full" src="{{ asset('images/capabilities/content-production.png') }}">
 					</div>
 				</div>
-				<div class="w-2/3">
+				<div class="w-full md:w-2/3">
 					<div class="flex overflow-x-auto pt-5 slider space-area" id="process-slider">
 						@php
 							$items = [
@@ -67,7 +67,7 @@
 							]
 						@endphp
 						@foreach($items as $item)
-						<div style="min-width: 50vw;" class="space-item-1 px-10">
+						<div style="min-width: 50vw;" class="space-item-1 px-2 md:px-10 ">
 							<div class="mb-3 text-black ">
 								<div class="flex gap-x-4 items-center">
 									<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
@@ -86,7 +86,7 @@
 		
 		<div class="mx-4 md:app-container ">
 			<div class="flex justify-between items-center">
-				<div class="flex gap-x-4 items-center slider-dot">
+				<div class="flex gap-x-2 items-center slider-dot">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>

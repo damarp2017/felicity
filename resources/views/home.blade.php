@@ -168,7 +168,7 @@
 		
 		<div class="mx-4 md:app-container ">
 			<div class="flex justify-between items-center ">
-				<div class="flex gap-x-4 items-center slider-dot">
+				<div class="flex gap-x-2 items-center slider-dot">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
@@ -309,11 +309,11 @@
 
 	</section>
 
-	<section class="-mb-36  overflow-x-hidden bg--section">
+	<section class="-mb-20  overflow-x-hidden bg--section">
 		<div class="z-10 relative mx-4 md:app-container ">
-			<div class=" p-10 bg--blue rounded-xl" >
+			<div class=" md:p-10 p-5 bg--blue rounded-xl" >
 				<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
-				<div class="text-white opacity-50 mb--44 md:font--size-18">We share new insights every week. We don’t spam. Promise.</div>
+				<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t spam. Promise.</div>
 				<div class="block md:flex gap-x-4">
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);

@@ -103,7 +103,7 @@
 
 		sliderHandler = function(slider){
 			this.slider=slider;
-			this.dotsElement = $(this.slider).next().find(".slider-dot");
+			this.dotsElement = $(this.slider).parents('section').find(".slider-dot");
 			this.dotsElement.html('');
 			this.parentWidth = $(this.slider).width()
 			this.scrollWidth = $(this.slider).get(0).scrollWidth;
@@ -111,8 +111,10 @@
 			for(var i=0;i<this.pagesTotal;i++){
 				if(i==0){
 					this.dotsElement.append(`<div class="bg--blue w-10 h-1 md:h-2 rounded-full it"></div>`);
-				}else{
+				}else if(i<3){
 					this.dotsElement.append(`<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full it"></div>`);
+				}else{
+					this.dotsElement.append(`<div class="bg-gray-300 w-1 h-1 md:h-2 rounded-full it"></div>`);
 				}
 			}
 			this.isDown = false;
@@ -123,7 +125,7 @@
 			this.momentumID;
 			this.curpage = ()=>{
 				page = this.slider.scrollLeft/this.slider.offsetWidth;
-				console.log(this.slider,this.slider.offsetWidth)
+				// console.log(this.slider,this.slider.offsetWidth)
 				return page;
 			}
 			this.touchStart = (e)=>{
@@ -170,22 +172,24 @@
 				    }
 				}
 				this.newP=p*this.slider.offsetWidth;
-				console.log("p",p,this.newP);
+				// console.log("p",p,this.newP);
+				this.scrollAnimate();
+			}
+			this.scrollAnimate=()=>{
 				if(this.newP>this.slider.scrollWidth || this.newP<0){
 					return
 				}
 				this.dotsElement.children().removeClass('bg--blue');
 				this.dotsElement.children().removeClass('w-10');
 				this.dotsElement.children().addClass('bg-gray-300');
-				this.dotsElement.children().addClass('w-5');
+				// this.dotsElement.children().addClass('w-5');
 				// console.log();
 				$(this.dotsElement.children().get(p)).addClass('bg--blue');
 				$(this.dotsElement.children().get(p)).addClass('w-10');
-				console.log(this.curpage());
+				// console.log(this.curpage());
 
 				requestAnimationFrame(this.animate);
 			}
-
 			this.animate=()=>{
 				if(this.slider.scrollLeft<this.newP){
 			    	this.slider.scrollLeft+=10;
@@ -244,6 +248,26 @@
 				  this.momentumID = requestAnimationFrame(momentumLoop);
 				}
 			}	
+			console.log(this.slider.id)
+			let self = this;
+			$(".slider-control[target='#"+this.slider.id+"']").on('click',function(){
+				var action = $(this).attr('action');
+				// console.log(this);
+				width = self.slider.offsetWidth;
+				scroll = self.slider.scrollLeft;
+				if(action=='prev'){
+					p=(scroll-width)
+				}else{
+					p=(scroll+width)
+				}
+
+		    	p = (p/self.slider.offsetWidth).toFixed(0);
+		    	p = parseInt(p);
+
+				self.newP = p*self.slider.offsetWidth;
+				self.scrollAnimate();
+			})
+			
 		}
 		sliders.forEach(function(s){
 			slider = new sliderHandler(s);
@@ -252,25 +276,7 @@
 			$('#loading').fadeOut();
 		},500)
 
-		$('.slider-control').each(function(){
-			$(this).on('click',function(){
-				var target = $(this).attr('target');
-				var action = $(this).attr('action');
-				// console.log($(target));
-				width = $(target).width();
-				scroll = $(target).scrollLeft();
-				if(action=='prev'){
-					$(target).animate({
-						scrollLeft:scroll-width
-					});
-				}else{
-					$(target).animate({
-						scrollLeft:scroll+width
-					});
-				}
-			})
-			
-		})
+		
 		  
 	</script>
 </body>

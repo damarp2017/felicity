@@ -4,7 +4,7 @@
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-screen"> -->
 		<div class="mx-4 md:app-container">
-			<div class="flex flex-col h-screen justify-center items-center" logo/black.png?new>
+			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" logo/black.png?new>
 				<div class="mx-4 md:mx-0 text-center">
 					<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center">Leverage The Power of Influence</div>
 				</div>
@@ -29,13 +29,13 @@
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<h2 class="text--blue text-3xl md:font--size-39 font-bold">Our Process</h2>
 			</div>
-			<div class="flex">
-				<div class="w-1/3">
+			<div class="flex flex-wrap">
+				<div class="w-full md:w-1/3">
 					<div >
 						<img class="max-h-80 max-w-full" src="{{ asset('images/capabilities/influencer-outreach.png') }}">
 					</div>
 				</div>
-				<div class="w-2/3">
+				<div class="w-full md:w-2/3">
 					<div class="flex overflow-x-auto pt-5 slider space-area" id="process-slider">
 						@php
 							$items = [
@@ -72,7 +72,7 @@
 							]
 						@endphp
 						@foreach($items as $item)
-						<div style="min-width: 50vw;" class="space-item-1 px-10">
+						<div style="min-width: 50vw;" class="space-item-1 px-2 md:px-10 ">
 							<div class="mb-3 text-black ">
 								<div class="flex gap-x-4 items-center">
 									<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
@@ -91,7 +91,7 @@
 		
 		<div class="mx-4 md:app-container ">
 			<div class="flex justify-between items-center">
-				<div class="flex gap-x-4 items-center slider-dot">
+				<div class="flex gap-x-2 items-center slider-dot">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
