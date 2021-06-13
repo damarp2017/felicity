@@ -1,5 +1,5 @@
-<nav class="navbar items-start fixed padding-navbar z-20 w-full transition duration-300 ease-in-out ">
-	<div class=" hidden md:flex w-full justify-between">
+<nav class="hidden md:block navbar items-start fixed z-20 w-full transition duration-300 ease-in-out md:px-20 py-10">
+	<div class="flex w-full justify-between">
 		<a href="{{ url('/home') }}">
 			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png?new') }}">
 			<!-- <img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png?new') }}"> -->
@@ -45,13 +45,13 @@
 				</svg>
 			</button>
 		</div>
-		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out " >
+		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out pb-5" >
 			<a href="{{ url('capabilities') }}" class="block text-white hover:text-gray-800 text-lg"> Capabilities </a>
 			<a href="{{ url('opportunities') }}" class="block text-white hover:text-gray-800 text-lg"> Opportunities </a>
 			<a href="//www.behance.net/felicityhq" target="_blank" class="block text-white hover:text-gray-800 text-lg"> Case Studies </a>
 			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-white hover:text-gray-800 text-lg"> Insights </a>
 			<a href="{{ url('contact-us') }}" class="block text-white hover:text-gray-800 text-lg"> Contact Us </a>
-			<a href="//calendly.com/felicityhq/hello" target="_blank" class="flex justify-center items-center w-72 bg-white py-3 px-2 text-lg rounded-full text-blue font-bold">
+			<a href="//calendly.com/felicityhq/hello" target="_blank" class="flex justify-center items-center w-72 bg-white py-3 px-2 text-lg rounded-full text--blue font-bold">
 				Book A Free Consultation Call
 			</a>
 		</div>
@@ -64,27 +64,35 @@
 	const navlinks = document.querySelectorAll('.navlink');
 	const logoBlack = document.querySelector('.logo-black')
 	const logoBlackHeader = document.querySelector('.logo-black-header')
-	const logoWhite = document.querySelectorAll('.logo-white')
+	const logoWhite = document.querySelector('.logo-white')
 	const menu = document.querySelector('.menu')
 
 	window.onscroll = () => {
 		if (window.scrollY > 80) {
-			navbar.classList.add('hidden');
-
+			// navbar.classList.add('hidden');
+			navbar.classList.add('bg-tr');
+			navbar.classList.add('py-1');
+			navbar.classList.remove('py-10');
+			logoWhite.style.transform='scale(.5)';
 			// Array.from(logoWhite).forEach((logo, index) => {
 			// 	logo.classList.add('hidden')
 			// })
 			// logoBlack.classList.remove('hidden')
-			logoBlackHeader.classList.remove('hidden')
+			// logoBlackHeader.classList.remove('hidden')
 			// menu.classList.add('border', 'border-red-500')
 		}else{
-			navbar.classList.remove('hidden');
+			navbar.classList.remove('bg-tr');
+			navbar.classList.remove('py-1');
+			navbar.classList.add('py-10');
+			logoWhite.style.transform='';
+
+			// navbar.classList.remove('hidden');
 
 			// Array.from(logoWhite).forEach((logo, index) => {
 			// 	logo.classList.remove('hidden')
 			// })
 			// logoBlack.classList.add('hidden')
-			logoBlackHeader.classList.add('hidden')
+			// logoBlackHeader.classList.add('hidden')
 
 			// menu.classList.remove('border', 'border-red-500')
 		}

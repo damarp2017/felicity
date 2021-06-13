@@ -28,8 +28,24 @@
 		::-webkit-scrollbar-thumb {
 		  background: #888;
 		}
+		.navbar{
+			transition: all 200ms;
+		}
+		.navbar-mobile{
+			
+		    border-bottom-left-radius: 20px;
+		    border-bottom-right-radius: 20px;
+		}
 		.navbar-mobile:not(.bg--blue){
+			/*background:#3b28c2bf;*/
+		    background: #3e2bc1c7;
+		}
+		.bg-tr{
 			background:#3b28c2bf;
+
+		}
+		.logo-white{
+			transition: transform 200ms;
 		}
     </style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
