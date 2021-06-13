@@ -4,19 +4,19 @@
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 20% 0">
-			<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-150 mb-5 md:mb-0 text-center"> About Us</div>
-			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
+			<div class="text-white font-semibold text-5xl md:line--height-97 md:font--size-150 mb-5 md:mb-0 text-center"> On a journey to take India to the world</div>
+			<div class="text-base md:font--size-22 text-white opacity-50 w-1/2">It is our constant endeavour to help businesses grow and evolve over time and to be able to achieve it, we want to work with people that synergise with the values that we strongly imbibe in every thing we do here at Felicity</div>
 		</div>
 	</header>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--137">
+	<!-- <section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--137">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<div class="mb-6 text-3xl md:font--size-55 font-semibold">Vision</div>
-				<div class="text-base md:font--size-22 line--height-160 " style="color: #898989">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy .</div>
+				<div class="mb-6 text-3xl md:font--size-55 font-semibold">Vision for the Company</div>
+				<div class="text-base md:font--size-22 line--height-160 " style="color: #898989">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising.</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="bg-white w-full overflow-x-hidden ">
 		<div class="mx-4 md:app-container">
@@ -28,9 +28,9 @@
 
 				<div class="w-full md:w--636">
 					<div class="mb-3 text-black ">
-						<div class="text-3xl font-bold md:font--size-70 md:mb--27">For Company</div>
+						<div class="text-3xl font-bold md:font--size-70 md:mb--27">Vision for the Company</div>
 					</div>
-					<div class="text-base md:font--size-19 text--gray line--height-160 mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-19 text--gray line--height-160 mb-4">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising.</div>
 				</div>
 			</div>
 
@@ -40,9 +40,9 @@
 				</div>
 				<div class="w-full md:w--632">
 					<div class="mb-3 text-black ">
-						<div class="text-3xl font-bold md:font--size-67 md:mb--27">For Team</div>
+						<div class="text-3xl font-bold md:font--size-67 md:mb--27">Vision for the Team</div>
 					</div>
-					<div class="text-base md:font--size-19 text--gray line--height-160 mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-19 text--gray line--height-160 mb-4">We want to create world leaders who are willing to disrupt the Indian Advertising Industry and help our partners creatively share their products and services with the world.</div>
 				</div>
 				<div class="w--48"></div>
 				<div class="hidden md:block md:w--579">
@@ -52,46 +52,7 @@
 		</div>
 	</section>
 
-	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20 ">
-		<div class="mx-4 md:app-container">
-			<div class="flex items-center mb-10 md:mb-20">
-				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
-				<div class="text--blue text-2xl md:font--size-39 font-bold">Values</div>
-			</div>
-	
-			<div class="block md:flex mb-24 items-center">
-				<div class="w-full md:w-1/2">
-					<img class="h-auto md:h-96" src="{{ asset('images/about_us/3.png') }}">
-				</div>
-				<div class="w-full md:w-1/2">
-					<div class="mb-3 text-black ">
-						<div class="flex gap-x-4 items-center">
-							<div class="text-2xl md:font--size-30">01</div>
-							<div class="w-48"><hr></div>
-						</div>
-						<div class="text-3xl md:my-10 font-bold md:font--size-100">Vision</div>
-					</div>
-					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
-				</div>
-			</div>
-
-			<div class="flex justify-between items-center">
-				<div class="flex gap-x-4 items-center">
-					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
-					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
-					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
-				</div>
-				<div class="flex gap-x-4 items-center" style="margin-right: -54px">
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
-						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
-					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full">
-						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	@include('components.values-section')
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
@@ -103,7 +64,7 @@
 					<div class="mb-3 text-black ">
 						<div class=" text-3xl md:font--size-80 font-bold md:mb-10 md:line--height-99c34">Conscious Advertising Network</div>
 					</div>
-					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The Conscious Advertising Network is a voluntary coalition of over 70 organisations set up to ensure that industry ethics catches up with the technology of modern advertising.</div>
 				</div>
 				<div class="hidden md:block md:w--186"></div>
 				<div class="hidden md:block md:w--459">
@@ -120,7 +81,7 @@
 					<div class="mb-3 text-black ">
 						<div class="text-3xl md:font--size-80 font-bold md:line--height-99c34">Mentored By Schbang</div>
 					</div>
-					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.The sketching of wireframes is integral in beginning to realise concepts and ideas into readable, managed design.</div>
+					<div class="text-base md:font--size-22 line--height-160 text--gray mb-4">With a common vision of taking India to the world, we are mentored by India’s fastest growing agency and are proud to be a part of the Schbang Network. With this, we continue to build a strong mesh of creative companies on a common mission.</div>
 				</div>
 			</div>
 
@@ -136,7 +97,7 @@
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--blue">Team</span></div>
-					<div class="text-base md:font--size-22 text--gray mb-10 md:mb-14" style="line-height: 160%;">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<div class="text-base md:font--size-22 text--gray mb-10 md:mb-14" style="line-height: 160%;">Our vision of taking India to the world is impossible without the help of honest, talented, and purpose driven individuals. We are on a constant lookout for people that believe in the power of ideas and dare to change the world with their own.</div>
 					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
 				</div>
 			</div>

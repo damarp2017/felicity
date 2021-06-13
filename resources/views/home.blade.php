@@ -8,7 +8,7 @@
 				<div class="md:font--size-24 text-xl text-white uppercase text-center mb-1 md:mb-0" style="transform: translateY(10px);letter-spacing: 3px">We design the</div>
 				<div class="text-white font-semibold text-8xl md:line--height-90 md:font--size-190 text-center"> Future</div>
 				<div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div>
-				<div class="md:font--size-20  text-base text-white text-center w-full opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
+				<div class="md:font--size-20  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div>
 			</div>
 		</div>
 	</header>
@@ -26,7 +26,7 @@
 					<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 					<div class="text--blue text-3xl md:font--size-52 font-bold">Our Vision</div>
 				</div>
-				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class bra</div>
+				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising</div>
 			</div>
 
 			<div class="block md:flex items-center mb-6">
@@ -35,7 +35,7 @@
 						<!-- <div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 						<div class="text--blue text-3xl md:font--size-52 font-bold">Our Manifestos</div>
 					</div>
-					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class ,for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make .</div>
+					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">Felicity was started out of sheer love and admiration for the art of advertising. We believe that ideas can change the world and it is our constant endeavour to help businesses grow and evolve over time. We want to work with brands that synergise with the values that we strongly imbibe in every thing we do here at Felicity.</div>
 				</div>
 				<div class="w-full md:w-1/2"><img class="w-full" style="object-fit: none" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
@@ -43,51 +43,53 @@
 		<div class="mx-4 pt-0 md:pt-20 md:px-10 md:-mr--27">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-0 mb-6 md:mb-10">
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Know Your Consumer</div>
-							<div class="text-base font-normal text--gray md:font--size-20">We know how to make your consumer, your customer.</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">Win-Win Situation</div>
+							<div class="text-base text--gray md:font--size-20">When you score, we score!</div>
 						</div>
 					</div>
-					
+
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Solve Your Problems</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We’re Problem Solvers</div>
 							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand.</div>
 						</div>
 					</div>
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
-						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Are Bold</div>
-							<div class="text-base text--gray md:font--size-20">We dare to dream, and we get it done.</div>
-						</div>
-					</div>
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
-						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Win Together</div>
-							<div class="text-base text--gray md:font--size-20">When your business wins, we win.</div>
-						</div>
-					</div>
 
+					
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Worship Data </div>
-							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences.</div>
+							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences</div>
+						</div>
+					</div>
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
+						<div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Are Bold</div>
+							<div class="text-base text--gray md:font--size-20">We dare to dream and to turn it into reality</div>
 						</div>
 					</div>
 
 					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
 						<div>
-							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Move Fast</div>
-							<div class="text-base text--gray md:font--size-20">Quicker decision and patience, win us games.</div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We’re Agile</div>
+							<div class="text-base text--gray md:font--size-20">We make decisions quickly but carefully</div>
+						</div>
+					</div>
+
+					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
+						<div>
+							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We’re Match-Makers</div>
+							<div class="text-base font-normal text--gray md:font--size-20">From consumer to customer, we help you convert</div>
 						</div>
 					</div>
 
@@ -105,28 +107,61 @@
 
 
 	<section class="bg-white min-h-screen w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
-			<div class="flex items-center mb-20">
+		<div class="mx-4 md:app-container mb-10">
+			<div class="flex items-center ">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<div class="text--blue text-3xl md:font--size-52 font-bold">Our Capabilities</div>
 			</div>
 		</div>
-		<div class="mx-4 md:px-10">
-			<div class="block md:flex mb-20">
-				<div class="w-full md:w-1/2">
-					<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/home/capabilities.png') }}">
-				</div>
-				<div class="w-full md:w-1/2">
-					<div class="text-black text-3xl md:font--size-85 font-bold mb-4 md:mb-10">
-						<div class="md:mb-11">Marketing</div>
-						<div class="text--blue">Strategy</div>
+		<div class="flex overflow-x-auto pt-5" >
+			@php
+			$items = [
+				[
+					'slug'=>'marketing-strategy',
+					'title'=>'<div class="md:mb-11">Marketing</div>
+								<div class="text--blue">Strategy</div>',
+					'desc'=>"Think of us as your extended brains. It is important for all businesses to have an effective marketing strategy to capitalize and capture larger market share and higher share of voice. We help you do that. Get in touch with us to discuss your brand story and audit your brand to see if we are a good fit to work with each other."
+				],[
+					'slug'=>'branding',
+					'title'=>'<div class="md:mb-11">Branding</div>',
+					'desc'=>"Branding is important because it makes a memorable impression on consumers and allows your customers and clients to know what to expect from your company. It is a way of distinguishing yourself from the competitors and clarifying what it is you offer that makes you the better choice."
+				],[
+					'slug'=>'content-production',
+					'title'=>'<div class="md:mb-11">Content</div>
+								<div class="text--blue">Production</div>',
+					'desc'=>"Content production is a marketing strategy that focuses on developing and delivering valuable, relevant, and consistent content in order to attract and maintain a specific audience – and, eventually, to drive profitable consumer action."
+				],[
+					'slug'=>'influencer-outreach',
+					'title'=>'<div class="md:mb-11">Influencer</div>
+								<div class="text--blue">Outreach</div>',
+					'desc'=>"The influencer marketing industry has grown to a staggering $1 Billion and is still in its nascent stages. Content creators hold tremendous power and influence over specific target audiences that can be leveraged to integrate brand products to reach potential customers."
+				],[
+					'slug'=>'technology-design',
+					'title'=>'<div class="md:mb-11">Technology &</div>
+								<div class="text--blue">Design</div>',
+					'desc'=>"Technology is an enabler that allows us to solve complex problems in our business. In the context of marketing, we help brands create scalable infrastructure that they can build their businesses on and reach their desired customers."
+				],
+			];
+			@endphp
+			@foreach($items as $item)
+			<div style="min-width: 100vw;">
+				<div class="block md:flex mx-4 md:app-container">
+					<div class="w-full md:w-1/2">
+						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/home/capabilities.png') }}">
 					</div>
-					<div class="text-base md:font--size-20 text--grey-transparent mb-10" style="line-height: 1.8">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					
-					<a href="{{ url('capabilities') }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
+					<div class="w-full md:w-1/2">
+						<div class="text-black text-3xl md:font--size-85 font-bold mb-4 md:mb-10">
+							{!! $item['title'] !!}
+						</div>
+						<div class="text-base md:font--size-20 text--grey-transparent mb-10" style="line-height: 1.8">{!! $item['desc'] !!}</div>
+						
+						<a href="{{ url('capabilities/'.$item['slug']) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
+					</div>
 				</div>
-			</div>
-
+			</div>	
+			@endforeach
+		</div>
+		<div class="mx-4 md:px-10">
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
@@ -148,8 +183,8 @@
 	<section class="bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
 		<div class="mx-4 md:app-container pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
-				<div class="mb-4 md:mb-5 text-3xl md:font--size-85 font-semibold md:line--height-99c34">Team That Makes It Possible</div>
-				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div>
+				<div class="mb-4 md:mb-5 text-3xl md:font--size-85 font-semibold md:line--height-99c34">Your Brand Is In Good Hands</div>
+				<div class="text-base md:font--size-20 text--grey-transparent" style="line-height: 1.8">The team that brings your ideas to life.</div>
 			</div>
 		</div>
 		<div>
@@ -195,7 +230,7 @@
 					<div class="px-10 py-20 bg--blue rounded-xl">
 						<div class="text-white text-3xl md:font--size-65 mb-10">Insight </div>
 						<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
-							for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to
+							Make smarter business decisions while building a solid foundation for your brand.
 						</div>
 						<a href="//medium.com/@felicitymedia" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See More Insight</a>
 					</div>
@@ -204,9 +239,9 @@
 					<div class="px-10 py-20 bg--blue rounded-xl">
 						<div class="text-white text-3xl md:font--size-65 mb-10">Case Studies </div>
 						<div class="mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
-							for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to
+							Our work that can be measured in business impact.
 						</div>
-						<a href="//behance.com" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See Our Work</a>
+						<a href="//www.behance.net/felicityhq" target="_blank" class="flex justify-center items-center bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60">See Our Work</a>
 					</div>
 				</div>
 			</div>
@@ -278,7 +313,7 @@
 				<div class="text-base md:font--size-17 font--poppins w-full md:w-10/12 " 
 				style="letter-spacing: 0.02em;
 				color: rgba(55, 55, 55, 0.46);
-				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
+				opacity: 0.8;">We’re just a few clicks away from helping you solve your marketing roadblocks. We’ll get in touch within 14 hours.</div>
 			</div>
 
 			<form action="">
@@ -315,7 +350,7 @@
 				</div>
 				<div class="w-full md:w-1/2">
 					<div class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--blue">Team</span></div>
-					<div class="text-base md:font--size-22 text--gray mb-10 md:mb-14" style="line-height: 160%;">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products tofor world-class brands to make your products </div>
+					<div class="text-base md:font--size-22 text--gray mb-10 md:mb-14" style="line-height: 160%;">Our vision of taking India to the world is impossible without the help of honest, talented, and purpose driven individuals. We are on a constant lookout for people that believe in the power of ideas and dare to change the world with their own.</div>
 					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
 				</div>
 			</div>
@@ -327,7 +362,7 @@
 		<div class="z-20 relative mx-4 md:app-container ">
 			<div class=" p-10 bg--blue rounded-xl" >
 				<div class="text-3xl md:font--size-50 font-semibold text-white mb--17 md:mb-10">Learn Something New</div>
-				<div class="text-white opacity-50 mb--44 md:font--size-20">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to for world-class brands to make your products to live .</div>
+				<div class="text-white opacity-50 mb--44 md:font--size-20">We share new insights every week. We don’t spam. Promise.</div>
 				<div class="block md:flex gap-x-4">
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);
