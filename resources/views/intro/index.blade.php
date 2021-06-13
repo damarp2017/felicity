@@ -49,7 +49,7 @@
 	    background: #842e257d;
 	    position: absolute;
 	    right: 28px;
-	    bottom: 22px;
+	    bottom: 50px;
 	    z-index: 200;
 	    width: 50px;
 	    height: 50px;
