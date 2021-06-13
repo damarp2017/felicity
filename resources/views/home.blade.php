@@ -147,7 +147,7 @@
 			<div style="min-width: 100vw;">
 				<div class="block md:flex mx-4 md:app-container">
 					<div class="w-full md:w-1/2">
-						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/home/capabilities.png') }}">
+						<img class="h-auto max:h-96 max:w-full w-full" src="{{ asset('images/capabilities/'.$item['slug'].'.png') }}">
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="text-black text-3xl md:font--size-85 font-bold mb-4 md:mb-10">

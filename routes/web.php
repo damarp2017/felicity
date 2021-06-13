@@ -15,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 	Route::view('/', 'intro.index');
 	Route::view('home', 'home');
 	Route::view('capabilities', 'capabilities');
+	
+	Route::view('capabilities/marketing-strategy', 'capabilities.marketing-strategy');
+	Route::view('capabilities/branding', 'capabilities.branding');
+	Route::view('capabilities/content-production', 'capabilities.content-production');
+	Route::view('capabilities/influencer-outreach', 'capabilities.influencer-outreach');
+	Route::view('capabilities/technology-design', 'capabilities.technology-design');
+
 	Route::view('capabilities-inside', 'capabilities_inside');
 	Route::view('opportunities', 'opportunities');
 	Route::view('about-us', 'about_us');
