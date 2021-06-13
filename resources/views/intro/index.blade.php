@@ -66,13 +66,16 @@
 	}
 	@keyframes zoomin{
 		0%{
-			transform: scale(1);
+			opacity: .5;
+			transform: scale(.9);
 		}
 		50%{
-			transform: scale(1.2);
+			opacity: 1;
+			transform: scale(1);
 		}
 		100%{
-			transform: scale(1);
+			opacity: .5;
+			transform: scale(.9);
 		}
 
 	}
@@ -86,6 +89,11 @@
 	<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);display: none;" class="text-center logo" >
 		<img src="{{asset('images/logo/black.png?new')}}" style="max-width:100px;width: 30%;" class="mx-auto">
 	</div>
+	<div style="position:absolute;bottom: 60px;left: 50%;transform: translateX(-50%);display:none;" id="confirm" >
+		<button style="
+	    animation: zoomin 3s ease infinite;" class=" bottom-0 flex justify-center  items-center border border-gray-900 py-4 px-5 rounded-full text-gray-900 text-sm" onclick="play()" >Touch <br/>here </button>
+	</div>
+
 </div>
 <script type="text/javascript">
 		setTimeout(function(){
@@ -94,7 +102,7 @@
 	
 </script>
 <div style="position: relative;text-align: center;overflow: hidden;height: 100vh;background: #010001">
-	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;" muted>
+	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;" >
 	  <source src="" class="vidsource" type="video/mp4">
 	</video>
 	<!-- <video preload="none" class="vidbg video" muted="" style="position: absolute;z-index: 80;">
@@ -129,6 +137,7 @@
     			}    			
     		}
     		$('.vidcon, .vidbg').each(function(){
+
 				this.load();
 			})
     	}
@@ -147,10 +156,18 @@
     	$('.vidcon, .vidbg')[0].onended = function() {
           window.location.href = "{{ url('/home') }}";
 		};
+		function play(){
+			$('.vidcon, .vidbg')[0].play();	
+			$('#loading').fadeOut();
+		}
 		$('.vidcon, .vidbg')[0].addEventListener('loadeddata', function() {
 			setTimeout(function(){
-				$('#loading').fadeOut();
-				$('.vidcon, .vidbg')[0].play();	
+				try{
+					$('.vidcon, .vidbg')[0].play();	
+					$('#loading').fadeOut();
+				}catch(err){
+					$('#confirm').fadeIn();
+				}
 				// setTimeout(function(){
 
 				// },2000)
