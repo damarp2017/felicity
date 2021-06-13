@@ -73,7 +73,7 @@
 									<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
 									<div class="w-48"><hr></div>
 								</div>
-								<div class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</div>
+								<h2 class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</h2>
 							</div>
 							<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
 								
