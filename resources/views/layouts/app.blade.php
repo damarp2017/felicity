@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Felicity</title>
 	<meta name="theme-color" content="#3B28C2">
-
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
