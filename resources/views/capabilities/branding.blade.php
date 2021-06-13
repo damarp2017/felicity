@@ -18,7 +18,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex flex-col">
 				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</h2>
-				<div class="text-base md:font--size-20 line--height-160 text--grey-transparent">A logo, a name, or a colour scheme aren't enough to define your brand. It is, at the most basic level, who you are as a brand. Customers' perceptions of your company are shaped by your branding, which may elicit an emotional response at every touch point if done correctly. Businesses with strong brands are more likely to retain long-term customers and have an easier time attracting new customers since they already know what they stand for.</div>
+				<div class="text-base md:font--size-20 line--height-160 text--gray">A logo, a name, or a colour scheme aren't enough to define your brand. It is, at the most basic level, who you are as a brand. Customers' perceptions of your company are shaped by your branding, which may elicit an emotional response at every touch point if done correctly. Businesses with strong brands are more likely to retain long-term customers and have an easier time attracting new customers since they already know what they stand for.</div>
 			</div>
 		</div>
 	</section>
@@ -103,10 +103,10 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--171">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</h2>
+				<h2 class="text-3xl md:font--size-75 font-semibold leading-normal">What’s all Included</h2>
 				<!-- <div class="text-base md:font--size-20 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
 			</div>
 		</div>
@@ -194,7 +194,7 @@
 					
 					<div class="text--blue md:font--size-17 mb-2 font-bold" 
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
-					<div class="text-base md:font--size-17 text--grey-transparent" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
+					<div class="text-base md:font--size-17 text--gray" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
 			</a>
 		</div>

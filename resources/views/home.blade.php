@@ -22,7 +22,7 @@
 		<div class="mx-4 md:app-container md:pt-10">
 			<!-- <div class="flex mb-20 flex-col text-center justify-center">
 				<div class="mb-6 text-3xl md:font--size-65 font-semibold">About Us</div>
-				<div class="md:font--size-18 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div> -->
 
@@ -31,7 +31,7 @@
 					<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 					<h2 class="text--blue text-3xl md:font--size-52 font-bold">Our Vision</h2>
 				</div>
-				<div class="text-base md:font--size-20 text--grey-transparent leading-normal ">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising</div>
+				<div class="text-base md:font--size-20 text--gray leading-normal ">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising</div>
 			</div>
 
 			
@@ -157,7 +157,7 @@
 						<h2 class="text-black text-5xl md:font--size-70 font-bold mb-4 leading-none">
 							{!! $item['title'] !!}
 						</h2>
-						<div class="text-base md:font--size-20 text--grey-transparent mb-10 leading-normal ">{!! $item['desc'] !!}</div>
+						<div class="text-base md:font--size-20 text--gray mb-10 leading-normal ">{!! $item['desc'] !!}</div>
 						
 						<a href="{{ url('capabilities/'.$item['slug']) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
 					</div>
@@ -189,7 +189,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<h2 class="mb-4 md:mb-5 text-3xl md:font--size-70 font-semibold md:line--height-99c34">Your Brand Is In Good Hands</h2>
-				<div class="text-base md:font--size-20 text--grey-transparent leading-normal ">The team that brings your ideas to life.</div>
+				<div class="text-base md:font--size-20 text--gray leading-normal ">The team that brings your ideas to life.</div>
 			</div>
 		</div>
 		<div>
@@ -197,31 +197,31 @@
 				<div class="grid -mr-4 md:-mr-36 grid-flow-col auto-cols-max gap-x-10 ">
 					<div class="w-full">
 						<img class="mb-4 h-48 md:h-80" src="{{ asset('images/person/1.png') }}" alt="">
-						<div class="text--color-team md:font--size-30 " style="margin-bottom: -5px">Bruce Wayne</div>
+						<div class="text--color-team md:font--size-30 font-bold " style="margin-bottom: -5px">Bruce Wayne</div>
 						<div class="text--color-team md:font--size-17 uppercase" >WEB DEVELOPER</div>
 					</div>
 
 					<div class="w-full">
 						<img class="mb-4 h-48 md:h-80" src="{{ asset('images/person/2.png') }}" alt="">
-						<div class="text--color-team md:font--size-30 " style="margin-bottom: -5px">Diana Prince</div>
+						<div class="text--color-team md:font--size-30 font-bold " style="margin-bottom: -5px">Diana Prince</div>
 						<div class="text--color-team md:font--size-17 uppercase" >GRAPHIC DESIGNER</div>
 					</div>
 
 					<div class="w-full">
 						<img class="mb-4 h-48 md:h-80" src="{{ asset('images/person/3.png') }}" alt="">
-						<div class="text--color-team md:font--size-30 " style="margin-bottom: -5px">Clark Kent</div>
+						<div class="text--color-team md:font--size-30 font-bold " style="margin-bottom: -5px">Clark Kent</div>
 						<div class="text--color-team md:font--size-17 uppercase" >GRAPHIC DESIGNER</div>
 					</div>
 
 					<div class="w-full">
 						<img class="mb-4 h-48 md:h-80" src="{{ asset('images/person/3.png') }}" alt="">
-						<div class="text--color-team md:font--size-30 " style="margin-bottom: -5px">Clark Kent</div>
+						<div class="text--color-team md:font--size-30 font-bold " style="margin-bottom: -5px">Clark Kent</div>
 						<div class="text--color-team md:font--size-17 uppercase" >GRAPHIC DESIGNER</div>
 					</div>
 
 					<div class="w-full">
 						<img class="mb-4 h-48 md:h-80" src="{{ asset('images/person/3.png') }}" alt="">
-						<div class="text--color-team md:font--size-30 " style="margin-bottom: -5px">Clark Kent</div>
+						<div class="text--color-team md:font--size-30 font-bold " style="margin-bottom: -5px">Clark Kent</div>
 						<div class="text--color-team md:font--size-17 uppercase" >GRAPHIC DESIGNER</div>
 					</div>
 				</div>
@@ -234,7 +234,7 @@
 		<div class="mx-4 md:container--case-studies pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-70 font-semibold">Case Studies</div>
-				<div class="text-base md:font--size-18 text--grey-transparent">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="text-base md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
 
@@ -254,7 +254,7 @@
 					
 					<div class="text--blue md:font--size-17 mb-2 font-bold" 
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
-					<div class="text-base md:font--size-17 text--grey-transparent" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
+					<div class="text-base md:font--size-17 text--gray" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
 			</a>
 			@endfor

@@ -18,7 +18,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex flex-col">
 				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</h2>
-				<div class="text-base md:font--size-20 line--height-160 text--grey-transparent">Technology and Design is a highly specialised department that deals in ensuring that your brand has the infrastructure in place that can support your marketing efforts and create an effective conversion funnel that positively impacts your ROI.</div>
+				<div class="text-base md:font--size-20 line--height-160 text--gray">Technology and Design is a highly specialised department that deals in ensuring that your brand has the infrastructure in place that can support your marketing efforts and create an effective conversion funnel that positively impacts your ROI.</div>
 			</div>
 		</div>
 	</section>
@@ -29,46 +29,49 @@
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<h2 class="text--blue text-3xl md:font--size-39 font-bold">Our Process</h2>
 			</div>
-		</div>
-		<div class="flex overflow-x-auto pt-5 slider" id="process-slider" >
-			@php
-				$items = [
-					[
-						'no'=>'01',
-						'title'=>'Planning',
-						'desc'=>"SThis is where we define goals, what we will measure success, define needs, consider improving existing processes, and explore the available options before defining the Scope of Work (SOW).."
-					],
-					[
-						'no'=>'02',
-						'title'=>'Implement',
-						'desc'=>"We then start with implementing the SOW, and configure the required technologies. We then move to data migration, define usage and support, and at the time of delivery train the users."
-					],
-					[
-						'no'=>'03',
-						'title'=>'Measure',
-						'desc'=>"At the start of the project, we defined what success would look like. At the end of the project, we take a look at what we've done to see if we've achieved that. We then come up with a set of measures and an ongoing process to track how well things are working."
-					],
-				]
-			@endphp
-			@foreach($items as $item)
-			<div style="min-width: 100vw;">
-				<div class="block md:flex mx-4 md:app-container">
-					<div class="w-full md:w-1/2">
-						<img class="max-h-80 max-w-full" src="{{ asset('images/opportunities/2.png') }}">
+			<div class="flex">
+				<div class="w-1/3">
+					<div >
+						<img class="max-h-80 max-w-full" src="{{ asset('images/capabilities/technology-design.png') }}">
 					</div>
-					<div class="w-full md:w-1/2">
-						<div class="mb-3 text-black ">
-							<div class="flex gap-x-4 items-center">
-								<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
-								<div class="w-48"><hr></div>
+				</div>
+				<div class="w-2/3">
+					<div class="flex overflow-x-auto pt-5 slider space-area" id="process-slider">
+						@php
+							$items = [
+								[
+									'no'=>'01',
+									'title'=>'Planning',
+									'desc'=>"SThis is where we define goals, what we will measure success, define needs, consider improving existing processes, and explore the available options before defining the Scope of Work (SOW)."
+								],
+								[
+									'no'=>'02',
+									'title'=>'Implement',
+									'desc'=>"We then start with implementing the SOW, and configure the required technologies. We then move to data migration, define usage and support, and at the time of delivery train the users."
+								],
+								[
+									'no'=>'03',
+									'title'=>'Measure',
+									'desc'=>"At the start of the project, we defined what success would look like. At the end of the project, we take a look at what we've done to see if we've achieved that. We then come up with a set of measures and an ongoing process to track how well things are working."
+								],
+							]
+						@endphp
+						@foreach($items as $item)
+						<div style="min-width: 50vw;" class="space-item-1 px-10">
+							<div class="mb-3 text-black ">
+								<div class="flex gap-x-4 items-center">
+									<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
+									<div class="w-48"><hr></div>
+								</div>
+								<div class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</div>
 							</div>
-							<div class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</div>
+							<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
+								
 						</div>
-						<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
+						@endforeach
 					</div>
 				</div>
 			</div>
-			@endforeach
 		</div>
 		
 		<div class="mx-4 md:app-container ">
@@ -79,10 +82,10 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
 				<div class="flex gap-x-4 items-center">
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="next">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="prev">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="prev">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="next">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>
@@ -90,10 +93,10 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--171">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</h2>
+				<h2 class="text-3xl md:font--size-75 font-semibold leading-normal">What’s all Included</h2>
 				<!-- <div class="text-base md:font--size-20 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
 			</div>
 		</div>
@@ -142,10 +145,10 @@
 	
 				</div>
 			</div>
-			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 left-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full  slider-control" target="#included-slider" action="next">
+			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 left-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full  slider-control" target="#included-slider" action="prev">
 				<img src="{{ asset('images/utilities/prev.png') }}">
 			</button>
-			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 right-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full slider-control" target="#included-slider" action="prev">
+			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 right-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full slider-control" target="#included-slider" action="next">
 				<img src="{{ asset('images/utilities/next.png') }}">
 			</button>
 		</div>
@@ -171,7 +174,7 @@
 					
 					<div class="text--blue md:font--size-17 mb-2 font-bold" 
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
-					<div class="text-base md:font--size-17 text--grey-transparent" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
+					<div class="text-base md:font--size-17 text--gray" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
 			</a>
 		</div>

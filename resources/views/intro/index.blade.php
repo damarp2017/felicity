@@ -129,8 +129,8 @@
     			}    			
     		}
     		$('.vidcon, .vidbg').each(function(){
-					this.load();
-				})
+				this.load();
+			})
     	}
 
     	$(document).ready(function(){
@@ -150,7 +150,7 @@
 		$('.vidcon, .vidbg')[0].addEventListener('loadeddata', function() {
 			setTimeout(function(){
 				$('#loading').fadeOut();
-					$('.vidcon, .vidbg')[0].play();	
+				$('.vidcon, .vidbg')[0].play();	
 				// setTimeout(function(){
 
 				// },2000)

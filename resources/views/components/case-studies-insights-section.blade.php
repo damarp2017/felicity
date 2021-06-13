@@ -8,7 +8,7 @@
 							Make smarter business decisions while building a solid foundation for your brand.
 						</div>
 						<div class="text-right md:text-left">
-							<a href="//medium.com/@felicitymedia" target="_blank" class="px-6 py-3 bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60 text-bold">See More Insights</a>
+							<a href="//medium.com/@felicitymedia" target="_blank" class="px-6 py-3 md:px-7 md:py-4 bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60 font-bold">See More Insights</a>
 						</div>
 					</div>
 				</div>
@@ -19,7 +19,7 @@
 							Our work that can be measured in business impact.
 						</div>
 						<div class="text-right md:text-left">
-							<a href="//www.behance.net/felicityhq" target="_blank" class="px-6 py-3 bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60 text-bold">See Our Work</a>
+							<a href="//www.behance.net/felicityhq" target="_blank" class="px-6 py-3 md:px-7 md:py-4 bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60 font-bold">See Our Work</a>
 						</div>
 					</div>
 				</div>

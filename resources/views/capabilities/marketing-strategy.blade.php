@@ -18,7 +18,7 @@
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex flex-col">
 				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</h2>
-				<div class="text-base md:font--size-20 line--height-160 text--grey-transparent">You had an idea that you brought to life after putting hours and hours of effort into honing the product that truly benefits the customer and solves a problem. Now, It’s time for you to share it with the world and you need a partner that can help you do that. At Felicity, we understand the power of ideas but, we also understand that to succeed, efforts need a powerful push in the right direction. We help businesses with holistic marketing strategies to capitalize and win in this competitive marketplace. We know that when it comes to marketing, there is no one-size-fits-all.</div>
+				<div class="text-base md:font--size-20 line--height-160 text--gray">You had an idea that you brought to life after putting hours and hours of effort into honing the product that truly benefits the customer and solves a problem. Now, It’s time for you to share it with the world and you need a partner that can help you do that. At Felicity, we understand the power of ideas but, we also understand that to succeed, efforts need a powerful push in the right direction. We help businesses with holistic marketing strategies to capitalize and win in this competitive marketplace. We know that when it comes to marketing, there is no one-size-fits-all.</div>
 			</div>
 		</div>
 	</section>
@@ -29,71 +29,75 @@
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<h2 class="text--blue text-3xl md:font--size-39 font-bold">Our Process</h2>
 			</div>
-		</div>
-			@php
-				$items = [
-					[
-						'no'=>'01',
-						'title'=>'Set Expectations and Goals',
-						'desc'=>"We set realistic and measurable goals to achieve over the next 18 to 24 months. This time span allows us to plan activities around community events that are in line with your marketing goals."
-					],
-					[
-						'no'=>'02',
-						'title'=>'Conduct a Brand Audit',
-						'desc'=>"We review all marketing activities that have been carried out by your brand over the past three years. We are as thorough as possible and make sure to review every announcement, advertisement, phonebook ad, open house, brochure and seminar and evaluate what worked for your brand."
-					],
-					[
-						'no'=>'03',
-						'title'=>'Conduct Market Research',
-						'desc'=>"We draw a realistic picture of your brand. With this research, we can make fairly accurate projections about future growth in the market, identify competitive factors and explore nontraditional opportunities. Our research may even bring to light some problem areas in your brand positioning as well as solutions you can implement right away."
-					],
-					[
-						'no'=>'04',
-						'title'=>'Identify Target Audience',
-						'desc'=>"With the help of our market research analysis, we will be able to identify our Target Audience which is the specific group of customers to whom we should direct our marketing efforts. We understand that the key to marketing lies in targeting the audience that your brand can serve better than your competition – and communicating this to that target group."
-					],
-					[
-						'no'=>'05',
-						'title'=>'Determine a Media Plan',
-						'desc'=>"Depending on the scope of work we narrow down on after our initial analysis of the brand, we will chart out a media plan that fits our brand’s requirements and define an actionable conversion plan along with it."
-					],
-					[
-						'no'=>'06',
-						'title'=>"Develop Marketing Strategies",
-						'desc'=>"With your budget in place, we will begin to define specific marketing strategies that will address your goals, reach your target audience and build your customer base. Each strategy will be related to a specific goal and will be made up of defined execution plans."
-					],
-					[
-						'no'=>'07',
-						'title'=>"Develop an Action Plan",
-						'desc'=>"An action plan is a time-line that will show which marketing actions will be done when and by whom. The schedule will also include the cost of each marketing action and how it fits into the budget estimates for our campaign period."
-					],
-					[
-						'no'=>'08',
-						'title'=>"Define Success Parameters",
-						'desc'=>"The value of a marketing plan is its effectiveness, which requires deliberate and timely implementation and monitoring and evaluation of results. It’s important to measure our results against the standards we set in establishing our goals. We will review our plan periodically (we recommend quarterly) by comparing our progress with the action plan."
-					],
-				]
-			@endphp
-		<div class="flex overflow-x-auto pt-5 slider" id="process-slider">
-			@foreach($items as $item)
-			<div style="min-width: 100vw;">
-				<div class="block md:flex mx-4 md:app-container">
-					<div class="w-full md:w-1/2">
-						<img class="max-h-80 max-w-full" src="{{ asset('images/opportunities/2.png') }}">
+
+			<div class="flex">
+				<div class="w-1/3">
+					<div >
+						<img class="max-h-80 max-w-full" src="{{ asset('images/capabilities/marketing-strategy.png') }}">
 					</div>
-					<div class="w-full md:w-1/2">
-						<div class="mb-3 text-black ">
-							<div class="flex gap-x-4 items-center">
-								<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
-								<div class="w-48"><hr></div>
+				</div>
+				<div class="w-2/3">
+					<div class="flex overflow-x-auto pt-5 slider space-area" id="process-slider">
+						@php
+							$items = [
+								[
+									'no'=>'01',
+									'title'=>'Set Expectations and Goals',
+									'desc'=>"We set realistic and measurable goals to achieve over the next 18 to 24 months. This time span allows us to plan activities around community events that are in line with your marketing goals."
+								],
+								[
+									'no'=>'02',
+									'title'=>'Conduct a Brand Audit',
+									'desc'=>"We review all marketing activities that have been carried out by your brand over the past three years. We are as thorough as possible and make sure to review every announcement, advertisement, phonebook ad, open house, brochure and seminar and evaluate what worked for your brand."
+								],
+								[
+									'no'=>'03',
+									'title'=>'Conduct Market Research',
+									'desc'=>"We draw a realistic picture of your brand. With this research, we can make fairly accurate projections about future growth in the market, identify competitive factors and explore nontraditional opportunities. Our research may even bring to light some problem areas in your brand positioning as well as solutions you can implement right away."
+								],
+								[
+									'no'=>'04',
+									'title'=>'Identify Target Audience',
+									'desc'=>"With the help of our market research analysis, we will be able to identify our Target Audience which is the specific group of customers to whom we should direct our marketing efforts. We understand that the key to marketing lies in targeting the audience that your brand can serve better than your competition – and communicating this to that target group."
+								],
+								[
+									'no'=>'05',
+									'title'=>'Determine a Media Plan',
+									'desc'=>"Depending on the scope of work we narrow down on after our initial analysis of the brand, we will chart out a media plan that fits our brand’s requirements and define an actionable conversion plan along with it."
+								],
+								[
+									'no'=>'06',
+									'title'=>"Develop Marketing Strategies",
+									'desc'=>"With your budget in place, we will begin to define specific marketing strategies that will address your goals, reach your target audience and build your customer base. Each strategy will be related to a specific goal and will be made up of defined execution plans."
+								],
+								[
+									'no'=>'07',
+									'title'=>"Develop an Action Plan",
+									'desc'=>"An action plan is a time-line that will show which marketing actions will be done when and by whom. The schedule will also include the cost of each marketing action and how it fits into the budget estimates for our campaign period."
+								],
+								[
+									'no'=>'08',
+									'title'=>"Define Success Parameters",
+									'desc'=>"The value of a marketing plan is its effectiveness, which requires deliberate and timely implementation and monitoring and evaluation of results. It’s important to measure our results against the standards we set in establishing our goals. We will review our plan periodically (we recommend quarterly) by comparing our progress with the action plan."
+								],
+							]
+						@endphp
+						@foreach($items as $item)
+						<div style="min-width: 50vw;" class="space-item-1 px-10">
+							<div class="mb-3 text-black ">
+								<div class="flex gap-x-4 items-center">
+									<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
+									<div class="w-48"><hr></div>
+								</div>
+								<div class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</div>
 							</div>
-							<div class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</div>
+							<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
+								
 						</div>
-						<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
+						@endforeach
 					</div>
 				</div>
 			</div>
-			@endforeach
 		</div>
 		
 		<div class="mx-4 md:app-container ">
@@ -104,10 +108,10 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
 				<div class="flex gap-x-4 items-center">
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="next">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="prev">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="prev">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="next">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>
@@ -115,10 +119,10 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:pb-20 md:pt--171">
+	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-75 font-semibold">What’s all Included</h2>
+				<h2 class="text-3xl md:font--size-75 font-semibold leading-normal">What’s all Included</h2>
 				<!-- <div class="text-base md:font--size-20 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->
 			</div>
 		</div>
@@ -177,10 +181,10 @@
 				</div>
 			</div>
 			
-			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 left-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full  slider-control" target="#included-slider" action="next">
+			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 left-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full  slider-control" target="#included-slider" action="prev">
 				<img src="{{ asset('images/utilities/prev.png') }}">
 			</button>
-			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 right-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full slider-control" target="#included-slider" action="prev">
+			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 right-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full slider-control" target="#included-slider" action="next">
 				<img src="{{ asset('images/utilities/next.png') }}">
 			</button>
 		</div>
@@ -206,7 +210,7 @@
 					
 					<div class="text--blue md:font--size-17 mb-2 font-bold" 
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
-					<div class="text-base md:font--size-17 text--grey-transparent" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
+					<div class="text-base md:font--size-17 text--gray" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
 			</a>
 		</div>
