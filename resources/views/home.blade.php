@@ -37,22 +37,22 @@
 					</div>
 					<div class="text-base md:font--size-20 text--gray" style="line-height: 1.8">Felicity was started out of sheer love and admiration for the art of advertising. We believe that ideas can change the world and it is our constant endeavour to help businesses grow and evolve over time. We want to work with brands that synergise with the values that we strongly imbibe in every thing we do here at Felicity.</div>
 				</div>
-				<div class="w-full md:w-1/2"><img class="w-full" style="object-fit: none" src="{{ asset('images/home/our_manifestos.png') }}"></div>
+				<div class="w-full md:w-1/2 p-5"><img class="w-full" style="object-fit: none" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
 		</div>
 		<div class="mx-4 pt-0 md:pt-20 md:px-10 md:-mr--27">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-0 mb-6 md:mb-10">
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png') }}">
+					<div class="card--about-home w-full md:w-auto  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/4.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">Win-Win Situation</div>
 							<div class="text-base text--gray md:font--size-20">When you score, we score!</div>
 						</div>
 					</div>
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png') }}">
+					<div class="card--about-home w-full md:w-auto  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/5.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We’re Problem Solvers</div>
 							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand.</div>
@@ -62,31 +62,31 @@
 
 
 					
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png') }}">
+					<div class="card--about-home w-full md:w-auto  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/2.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Worship Data </div>
 							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences</div>
 						</div>
 					</div>
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png') }}">
+					<div class="card--about-home w-full md:w-auto  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/3.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We Are Bold</div>
 							<div class="text-base text--gray md:font--size-20">We dare to dream and to turn it into reality</div>
 						</div>
 					</div>
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png') }}">
+					<div class="card--about-home w-full md:w-auto  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/6.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We’re Agile</div>
 							<div class="text-base text--gray md:font--size-20">We make decisions quickly but carefully</div>
 						</div>
 					</div>
 
-					<div class="card--about-home  bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
-						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png') }}">
+					<div class="card--about-home w-full md:w-auto  bg-white rounded-xl flex px-6 py-4 items-center mb-4 ">
+						<img class="w-10 h-10 mr-5" src="{{ asset('images/home/items/1.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-2 font-semibold text--blue">We’re Match-Makers</div>
 							<div class="text-base font-normal text--gray md:font--size-20">From consumer to customer, we help you convert</div>

@@ -28,6 +28,9 @@
 		::-webkit-scrollbar-thumb {
 		  background: #888;
 		}
+		.navbar-mobile:not(.bg--blue){
+			background:#3b28c2bf;
+		}
     </style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	
