@@ -12,10 +12,10 @@
 			<div class="grid grid-cols-2 md:flex md:flex-row mb--94">
 				<div class="flex flex-col w-auto mb-8 md:mb-0 md:mr--150">
 					<div style="color: #949494;" class="font--poppins mb-2 md:font--size-17  font--poppins uppercase">quick links</div>
-					<a href="{{ url('/') }}" class="text-white mb-2 md:font--size-18 font--poppins">Home</a>
+					<a href="{{ url('/home') }}" class="text-white mb-2 md:font--size-18 font--poppins">Home</a>
 					<a href="#" class="text-white mb-2 md:font--size-18 font--poppins">Career</a>
 					<a href="{{ url('contact-us') }}" class="text-white mb-2 md:font--size-18 font--poppins">Contact Us</a>
-					<a href="{{ url('our-clients') }}" class="text-white mb-2 md:font--size-18 font--poppins">Our Client</a>
+					<!-- <a href="{{ url('our-clients') }}" class="text-white mb-2 md:font--size-18 font--poppins">Our Client</a> -->
 				</div>
 				<div class="flex flex-col mb-8 md:mb-0 md:mr--150">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">Social Media</div>
@@ -26,8 +26,9 @@
 				<div class="flex flex-col mb-8 md:mb-0">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">About</div>
 					<a href="{{ url('terms-and-conditions') }}" class="text-white mb-2 md:font--size-18 font--poppins">Terms</a>
-					<a href="#" class="text-white mb-2 md:font--size-18 font--poppins">Privacy</a>
-					<a href="{{ url('press-release') }}" class="text-white mb-2 md:font--size-18 font--poppins">Press Release</a>
+					<a href="{{url('privacy')}}" class="text-white mb-2 md:font--size-18 font--poppins">Privacy</a>
+					<a href="{{url('about-us')}}" class="text-white mb-2 md:font--size-18 font--poppins">About Us</a>
+					<!-- <a href="{{ url('press-release') }}" class="text-white mb-2 md:font--size-18 font--poppins">Press Release</a> -->
 				</div>
 			</div>
 	

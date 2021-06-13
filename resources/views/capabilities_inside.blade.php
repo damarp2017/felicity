@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
+	<header class="w-full overflow-x-hidden bg--header-gradient relative">
 		@include('layouts.__navigation')
-		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 20% 0">
 			<div class="mx-4 md:mx-0 text-center">
 				<div class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center"> Branding at it’s <br> best at Felicity</div>
@@ -24,8 +24,8 @@
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="flex items-center mb-20">
-				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-				<div class="text--pink text-3xl md:font--size-39 font-bold">Our Process</div>
+				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
+				<div class="text--blue text-3xl md:font--size-39 font-bold">Our Process</div>
 			</div>
 	
 			<div class="block md:flex mb-24">
@@ -46,7 +46,7 @@
 
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
-					<div class="bg--pink w-10 h-1 md:h-2 rounded-full"></div>
+					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
@@ -133,7 +133,7 @@
 						<div class="text-base text--color-team md:font--size-16 font--gilroy-md">FEATURED</div>
 					</div>
 					
-					<div class="text--pink md:font--size-17 mb-2 font-bold" 
+					<div class="text--blue md:font--size-17 mb-2 font-bold" 
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
 					<div class="text-base md:font--size-17 text--grey-transparent" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
@@ -143,8 +143,8 @@
 
 	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container pt-0 md:pt-20">
-			<div class="w-full mb-3 md:mb--140">
-				<div class="text-3xl md:font--size-65 font-semibold mb-4 md:mb-10">Work with us for a <span class="text--pink">Project ?</span></div>
+			<div class="w-full md:mb--140">
+				<div class="text-3xl md:font--size-65 font-semibold mb-4 md:mb-10">Work with us for a <span class="text--blue">Project ?</span></div>
 				<div class="text-base font--poppins md:font--size-17 w-full md:w-3/4 " 
 				style="
 				line-height: 192.8%;
@@ -168,7 +168,7 @@
 					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Reason to contact" style="border-radius: 15px">
 					</div>
-					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--pink"
+					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--blue"
 					style="border-radius: 19px">Send</button>
 				</div>
 			</form>

@@ -2,7 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
 		@include('layouts.__navigation')
-		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center" style="padding: 25% 0">
 			<div class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> What's your next <br> destination?</div>
 			<div class="text-base text-center md:font--size-22 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div>
@@ -12,8 +12,8 @@
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:mr--95 md:ml--77 ">
 			<div class="flex items-center justify-center mb--95">
-				<div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div>
-				<div class="text--pink text-3xl md:font--size-39 font-bold">Vision</div>
+				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
+				<div class="text--blue text-3xl md:font--size-39 font-bold">Vision</div>
 			</div>
 	
 			<div class="block md:flex mb-24">
@@ -34,7 +34,7 @@
 
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-4 items-center">
-					<div class="bg--pink w-10 h-1 md:h-2 rounded-full"></div>
+					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
@@ -53,7 +53,7 @@
 	<section class="bg--gray-light w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:ml--68 md:mr--94 " >
 			<div class="flex flex-col items-center justify-center text-center mb-20">
-				<div class="text-3xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Live your best life , <span class="text--pink">Benifits</span> to <br> work with us .</div>
+				<div class="text-3xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Live your best life , <span class="text--blue">Benifits</span> to <br> work with us .</div>
 				<div class="text-base md:font--size-18 font--poppins "
 				style="letter-spacing: 0.02em;
 				line-height: 185.3%;
@@ -66,7 +66,7 @@
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
 					</div>
-					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Flexible</div>
 						<div class="font--gilroy-reg">Time Schedule</div>
 					</div>	
@@ -76,7 +76,7 @@
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
 					</div>
-					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Learing and </div>
 						<div class="font--gilroy-reg">Development</div>
 					</div>
@@ -86,7 +86,7 @@
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/love.png') }}" alt="">
 					</div>
-					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Generous Parental  </div>
 						<div class="font--gilroy-reg"><span class="font--gilroy-bold">and</span> Family Leaves</div>
 					</div>
@@ -96,7 +96,7 @@
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
 					</div>
-					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Headspace</div>
 						<div class="font--gilroy-reg">Membership</div>
 					</div>
@@ -105,7 +105,7 @@
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/book.png') }}" alt="">
 					</div>
-					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Book</div>
 						<div class="font--gilroy-reg">Reimbursements</div>
 					</div>
@@ -115,7 +115,7 @@
 					<div class="flex items-center justify-center">
 						<img class="mb-9 h-14 md:h-auto" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
 					</div>
-					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
+					<div class="text--blue text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Paid Volunteer </div>
 						<div class="font--gilroy-reg">Time</div>
 					</div>
@@ -224,7 +224,7 @@
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
 			<div class="mb-0 md:mb--51">
-				<div class="text-3xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Oppurtunities , Small teams, <br> <span class="text--pink">global mission</span> </div>
+				<div class="text-3xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Oppurtunities , Small teams, <br> <span class="text--blue">global mission</span> </div>
 				<div class=" text-base md:font--size-22 text--gray line--height-160">for world-class brands to make your products to live for world-class brands to make your products to <br> live for world-class brands to make your products to</div>
 			</div>
 
@@ -238,10 +238,10 @@
 			<div>
 				<div class="uppercase my-4 md:mb--24 text-sm font--gilroy-md md:font--size-14 text--black-op-87" >Filters</div>
 				<div class="grid grid-flow-col auto-cols-max gap-x-5 md:gap-x-0 mb-10 md:mb--87 overflow-x-auto md:overflow-x-hidden ">
-					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--red focus:text--white-op-87" style="letter-spacing: 0.02em;">UI/UX Designer</a>
-					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--red focus:text--white-op-87" style="letter-spacing: 0.02em;">Web Designer</a>
-					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--red focus:text--white-op-87" style="letter-spacing: 0.02em;">Graphic Designer</a>
-					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--red focus:text--white-op-87" style="letter-spacing: 0.02em;">Content writer</a>
+					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--blue focus:text--white-op-87" style="letter-spacing: 0.02em;">UI/UX Designer</a>
+					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--blue focus:text--white-op-87" style="letter-spacing: 0.02em;">Web Designer</a>
+					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--blue focus:text--white-op-87" style="letter-spacing: 0.02em;">Graphic Designer</a>
+					<a href="#" class="filter-link md:mr--3 font--gilroy-md rounded-lg py-3 px-5 md:padding-button-filter-jobs text--gray-66 md:font--size-17 focus:bg--blue focus:text--white-op-87" style="letter-spacing: 0.02em;">Content writer</a>
 				</div>
 
 				<div class="uppercase mb-6 md:mb--21 text-sm font--gilroy-md md:font--size-14 text--black-op-87">AVAILABLE POSITIONS</div>

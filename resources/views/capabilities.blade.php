@@ -2,7 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--header-gradient relative ">
 		@include('layouts.__navigation')
-		<img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full">
+		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-full justify-center items-center text-center" style="padding: 25% 0">
 			<div class="block md:hidden text-lg text-white uppercase">We design the</div>
 			<div class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-150">Our Capabilities</div>
@@ -18,7 +18,7 @@
 				<div class="w-full md:w-1/2 ">
 					<div class="text-5xl md:font--size-85 font-bold mb-4 md:mb--23">Branding</div>
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64 bg--pink text-white md:font--size-18  font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
+					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64 bg--blue text-white md:font--size-18  font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 				<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/brand.png') }}"></div>
 			</div>
@@ -28,10 +28,10 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-5xl md:font--size-85 font-bold mb-4 md:mb--23">
 						<div>Marketing</div>
-						<div class="text--pink">Strategy</div>	
+						<div class="text--blue">Strategy</div>	
 					</div>
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--pink md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
+					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--blue md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 			</div>
 
@@ -40,10 +40,10 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-5xl md:font--size-85 font-bold mb-4 md:mb--23">
 						<div>Content</div>
-						<div class="text--pink">Production</div>	
+						<div class="text--blue">Production</div>	
 					</div>
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--pink md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
+					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--blue md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 				<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/content.png') }}"></div>
 			</div>
@@ -53,10 +53,10 @@
 				<div class="w-full md:w-1/2">
 					<div class="text-5xl md:font--size-85 font-bold mb-4 md:mb--23">
 						<div>Influencer </div>
-						<div class="text--pink">Outreach</div>	
+						<div class="text--blue">Outreach</div>	
 					</div>
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--pink md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
+					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--blue md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 			</div>
 
@@ -65,10 +65,10 @@
 				<div class="w-full  md:w-1/2 mb-8 md:mb-0">
 					<div class="text-5xl md:font--size-85 font-bold mb-4 md:mb--23">
 						<div>Technology  </div>
-						<div class="text--pink">and Design</div>	
+						<div class="text--blue">and Design</div>	
 					</div>
 					<div class="text-base md:font--size-22 text--gray line--height-160 mb-4 md:mb--28">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles We fuel the growth of purpose driven brands through strategy activation.</div>
-					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--pink md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
+					<a href="{{ url('capabilities-inside') }}" class="flex justify-center items-center w-32 h-12 md:w--315 md:h--64  bg--blue md:font--size-18 text-white font--gilroy-md rounded-full outline-none focus:outline-none">See More</a>
 				</div>
 				<div class="w-full  md:w-auto"><img class="h-auto md:h-96" src="{{ asset('images/capabilities/tech.png') }}"></div>
 			</div>
@@ -81,9 +81,9 @@
 	
 	
 	<section  class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container pt-0 md:pt-20">
-			<div class="w-full mb-3 md:mb--140">
-				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--pink">Project</span> Idea ?</div>
+		<div class="mx-4 md:app-container  pt-0 md:pt-20">
+			<div class="w-full md:mb--140">
+				<div class="text-3xl md:font--size-65  w-8/12 md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea ?</div>
 				<div class="text-base font--poppins md:font--size-17 w-full md:w-3/4 " 
 				style="
 				line-height: 192.8%;
@@ -107,7 +107,7 @@
 					<div class="mb-1 md:mb--43">
 						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg-white focus:outline-none" placeholder="Reason to contact" style="border-radius: 15px">
 					</div>
-					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--pink"
+					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--blue"
 					style="border-radius: 19px">Send</button>
 				</div>
 			</form>

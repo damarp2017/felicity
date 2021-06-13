@@ -2,7 +2,7 @@
 @section('content')
 	@include('layouts.__navigation_light')
 
-	<section class="bg-white w-full overflow-x-hidden py-10">
+	<section class="bg-white w-full overflow-x-hidden py-20 md:py-10">
 		<div class="mx-4 md:container--other-layouts">
 			<div class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-0 mb-10">
 				<div class="w-full md:w-1/2 md:mr--78">
