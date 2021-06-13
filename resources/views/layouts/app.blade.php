@@ -100,102 +100,153 @@
 			$(this).css('min-width',width);
 		})
 		const sliders = document.querySelectorAll('.slider');
-		sliders.forEach(function(slider){
-			let dotsElement = $('#process-slider').next().find(".slider-dot");
-			dotsElement.html('');
-			let parentWidth = $(this).width()
-			let scrollWidth = $(this).get(0).innerWidth;
-			let pagesTotal=Math.ceil(scrollWidth/parentWidth);
-			for(var i=0;i<pagesTotal;i++){
-				dotsElement.append(`<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>`);
+
+		sliderHandler = function(slider){
+			this.slider=slider;
+			this.dotsElement = $(this.slider).next().find(".slider-dot");
+			this.dotsElement.html('');
+			this.parentWidth = $(this.slider).width()
+			this.scrollWidth = $(this.slider).get(0).scrollWidth;
+			this.pagesTotal=Math.ceil(this.scrollWidth/this.parentWidth);
+			for(var i=0;i<this.pagesTotal;i++){
+				if(i==0){
+					this.dotsElement.append(`<div class="bg--blue w-10 h-1 md:h-2 rounded-full it"></div>`);
+				}else{
+					this.dotsElement.append(`<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full it"></div>`);
+				}
 			}
-			let isDown = false;
-			  let startX;
-			  let scrollLeft;
-			  slider.addEventListener('mousedown', (e) => {
-			  	console.log('aa')
-			    isDown = true;
-			    slider.classList.add('active');
-			    startX = e.pageX - slider.offsetLeft;
-			    scrollLeft = slider.scrollLeft;
-			    cancelMomentumTracking();
-			  });
-			  
-			  
-			  slider.addEventListener('mouseleave', () => {
-			    isDown = false;
-			    slider.classList.remove('active');
-			  });
-			  
-			  
-			  slider.addEventListener('mouseup', (e) => {
-			    beginMomentumTracking();
-				let pagesTotal=Math.ceil(slider.scrollWidth/slider.offsetWidth);
-			    isDown = false;
-			    slider.classList.remove('active');
-			    p=(slider.scrollLeft/slider.offsetWidth);
-			    endX =  e.pageX - slider.offsetLeft;
-			    posX = (startX-endX);
-			    if(posX>0){
-			    	if((endX/slider.offsetWidth)>0.25){
+			this.isDown = false;
+			this.startX;
+			this.newP=0;
+
+			this.velX = 0;
+			this.momentumID;
+			this.curpage = ()=>{
+				page = this.slider.scrollLeft/this.slider.offsetWidth;
+				console.log(this.slider,this.slider.offsetWidth)
+				return page;
+			}
+			this.touchStart = (e)=>{
+				if(e.type=='touchstart'){
+					e = e.changedTouches[0];
+				}
+				this.isDown = true;
+				this.slider.classList.add('active');
+				this.startX = e.pageX - this.slider.offsetLeft;
+				scrollLeft = this.slider.scrollLeft;
+				cancelMomentumTracking();
+			}
+			this.touchCancel = () => {
+				this.isDown = false;
+				this.slider.classList.remove('active');
+			}
+
+			this.touchEnd = (e) => {
+				if(e.type=='touchend'){
+					e = e.changedTouches[0];
+				}
+				beginMomentumTracking();
+				let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
+				this.isDown = false;
+				this.slider.classList.remove('active');
+				p=(this.slider.scrollLeft/this.slider.offsetWidth);
+				endX =  e.pageX - this.slider.offsetLeft;
+				posX = (this.startX-endX);
+				if(posX>0){
+					if((endX/this.slider.offsetWidth)>0.25){
 				    	p = Math.ceil(p);
-				    }
-			    }else{
-			    	if((Math.abs(endX)/slider.offsetWidth)>0.25){
-				    	p = Math.floor(p);
-				    }
-			    }
-			    newP=p*slider.offsetWidth;
-			    function animate(){
-			    	if(slider.scrollLeft<newP){
-				    	slider.scrollLeft+=10;
-				    	if(slider.scrollLeft<=newP){
-				    		momentumID = requestAnimationFrame(animate);
-				    	}
 				    }else{
-				    	slider.scrollLeft-=10;
-				    	if(slider.scrollLeft>=newP){
-				    		momentumID = requestAnimationFrame(animate);
-				    	}
+				    	p = (this.slider.offsetLeft + posX);
+				    	p = (p/this.slider.offsetWidth).toFixed(0);
+				    	p = parseInt(p);
 				    }
-			   	}
-			   	requestAnimationFrame(animate);
-			  });
-			  
-			  
-			  slider.addEventListener('mousemove', (e) => {
-			    if(!isDown) return;
-			    e.preventDefault();
-			    const x = e.pageX - slider.offsetLeft;
-			    const walk = (x - startX) ; //scroll-fast
-			    var prevScrollLeft = slider.scrollLeft;
-			    slider.scrollLeft = scrollLeft - walk;
-			    velX = slider.scrollLeft - prevScrollLeft;
-			  });
-			  
-			  // Momentum 
-			  
-			  var velX = 0;
-			  var momentumID;
-			  
-			  slider.addEventListener('wheel', (e) => {
-			    cancelMomentumTracking();
-			  });  
-			  
-			  function beginMomentumTracking(){
-			    cancelMomentumTracking();
-			    momentumID = requestAnimationFrame(momentumLoop);
-			  }
-			  function cancelMomentumTracking(){
-			    cancelAnimationFrame(momentumID);
-			  }
-			  function momentumLoop(){
-			    slider.scrollLeft += velX;
-			    velX *= 0.95; 
-			    if (Math.abs(velX) > 0.5){
-			      momentumID = requestAnimationFrame(momentumLoop);
+				}else{
+					if((Math.abs(endX)/this.slider.offsetWidth)>0.25){
+				    	p = Math.floor(p);
+				    }else{
+				    	p = (this.slider.offsetLeft + posX);
+				    	p = (p/this.slider.offsetWidth).toFixed(0);
+				    	p = parseInt(p);
+				    }
+				}
+				this.newP=p*this.slider.offsetWidth;
+				console.log("p",p,this.newP);
+				if(this.newP>this.slider.scrollWidth || this.newP<0){
+					return
+				}
+				this.dotsElement.children().removeClass('bg--blue');
+				this.dotsElement.children().removeClass('w-10');
+				this.dotsElement.children().addClass('bg-gray-300');
+				this.dotsElement.children().addClass('w-5');
+				// console.log();
+				$(this.dotsElement.children().get(p)).addClass('bg--blue');
+				$(this.dotsElement.children().get(p)).addClass('w-10');
+				console.log(this.curpage());
+
+				requestAnimationFrame(this.animate);
+			}
+
+			this.animate=()=>{
+				if(this.slider.scrollLeft<this.newP){
+			    	this.slider.scrollLeft+=10;
+			    	if(this.slider.scrollLeft<=this.newP){
+			    		requestAnimationFrame(this.animate);
+			    	}
+			    }else{
+			    	this.slider.scrollLeft-=10;
+			    	if(this.slider.scrollLeft>=this.newP){
+			    		requestAnimationFrame(this.animate);
+			    	}
 			    }
-			  }	
+			}
+			this.touchMove = (e) => {
+				if(!this.isDown) return;
+				e.preventDefault();
+				const x = e.pageX - this.slider.offsetLeft;
+				const walk = (x - this.startX) ; //scroll-fast
+				var prevScrollLeft = this.slider.scrollLeft;
+				this.slider.scrollLeft = scrollLeft - walk;
+				this.velX = this.slider.scrollLeft - prevScrollLeft;
+			}
+
+			this.slider.addEventListener('mousemove', this.touchMove);
+			// this.slider.addEventListener('touchmove',,{passive:true});
+
+			this.slider.addEventListener('mousedown', this.touchStart,{passive:true});
+			this.slider.addEventListener('touchstart', this.touchStart,{passive:true});
+
+
+			this.slider.addEventListener('mouseleave', this.touchCancel,{passive:true});
+			this.slider.addEventListener('touchcancel', this.touchCancel,{passive:true});
+
+
+			this.slider.addEventListener('mouseup', this.touchEnd,{passive:true});
+			this.slider.addEventListener('touchend', this.touchEnd,{passive:true});
+
+			// Momentum 
+
+
+			this.slider.addEventListener('wheel', (e) => {
+				cancelMomentumTracking();
+			},{passive:true} ); 
+
+			function beginMomentumTracking(){
+				cancelMomentumTracking();
+				this.momentumID = requestAnimationFrame(momentumLoop);
+			}
+			function cancelMomentumTracking(){
+				cancelAnimationFrame(this.momentumID);
+			}
+			momentumLoop=()=>{
+				this.slider.scrollLeft += this.velX;
+				this.velX *= 0.95; 
+				if (Math.abs(this.velX) > 0.5){
+				  this.momentumID = requestAnimationFrame(momentumLoop);
+				}
+			}	
+		}
+		sliders.forEach(function(s){
+			slider = new sliderHandler(s);
 		})
 		setTimeout(function(){
 			$('#loading').fadeOut();
