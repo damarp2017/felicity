@@ -47,6 +47,9 @@
 		.logo-white{
 			transition: transform 200ms;
 		}
+		.slider-control{
+			cursor: pointer;
+		}
     </style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	

@@ -144,7 +144,7 @@
 		@endphp
 		<div class="relative mx-10">
 			<div class="mx-0 md:mx-10 space-area ">
-				<div class="block md:flex slider overflow-x-auto" >
+				<div class="block md:flex slider overflow-x-auto" id="included-slider">
 					
 					@foreach($items as $item)
 					<div class="space-item" style="min-width:50vw;">
@@ -162,10 +162,10 @@
 	
 				</div>
 			</div>
-			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 left-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full">
+			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 left-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full  slider-control" target="#included-slider" action="prev">
 				<img src="{{ asset('images/utilities/prev.png') }}">
 			</button>
-			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 right-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full">
+			<button class="hidden md:flex absolute transform -translate-y-1/2 top-1/2 right-0 bg-gray-200 w-10 h-10 md:w--64 md:h--64 items-center justify-center rounded-full slider-control" target="#included-slider" action="next">
 				<img src="{{ asset('images/utilities/next.png') }}">
 			</button>
 		</div>
