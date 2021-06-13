@@ -23,11 +23,11 @@
 				color: rgba(55, 55, 55, 0.46);
 				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div> -->
 				<div class="">
-					<div class="jaipur flex justify-between md:justify-start cursor-pointer md:items-start">
+					<div class="jaipur flex  cursor-pointer md:items-start">
 						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green  text-white rounded-full " onclick="jaipur()">Jaipur</button>
 						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200 text-white rounded-full " onclick="mumbai()">Mumbai</button>
 					</div>
-					<div class="mumbai flex justify-between md:justify-start cursor-pointer md:items-start" style="display: none;">
+					<div class="mumbai flex  cursor-pointer md:items-start" style="display: none;">
 						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200  text-white rounded-full " onclick="jaipur()">Jaipur</button>
 						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green text-white rounded-full " onclick="mumbai()">Mumbai</button>
 					</div>

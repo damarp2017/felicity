@@ -94,7 +94,7 @@
 	
 </script>
 <div style="position: relative;text-align: center;overflow: hidden;height: 100vh;background: #010001">
-	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;">
+	<video preload="none" class="vidcon hori video" style="position: absolute;z-index: 90;" muted>
 	  <source src="" class="vidsource" type="video/mp4">
 	</video>
 	<!-- <video preload="none" class="vidbg video" muted="" style="position: absolute;z-index: 80;">
