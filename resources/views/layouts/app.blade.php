@@ -177,7 +177,10 @@
 				this.scrollAnimate();
 			}
 			this.scrollAnimate=()=>{
-				if(this.newP>this.slider.scrollWidth || this.newP<0){
+				if(this.newP<0){
+					this.newP=0;
+				}
+				if(this.newP>this.slider.scrollWidth){
 					return
 				}
 				this.dotsElement.children().removeClass('bg--blue');
