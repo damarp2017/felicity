@@ -98,7 +98,7 @@
 		
 		<div class="mx-4 md:app-container ">
 			<div class="flex justify-between items-center">
-				<div class="flex gap-x-4 items-center">
+				<div class="flex gap-x-4 items-center slider-dot">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>

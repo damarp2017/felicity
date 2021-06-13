@@ -76,6 +76,14 @@
 		})
 		const sliders = document.querySelectorAll('.slider');
 		sliders.forEach(function(slider){
+			let dotsElement = $('#process-slider').next().find(".slider-dot");
+			dotsElement.html('');
+			let parentWidth = $(this).width()
+			let scrollWidth = $(this).get(0).innerWidth;
+			let pagesTotal=Math.ceil(scrollWidth/parentWidth);
+			for(var i=0;i<pagesTotal;i++){
+				dotsElement.append(`<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>`);
+			}
 			let isDown = false;
 			  let startX;
 			  let scrollLeft;
