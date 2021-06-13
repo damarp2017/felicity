@@ -84,7 +84,7 @@
 <body>
 <div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;" class="bg--section" id="loading">
 	<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);display: none;" class="text-center logo" >
-		<img src="{{asset('images/logo/black.png')}}" style="max-width:100px;width: 30%;" class="mx-auto">
+		<img src="{{asset('images/logo/black.png?new')}}" style="max-width:100px;width: 30%;" class="mx-auto">
 	</div>
 </div>
 <script type="text/javascript">

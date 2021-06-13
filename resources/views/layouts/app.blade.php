@@ -36,7 +36,7 @@
 <body>
 	<div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;" class="bg--blue" id="loading">
 		<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);" class="text-center logo" >
-			<img src="{{asset('images/logo/logo.png')}}" style="max-width:100px;width: 30%;" class="mx-auto">
+			<img src="{{asset('images/logo/logo.png?new')}}" style="max-width:100px;width: 30%;" class="mx-auto">
 		</div>
 	</div>
 	@yield('content')

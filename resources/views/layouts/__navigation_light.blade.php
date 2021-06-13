@@ -1,7 +1,7 @@
 <nav class="navbar hidden md:flex shadow-lg bg-white padding-navbar-light z-20 w-full 
 transition duration-300 ease-in-out items-start justify-between">
 	<a href="{{ url('/home') }}">
-		<img class="h-8" style="height:55px" src="{{ asset('images/logo/black.png') }}">
+		<img class="h-8" style="height:55px" src="{{ asset('images/logo/black.png?new') }}">
 	</a>
 	<div class="flex items-center gap-x-8">
 		<a href="{{ url('capabilities') }}" class="hover:text-gray-500 font--size-15"> Capabilities </a>
@@ -16,7 +16,7 @@ transition duration-300 ease-in-out items-start justify-between">
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
 			<a href="{{ url('/home') }}">
-				<img class="h-10" src="{{ asset('images/logo/black.png') }}">
+				<img class="h-10" src="{{ asset('images/logo/black.png?new') }}">
 			</a>
 			<button @click="open = !open" class="border border-red-500 focus:outline-none w-10 h-10 flex justify-center items-center bg-white rounded-full">
 				<svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

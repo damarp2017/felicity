@@ -2,7 +2,7 @@
 	<div class="mx-4 md:app-container">
 		<div class="{{ request()->is('/') ? 'md:ml--24' : '' }}">
 			<div class="mb--62">
-				<img class="mb-10 md:mb-20 h-10 md:h-auto" src="{{ asset('images/logo/logo.png') }}" alt="">
+				<img class="mb-10 md:mb-20 h-10 md:h-auto" src="{{ asset('images/logo/logo.png?new') }}" alt="">
 				<div class="text-white uppercase font--poppins mb-4 md:font--size-15" style="letter-spacing: 3px;">Made in India with ❤️</div>
 				<div class="font--poppins mb-4 md:mb-7 md:font--size-17" style="color: #8C8C8C; line-height: 31px;">Felicity helps purpose-driven brands build sustainable and profitable businesses with conscious advertising.</div>
 				<!-- <div class="text-white font--poppins md:font--size-17 mb-3">We are part of the conscious advertising network</div> -->

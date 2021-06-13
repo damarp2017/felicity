@@ -1,8 +1,8 @@
 <nav class="navbar items-start fixed padding-navbar z-20 w-full transition duration-300 ease-in-out ">
 	<div class=" hidden md:flex w-full justify-between">
 		<a href="{{ url('/home') }}">
-			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png') }}">
-			<img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png') }}">
+			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png?new') }}">
+			<img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png?new') }}">
 		</a>
 		<div class="flex items-center">
 			
@@ -34,9 +34,9 @@
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
 			<a href="{{ url('/home') }}">
-				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
-				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
-				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png') }}">
+				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png?new') }}">
+				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png?new') }}">
+				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png?new') }}">
 			</a>
 			<button @click="open = !open" class="menu focus:outline-none w-10 h-10 flex justify-center items-center bg-white rounded-full">
 				<svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,8 +125,8 @@
 
 {{-- <nav class="navbar hidden md:flex items-center justify-between fixed px-8 py-3 z-20 w-full transition duration-300 ease-in-out ">
 	<a href="{{ url('/home') }}">
-		<img class="logo-white h-8" src="{{ asset('images/logo/logo.png') }}">
-		<img class="logo-black hidden h-8" src="{{ asset('images/logo/black.png') }}">
+		<img class="logo-white h-8" src="{{ asset('images/logo/logo.png?new') }}">
+		<img class="logo-black hidden h-8" src="{{ asset('images/logo/black.png?new') }}">
 	</a>
 	<div class="flex gap-x-10 items-center">
 		<a href="#" class="navlink text-white hover:text-gray-200 font--size-15"> Our Process </a>
@@ -144,9 +144,9 @@
 	<nav :class="{ 'bg-white': open }" class="navbar-mobile block md:hidden fixed px-8 py-3 z-20 w-full ">
 		<div class="flex items-center justify-between">
 			<a href="{{ url('/home') }}">
-				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png') }}">
-				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png') }}">
-				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png') }}">
+				<img class="logo-white h-10" x-show="!open" src="{{ asset('images/logo/logo.png?new') }}">
+				<img class="h-10" x-show="open" src="{{ asset('images/logo/black.png?new') }}">
+				<img class="logo-black-header hidden h-10" x-show="!open" src="{{ asset('images/logo/black.png?new') }}">
 			</a>
 			<button @click="open = !open" class="menu focus:outline-none w-10 h-10 flex justify-center items-center bg-white rounded-full">
 				<svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
