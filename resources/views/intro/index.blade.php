@@ -51,7 +51,7 @@
 	    background: #842e257d;
 	    position: absolute;
 	    right: 28px;
-	    bottom: 100px;
+	    top: 80vh;
 	    z-index: 200;
 	    width: 50px;
 	    height: 50px;
@@ -98,9 +98,9 @@
 	<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);display: none;" class="text-center logo" >
 		<img src="{{asset('images/logo/logo.png?new')}}" style="max-width:100px;width: 30%;" class="mx-auto">
 	</div>
-	<div style="position:absolute;bottom: 100px;left: 50%;transform: translateX(-50%);display:none;" id="confirm" >
+	<div style="position:absolute;top: 80vh;left: 50%;transform: translateX(-50%);display:none;" id="confirm" >
 		<button style="
-	    animation: zoomin 3s ease infinite;" class=" bottom-0 flex justify-center  items-center border border-white py-4 px-5 rounded-full text-white text-sm" onclick="play()" >Touch <br/>here </button>
+	    animation: zoomin 3s ease infinite;" class="flex justify-center  items-center border border-white py-4 px-5 rounded-full text-white text-sm" onclick="play()" >Touch <br/>here </button>
 	</div>
 
 </div>
