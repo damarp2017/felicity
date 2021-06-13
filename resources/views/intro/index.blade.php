@@ -162,12 +162,17 @@
 		}
 		$('.vidcon, .vidbg')[0].addEventListener('loadeddata', function() {
 			setTimeout(function(){
-				try{
-					$('.vidcon, .vidbg')[0].play();	
-					$('#loading').fadeOut();
-				}catch(err){
+				// try{
+					$('.vidcon, .vidbg')[0].play().then(res=>{
+						$('#loading').fadeOut();
+
+					}).catch((e)=>{
 					$('#confirm').fadeIn();
-				}
+						console.log(e)
+					});	
+				// }catch(err){
+					$('#confirm').fadeIn();
+				// }
 				// setTimeout(function(){
 
 				// },2000)
