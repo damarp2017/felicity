@@ -195,40 +195,8 @@
 			</a>
 		</div>
 	</section> -->
+	@include('components.have-a-project-idea-section')
 
-	<section  class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container pt-20">
-			<div class="w-full md:mb--140">
-				<div class="text-3xl md:font--size-65 font-semibold mb-4 md:mb-10">Work with us for a <span class="text--blue">Project ?</span></div>
-				<div class="text-base font--poppins md:font--size-17 w-full md:w-3/4 " 
-				style="
-				line-height: 192.8%;
-				letter-spacing: 0.02em;
-				color: rgba(55, 55, 55, 0.46);
-				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div>
-			</div>
-
-			<form action="">
-				<div class="flex flex-col gap-y-4 md:gap-y-0 mb-5">
-					<div class="mb--43">
-						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Email Address" style="border-radius: 15px">
-					</div>
-					<div class="mb--43">
-						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Full Name" style="border-radius: 15px">
-					</div>
-
-					<div class="mb--43">
-						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Phone Number" style="border-radius: 15px">
-					</div>
-					<div class="mb--43">
-						<input type="text" class="text--gray-dark w-full p-3 md:padding--form-we-have md:font--size-19 bg--form-cap-inside focus:outline-none" placeholder="Reason to contact" style="border-radius: 15px">
-					</div>
-					<button class="w-full py-3 md:padding-button-have-a md:font--size-21 font--gilroy-md text-white text-center bg--blue"
-					style="border-radius: 19px">Send</button>
-				</div>
-			</form>
-		</div>
-	</section>
 
 @endsection
 
