@@ -1,7 +1,7 @@
 <section  class="bg-white w-full  py-10 md:py-20">
 		<div class="mx-4 md:app-container ">
 			<div class="w-full mb-10">
-				<h2 class="text-3xl md:font--size-65  md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea ?</h2>
+				<h2 class="text-3xl md:font--size-65  md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea?</h2>
 				<div class="text-base md:font--size-17 font--poppins w-full md:w-10/12 " 
 				style="letter-spacing: 0.02em;
 				color: rgba(55, 55, 55, 0.46);
