@@ -337,7 +337,7 @@
 
 
 			this.slider.addEventListener('mouseup', this.touchEnd,{passive:true});
-			this.slider.addEventListener('touchend', this.touchEnd,{passive:true});
+			// this.slider.addEventListener('touchend', this.touchEnd,{passive:true});
 
 			// Momentum 
 
