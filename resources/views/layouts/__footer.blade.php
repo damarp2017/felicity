@@ -62,11 +62,13 @@
 	
 			{{-- mobile --}}
 			<div class="flex flex-col md:hidden gap-x-8 gap-y-4">
-				<div class="text-white font--poppins">© {{ date('Y') }} Felicity Media Private Limited</div>
-				<div class="text-white font--poppins">hello@felicitymedia.in</div>
-				<div class="flex justify-between">
-					<div class="text-white font--poppins">+91-7738180136</div>
-					<div class="flex items-center gap-x-8">
+				<div class="mb-2">
+					<div class="text-white font--poppins md:text-left text-center">© {{ date('Y') }} Felicity Media Private Limited</div>
+					<div class="text-white font--poppins md:text-left text-center">hello@felicitymedia.in</div>
+					<div class="text-white font--poppins md:text-left text-center">+91-7738180136</div>
+				</div>
+				<div class="px-8">
+					<div class="flex items-center gap-x-8 justify-between ">
 						<a href="//twitter.com/mediafelicity" target="_blank">
 							<img src="{{ asset('images/utilities/sosmed/twitter.png') }}" alt="">
 						</a>

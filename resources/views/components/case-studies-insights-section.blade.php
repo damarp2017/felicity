@@ -7,9 +7,7 @@
 						<div class="md:h-20 mb-5 md:mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
 							Make smarter business decisions while building a solid foundation for your brand.
 						</div>
-						<div class="text-right md:text-left">
 							<a href="//medium.com/@felicitymedia" target="_blank" class="px-6 py-3 md:px-7 md:py-4 bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60 font-bold">See More Insights</a>
-						</div>
 					</div>
 				</div>
 				<div class="px-0 md:px-5 md:w-1/2">
@@ -18,9 +16,7 @@
 						<div class="md:h-20 mb-5 md:mb-10 text-white font--poppins text-base md:font--size-17" style="opacity: .5;line-height: 1.8;">
 							Our work that can be measured in business impact.
 						</div>
-						<div class="text-right md:text-left">
 							<a href="//www.behance.net/felicityhq" target="_blank" class="px-6 py-3 md:px-7 md:py-4 bg-white rounded-full text-sm md:font--size-18 text--blue w-32 h-12 md:w--244 md:h--60 font-bold">See Our Work</a>
-						</div>
 					</div>
 				</div>
 			</div>

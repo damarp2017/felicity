@@ -17,11 +17,12 @@ class CheckForMaintenanceMode extends Middleware
     ];
     public function handle($request, Closure $next, $guard = null)
     {
-        if (!$request->is('coming-soon')) {
-            if(!session()->has('allow')){
-                return redirect('coming-soon');
-            }
-        }
+        
+        // if (!$request->is('coming-soon')) {
+        //     if(!session()->has('allow')){
+        //         return redirect('coming-soon');
+        //     }
+        // }
         return $next($request);
 
     }
