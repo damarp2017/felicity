@@ -317,8 +317,9 @@
 			    }
 			}
 			this.touchMove = (e) => {
-				console.log('move');
+				console.log('move',e);
 				if(!this.isDown) return;
+
 				e.preventDefault();
 				const x = e.pageX - this.slider.offsetLeft;
 				const walk = (x - this.startX) ; //scroll-fast
