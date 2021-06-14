@@ -6,6 +6,37 @@ use Illuminate\Support\Facades\Route;
 	Route::get('/coming-soon',function(){
 		return view('coming-soon');
 	});
+	Route::post('/have-a-project',function(){
+		$fullname=request()->input('fullname');
+		$email=request()->input('email');
+		$phone=request()->input('phone');
+		$reason=request()->input('reason');
+		$subject = "New Leads! | ".$fullname." | FelicityMedia";
+		$to = 'info@felicitymedia.in';
+		$content="
+		<<!DOCTYPE html>
+		<html>
+		<body>
+			<h5>Detail:</h5>
+			Fullname: {$fullname}<br/>
+			Email: {$email}<br/>
+			Phone: {$phone}<br/>
+			Reason: {$reason}<br/>
+			<br/>
+		</body>
+		</html>
+		";
+		$res= mail($to,$subject,$content,[
+            'From'=>'noreply@felicitymedia.in',
+            'MIME-Version'=>'1.0',
+            'Content-type'=>'text/html; charset=iso-8859-1',
+            'X-Priority'=>'1',
+            'Reply-To'=>'noreply@ethnicindia.co',
+            'X-Mailer'=>'PHP/'.phpversion(),
+        ],'-fnoreply@ethnicindia.co');
+
+        return response()->json(['res'=>$res]);
+	});
 	Route::post('/coming-soon',function(){
 		if(request()->input('password')=='myfeli'){
 			session()->put('allow',true);

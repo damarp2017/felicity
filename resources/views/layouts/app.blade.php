@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Felicity</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="theme-color" content="#3B28C2">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
@@ -91,9 +92,12 @@
 
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+	<script type="text/javascript">
+		$.ajaxSetup({ headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') } });
+	</script>
 	@stack('scripts')
 	<script type="text/javascript">
+
 		$('.space-item').each(function(){
 			width = $(this).parents('.space-area').width()/3;
 			$(this).css('min-width',width);
@@ -282,8 +286,26 @@
 			$('#loading').fadeOut();
 		},500)
 
+		$("#form-have-a-project").on("submit",function(e){
+			e.preventDefault();
+			$('body').css('cursor','wait');
+			var form  = $('#form-have-a-project').serialize();
+			$.post('{{url('have-a-project')}}',form)
+			.done(function(data){
+				$('body').css('cursor','unset');
+				alert("Thank's, we'll reach to you!");
+				$("#form-have-a-project").find('input').val('');
+			})
+			.fail(function(data){
+				$('body').css('cursor','unset');
+				alert("Can't connect to our network, please try again.");
+
+				// $("#form-have-a-project").find('input').val('');
+			})
 		
+		})
 		  
 	</script>
+		
 </body>
 </html>

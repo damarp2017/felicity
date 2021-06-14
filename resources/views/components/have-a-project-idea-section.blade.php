@@ -8,27 +8,27 @@
 				opacity: 0.8;">We’re just a few clicks away from helping you solve your marketing roadblocks. We’ll get in touch within 14 hours.</div>
 			</div>
 
-			<form action="">
+			<form id="form-have-a-project">
 				<div class="block md:flex mb-5">
 					<div class="w-full md:w-1/2">
 						<div class="mb-3 md:mb--30 md:mr--28">
-							<input type="text" class=" text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Email Address">
+							<input type="text" class=" text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" name="email" placeholder="Email Address" required>
 						</div>
 						<div class="mb-3 md:mb--30 md:mr--28">
-							<input type="text" class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Full Name">
+							<input type="text" class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" name="fullname" placeholder="Full Name" required="">
 						</div>
 						
 					</div>
 					<div class="w-full md:w-1/2">
 						<div class="mb-3 md:mb--30">
-							<input type="text" class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Phone Number">
+							<input type="text" class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" name="phone" placeholder="Phone Number" required="">
 						</div>
 						<div class="mb-3 md:mb--30">
-							<input type="text" class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" placeholder="Reason to contact">
+							<input type="text" class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none" name="reason" placeholder="Reason to contact" required="">
 						</div>
 					</div>
 				</div>
-				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue">Send</button>
+				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue" >Send</button>
 			</form>
 		</div>
 	</section>
