@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 		$phone=request()->input('phone');
 		$reason=request()->input('reason');
 		$subject = "New Leads! | ".$fullname." | FelicityMedia";
-		$to = 'info@felicitymedia.in';
+		$to = 'hello@felicitymedia.in';
 		// $to = 'official.rifkidermawan@gmail.com';
 		$content="
 		<!DOCTYPE html>
