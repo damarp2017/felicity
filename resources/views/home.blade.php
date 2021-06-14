@@ -101,7 +101,7 @@
 
 			<div class="flex justify-center gap-x-4 flex-wrap gap-y-4">
 				<a href="{{ url('about-us') }}" class="w-full md:w-auto  md:h--68 bg--gradient-black p-4 md:py-5 md:px-10 text-white text-center text-base md:font--size-17 rounded-full hover:zoom"> Know More </a>
-				<a href="//docs.google.com/presentation/d/18FTqkjBucoyTOq9QmWR6yMUNFE4F6kEbvlio6IBuE_U/edit?usp=sharing" target="_blank" class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-base md:font--size-17 rounded-full hover:zoom"> Download Company Deck </a>
+				<a href="//docs.google.com/presentation/d/18FTqkjBucoyTOq9QmWR6yMUNFE4F6kEbvlio6IBuE_U/edit?usp=sharing" target="_blank" class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-center text-base md:font--size-17 rounded-full hover:zoom"> Download Company Deck </a>
 			</div>
 			 
 		</div>
