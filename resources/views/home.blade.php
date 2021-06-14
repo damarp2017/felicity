@@ -4,13 +4,13 @@
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center">
-			<div class="mx-4 md:app-container">
+			<div class="mx-4 md:app-container   ">
 				<!-- <div class="md:font--size-24 text-lg text-white uppercase text-center mb-1 md:mb-0 md:text--we-design-the">We design the</div> -->
 				<!-- <div class="text-white font-semibold text-8xl md:line--height-90 md:font--size-190 text-center">  -->
 					<!-- Your brand is a promise to your customers. We help you keep it -->
 				<!-- </div> -->
-				<h1 class="text-white font-semibold mb-10 md:mb-5 text-4xl  md:font--size-55 text-center leading-normal">Your brand is a promise to your customers.</h1>
-				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-45 text-center ">We help you keep it.</h1>
+				<h1 class="text-white font-semibold mb-10 md:mb-5 text-4xl  2xl:font--size-70 md:font--size-55 text-center leading-normal">Your brand is a promise to your customers.</h1>
+				<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">We help you keep it.</h1>
 
 				<!-- <div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div> -->
 				<!-- <div class="md:font--size-18  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div> -->
@@ -18,8 +18,8 @@
 		</div>
 	</header>
 
-	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container md:pt-10">
+	<section class=" bg--section w-full overflow-x-hidden py-10 md:py-20">
+		<div class="tag mx-4 md:app-container 2xl:px-40  md:pt-10">
 			<!-- <div class="flex mb-20 flex-col text-center justify-center">
 				<div class="mb-6 text-3xl md:font--size-65 font-semibold">About Us</div>
 				<div class="md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
@@ -36,7 +36,7 @@
 
 			
 		</div>
-		<div class="mx-4 md:app-container">
+		<div class="tag mx-4 md:app-container 2xl:px-40 ">
 			<div class="block md:flex items-center mb-6">
 				<div class="w-full md:w-1/2">
 					<div class="flex items-center mb-3 md:mb-10">
@@ -45,12 +45,12 @@
 					</div>
 					<div class="text-base md:font--size-20 text--gray leading-normal ">Felicity was started out of sheer love and admiration for the art of advertising. We believe that ideas can change the world and it is our constant endeavour to help businesses grow and evolve over time. We want to work with brands that synergise with the values that we strongly imbibe in every thing we do here at Felicity.</div>
 				</div>
-				<div class="w-full md:w-1/2 p-5"><img class="w-full" src="{{ asset('images/home/our_manifestos.png') }}"></div>
+				<div class="tag w-full md:w-1/2 p-5"><img class="w-full" src="{{ asset('images/home/our_manifestos.png') }}"></div>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-5 mb-5">
 
-					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/1.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">Win-Win Situation</div>
@@ -58,7 +58,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/2.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Problem Solvers</div>
@@ -66,14 +66,14 @@
 						</div>
 					</div>
 					
-					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/3.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We Worship Data </div>
 							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences</div>
 						</div>
 					</div>
-					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/4.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We Are Bold</div>
@@ -81,7 +81,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home h-26 md:h-32 w-full  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="tag card--about-home h-26 md:h-32 w-full  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/5.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Agile</div>
@@ -89,7 +89,7 @@
 						</div>
 					</div>
 
-					<div class="card--about-home h-26 md:h-32 w-full  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<div class="tag card--about-home h-26 md:h-32 w-full  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/6.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Match-Makers</div>
@@ -100,8 +100,8 @@
 			</div>
 
 			<div class="flex justify-center gap-x-4 flex-wrap gap-y-4">
-				<a href="{{ url('about-us') }}" class="w-full md:w-auto  md:h--68 bg--gradient-black p-4 md:py-5 md:px-10 text-white text-center text-base md:font--size-17 rounded-full"> Know More </a>
-				<button class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-base md:font--size-17 rounded-full"> Download Company Deck </button>
+				<a href="{{ url('about-us') }}" class="w-full md:w-auto  md:h--68 bg--gradient-black p-4 md:py-5 md:px-10 text-white text-center text-base md:font--size-17 rounded-full hover:zoom"> Know More </a>
+				<a href="//docs.google.com/presentation/d/18FTqkjBucoyTOq9QmWR6yMUNFE4F6kEbvlio6IBuE_U/edit?usp=sharing" target="_blank" class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-base md:font--size-17 rounded-full hover:zoom"> Download Company Deck </a>
 			</div>
 			 
 		</div>
@@ -110,8 +110,8 @@
 	</section>
 
 
-	<section class="bg-white min-h-screen w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container mb-10">
+	<section class="tag bg-white min-h-screen w-full overflow-x-hidden py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40  mb-10">
 			<div class="flex items-center ">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<h2 class="text--blue text-3xl md:font--size-52 font-bold">Our Capabilities</h2>
@@ -149,7 +149,7 @@
 			@endphp
 			@foreach($items as $item)
 			<div style="min-width: 100vw;">
-				<div class="block md:flex mx-4 md:app-container">
+				<div class="block md:flex mx-4 md:app-container 2xl:px-40 ">
 					<div class="w-full md:w-1/2 text-center">
 						<img class="inline max-h-45 md:max-h-80 max-w-full" src="{{ asset('images/capabilities/'.$item['slug'].'.png') }}">
 					</div>
@@ -159,14 +159,14 @@
 						</h2>
 						<div class="text-base md:font--size-20 text--gray mb-10 leading-normal ">{!! $item['desc'] !!}</div>
 						
-						<a href="{{ url('capabilities/'.$item['slug']) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18">See More</a>
+						<a href="{{ url('capabilities/'.$item['slug']) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">See More</a>
 					</div>
 				</div>
 			</div>	
 			@endforeach
 		</div>
 		
-		<div class="mx-4 md:app-container ">
+		<div class="mx-4 md:app-container 2xl:px-40  ">
 			<div class="flex justify-between items-center ">
 				<div class="flex gap-x-2 items-center slider-dot">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
@@ -174,10 +174,10 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
 				<div class="flex gap-x-4 items-center">
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#capabilities-slider" action="prev">
+					<div class=" hover:zoom bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#capabilities-slider" action="prev">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#capabilities-slider" action="next">
+					<div class=" hover:zoom bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#capabilities-slider" action="next">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>
@@ -185,8 +185,8 @@
 		</div>
 	</section>
 
-	<!-- <section class="bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
-		<div class="mx-4 md:app-container">
+	<!-- <section class="tag bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
+		<div class="mx-4 md:app-container 2xl:px-40 ">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<h2 class="mb-4 md:mb-5 text-3xl md:font--size-70 font-semibold md:line--height-99c34">Your Brand Is In Good Hands</h2>
 				<div class="text-base md:font--size-20 text--gray leading-normal ">The team that brings your ideas to life.</div>
@@ -230,7 +230,7 @@
 	</section> -->
 
 	@include('components.case-studies-insights-section')
-	<!-- <section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
+	<!-- <section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:container--case-studies pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-70 font-semibold">Case Studies</div>
@@ -261,8 +261,8 @@
 		</div>
 	</section>
 
-	<section class="bg--gray-light w-full overflow-x-hidden  py-10 md:py-20">
-		<div class="mx-4 md:app-container md:-mr--113 md:w-full">
+	<section class="tag bg--gray-light w-full overflow-x-hidden  py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40  md:-mr--113 md:w-full">
 			<div class="flex flex-col md:flex-row items-center w-full">
 				<div class="w-full md:w-1/2 mr-0 mb-3 md:mb-0">
 					<div class="w-10/12">
@@ -293,8 +293,8 @@
 
 
 
-	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container ">
+	<section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40  ">
 			<div class="block md:flex items-center">
 				<div class="w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
@@ -302,15 +302,15 @@
 				<div class="w-full md:w-1/2">
 					<h2 class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span class="text--blue">Team</span></h2>
 					<div class="text-base md:font--size-20 text--gray mb-10 md:mb-14" style="line-height: 160%;">Our vision of taking India to the world is impossible without the help of honest, talented, and purpose driven individuals. We are on a constant lookout for people that believe in the power of ideas and dare to change the world with their own.</div>
-					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60">Explore Profiles</a>
+					<a href="{{ url('opportunities') }}" class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60  hover:zoom">Explore Profiles</a>
 				</div>
 			</div>
 		</div>
 
 	</section>
 
-	<section class="-mb-20  overflow-x-hidden bg--section">
-		<div class="z-10 relative mx-4 md:app-container ">
+	<section class=" -mb-20  overflow-x-hidden bg--section">
+		<div class="z-10 relative mx-4 md:app-container 2xl:px-40  ">
 			<div class=" md:p-10 p-5 bg--blue rounded-xl" >
 				<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
 				<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t spam. Promise.</div>
@@ -328,7 +328,7 @@
 						class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
 						placeholder="Full Name" name="fullname">
 					</div>
-					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none font-bold focus:outline-none"
+					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none font-bold focus:outline-none  hover:zoom"
 					style="border-radius: 7px;" type="submit">Subscribe</button>
 				</div>
 				</form>

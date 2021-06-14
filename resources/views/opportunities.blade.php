@@ -13,8 +13,8 @@
 
 	@include('components.values-section')
 
-	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:ml--68 md:mr--94 " >
+	<section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40" >
 			<div class="flex flex-col items-center justify-center text-center md:mb-20">
 				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Small initiatives to make your life <span class="text--blue">better</span>.</div>
 				<!-- <div class="text-base md:font--size-18 font--poppins "
@@ -167,8 +167,8 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
+	<section class="tag bg-white w-full overflow-x-hidden py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="block md:flex items-center justify-between mb-5 md:mb-20">
 				<div class="w-full md:w-1/2 md:mr--84">
 					<img class="w-full" src="{{ asset('images/opportunities/1.png') }}" alt="">
@@ -178,7 +178,7 @@
 					<div class="text--gray line--height-160 text-base md:font--size-20 w-full">Our vision is simple, yet powerful - Take India to the World. We know the immense talent India has to offer and we want to partner with individuals that share and feel strongly about where we are headed as a company. It takes courage and discipline to break through and create something that represents us at a global level. We are up for the challenge. Are you?</div>
 				</div>
 			</div>	
-			<div class="block md:flex items-center justify-between mb-5 md:mb-20"">
+			<div class="block md:flex items-center justify-between mb-5 md:mb-20">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
@@ -193,8 +193,8 @@
 		</div>
 	</section>
 
-	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
+	<section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="mb-0 md:mb--51">
 				<h2 class="text-2xl md:font--size-55 mb-6 md:mb-10 font-bold md:line--height-99c34">Purpose driven team on a  <br> <span class="text--blue">global mission</span> </h2>
 				<div class=" text-base md:font--size-20 text--gray line--height-160">(No open positions currently. Check again later.)</div>

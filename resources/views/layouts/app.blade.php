@@ -74,6 +74,22 @@
 			font-family: "Source Serif Pro";
 			font-weight: 700!important;
 		}
+		.hover\:zoom{
+			transition: all 300ms;			
+		}
+		.hover\:zoom:hover{
+			transform: scale(1.025);
+		}
+		.tag {
+		  opacity: 0;
+		  transform: translate(0, 10vh);
+		  transition: all 1s;
+		}
+
+		.tag.visible {
+		  opacity: 1;
+		  transform: translate(0, 0);
+		}
 	</style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	
@@ -96,7 +112,24 @@
 	</script>
 	@stack('scripts')
 	<script type="text/javascript">
+		$(document).on("scroll", function() {
+		  var pageTop = $(document).scrollTop();
+		  var pageBottom = pageTop + ($(window).height()*0.80);
+		  var tags = $(".tag");
 
+		  for (var i = 0; i < tags.length; i++) {
+		    var tag = tags[i];
+
+		    if ($(tag).position().top < pageBottom) {
+		      $(tag).addClass("visible");
+		    } else {
+		      $(tag).removeClass("visible");
+		    }
+		  }
+		});
+	</script>
+	<script type="text/javascript">
+		
 		$('.space-item').each(function(){
 			width = $(this).parents('.space-area').width()/3;
 			$(this).css('min-width',width);

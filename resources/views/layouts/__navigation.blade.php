@@ -22,7 +22,7 @@
 				<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--40 text-white  font--size-15"> Insights </a>
 				<a href="{{ url('contact-us') }}" class="navlink mr--38 text-white  font--size-15"> Contact Us </a>
 
-				<a href="//calendly.com/felicityhq/hello" target="_blank" class="bg-white py-4 px-8 rounded-full text--blue font--size-15 font-bold">
+				<a href="//calendly.com/felicityhq/hello" target="_blank" class="bg-white py-4 px-8 rounded-full text--blue font--size-15 font-bold  hover:zoom">
 					Book A Free Consultation Call
 				</a>
 			@endif

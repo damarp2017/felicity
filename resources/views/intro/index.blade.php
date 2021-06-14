@@ -100,7 +100,7 @@
 	</div>
 	<div style="position:absolute;top: 75vh;left: 50%;transform: translateX(-50%);display:none;" id="confirm" >
 		<button style="
-	    animation: zoomin 3s ease infinite;" class="flex justify-center  items-center border border-white py-4 px-5 rounded-full text-white text-sm" onclick="play()" >See What’s <br/>Possible </button>
+	    animation: zoomin 3s ease infinite;" class="flex justify-center  items-center border border-white py-4 px-5 rounded-full text-white text-sm" onclick="play()" >See What’s Possible </button>
 	</div>
 
 </div>

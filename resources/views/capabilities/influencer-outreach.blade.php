@@ -3,7 +3,7 @@
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-screen"> -->
-		<div class="mx-4 md:app-container">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" logo/black.png?new>
 				<div class="mx-4 md:mx-0 text-center">
 					<h1 class="text-white font-semibold md:line--height-105c8 text-5xl md:font--size-95 mb-5 text-center">Leverage The Power of Influence</h1>
@@ -15,7 +15,7 @@
 	</header>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="block md:flex flex-col">
 				<h2 class="mb-6 md:mb-10 text-3xl md:font--size-55 font-semibold">About The Service</h2>
 				<div class="text-base md:font--size-20 line--height-160 text--gray">Understanding the power of influencers is only the tip of the iceberg. Identifying relevant influencers, aligning them with your brand’s vision, collaborating for content creation, and then seamlessly executing the campaign requires a deeper understanding of both the content creator and the brand. This is where we come in.</div>
@@ -24,7 +24,7 @@
 	</section>
 
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container ">
+		<div class="mx-4 md:app-container 2xl:px-40 ">
 			<div class="flex  mb-20">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
 				<h2 class="text--blue text-3xl md:font--size-39 font-bold">Our Process</h2>
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 
-		<div class="mx-4 md:app-container ">
+		<div class="mx-4 md:app-container 2xl:px-40 ">
 			<div class="flex justify-between items-center">
 				<div class="flex gap-x-2 items-center slider-dot">
 					<div class="bg--blue w-10 h-1 md:h-2 rounded-full"></div>
@@ -97,10 +97,10 @@
 					<div class="bg-gray-300 w-5 h-1 md:h-2 rounded-full"></div>
 				</div>
 				<div class="flex gap-x-4 items-center">
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="prev">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control hover:zoom" target="#process-slider" action="prev">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/prev.png') }}">
 					</div>
-					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control" target="#process-slider" action="next">
+					<div class="bg-gray-200 w-10 h-10 md:w--64 md:h--64 flex items-center justify-center rounded-full slider-control hover:zoom" target="#process-slider" action="next">
 						<img class="h-3 md:h-auto" src="{{ asset('images/utilities/next.png') }}">
 					</div>
 				</div>
@@ -109,7 +109,7 @@
 	</section>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="block md:flex mb-10 flex-col">
 				<h2 class="text-3xl md:font--size-75 font-semibold leading-normal">What’s all Included</h2>
 				<!-- <div class="text-base md:font--size-20 line--height-160 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class brands to make your products to</div> -->

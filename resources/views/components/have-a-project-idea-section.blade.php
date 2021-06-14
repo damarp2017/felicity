@@ -1,5 +1,5 @@
-<section  class="bg-white w-full  py-10 md:py-20">
-		<div class="mx-4 md:app-container ">
+<section  class="tag bg-white w-full  py-10 md:py-20">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="w-full mb-10">
 				<h2 class="text-3xl md:font--size-65  md:w-full font-semibold mb-4 md:mb-10">Have a <span class="text--blue">Project</span> Idea?</h2>
 				<div class="text-base md:font--size-17 font--poppins w-full md:w-10/12 " 
@@ -28,7 +28,7 @@
 						</div>
 					</div>
 				</div>
-				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue" type="submit">Send</button>
+				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue hover:zoom" type="submit">Send</button>
 			</form>
 		</div>
 	</section>

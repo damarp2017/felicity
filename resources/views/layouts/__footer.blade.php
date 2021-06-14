@@ -23,6 +23,7 @@
 					<a target="_blank" href="//fb.com/thefelicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Facebook</a>
 					<a target="_blank" href="//twitter.com/mediafelicity" class="text-white mb-2 md:font--size-18 font--poppins">Twitter</a>
 					<a target="_blank" href="//linkedin.com/company/felicity-media" class="text-white mb-2 md:font--size-18 font--poppins">Linkedin</a>
+					<a target="_blank" href="//www.youtube.com/channel/UCjKNT2-xOcOUw-_fAsrrVRA" class="text-white mb-2 md:font--size-18 font--poppins">Linkedin</a>
 				</div>
 				<div class="flex flex-col mb-8 md:mb-0">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">About</div>
@@ -54,7 +55,7 @@
 					<a href="//linkedin.com/company/felicity-media" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
 					</a>
-					<a href="//youtube.com/c/" target="_blank" >
+					<a href="//www.youtube.com/channel/UCjKNT2-xOcOUw-_fAsrrVRA" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
 					</a>
 				</div>
@@ -81,7 +82,7 @@
 						<a href="//linkedin.com/company/felicity-media" target="_blank">
 							<img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
 						</a>
-						<a href="//youtube.com/c/" target="_blank">
+						<a href="//www.youtube.com/channel/UCjKNT2-xOcOUw-_fAsrrVRA" target="_blank">
 							<img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
 						</a>
 					</div>

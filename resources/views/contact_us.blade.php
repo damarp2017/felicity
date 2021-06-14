@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-	<header class="w-full overflow-x-hidden bg--blue relative ">
+	<header class="tag w-full overflow-x-hidden bg--blue relative ">
 	@include('layouts.__navigation')
-		<div class="mx-4 md:app-container">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-96 md:h-screen justify-center items-center text-center">
 				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
@@ -14,7 +14,7 @@
 	</header>
 
 	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
-		<div class="mx-4 md:app-container">
+		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="mb-10 md:mb--38">
 				<!-- <div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65">Say hello </div> -->
 				<!-- <div class=" w-full md:w-9/12 mb-8 text-base md:font--size-17 font--poppins"
@@ -24,12 +24,12 @@
 				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div> -->
 				<div class="">
 					<div class="jaipur flex  cursor-pointer md:items-start">
-						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green  text-white rounded-full " onclick="jaipur()">Jaipur</button>
-						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200 text-white rounded-full " onclick="mumbai()">Mumbai</button>
+						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green  text-white rounded-full " onclick="jaipur()">Jaipur</button>
+						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200 text-white rounded-full " onclick="mumbai()">Mumbai</button>
 					</div>
 					<div class="mumbai flex  cursor-pointer md:items-start" style="display: none;">
-						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200  text-white rounded-full " onclick="jaipur()">Jaipur</button>
-						<button class="w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green text-white rounded-full " onclick="mumbai()">Mumbai</button>
+						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200  text-white rounded-full " onclick="jaipur()">Jaipur</button>
+						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green text-white rounded-full " onclick="mumbai()">Mumbai</button>
 					</div>
 				</div>
 			</div>
@@ -71,11 +71,11 @@
 								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="reason" placeholder="Reason to contact">
 							</div>
 							
-							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--blue" style="border-radius: 19px" type="submit">Send</button>
+							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--blue hover:zoom" style="border-radius: 19px" type="submit">Send</button>
 						</form>
 					</div>
-					<div class="hidden md:block w-full md:w-1/2">
-						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank"><img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""></a>
+					<div class="hidden md:block w-full md:w-1/2 ">
+						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank"><img class="h-96 w-full object-cover object-center rounded-2xl hover:zoom" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""></a>
 						<!-- <div class="text--gray text-sm">*Click to view maps</div> -->
 					</div>
 				</div>
