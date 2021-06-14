@@ -42,14 +42,20 @@
 					<div class="text-white font--size-17 font--poppins">+91-7738180136</div>
 				</div>
 				<div class="flex items-center gap-x-8">
-					<a href="//twitter.com/mediafelicity" target="_blank" href="//twitter.com/felicitymedia">
+					<a href="//twitter.com/mediafelicity" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/twitter.png') }}" alt="">
 					</a>
-					<a href="//instagram.com/felicitymedia" target="_blank" href="//instagram.com/felicitymedia">
+					<a href="//instagram.com/felicitymedia" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/ig.png') }}" alt="">
 					</a>
-					<a href="//fb.com/thefelicitymedia" target="_blank" href="//fb.com/thefelicitymedia">
+					<a href="//fb.com/thefelicitymedia" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/fb.png') }}" alt="">
+					</a>
+					<a href="//linkedin.com/company/felicity-media" target="_blank" >
+						<img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
+					</a>
+					<a href="//youtube.com/c/" target="_blank" >
+						<img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
 					</a>
 				</div>
 			</div>
@@ -69,6 +75,12 @@
 						</a>
 						<a href="//fb.com/thefelicitymedia" target="_blank">
 							<img src="{{ asset('images/utilities/sosmed/fb.png') }}" alt="">
+						</a>
+						<a href="//linkedin.com/company/felicity-media" target="_blank">
+							<img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
+						</a>
+						<a href="//youtube.com/c/" target="_blank">
+							<img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
 						</a>
 					</div>
 				</div>
