@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 		$reason=request()->input('reason');
 		$subject = "New Leads! | ".$fullname." | FelicityMedia";
 		$to = 'info@felicitymedia.in';
-		$to = 'official.rifkidermawan@gmail.com';
+		// $to = 'official.rifkidermawan@gmail.com';
 		$content="
-		<<!DOCTYPE html>
+		<!DOCTYPE html>
 		<html>
 		<body>
 			<h5>Detail:</h5>
