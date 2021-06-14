@@ -253,8 +253,9 @@
 			this.touchEnd = (e) => {
 				if(e.type=='touchend'){
 					e = e.changedTouches[0];
+				}else{
+					beginMomentumTracking();
 				}
-				beginMomentumTracking();
 				let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
 				this.isDown = false;
 				this.slider.classList.remove('active');
@@ -337,7 +338,7 @@
 
 
 			this.slider.addEventListener('mouseup', this.touchEnd,{passive:true});
-			// this.slider.addEventListener('touchend', this.touchEnd,{passive:true});
+			this.slider.addEventListener('touchend', this.touchEnd,{passive:true});
 
 			// Momentum 
 
