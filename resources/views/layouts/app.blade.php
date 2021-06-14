@@ -247,6 +247,7 @@
 				cancelMomentumTracking();
 			}
 			this.touchCancel = () => {
+				console.log('cancel');
 				this.isDown = false;
 				this.slider.classList.remove('active');
 			}
