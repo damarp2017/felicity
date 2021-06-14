@@ -237,6 +237,7 @@
 				return page;
 			}
 			this.touchStart = (e)=>{
+				console.log('start');
 				if(e.type=='touchstart'){
 					e = e.changedTouches[0];
 				}
@@ -254,8 +255,8 @@
 				if(e.type=='touchend'){
 					e = e.changedTouches[0];
 				}else{
-					beginMomentumTracking();
 				}
+				beginMomentumTracking();
 				let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
 				this.isDown = false;
 				this.slider.classList.remove('active');
@@ -300,18 +301,18 @@
 				$(this.dotsElement.children().get(p-1)).addClass('w-10');
 				// console.log(this.curpage());
 
-				requestAnimationFrame(this.animate);
+				this.momentumID = requestAnimationFrame(this.animate);
 			}
 			this.animate=()=>{
 				if(this.slider.scrollLeft<this.newP){
 			    	this.slider.scrollLeft+=10;
 			    	if(this.slider.scrollLeft<=this.newP){
-			    		requestAnimationFrame(this.animate);
+			    		this.momentumID = requestAnimationFrame(this.animate);
 			    	}
 			    }else{
 			    	this.slider.scrollLeft-=10;
 			    	if(this.slider.scrollLeft>=this.newP){
-			    		requestAnimationFrame(this.animate);
+			    		this.momentumID = requestAnimationFrame(this.animate);
 			    	}
 			    }
 			}
