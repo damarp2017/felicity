@@ -2,6 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
+        @include('layouts.__wave')
 		<div class="mx-4 md:app-container 2xl:px-40">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-screen"> -->
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" logo/black.png?new>
