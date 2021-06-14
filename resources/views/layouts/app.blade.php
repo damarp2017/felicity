@@ -262,7 +262,7 @@
 				p=(this.slider.scrollLeft/this.slider.offsetWidth);
 				endX =  e.pageX - this.slider.offsetLeft;
 				posX = (this.startX-endX);
-				console.log("endX",endX,"p",p,"startX",startX,"posX",posX)
+				console.log("endX",endX,"p",p,"startX",this.startX,"posX",posX)
 				if(posX>0){
 					if((endX/this.slider.offsetWidth)>0.25){
 				    	p = Math.ceil(p);
