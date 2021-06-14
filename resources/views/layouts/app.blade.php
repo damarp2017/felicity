@@ -243,7 +243,6 @@
 				this.isDown = true;
 				this.slider.classList.add('active');
 				this.startX = e.pageX - this.slider.offsetLeft;
-				scrollLeft = this.slider.scrollLeft;
 				cancelMomentumTracking();
 			}
 			this.touchCancel = () => {
@@ -316,6 +315,7 @@
 			    }
 			}
 			this.touchMove = (e) => {
+				console.log('move');
 				if(!this.isDown) return;
 				e.preventDefault();
 				const x = e.pageX - this.slider.offsetLeft;
