@@ -10,7 +10,7 @@
 					<!-- Your brand is a promise to your customers. We help you keep it -->
 				<!-- </div> -->
 				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-63 text-center leading-normal">Your brand is a promise to your customers.</h1>
-				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-100 text-center leading-normal"><br/>We help you keep it</h1>
+				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-100 text-center "><br/>We help you keep it</h1>
 
 				<!-- <div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div> -->
 				<!-- <div class="md:font--size-18  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div> -->
