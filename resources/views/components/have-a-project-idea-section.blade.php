@@ -28,7 +28,7 @@
 						</div>
 					</div>
 				</div>
-				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue" >Send</button>
+				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue" type="submit">Send</button>
 			</form>
 		</div>
 	</section>

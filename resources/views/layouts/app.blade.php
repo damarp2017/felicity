@@ -11,8 +11,7 @@
 	<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
 	<style>
 
@@ -73,7 +72,7 @@
 	<style type="text/css">
 		h1,h2{
 			font-family: "Source Serif Pro";
-			font-weight: 600!important;
+			font-weight: 700!important;
 		}
 	</style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -295,6 +294,24 @@
 				$('body').css('cursor','unset');
 				alert("Thank's, we'll reach to you!");
 				$("#form-have-a-project").find('input').val('');
+			})
+			.fail(function(data){
+				$('body').css('cursor','unset');
+				alert("Can't connect to our network, please try again.");
+
+				// $("#form-have-a-project").find('input').val('');
+			})
+		
+		})
+		$("#form-subscribe").on("submit",function(e){
+			e.preventDefault();
+			$('body').css('cursor','wait');
+			var form  = $('#form-subscribe').serialize();
+			$.post('{{url('subscribe')}}',form)
+			.done(function(data){
+				$('body').css('cursor','unset');
+				alert("Subscribed!");
+				$("#form-subscribe").find('input').val('');
 			})
 			.fail(function(data){
 				$('body').css('cursor','unset');

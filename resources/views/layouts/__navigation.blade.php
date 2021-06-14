@@ -46,13 +46,13 @@
 			</button>
 		</div>
 		<div x-show="open"  class="mt-8 flex flex-col gap-y-5 transition duration-300 ease-in-out pb-5" >
-			<a href="{{ url('home') }}" class="block text-white hover:text-gray-800 text-lg"> Home </a>
-			<a href="{{ url('capabilities') }}" class="block text-white hover:text-gray-800 text-lg"> Capabilities </a>
-			<a href="{{ url('opportunities') }}" class="block text-white hover:text-gray-800 text-lg"> Opportunities </a>
-			<a href="//www.behance.net/felicityhq" target="_blank" class="block text-white hover:text-gray-800 text-lg"> Case Studies </a>
-			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-white hover:text-gray-800 text-lg"> Insights </a>
-			<a href="{{ url('contact-us') }}" class="block text-white hover:text-gray-800 text-lg"> Contact Us </a>
-			<div class="flex justify-center items-center">
+			<a href="{{ url('home') }}" class="block text-white hover:text-gray-800 text-xl text-center"> Home </a>
+			<a href="{{ url('capabilities') }}" class="block text-white hover:text-gray-800 text-xl text-center"> Capabilities </a>
+			<a href="{{ url('opportunities') }}" class="block text-white hover:text-gray-800 text-xl text-center"> Opportunities </a>
+			<a href="//www.behance.net/felicityhq" target="_blank" class="block text-white hover:text-gray-800 text-xl text-center"> Case Studies </a>
+			<a href="//medium.com/@felicitymedia" target="_blank" class="block text-white hover:text-gray-800 text-xl text-center"> Insights </a>
+			<a href="{{ url('contact-us') }}" class="block text-white hover:text-gray-800 text-xl text-center"> Contact Us </a>
+			<div class="flex justify-center items-center mt-10">
 				<a href="//calendly.com/felicityhq/hello" target="_blank" class="flex justify-center items-center w-72 bg-white py-3 px-2 rounded-full text--blue font-bold">
 				Book A Free Consultation Call
 			</a>

@@ -7,7 +7,7 @@
 			<div class="flex flex-col h-96 md:h-screen justify-center items-center text-center">
 				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
 				
-				<h2 class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65 text-white">Say hello </h2>
+				<h2 class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-100 text-white">Say hello </h2>
 				<!-- <div class="text-base md:font--size-20 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
@@ -57,21 +57,21 @@
 						<div class="text--gray text-sm" style="opacity: .5;">*Click to open maps</div>
 					</div>
 					<div class="w-full md:w-1/2">
-						<form action="">
+						<form id="form-have-a-project">
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Email Address">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="email" placeholder="Email Address">
 							</div>
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Full Name">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="fullname" placeholder="Full Name">
 							</div>
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Phone Number">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="phone" placeholder="Phone Number">
 							</div>
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" placeholder="Reason to contact">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="reason" placeholder="Reason to contact">
 							</div>
 							
-							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--blue" style="border-radius: 19px">Send</button>
+							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--blue" style="border-radius: 19px" type="submit">Send</button>
 						</form>
 					</div>
 					<div class="hidden md:block w-full md:w-1/2">

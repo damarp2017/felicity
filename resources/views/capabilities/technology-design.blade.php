@@ -42,7 +42,7 @@
 								[
 									'no'=>'01',
 									'title'=>'Planning',
-									'desc'=>"SThis is where we define goals, what we will measure success, define needs, consider improving existing processes, and explore the available options before defining the Scope of Work (SOW)."
+									'desc'=>"This is where we define goals, how we will measure success, define needs, consider improving existing processes, and explore the available options before defining the Scope of Work (SOW)."
 								],
 								[
 									'no'=>'02',

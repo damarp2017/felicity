@@ -9,8 +9,8 @@
 				<!-- <div class="text-white font-semibold text-8xl md:line--height-90 md:font--size-190 text-center">  -->
 					<!-- Your brand is a promise to your customers. We help you keep it -->
 				<!-- </div> -->
-				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-63 text-center leading-normal">Your brand is a promise to your customers.</h1>
-				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-100 text-center "><br/>We help you keep it</h1>
+				<h1 class="text-white font-semibold mb-10 md:mb-5 text-4xl  md:font--size-55 text-center leading-normal">Your brand is a promise to your customers.</h1>
+				<h1 class="text-white font-semibold md:mb-5 text-3xl  md:font--size-45 text-center ">We help you keep it.</h1>
 
 				<!-- <div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div> -->
 				<!-- <div class="md:font--size-18  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div> -->
@@ -51,7 +51,7 @@
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-5 mb-5">
 
 					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-8 mr-5" src="{{ asset('images/home/items/4.png?new') }}">
+						<img class="w-10 mr-5" src="{{ asset('images/home/items/1.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">Win-Win Situation</div>
 							<div class="text-base text--gray md:font--size-20">When you score, we score!</div>
@@ -59,7 +59,7 @@
 					</div>
 
 					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-8 mr-5" src="{{ asset('images/home/items/5.png?new') }}">
+						<img class="w-10 mr-5" src="{{ asset('images/home/items/2.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Problem Solvers</div>
 							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand.</div>
@@ -67,14 +67,14 @@
 					</div>
 					
 					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-8 mr-5" src="{{ asset('images/home/items/2.png?new') }}">
+						<img class="w-10 mr-5" src="{{ asset('images/home/items/3.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We Worship Data </div>
 							<div class="text-base text--gray md:font--size-20">Our creativity is driven by data and human experiences</div>
 						</div>
 					</div>
 					<div class="card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-8 mr-5" src="{{ asset('images/home/items/3.png?new') }}">
+						<img class="w-10 mr-5" src="{{ asset('images/home/items/4.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We Are Bold</div>
 							<div class="text-base text--gray md:font--size-20">We dare to dream and to turn it into reality</div>
@@ -82,7 +82,7 @@
 					</div>
 
 					<div class="card--about-home h-26 md:h-32 w-full  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-8 mr-5" src="{{ asset('images/home/items/6.png?new') }}">
+						<img class="w-10 mr-5" src="{{ asset('images/home/items/5.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Agile</div>
 							<div class="text-base text--gray md:font--size-20">We make decisions quickly but carefully</div>
@@ -90,7 +90,7 @@
 					</div>
 
 					<div class="card--about-home h-26 md:h-32 w-full  bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-						<img class="w-10 h-8 mr-5" src="{{ asset('images/home/items/1.png?new') }}">
+						<img class="w-10 mr-5" src="{{ asset('images/home/items/6.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Match-Makers</div>
 							<div class="text-base font-normal text--gray md:font--size-20">From consumer to customer, we help you convert</div>
@@ -185,7 +185,7 @@
 		</div>
 	</section>
 
-	<section class="bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
+	<!-- <section class="bg-white w-full py-10 md:py-20" style="background-color: #fcfcfc">
 		<div class="mx-4 md:app-container">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<h2 class="mb-4 md:mb-5 text-3xl md:font--size-70 font-semibold md:line--height-99c34">Your Brand Is In Good Hands</h2>
@@ -227,7 +227,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	@include('components.case-studies-insights-section')
 	<!-- <section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
@@ -314,22 +314,24 @@
 			<div class=" md:p-10 p-5 bg--blue rounded-xl" >
 				<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
 				<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t spam. Promise.</div>
+				<form id="form-subscribe">
 				<div class="block md:flex gap-x-4">
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);
 						border-radius: 12px;"
 						class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
-						placeholder="Email Address">
+						placeholder="Email Address" name="email">
 					</div>
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text"  style="background: rgba(255, 255, 255, 0.15);
 						border-radius: 12px;"
 						class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
-						placeholder="Full Name">
+						placeholder="Full Name" name="fullname">
 					</div>
-					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none focus:outline-none"
-					style="border-radius: 7px;">Subscribe</button>
+					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none font-bold focus:outline-none"
+					style="border-radius: 7px;" type="submit">Subscribe</button>
 				</div>
+				</form>
 			</div>
 		</div>
 		

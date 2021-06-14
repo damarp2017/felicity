@@ -32,9 +32,37 @@ use Illuminate\Support\Facades\Route;
             'MIME-Version'=>'1.0',
             'Content-type'=>'text/html; charset=iso-8859-1',
             'X-Priority'=>'1',
-            'Reply-To'=>'noreply@ethnicindia.co',
+            'Reply-To'=>'noreply@felicitymedia.in',
             'X-Mailer'=>'PHP/'.phpversion(),
-        ],'-fnoreply@ethnicindia.co');
+        ],'-fnoreply@felicitymedia.in');
+
+        return response()->json(['res'=>$res]);
+	});
+	Route::post('/subscribe',function(){
+		$fullname=request()->input('fullname');
+		$email=request()->input('email');
+		$subject = "New Subscriber! | ".$fullname." | FelicityMedia";
+		$to = 'hello@felicitymedia.in';
+		// $to = 'official.rifkidermawan@gmail.com';
+		$content="
+		<!DOCTYPE html>
+		<html>
+		<body>
+			<h5>Detail:</h5>
+			Fullname: {$fullname}<br/>
+			Email: {$email}<br/>
+			<br/>
+		</body>
+		</html>
+		";
+		$res= mail($to,$subject,$content,[
+            'From'=>'noreply@felicitymedia.in',
+            'MIME-Version'=>'1.0',
+            'Content-type'=>'text/html; charset=iso-8859-1',
+            'X-Priority'=>'1',
+            'Reply-To'=>'noreply@felicitymedia.in',
+            'X-Mailer'=>'PHP/'.phpversion(),
+        ],'-fnoreply@felicitymedia.in');
 
         return response()->json(['res'=>$res]);
 	});
