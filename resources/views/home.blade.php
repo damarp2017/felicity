@@ -2,6 +2,7 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative" style="background:#3B28C2">
 		@include('layouts.__navigation')
+        @include('layouts.__wave')
 		<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 		<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center">
 			<div class="mx-4 md:app-container   ">
@@ -18,7 +19,7 @@
 		</div>
 	</header>
 
-	<section class=" bg--section w-full overflow-x-hidden py-10 md:py-20">
+	<section class=" bg--section w-full overflow-x-hidden overflow-y-hidden py-10 md:py-20">
 		<div class="tag mx-4 md:app-container 2xl:px-40  md:pt-10">
 			<!-- <div class="flex mb-20 flex-col text-center justify-center">
 				<div class="mb-6 text-3xl md:font--size-65 font-semibold">About Us</div>

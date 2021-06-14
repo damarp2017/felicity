@@ -2,9 +2,10 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
+        @include('layouts.__wave')
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-			<div class="flex flex-col h-96 md:h-screen justify-center items-center" >
+			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" >
 				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking <br/>India to the world 🌏</h1>
 				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>

@@ -98,6 +98,67 @@
 		  opacity: 1;
 		  transform: translate(0, 0);
 		}
+
+    .wave-wrapper{
+        position: absolute;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 17;
+        pointer-events: none;
+    }
+    .wave{
+        transition: all .5s ease-in-out;
+    }
+    .wave > svg{
+        transition: width 2s;
+    }
+    .wave1{
+        position: absolute;
+        right: 0%;
+        top: -20%;
+        transform: rotate(45deg) scale(2);
+    }
+    .wave1 > svg{
+        opacity: .2;
+        animation: waves1 linear 20s infinite;
+        width: 200%;
+    }
+    .wave2{
+        position: absolute;
+        right: 5%;
+        top:-10%;
+        transform: rotate(45deg) scale(3);
+    }
+
+    
+    .wave2 > svg{
+        opacity: .2;
+        animation: waves1 linear 10s infinite;
+        width: 200%;
+    }
+    
+
+    .wave2.big{
+        right: 10%;
+        top: -10%;
+        transform: rotate(20deg) scale(3);
+    }
+    .wave1.big{
+        top: 10%;
+        transform: rotate(50deg) scale(2);
+    }
+    
+
+    @keyframes waves1{
+        0% {
+            transform: translateX(0);
+        }
+        100%{
+            transform: translate(-50%);
+        }
+    }
+
 	</style>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	
@@ -122,7 +183,7 @@
 	<script type="text/javascript">
 		$(document).on("scroll", function() {
 		  var pageTop = $(document).scrollTop();
-		  var pageBottom = pageTop + ($(window).height()*0.80);
+		  var pageBottom = pageTop + ($(window).height());
 		  var tags = $(".tag");
 
 		  for (var i = 0; i < tags.length; i++) {
@@ -234,8 +295,8 @@
 				this.dotsElement.children().addClass('bg-gray-300');
 				// this.dotsElement.children().addClass('w-5');
 				// console.log();
-				$(this.dotsElement.children().get(p)).addClass('bg--blue');
-				$(this.dotsElement.children().get(p)).addClass('w-10');
+				$(this.dotsElement.children().get(p-1)).addClass('bg--blue');
+				$(this.dotsElement.children().get(p-1)).addClass('w-10');
 				// console.log(this.curpage());
 
 				requestAnimationFrame(this.animate);

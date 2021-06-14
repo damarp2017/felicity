@@ -2,9 +2,10 @@
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 		@include('layouts.__navigation')
+        @include('layouts.__wave')
 		<div class="mx-4 md:app-container 2xl:px-40">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
-			<div class="flex flex-col h-96 md:h-screen justify-center items-center text-center">
+			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center text-center">
 				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
 				<h1 class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-100">Our Capabilities</h1>
 				
@@ -13,7 +14,7 @@
 		</div>
 	</header>
 
-	<section class=" bg--section w-full overflow-x-hidden py-10 md:py-20">
+	<section class=" bg--section w-full overflow-x-hidden overflow-y-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="tag block md:flex md:h-screen-3/4 justify-between items-center mb-20 ">
 				<div class="block md:hidden w-full md:w-1/2 "><img class="h-auto  md:h-96" src="{{ asset('images/capabilities/branding.png') }}"></div>
