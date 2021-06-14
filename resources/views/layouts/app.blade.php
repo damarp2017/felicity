@@ -292,7 +292,7 @@
 			$.post('{{url('have-a-project')}}',form)
 			.done(function(data){
 				$('body').css('cursor','unset');
-				alert("Thank's, we'll reach to you!");
+				alert("Thanks! Our team will reach out to you shortly.");
 				$("#form-have-a-project").find('input').val('');
 			})
 			.fail(function(data){
