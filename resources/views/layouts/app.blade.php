@@ -329,7 +329,7 @@
 			// this.slider.addEventListener('touchmove',,{passive:true});
 
 			this.slider.addEventListener('mousedown', this.touchStart,{passive:true});
-			this.slider.addEventListener('touchstart', this.touchStart,{passive:true});
+			// this.slider.addEventListener('touchstart', this.touchStart,{passive:true});
 
 
 			this.slider.addEventListener('mouseleave', this.touchCancel,{passive:true});
