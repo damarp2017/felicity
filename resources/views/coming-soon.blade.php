@@ -20,7 +20,7 @@
 		<form method="POST" action="{{url('/coming-soon')}}">
 			@csrf
 			<div class="w-full md:w-1/3 mx-auto">
-				<input class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none mb-5" type="text" name="password" value="" placeholder="Tell me">
+				<input class="text--gray-dark font--gilroy-md w-full p-3 md:padding--form-we-have rounded-xl md:font--size-19 bg-gray-100 focus:outline-none mb-5" type="text" name="secret" value="" placeholder="Tell me">
 				<button class="w-full py-3 md:font--size-21 font--gilroy-md text-white text-center rounded bg--blue" type="submit">Open</button>
 			</div>
 		</form>

@@ -67,7 +67,7 @@ use Illuminate\Support\Facades\Route;
         return response()->json(['res'=>$res]);
 	});
 	Route::post('/coming-soon',function(){
-		if(request()->input('password')=='myfeli'){
+		if(request()->input('secret')=='myfeli'){
 			session()->put('allow',true);
 		}
 		return redirect('/');
