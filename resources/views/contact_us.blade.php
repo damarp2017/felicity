@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-	<header class="tag w-full overflow-x-hidden bg--blue relative ">
+	<header class="w-full overflow-x-hidden bg--blue relative ">
 	@include('layouts.__navigation')
 		<div class="mx-4 md:app-container 2xl:px-40">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
@@ -13,7 +13,7 @@
 		</div>
 	</header>
 
-	<section class="bg-white w-full overflow-x-hidden py-10 md:py-20">
+	<section class="tag bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40">
 			<div class="mb-10 md:mb--38">
 				<!-- <div class="mb-3 md:mb--15 font-semibold text-4xl md:font--size-65">Say hello </div> -->
