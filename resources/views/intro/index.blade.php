@@ -11,6 +11,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
 	<link rel="stylesheet" href="{{asset('/css/app.css?new')}}">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129747187-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-129747187-1');
+	</script>
 	<style>
         body {
             font-family: 'Kollektif', sans-serif;
