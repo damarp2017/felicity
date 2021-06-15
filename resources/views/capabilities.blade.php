@@ -34,7 +34,7 @@
 						<div class="text--blue">Strategy</div>	
 					</h2>
 					<div class="text-base md:font--size-20 text--gray line--height-160 mb-4 md:mb--28">Think of us as your extended brains. It is important for all businesses to have an effective marketing strategy to capitalize and capture larger market share and higher share of voice. We help you do that. Get in touch with us to discuss your brand story and audit your brand to see if we are a good fit to work with each other.</div>
-					<a href="{{ url('capabilities/marketing-strategy') }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">See More</a>>
+					<a href="{{ url('capabilities/marketing-strategy') }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">See More</a>
 				</div>
 			</div>
 
