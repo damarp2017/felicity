@@ -45,6 +45,10 @@
 		    border-bottom-left-radius: 20px;
 		    border-bottom-right-radius: 20px;
 		}
+		.bg--navbar{
+		    background: #3e2bc1c7;
+
+		}
 		.navbar-mobile{
 			transition: all 200ms;
 		    border-bottom-left-radius: 20px;
@@ -52,7 +56,6 @@
 		}
 		.navbar-mobile:not(.bg--blue){
 			/*background:#3b28c2bf;*/
-		    background: #3e2bc1c7;
 		}
 		.bg-tr{
 			background:#3b28c2bf;

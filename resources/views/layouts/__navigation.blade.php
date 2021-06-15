@@ -187,7 +187,13 @@
 	const logoBlackHeader = document.querySelector('.logo-black-header')
 	const logoWhite = document.querySelectorAll('.logo-white')
 	const menu = document.querySelector('.menu')
+	const menu = document.querySelector('.navbar-mobile')
 	window.onscroll = () => {
+		if(window.scrollY > document.querySelector('header').height){
+			mobileHeader.classList.add('bg--navbar')
+		}else{
+			mobileHeader.classList.remove('bg--navbar')
+		}
 		if (window.scrollY > 300) {
 			navbar.classList.add('bg-white');
 			navbar.classList.add('shadow-lg');

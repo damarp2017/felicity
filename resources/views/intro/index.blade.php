@@ -106,7 +106,7 @@
 <body>
 	<script type="text/javascript">
 		if(localStorage.getItem('has-watch')=="true"){
-         	// window.location.href = "{{ url('/home') }}";
+         	window.location.href = "{{ url('/home') }}";
 		}
 	</script>
 <div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;background: #d65244;" id="loading">
@@ -192,7 +192,7 @@
 				// try{
 					vidPlay = document.querySelector('.vidcon').play();
 					if(!vidPlay){
-
+			         	window.location.href = "{{ url('/home') }}";
 					}else{
 						vidPlay.then(res=>{
 							$('#loading').fadeOut();
