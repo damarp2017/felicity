@@ -257,21 +257,15 @@
 			}
 
 			this.touchEnd = (e) => {
-				if(e.type=='touchend'){
+				var type = e.type;
+				if(type=='touchend'){
 					e = e.changedTouches[0];
 				}else{
 					this.slider.classList.remove('active');
 					this.isDown = false;
 				}
 
-				this.dotsElement.children().removeClass('bg--blue');
-				this.dotsElement.children().removeClass('w-10');
-				this.dotsElement.children().addClass('bg-gray-300');
-				// this.dotsElement.children().addClass('w-5');
-				// console.log();
-				$(this.dotsElement.children().get(p-1)).addClass('bg--blue');
-				$(this.dotsElement.children().get(p-1)).addClass('w-10');
-				
+
 				beginMomentumTracking();
 				let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
 				p=(this.slider.scrollLeft/this.slider.offsetWidth);
@@ -295,9 +289,22 @@
 				    	p = parseInt(p);
 				    }
 				}
+				this.dotsElement.children().removeClass('bg--blue');
+				this.dotsElement.children().removeClass('w-10');
+				this.dotsElement.children().addClass('bg-gray-300');
+				// this.dotsElement.children().addClass('w-5');
+				// console.log();
+				$(this.dotsElement.children().get(p-1)).addClass('bg--blue');
+				$(this.dotsElement.children().get(p-1)).addClass('w-10');
+				
 				this.newP=p*this.slider.offsetWidth;
 				// // console.log("p",p,this.newP);
-				this.scrollAnimate();
+				if(type=='touchend'){
+					// console.log("tiu")
+					// this.slider.scroll( { left: this.newP, behavior: 'smooth' })
+				}else{
+					this.scrollAnimate();
+				}
 
 			}
 			this.scrollAnimate=()=>{
@@ -355,7 +362,7 @@
 
 
 			this.slider.addEventListener('wheel', (e) => {
-				console.log(e);
+				// console.log(e);
 				cancelMomentumTracking();
 			},{passive:true} ); 
 
