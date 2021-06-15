@@ -289,13 +289,7 @@
 				    	p = parseInt(p);
 				    }
 				}
-				this.dotsElement.children().removeClass('bg--blue');
-				this.dotsElement.children().removeClass('w-10');
-				this.dotsElement.children().addClass('bg-gray-300');
-				// this.dotsElement.children().addClass('w-5');
-				// console.log();
-				$(this.dotsElement.children().get(p)).addClass('bg--blue');
-				$(this.dotsElement.children().get(p)).addClass('w-10');
+				
 				
 				this.newP=p*this.slider.offsetWidth;
 				// // console.log("p",p,this.newP);
@@ -315,7 +309,13 @@
 					return
 				}
 				this.momentumID = requestAnimationFrame(this.animate);
-
+				this.dotsElement.children().removeClass('bg--blue');
+				this.dotsElement.children().removeClass('w-10');
+				this.dotsElement.children().addClass('bg-gray-300');
+				// this.dotsElement.children().addClass('w-5');
+				// console.log();
+				$(this.dotsElement.children().get(p)).addClass('bg--blue');
+				$(this.dotsElement.children().get(p)).addClass('w-10');
 				// console.log(this.curpage());
 
 			}

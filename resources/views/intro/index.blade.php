@@ -106,12 +106,16 @@
 <body>
 	<script type="text/javascript">
 		if(localStorage.getItem('has-watch')=="true"){
-         	window.location.href = "{{ url('/home') }}";
+         	// window.location.href = "{{ url('/home') }}";
 		}
 	</script>
 <div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;background: #d65244;" id="loading">
 	<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);display: none;" class="text-center logo" >
 		<img src="{{asset('images/logo/logo.png?new')}}" style="max-width:100px;width: 30%;" class="mx-auto">
+	</div>
+
+	<div style="position:absolute;top: 75vh;left: 50%;transform: translateX(-50%);" id="gif" >
+		<img src="{{asset('images/loading.gif')}}" style="width: 100px;">
 	</div>
 	<div style="position:absolute;top: 75vh;left: 50%;transform: translateX(-50%);display:none;" id="confirm" >
 		<button style="
@@ -198,6 +202,7 @@
 							$('#loading').fadeOut();
 
 						}).catch((e)=>{
+							$('#gif').fadeOut();
 							$('#confirm').fadeIn();
 							// console.log(e)
 						});	

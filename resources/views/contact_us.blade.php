@@ -60,16 +60,16 @@
 					<div class="w-full md:w-1/2">
 						<form id="form-have-a-project">
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="email" placeholder="Email Address">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="email" placeholder="Email Address" required="">
 							</div>
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="fullname" placeholder="Full Name">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="fullname" placeholder="Full Name" required="">
 							</div>
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="phone" placeholder="Phone Number">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="phone" placeholder="Phone Number" required="">
 							</div>
 							<div class="mb-4 ">
-								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="reason" placeholder="Reason to contact">
+								<input type="text" class="text--gray-dark form--contact-us w-full p-3 md:py--19 md:px--31 bg-gray-100 md:font--size-19 focus:outline-none" name="reason" placeholder="Reason to contact" required="">
 							</div>
 							
 							<button class="w-full py-3 md:py--16 text-white text-center font--gilroy-md md:font--size-21 bg--blue hover:zoom" style="border-radius: 19px" type="submit">Send</button>

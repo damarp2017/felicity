@@ -321,13 +321,13 @@
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);
 						border-radius: 12px;"
 						class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
-						placeholder="Email Address" name="email">
+						placeholder="Email Address" name="email" required="">
 					</div>
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text"  style="background: rgba(255, 255, 255, 0.15);
 						border-radius: 12px;"
 						class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
-						placeholder="Full Name" name="fullname">
+						placeholder="Full Name" name="fullname" required="">
 					</div>
 					<button class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none font-bold focus:outline-none  hover:zoom"
 					style="border-radius: 7px;" type="submit">Subscribe</button>
