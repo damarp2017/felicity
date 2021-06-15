@@ -287,7 +287,7 @@
 				}
 				this.newP=p*this.slider.offsetWidth;
 				// // console.log("p",p,this.newP);
-				// this.scrollAnimate();
+				this.scrollAnimate();
 			}
 			this.scrollAnimate=()=>{
 				if(this.newP<0){
@@ -296,6 +296,8 @@
 				if(this.newP>this.slider.scrollWidth){
 					return
 				}
+				this.momentumID = requestAnimationFrame(this.animate);
+				
 				this.dotsElement.children().removeClass('bg--blue');
 				this.dotsElement.children().removeClass('w-10');
 				this.dotsElement.children().addClass('bg-gray-300');
@@ -305,7 +307,6 @@
 				$(this.dotsElement.children().get(p-1)).addClass('w-10');
 				// console.log(this.curpage());
 
-				this.momentumID = requestAnimationFrame(this.animate);
 			}
 			this.animate=()=>{
 				if(this.slider.scrollLeft<this.newP){
