@@ -362,8 +362,8 @@
 
 
 			this.slider.addEventListener('wheel', (e) => {
-				// console.log(e);
-				cancelMomentumTracking();
+				console.log(e);
+				// cancelMomentumTracking();
 			},{passive:true} ); 
 
 			function beginMomentumTracking(){
