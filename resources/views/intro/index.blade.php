@@ -104,6 +104,11 @@
 
 </head>
 <body>
+	<script type="text/javascript">
+		if(localStorage.getItem('has-watch')=="true"){
+         	// window.location.href = "{{ url('/home') }}";
+		}
+	</script>
 <div style="position:absolute;width: 100vw;bottom: 0;left: 0;top: 0;z-index: 250;background: #d65244;" id="loading">
 	<div style="position:absolute;top: 50%;width: 100%;left: 0;transform: translateY(-50%);display: none;" class="text-center logo" >
 		<img src="{{asset('images/logo/logo.png?new')}}" style="max-width:100px;width: 30%;" class="mx-auto">
@@ -133,8 +138,9 @@
 </div>  
 	
     <script>
-    	enableInlineVideo($('.vidcon, .vidbg')[0]);
+    	enableInlineVideo(document.querySelector('.vidcon'));
     	function reloadVideo(){
+    		console.log('reload')
     		width = $(window).width();
     		height = $(window).height();
     		ratio = width/height;
@@ -156,10 +162,9 @@
     				$('.vidsource').attr('src','{{ asset('videos/Opening9x16.mp4') }}');
     			}    			
     		}
-    		$('.vidcon, .vidbg').each(function(){
-
-				this.load();
-			})
+    		console.log("load");
+    		document.querySelector('.vidcon').crossorigin = 'anonymous';
+    		document.querySelector('.vidcon').load();
     	}
 
     	$(document).ready(function(){
@@ -173,23 +178,30 @@
 			reloadVideo();
 		})
 
-    	$('.vidcon, .vidbg')[0].onended = function() {
-          window.location.href = "{{ url('/home') }}";
+    	document.querySelector('.vidcon').onended = function() {
+    		localStorage.setItem('has-watch',"true");
+         	window.location.href = "{{ url('/home') }}";
 		};
 		function play(){
-			$('.vidcon, .vidbg')[0].play();	
+			document.querySelector('.vidcon').play();	
 			$('#loading').fadeOut();
 		}
-		$('.vidcon, .vidbg')[0].addEventListener('loadeddata', function() {
+		document.querySelector('.vidcon').addEventListener('loadeddata', function() {
+    		console.log("loaded");
 			setTimeout(function(){
 				// try{
-					$('.vidcon, .vidbg')[0].play().then(res=>{
-						$('#loading').fadeOut();
+					vidPlay = document.querySelector('.vidcon').play();
+					if(!vidPlay){
 
-					}).catch((e)=>{
-						$('#confirm').fadeIn();
-						// console.log(e)
-					});	
+					}else{
+						vidPlay.then(res=>{
+							$('#loading').fadeOut();
+
+						}).catch((e)=>{
+							$('#confirm').fadeIn();
+							// console.log(e)
+						});	
+					}
 				// }catch(err){
 					// $('#confirm').fadeIn();
 				// }
