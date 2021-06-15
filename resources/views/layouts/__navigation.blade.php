@@ -70,13 +70,16 @@
 	const logoWhite = document.querySelector('.logo-white')
 	const menu = document.querySelector('.menu')
 	const mobileHeader = document.querySelector('.navbar-mobile')
+	const header = document.querySelector('header');
 
 	window.onscroll = () => {
-		if(window.scrollY > document.querySelector('header').offsetHeight){
-			console.log(mobileHeader);
-			mobileHeader.classList.add('bg--navbar')
-		}else{
-			mobileHeader.classList.remove('bg--navbar')
+		if(header){
+			if(window.scrollY > document.querySelector('header').offsetHeight){
+				// console.log(mobileHeader);
+				mobileHeader.classList.add('bg--navbar')
+			}else{
+				mobileHeader.classList.remove('bg--navbar')
+			}
 		}
 		if (window.scrollY > 80) {
 			// navbar.classList.add('hidden');

@@ -259,11 +259,11 @@
 				if(e.type=='touchend'){
 					e = e.changedTouches[0];
 				}else{
+					this.slider.classList.remove('active');
 				}
-				// beginMomentumTracking();
+				beginMomentumTracking();
 				// let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
 				// this.isDown = false;
-				// this.slider.classList.remove('active');
 				// p=(this.slider.scrollLeft/this.slider.offsetWidth);
 				// endX =  e.pageX - this.slider.offsetLeft;
 				// posX = (this.startX-endX);
