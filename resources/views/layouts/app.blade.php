@@ -260,34 +260,34 @@
 					e = e.changedTouches[0];
 				}else{
 				}
-				beginMomentumTracking();
-				let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
-				this.isDown = false;
-				this.slider.classList.remove('active');
-				p=(this.slider.scrollLeft/this.slider.offsetWidth);
-				endX =  e.pageX - this.slider.offsetLeft;
-				posX = (this.startX-endX);
-				console.log("endX",endX,"p",p,"startX",this.startX,"posX",posX)
-				if(posX>0){
-					if((endX/this.slider.offsetWidth)>0.25){
-				    	p = Math.ceil(p);
-				    }else{
-				    	p = (this.slider.offsetLeft + posX);
-				    	p = (p/this.slider.offsetWidth).toFixed(0);
-				    	p = parseInt(p);
-				    }
-				}else{
-					if((Math.abs(endX)/this.slider.offsetWidth)>0.25){
-				    	p = Math.floor(p);
-				    }else{
-				    	p = (this.slider.offsetLeft + posX);
-				    	p = (p/this.slider.offsetWidth).toFixed(0);
-				    	p = parseInt(p);
-				    }
-				}
-				this.newP=p*this.slider.offsetWidth;
-				// console.log("p",p,this.newP);
-				this.scrollAnimate();
+				// beginMomentumTracking();
+				// let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
+				// this.isDown = false;
+				// this.slider.classList.remove('active');
+				// p=(this.slider.scrollLeft/this.slider.offsetWidth);
+				// endX =  e.pageX - this.slider.offsetLeft;
+				// posX = (this.startX-endX);
+				// console.log("endX",endX,"p",p,"startX",this.startX,"posX",posX)
+				// if(posX>0){
+				// 	if((endX/this.slider.offsetWidth)>0.25){
+				//     	p = Math.ceil(p);
+				//     }else{
+				//     	p = (this.slider.offsetLeft + posX);
+				//     	p = (p/this.slider.offsetWidth).toFixed(0);
+				//     	p = parseInt(p);
+				//     }
+				// }else{
+				// 	if((Math.abs(endX)/this.slider.offsetWidth)>0.25){
+				//     	p = Math.floor(p);
+				//     }else{
+				//     	p = (this.slider.offsetLeft + posX);
+				//     	p = (p/this.slider.offsetWidth).toFixed(0);
+				//     	p = parseInt(p);
+				//     }
+				// }
+				// this.newP=p*this.slider.offsetWidth;
+				// // console.log("p",p,this.newP);
+				// this.scrollAnimate();
 			}
 			this.scrollAnimate=()=>{
 				if(this.newP<0){
