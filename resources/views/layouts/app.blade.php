@@ -247,6 +247,7 @@
 				this.isDown = true;
 				this.slider.classList.add('active');
 				this.startX = e.pageX - this.slider.offsetLeft;
+				this.scrollLeft = this.slider.scrollLeft;
 				cancelMomentumTracking();
 			}
 			this.touchCancel = () => {
@@ -262,6 +263,15 @@
 					this.slider.classList.remove('active');
 					this.isDown = false;
 				}
+
+				this.dotsElement.children().removeClass('bg--blue');
+				this.dotsElement.children().removeClass('w-10');
+				this.dotsElement.children().addClass('bg-gray-300');
+				// this.dotsElement.children().addClass('w-5');
+				// console.log();
+				$(this.dotsElement.children().get(p-1)).addClass('bg--blue');
+				$(this.dotsElement.children().get(p-1)).addClass('w-10');
+				
 				beginMomentumTracking();
 				let pagesTotal=Math.ceil(this.slider.scrollWidth/this.slider.offsetWidth);
 				p=(this.slider.scrollLeft/this.slider.offsetWidth);
@@ -288,6 +298,7 @@
 				this.newP=p*this.slider.offsetWidth;
 				// // console.log("p",p,this.newP);
 				this.scrollAnimate();
+
 			}
 			this.scrollAnimate=()=>{
 				if(this.newP<0){
@@ -297,14 +308,7 @@
 					return
 				}
 				this.momentumID = requestAnimationFrame(this.animate);
-				
-				this.dotsElement.children().removeClass('bg--blue');
-				this.dotsElement.children().removeClass('w-10');
-				this.dotsElement.children().addClass('bg-gray-300');
-				// this.dotsElement.children().addClass('w-5');
-				// console.log();
-				$(this.dotsElement.children().get(p-1)).addClass('bg--blue');
-				$(this.dotsElement.children().get(p-1)).addClass('w-10');
+
 				// console.log(this.curpage());
 
 			}
@@ -322,14 +326,14 @@
 			    }
 			}
 			this.touchMove = (e) => {
-				console.log('move',e);
+				// console.log('move',e);
 				if(!this.isDown) return;
 
-				e.preventDefault();
+				// e.preventDefault();
 				const x = e.pageX - this.slider.offsetLeft;
 				const walk = (x - this.startX) ; //scroll-fast
 				var prevScrollLeft = this.slider.scrollLeft;
-				this.slider.scrollLeft = scrollLeft - walk;
+				this.slider.scrollLeft = this.scrollLeft - walk;
 				this.velX = this.slider.scrollLeft - prevScrollLeft;
 			}
 
