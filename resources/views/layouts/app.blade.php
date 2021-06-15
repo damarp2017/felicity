@@ -299,12 +299,12 @@
 				
 				this.newP=p*this.slider.offsetWidth;
 				// // console.log("p",p,this.newP);
-				if(type=='touchend'){
+				// if(type=='touchend'){
 					// console.log("tiu")
 					// this.slider.scroll( { left: this.newP, behavior: 'smooth' })
-				}else{
+				// }else{
 					this.scrollAnimate();
-				}
+				// }
 
 			}
 			this.scrollAnimate=()=>{
