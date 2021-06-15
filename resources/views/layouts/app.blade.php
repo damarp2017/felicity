@@ -294,8 +294,8 @@
 				this.dotsElement.children().addClass('bg-gray-300');
 				// this.dotsElement.children().addClass('w-5');
 				// console.log();
-				$(this.dotsElement.children().get(p-1)).addClass('bg--blue');
-				$(this.dotsElement.children().get(p-1)).addClass('w-10');
+				$(this.dotsElement.children().get(p)).addClass('bg--blue');
+				$(this.dotsElement.children().get(p)).addClass('w-10');
 				
 				this.newP=p*this.slider.offsetWidth;
 				// // console.log("p",p,this.newP);
