@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Felicity</title>
+	<title>Felicity | Integrated Marketing Solutions Agency</title>
 	<meta name=”robots” content="index, follow">
 	<meta name="theme-color" content="#d65244">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#d65244">
@@ -12,15 +12,16 @@
 	<meta content='yes' name='apple-mobile-web-app-capable'/>
 	<meta content='yes' name='mobile-web-app-capable'/>
 
-	<meta name="description" content="Felicity helps purpose-driven brands build sustainable and profitable businesses with conscious advertising.">
+	<meta name="description" content="Felicity excels in Video Production, Digital Marketing, Sonic Branding, Voice Search, Optimization, and Marketing Gamification.">
+	
 	<meta name="twitter:title" content="
-			Felicity: Your brand is a promise to your customers. We help you keep it.
+			Felicity | Integrated Marketing Solutions Agency.
 		" />
   	<meta name="twitter:card" content="summary" />
   	<meta name="twitter:creator" content="@mediafelicity" />
   	<meta property="og:url" content="{{url('/')}}" />
   	<meta property="og:title" content="
-  			Felicity: Your brand is a promise to your customers. We help you keep it.
+  			Felicity | Integrated Marketing Solutions Agency.
 		" />
 
 

@@ -63,7 +63,7 @@
 						<img class="w-10 mr-5" src="{{ asset('images/home/items/2.png?new') }}">
 						<div>
 							<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">We’re Problem Solvers</div>
-							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand.</div>
+							<div class="text-base text--gray md:font--size-20">We simplify technology so you can focus on your brand</div>
 						</div>
 					</div>
 					
