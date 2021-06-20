@@ -38,6 +38,9 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-129747187-1');
+	  gtag("event", "page_view", {
+		  page_location: "{{url()->current()}}",
+		});
 	</script>
 	<style>
         body {
