@@ -72,7 +72,7 @@ use Illuminate\Support\Facades\Route;
 		}
 		return redirect('/');
 	});
-	Route::view('/', 'intro.index');
+	Route::view('/', 'home');
 	Route::view('home', 'home');
 	Route::view('capabilities', 'capabilities');
 	
