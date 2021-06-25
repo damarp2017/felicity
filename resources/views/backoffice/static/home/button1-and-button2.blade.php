@@ -75,8 +75,9 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{ route('backoffice.home') }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('backoffice.home') }}">Button 1 and Button 2</a>
+                        <li class="breadcrumb-item"><a href="{{ route('backoffice.static.home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('backoffice.static.home') }}">Button 1 and Button
+                                2</a>
                         </li>
                     </ol>
                 </div>
@@ -89,7 +90,7 @@
                 <div class="card-header">
                     <h3 class="card-title">Button 1 and Button 2</h3>
                 </div>
-                <form action="{{ route('backoffice.home.updateButton1AndButton2') }}" method="POST">
+                <form action="{{ route('backoffice.static.home.updateButton1AndButton2') }}" method="POST">
                     @method('patch')
                     @csrf
                     <div class="card-body">

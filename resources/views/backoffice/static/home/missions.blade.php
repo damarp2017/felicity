@@ -19,7 +19,7 @@
 
 <script>
     function showAlertModal(index) {
-        const url = "{{ route('backoffice.home.deleteMissions', '') }}" + '/' + index;
+        const url = "{{ route('backoffice.static.home.deleteMissions', '') }}" + '/' + index;
         const modal = `
         <div class="modal fade" id="modal-danger">
             <div class="modal-dialog">
@@ -76,8 +76,9 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{ route('backoffice.home') }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('backoffice.home.missions') }}">Missions</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('backoffice.static.home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a
+                                href="{{ route('backoffice.static.home.missions') }}">Missions</a></li>
                     </ol>
                 </div>
             </div>
@@ -89,7 +90,8 @@
                 <div class="card-header">
                     <h3 class="card-title">Add New Missions</h3>
                 </div>
-                <form action="{{ route('backoffice.home.storeMissions') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('backoffice.static.home.storeMissions') }}" method="POST"
+                    enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
@@ -129,7 +131,7 @@
                 <div class="card-header">
                     <h3 class="card-title">Mission: {{ $mission['sequence'] }}</h3>
                 </div>
-                <form action="{{ route('backoffice.home.updateMissions', $key) }}" enctype="multipart/form-data"
+                <form action="{{ route('backoffice.static.home.updateMissions', $key) }}" enctype="multipart/form-data"
                     method="POST">
                     @method('patch')
                     @csrf

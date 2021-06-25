@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\BackOffice;
+namespace App\Http\Controllers\BackOffice\StaticContent;
 
 use App\Home;
 use App\Http\Controllers\Controller;
@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function titleAndSubtitle()
     {
         $home = Home::get()->first();
-        return view('backoffice.home.title-and-subtile', [
+        return view('backoffice.static.home.title-and-subtile', [
             'data' => $home
         ]);
     }
@@ -21,7 +21,7 @@ class HomeController extends Controller
     public function visionAndManifesto()
     {
         $home = Home::get()->first();
-        return view('backoffice.home.vision-and-manifesto', [
+        return view('backoffice.static.home.vision-and-manifesto', [
             'data' => $home
         ]);
     }
@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function missions()
     {
         $home = Home::get()->first();
-        return view('backoffice.home.missions', [
+        return view('backoffice.static.home.missions', [
             'data' => $home
         ]);
     }
@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function button1AndButton2()
     {
         $home = Home::get()->first();
-        return view('backoffice.home.button1-and-button2', [
+        return view('backoffice.static.home.button1-and-button2', [
             'data' => $home
         ]);
     }
@@ -55,7 +55,7 @@ class HomeController extends Controller
         $home->subtitle = $request->subtitle;
         $home->update();
 
-        return redirect()->route('backoffice.home.titleAndSubtitle')
+        return redirect()->route('backoffice.static.home.titleAndSubtitle')
             ->with(["success" => "Title and Subtitle updated successfully."]);
     }
 
@@ -78,14 +78,12 @@ class HomeController extends Controller
         if ($request->manifesto_image) {
             // Storage::delete($home->manifesto_image);
             $image = $request->file('manifesto_image')->store('images/home');
-        } else {
-            $image = $home->manifesto_image;
+            $home->manifesto_image = Storage::url($image);
         }
-        $home->manifesto_image = Storage::url($image);
         $home->manifesto_description = $request->manifesto_description;
         $home->update();
 
-        return redirect()->route('backoffice.home.visionAndManifesto')
+        return redirect()->route('backoffice.static.home.visionAndManifesto')
             ->with(["success" => "Vision and Manifesto updated successfully."]);
     }
 
@@ -103,7 +101,7 @@ class HomeController extends Controller
         ]));
 
         $home->update();
-        return redirect()->route('backoffice.home.missions')
+        return redirect()->route('backoffice.static.home.missions')
             ->with(["success" => "Missions created successfully."]);
     }
 
@@ -112,7 +110,7 @@ class HomeController extends Controller
         $home = Home::get()->first();
         if ($request->logo) {
             // Storage::delete($home->missions[$arrayIndex]['logo']);
-            $logo = $request->file('logo')->store('images/home/items');
+            $logo = Storage::url($request->file('logo')->store('images/home/items'));
         } else {
             $logo = $home->missions[$arrayIndex]['logo'];
         }
@@ -126,7 +124,7 @@ class HomeController extends Controller
             ])
         );
         $home->update();
-        return redirect()->route('backoffice.home.missions')
+        return redirect()->route('backoffice.static.home.missions')
             ->with(["success" => "Missions updated successfully."]);
     }
 
@@ -135,7 +133,7 @@ class HomeController extends Controller
         $home = Home::get()->first();
         $home->missions = collect($home->missions)->forget($arrayIndex);
         $home->update();
-        return redirect()->route('backoffice.home.missions')
+        return redirect()->route('backoffice.static.home.missions')
             ->with(["success" => "Missions deleted successfully."]);
     }
 
@@ -155,7 +153,7 @@ class HomeController extends Controller
 
         $home->update();
 
-        return redirect()->route('backoffice.home.button1AndButton2')
+        return redirect()->route('backoffice.static.home.button1AndButton2')
             ->with(["success" => "Button 1 and Button 2 updated successfully."]);
     }
 }

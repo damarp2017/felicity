@@ -16,8 +16,9 @@
         </div>
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <li class="nav-item {{ request()->routeIs('backoffice.home.*') ? 'menu-open' : '' }}">
-                    <a href="#" class="nav-link {{ request()->routeIs('backoffice.home.*') ? 'active' : '' }}">
+                <li class="nav-header">STATIC CONTENT</li>
+                <li class="nav-item {{ request()->routeIs('backoffice.static.home.*') ? 'menu-open' : '' }}">
+                    <a href="#" class="nav-link {{ request()->routeIs('backoffice.static.home.*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-home"></i>
                         <p>
                             Home
@@ -26,31 +27,83 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('backoffice.home.titleAndSubtitle') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.home.titleAndSubtitle') ? 'active' : '' }}">
+                            <a href="{{ route('backoffice.static.home.titleAndSubtitle') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.home.titleAndSubtitle') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Title and Subtitle</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('backoffice.home.visionAndManifesto') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.home.visionAndManifesto') ? 'active' : '' }}">
+                            <a href="{{ route('backoffice.static.home.visionAndManifesto') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.home.visionAndManifesto') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Vision and Manifesto</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('backoffice.home.missions') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.home.missions') ? 'active' : '' }}">
+                            <a href="{{ route('backoffice.static.home.missions') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.home.missions') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Missions</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('backoffice.home.button1AndButton2') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.home.button1AndButton2') ? 'active' : '' }}">
+                            <a href="{{ route('backoffice.static.home.button1AndButton2') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.home.button1AndButton2') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Button 1 and Button 2</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->routeIs('backoffice.static.capabilities.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.static.capabilities.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Capabilities
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.capabilities.title') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.capabilities.title') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Title</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->routeIs('backoffice.static.opportunities.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.static.opportunities.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Opportunities
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.opportunities.titleAndSubtitle') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.opportunities.titleAndSubtitle') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Title and Subtitle</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.opportunities.benefits') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.opportunities.benefits') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Benefits</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.opportunities.reasons') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.opportunities.reasons') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Reasons</p>
                             </a>
                         </li>
                     </ul>

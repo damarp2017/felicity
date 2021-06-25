@@ -26,9 +26,4 @@ class Home extends Model
         'button_2' => 'array',
         'missions' => 'array',
     ];
-
-    // public function getImageAttribute()
-    // {
-    //     return Storage::url($this->manifesto_image);
-    // }
 }

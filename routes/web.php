@@ -1,6 +1,8 @@
 <?php
 
-use App\Http\Controllers\BackOffice\HomeController;
+use App\Http\Controllers\BackOffice\StaticContent\HomeController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticCapabilityController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticOpportunityController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -100,15 +102,35 @@ Route::view('our-clients', 'our_clients');
 Auth::routes();
 
 Route::prefix('backoffice')->middleware('auth')->group(function () {
-	Route::get('home/', [HomeController::class, 'titleAndSubtitle'])->name('backoffice.home');
-	Route::get('home/title-and-subtitle', [HomeController::class, 'titleAndSubtitle'])->name('backoffice.home.titleAndSubtitle');
-	Route::get('home/vision-and-manifesto', [HomeController::class, 'visionAndManifesto'])->name('backoffice.home.visionAndManifesto');
-	Route::get('home/missions', [HomeController::class, 'missions'])->name('backoffice.home.missions');
-	Route::get('home/button1-and-button2', [HomeController::class, 'button1AndButton2'])->name('backoffice.home.button1AndButton2');
-	Route::patch('home/updateTitleAndSubtitle', [HomeController::class, 'updateTitleAndSubtitle'])->name('backoffice.home.updateTitleAndSubtitle');
-	Route::patch('home/updateVisionAndManifesto', [HomeController::class, 'updateVisionAndManifesto'])->name('backoffice.home.updateVisionAndManifesto');
-	Route::post('home/storeMissions', [HomeController::class, 'storeMissions'])->name('backoffice.home.storeMissions');
-	Route::patch('home/updateMissions/{arrayIndex}', [HomeController::class, 'updateMissions'])->name('backoffice.home.updateMissions');
-	Route::delete('home/deleteMissions/{arrayIndex}', [HomeController::class, 'deleteMissions'])->name('backoffice.home.deleteMissions');
-	Route::patch('home/updateButton1AndButton2', [HomeController::class, 'updateButton1AndButton2'])->name('backoffice.home.updateButton1AndButton2');
+	Route::prefix('static')->group(function () {
+		Route::prefix('home')->group(function () {
+			Route::get('', [HomeController::class, 'titleAndSubtitle'])->name('backoffice.static.home');
+			Route::get('title-and-subtitle', [HomeController::class, 'titleAndSubtitle'])->name('backoffice.static.home.titleAndSubtitle');
+			Route::get('vision-and-manifesto', [HomeController::class, 'visionAndManifesto'])->name('backoffice.static.home.visionAndManifesto');
+			Route::get('missions', [HomeController::class, 'missions'])->name('backoffice.static.home.missions');
+			Route::get('button1-and-button2', [HomeController::class, 'button1AndButton2'])->name('backoffice.static.home.button1AndButton2');
+			Route::patch('updateTitleAndSubtitle', [HomeController::class, 'updateTitleAndSubtitle'])->name('backoffice.static.home.updateTitleAndSubtitle');
+			Route::patch('updateVisionAndManifesto', [HomeController::class, 'updateVisionAndManifesto'])->name('backoffice.static.home.updateVisionAndManifesto');
+			Route::post('storeMissions', [HomeController::class, 'storeMissions'])->name('backoffice.static.home.storeMissions');
+			Route::patch('updateMissions/{arrayIndex}', [HomeController::class, 'updateMissions'])->name('backoffice.static.home.updateMissions');
+			Route::delete('deleteMissions/{arrayIndex}', [HomeController::class, 'deleteMissions'])->name('backoffice.static.home.deleteMissions');
+			Route::patch('updateButton1AndButton2', [HomeController::class, 'updateButton1AndButton2'])->name('backoffice.static.home.updateButton1AndButton2');
+		});
+		Route::prefix('capabilities')->group(function () {
+			Route::get('', [StaticCapabilityController::class, 'title'])->name('backoffice.static.capabilities');
+			Route::get('title', [StaticCapabilityController::class, 'title'])->name('backoffice.static.capabilities.title');
+			Route::patch('updateTitle', [StaticCapabilityController::class, 'updateTitle'])->name('backoffice.static.capabilities.updateTitle');
+		});
+		Route::prefix('opportunities')->group(function () {
+			Route::get('', [StaticOpportunityController::class, 'titleAndSubtitle'])->name('backoffice.static.opportunities');
+			Route::get('title-and-subtitle', [StaticOpportunityController::class, 'titleAndSubtitle'])->name('backoffice.static.opportunities.titleAndSubtitle');
+			Route::patch('updateTitleAndSubtitle', [StaticOpportunityController::class, 'updateTitleAndSubtitle'])->name('backoffice.static.opportunities.updateTitleAndSubtitle');
+
+			Route::get('benefits', [StaticOpportunityController::class, 'benefits'])->name('backoffice.static.opportunities.benefits');
+			Route::patch('updateBenefits/{arrayIndex}', [StaticOpportunityController::class, 'updateBenefits'])->name('backoffice.static.opportunities.updateBenefits');
+
+			Route::get('reasons', [StaticOpportunityController::class, 'reasons'])->name('backoffice.static.opportunities.reasons');
+			Route::patch('updateReasons/{arrayIndex}', [StaticOpportunityController::class, 'updateReasons'])->name('backoffice.static.opportunities.updateReasons');
+		});
+	});
 });
