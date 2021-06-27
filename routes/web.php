@@ -1,8 +1,11 @@
 <?php
 
 use App\Http\Controllers\BackOffice\StaticContent\HomeController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticAboutController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticCapabilityController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticOpportunityController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticPrivacyController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticTermsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -131,6 +134,21 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 
 			Route::get('reasons', [StaticOpportunityController::class, 'reasons'])->name('backoffice.static.opportunities.reasons');
 			Route::patch('updateReasons/{arrayIndex}', [StaticOpportunityController::class, 'updateReasons'])->name('backoffice.static.opportunities.updateReasons');
+		});
+        Route::prefix('about')->group(function () {
+			Route::get('', [StaticAboutController::class, 'title'])->name('backoffice.static.about');
+			Route::get('title', [StaticAboutController::class, 'title'])->name('backoffice.static.about.title');
+			Route::patch('updateTitle', [StaticAboutController::class, 'updateTitle'])->name('backoffice.static.about.updateTitle');
+		});
+        Route::prefix('privacy')->group(function () {
+			Route::get('', [StaticPrivacyController::class, 'edit'])->name('backoffice.static.privacy');
+			Route::get('edit', [StaticPrivacyController::class, 'edit'])->name('backoffice.static.privacy.edit');
+			Route::patch('update', [StaticPrivacyController::class, 'update'])->name('backoffice.static.privacy.update');
+		});
+        Route::prefix('terms')->group(function () {
+			Route::get('', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms');
+			Route::get('edit', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms.edit');
+			Route::patch('update', [StaticTermsController::class, 'update'])->name('backoffice.static.terms.update');
 		});
 	});
 });
