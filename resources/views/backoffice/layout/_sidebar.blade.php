@@ -108,6 +108,60 @@
                         </li>
                     </ul>
                 </li>
+
+
+				<li class="nav-header">SECTIONS</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.section.footer.subtitle') }}"
+						class="nav-link {{ request()->routeIs('backoffice.section.footer.subtitle') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Footer</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.section.have.project.idea') }}"
+						class="nav-link {{ request()->routeIs('backoffice.section.have.project.idea') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Have Project Idea</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.section.insight.case.study') }}"
+						class="nav-link {{ request()->routeIs('backoffice.section.insight.case.study') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Insights - Case Studies</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.section.join.the.team') }}"
+						class="nav-link {{ request()->routeIs('backoffice.section.join.the.team') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Join The Team</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.section.subscribe') }}"
+						class="nav-link {{ request()->routeIs('backoffice.section.subscribe') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Subscribe</p>
+					</a>
+				</li>
+
+				<li class="nav-header">DYNAMIC</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.dynamic.capablities.index') }}"
+						class="nav-link {{ request()->routeIs('backoffice.dynamic.capablities.index') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Capabilities</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.dynamic.our.value.index') }}"
+						class="nav-link {{ request()->routeIs('backoffice.dynamic.our.value.index') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Our Values</p>
+					</a>
+				</li>
             </ul>
         </nav>
     </div>

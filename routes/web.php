@@ -1,10 +1,9 @@
 <?php
 
-use App\Http\Controllers\BackOffice\StaticContent\HomeController;
-use App\Http\Controllers\BackOffice\StaticContent\StaticCapabilityController;
-use App\Http\Controllers\BackOffice\StaticContent\StaticOpportunityController;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, OurValueController};
+use App\Http\Controllers\BackOffice\Section\{FooterController, HaveProjectIdeaController, InsightCaseStudyController, JoinTheTeamController, SubscribeController};
+use App\Http\Controllers\BackOffice\StaticContent\{HomeController, StaticCapabilityController, StaticOpportunityController};
+use Illuminate\Support\Facades\{Auth, Route};
 
 // Route::group(['middleware'=>'App\Http\Middleware\CheckForMaintena'],function(){
 Route::get('/coming-soon', function () {
@@ -98,7 +97,7 @@ Route::view('press-release', 'press_release');
 Route::view('insights-inside', 'insights_inside');
 Route::view('case-studies-2', 'case_studies_2');
 Route::view('our-clients', 'our_clients');
-// });
+
 Auth::routes();
 
 Route::prefix('backoffice')->middleware('auth')->group(function () {
@@ -131,6 +130,54 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 
 			Route::get('reasons', [StaticOpportunityController::class, 'reasons'])->name('backoffice.static.opportunities.reasons');
 			Route::patch('updateReasons/{arrayIndex}', [StaticOpportunityController::class, 'updateReasons'])->name('backoffice.static.opportunities.updateReasons');
+		});
+		
+	});
+
+	Route::prefix('sections')->group(function(){
+		Route::prefix('footer')->group(function() {
+			Route::get('/subtitle', [FooterController::class, 'edit'])->name('backoffice.section.footer.subtitle');
+			Route::put('/subtitle', [FooterController::class, 'update']);
+		});
+
+		Route::prefix('have-project-idea')->group(function() {
+			Route::get('/', [HaveProjectIdeaController::class, 'edit'])->name('backoffice.section.have.project.idea');
+			Route::put('/', [HaveProjectIdeaController::class, 'update']);
+		});
+
+		Route::prefix('insight-case-study')->group(function() {
+			Route::get('/', [InsightCaseStudyController::class, 'edit'])->name('backoffice.section.insight.case.study');
+			Route::put('/', [InsightCaseStudyController::class, 'update']);
+		});
+
+		Route::prefix('join-the-team')->group(function() {
+			Route::get('/', [JoinTheTeamController::class, 'edit'])->name('backoffice.section.join.the.team');
+			Route::put('/', [JoinTheTeamController::class, 'update']);
+		});
+
+		Route::prefix('subscribe')->group(function() {
+			Route::get('/', [SubscribeController::class, 'edit'])->name('backoffice.section.subscribe');
+			Route::put('/', [SubscribeController::class, 'update']);
+		});
+	});
+
+	Route::prefix('dynamic')->group(function(){
+		Route::prefix('capabilities')->group(function() {
+			Route::get('/', [CapabilityController::class, 'index'])->name('backoffice.dynamic.capablities.index');
+			Route::get('/create', [CapabilityController::class, 'create'])->name('backoffice.dynamic.capablities.create');
+			Route::post('/create', [CapabilityController::class, 'store']);
+			Route::get('/{id}/edit', [CapabilityController::class, 'edit'])->name('backoffice.dynamic.capablities.edit');
+			Route::put('/{id}/edit', [CapabilityController::class, 'update']);
+			Route::delete('/{id}/delete', [CapabilityController::class, 'delete'])->name('backoffice.dynamic.capablities.delete');
+		});
+
+		Route::prefix('our-values')->group(function() {
+			Route::get('/', [OurValueController::class, 'index'])->name('backoffice.dynamic.our.value.index');
+			Route::get('/create', [OurValueController::class, 'create'])->name('backoffice.dynamic.our.value.create');
+			Route::post('/create', [OurValueController::class, 'store']);
+			Route::get('/{id}/edit', [OurValueController::class, 'edit'])->name('backoffice.dynamic.our.value.edit');
+			Route::put('/{id}/edit', [OurValueController::class, 'update']);
+			Route::delete('/{id}/delete', [OurValueController::class, 'delete'])->name('backoffice.dynamic.our.value.delete');
 		});
 	});
 });
