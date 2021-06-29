@@ -1,13 +1,14 @@
 <?php
 
-use App\Http\Controllers\BackOffice\Report\ContactUsController;
 use Illuminate\Support\Facades\{Auth, Route};
 use App\Http\Controllers\BackOffice\SettingController;
+use App\Http\Controllers\BackOffice\Report\ContactUsController;
 use App\Http\Controllers\BackOffice\Report\SubscriberController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticTermsController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticPrivacyController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\ContentController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleHeroController;
+use App\Http\Controllers\BackOffice\StaticContent\ContactUs\LocationController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleSubtitleController;
 use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, OurValueController};
 use App\Http\Controllers\BackOffice\StaticContent\{HomeController, StaticCapabilityController, StaticOpportunityController};
@@ -174,6 +175,16 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms');
 			Route::get('edit', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms.edit');
 			Route::patch('update', [StaticTermsController::class, 'update'])->name('backoffice.static.terms.update');
+		});
+
+		Route::prefix('contact-us')->group(function() {
+			Route::get('/', [LocationController::class, 'index'])->name('backoffice.static.location.index');
+			Route::get('/create', [LocationController::class, 'create'])->name('backoffice.static.location.create');
+			Route::post('/create', [LocationController::class, 'store']);
+			Route::get('/{id}/edit', [LocationController::class, 'edit'])->name('backoffice.static.location.edit');
+			Route::put('/{id}/edit', [LocationController::class, 'update']);
+			Route::get('/{id}/map', [LocationController::class, 'map'])->name('backoffice.static.location.map');
+			Route::delete('/{id}/delete', [LocationController::class, 'delete'])->name('backoffice.static.location.delete');
 		});
 		
 	});

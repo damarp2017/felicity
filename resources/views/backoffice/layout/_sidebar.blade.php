@@ -159,6 +159,14 @@
                     </a>
                 </li>
 
+				<li class="nav-item">
+                    <a href="{{ route('backoffice.static.location.index') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.static.location.index') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Contact Us (Location)</p>
+                    </a>
+                </li>
+
 
 
 
