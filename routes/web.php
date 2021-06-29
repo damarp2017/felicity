@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\{Auth, Route};
+use App\Http\Controllers\BackOffice\SettingController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticTermsController;
+use App\Http\Controllers\BackOffice\StaticContent\StaticPrivacyController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\ContentController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleHeroController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleSubtitleController;
@@ -100,6 +103,9 @@ Route::view('press-release', 'press_release');
 Route::view('insights-inside', 'insights_inside');
 Route::view('case-studies-2', 'case_studies_2');
 Route::view('our-clients', 'our_clients');
+// });
+
+Route::post('home', [SubscribeController::class, 'insert'])->name('subscribe.insert');
 
 Auth::routes();
 
@@ -136,6 +142,7 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('reasons', [StaticOpportunityController::class, 'reasons'])->name('backoffice.static.opportunities.reasons');
 			Route::patch('updateReasons/{arrayIndex}', [StaticOpportunityController::class, 'updateReasons'])->name('backoffice.static.opportunities.updateReasons');
 		});
+		
 		Route::prefix('about-us')->group(function () {
 			Route::prefix('title-hero')->group(function(){
 				Route::get('/', [TitleHeroController::class, 'edit'])->name('backoffice.static.about.us.title.hero');
@@ -154,6 +161,24 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 				Route::put('/{id}/edit', [ContentController::class, 'update']);
 				Route::delete('/{id}/delete', [ContentController::class, 'delete'])->name('backoffice.static.about.us.content.delete');
 			});
+		});
+
+		Route::prefix('privacy')->group(function () {
+			Route::get('', [StaticPrivacyController::class, 'edit'])->name('backoffice.static.privacy');
+			Route::get('edit', [StaticPrivacyController::class, 'edit'])->name('backoffice.static.privacy.edit');
+			Route::patch('update', [StaticPrivacyController::class, 'update'])->name('backoffice.static.privacy.update');
+		});
+		
+        Route::prefix('terms')->group(function () {
+			Route::get('', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms');
+			Route::get('edit', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms.edit');
+			Route::patch('update', [StaticTermsController::class, 'update'])->name('backoffice.static.terms.update');
+		});
+
+        Route::prefix('settings')->group(function () {
+			Route::get('', [SettingController::class, 'edit'])->name('backoffice.setting');
+			Route::get('edit', [SettingController::class, 'edit'])->name('backoffice.setting.edit');
+			Route::patch('edit', [SettingController::class, 'update'])->name('backoffice.setting.update');
 		});
 		
 	});
@@ -203,5 +228,6 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::put('/{id}/edit', [OurValueController::class, 'update']);
 			Route::delete('/{id}/delete', [OurValueController::class, 'delete'])->name('backoffice.dynamic.our.value.delete');
 		});
+
 	});
 });

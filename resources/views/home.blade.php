@@ -26,7 +26,7 @@
 	<div class="tag mx-4 md:app-container 2xl:px-40  md:pt-10">
 		<!-- <div class="flex mb-20 flex-col text-center justify-center">
 				<div class="mb-6 text-3xl md:font--size-65 font-semibold">About Us</div>
-				<div class="md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div> -->
 
@@ -276,7 +276,7 @@
 		<div class="mx-4 md:container--case-studies pt-20">
 			<div class="flex mb-4 md:mb-10 flex-col">
 				<div class="mb-4 md:mb-10 text-3xl md:font--size-70 font-semibold">Case Studies</div>
-				<div class="text-base md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class 
+				<div class="text-base md:font--size-18 text--gray">for world-class brands to make your products to live for world-class brands to make your products to live for world-class
 					<br> brands to make your products to for world-class brands to make your . </div>
 			</div>
 
@@ -293,8 +293,8 @@
 						<div class="text-2xl text--color-team md:font--size-42 mb-2 font--gilroy-bold">Roady V3.0 Ilustration</div>
 						<div class="text-base text--color-team md:font--size-16 font--gilroy-md">FEATURED</div>
 					</div>
-					
-					<div class="text--blue md:font--size-17 mb-2 font-bold" 
+
+					<div class="text--blue md:font--size-17 mb-2 font-bold"
 					style="letter-spacing: 0.07em; line-height: 100.84%;">ILLUSTRATION DESIGN</div>
 					<div class="text-base md:font--size-17 text--gray" style="line-height: 1.8;opacity: .8">for world-class brands to make your products to live for world-class brands to make your products to live for <br> world-class brands to make your products to</div>
 				</div>
@@ -323,7 +323,7 @@
 									<div class=" mb-6 md:font-size-12" style="line-height: 163.5%; color: #929292">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor a urna vel orci interdum amet, natoque id. Egestas sed adipiscing .</div>
 									<a href="" class="text--blue  md:font--size-12">Learn More</a>
 								</div>
-							</div>	
+							</div>
 						@endfor
 					</div>
 				</div>
@@ -363,7 +363,8 @@
 			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
 			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t
 				spam. Promise.</div>
-			<form id="form-subscribe">
+			<form method="post" action="{{ route('subscribe.insert') }}">
+                @csrf
 				<div class="block md:flex gap-x-4">
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);
@@ -373,7 +374,7 @@
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);
 						border-radius: 12px;" class="w-full md:font--size-21 font--gilroy-md placeholder-white p-4 md:padding-form-learn-something outline-none focus:outline-none text-white"
-							placeholder="Full Name" name="fullname" required="">
+							placeholder="Full Name" name="name" required="">
 					</div>
 					<button
 						class="bg-white w-full md:font--size-21 font--gilroy-md md:w-auto text--blue p-4 md:padding-button-learn-something outline-none font-bold focus:outline-none  hover:zoom"

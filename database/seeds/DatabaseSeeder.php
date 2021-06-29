@@ -1,6 +1,7 @@
 <?php
 
 use App\Home;
+use App\StaticContent\StaticAbout;
 use App\StaticContent\StaticCapability;
 use App\StaticContent\StaticOpportunity;
 use App\User;
@@ -134,5 +135,6 @@ class DatabaseSeeder extends Seeder
         $opportunity->purpose = 'Purpose driven team on a <br> <span class="text--blue">global mission</span>';
         $opportunity->status = "(No open positions currently. Check again later.)";
         $opportunity->save();
+
     }
 }

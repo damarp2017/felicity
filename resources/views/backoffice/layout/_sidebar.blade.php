@@ -138,6 +138,63 @@
                                 class="nav-link {{ request()->routeIs('backoffice.static.about.us.content.index') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Content</p>
+							</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->routeIs('backoffice.static.privacy.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.static.privacy.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Privacy Policy
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.privacy.edit') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.privacy.edit') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Privacy</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->routeIs('backoffice.static.terms.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.static.terms.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Terms and Conditions
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.terms.edit') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.terms.edit') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Terms and Conditions</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->routeIs('backoffice.setting.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.setting.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Settings
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.setting.edit') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.setting.edit') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Settings</p>
                             </a>
                         </li>
                     </ul>
