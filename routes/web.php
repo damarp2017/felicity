@@ -1,9 +1,12 @@
 <?php
 
-use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, OurValueController};
-use App\Http\Controllers\BackOffice\Section\{FooterController, HaveProjectIdeaController, InsightCaseStudyController, JoinTheTeamController, SubscribeController};
-use App\Http\Controllers\BackOffice\StaticContent\{HomeController, StaticCapabilityController, StaticOpportunityController};
 use Illuminate\Support\Facades\{Auth, Route};
+use App\Http\Controllers\BackOffice\StaticContent\AboutUs\ContentController;
+use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleHeroController;
+use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleSubtitleController;
+use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, OurValueController};
+use App\Http\Controllers\BackOffice\StaticContent\{HomeController, StaticCapabilityController, StaticOpportunityController};
+use App\Http\Controllers\BackOffice\Section\{FooterController, HaveProjectIdeaController, InsightCaseStudyController, JoinTheTeamController, SubscribeController};
 
 // Route::group(['middleware'=>'App\Http\Middleware\CheckForMaintena'],function(){
 Route::get('/coming-soon', function () {
@@ -100,6 +103,8 @@ Route::view('our-clients', 'our_clients');
 
 Auth::routes();
 
+
+
 Route::prefix('backoffice')->middleware('auth')->group(function () {
 	Route::prefix('static')->group(function () {
 		Route::prefix('home')->group(function () {
@@ -130,6 +135,25 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 
 			Route::get('reasons', [StaticOpportunityController::class, 'reasons'])->name('backoffice.static.opportunities.reasons');
 			Route::patch('updateReasons/{arrayIndex}', [StaticOpportunityController::class, 'updateReasons'])->name('backoffice.static.opportunities.updateReasons');
+		});
+		Route::prefix('about-us')->group(function () {
+			Route::prefix('title-hero')->group(function(){
+				Route::get('/', [TitleHeroController::class, 'edit'])->name('backoffice.static.about.us.title.hero');
+				Route::put('/', [TitleHeroController::class, 'update']);
+			});
+			Route::prefix('title-and-subtitle')->group(function(){
+				Route::get('/', [TitleSubtitleController::class, 'edit'])->name('backoffice.static.about.us.title.subtitle');
+				Route::put('/', [TitleSubtitleController::class, 'update']);
+			});
+
+			Route::prefix('content')->group(function(){
+				Route::get('/', [ContentController::class, 'index'])->name('backoffice.static.about.us.content.index');
+				Route::get('/create', [ContentController::class, 'create'])->name('backoffice.static.about.us.content.create');
+				Route::post('/create', [ContentController::class, 'store']);
+				Route::get('/{id}/edit', [ContentController::class, 'edit'])->name('backoffice.static.about.us.content.edit');
+				Route::put('/{id}/edit', [ContentController::class, 'update']);
+				Route::delete('/{id}/delete', [ContentController::class, 'delete'])->name('backoffice.static.about.us.content.delete');
+			});
 		});
 		
 	});

@@ -109,6 +109,40 @@
                     </ul>
                 </li>
 
+				<li class="nav-item {{ request()->routeIs('backoffice.static.about.us.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.static.about.us.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            About Us
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.about.us.title.hero') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.about.us.title.hero') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Title Hero</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.about.us.title.subtitle') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.about.us.title.subtitle') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Title and Subtitle</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.about.us.content.index') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.about.us.content.index') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Content</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
 
 				<li class="nav-header">SECTIONS</li>
 				<li class="nav-item">
