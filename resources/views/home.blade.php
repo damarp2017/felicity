@@ -363,8 +363,7 @@
 			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
 			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t
 				spam. Promise.</div>
-			<form method="post" action="{{ route('subscribe.insert') }}">
-                @csrf
+			<form method="post">
 				<div class="block md:flex gap-x-4">
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);
