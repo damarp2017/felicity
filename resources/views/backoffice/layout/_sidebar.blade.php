@@ -75,7 +75,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item {{ request()->routeIs('backoffice.static.opportunities.*') ? 'menu-open' : '' }}">
+                <li
+                    class="nav-item {{ request()->routeIs('backoffice.static.opportunities.*') ? 'menu-open' : '' }}">
                     <a href="#"
                         class="nav-link {{ request()->routeIs('backoffice.static.opportunities.*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-home"></i>
@@ -109,7 +110,7 @@
                     </ul>
                 </li>
 
-				<li class="nav-item {{ request()->routeIs('backoffice.static.about.us.*') ? 'menu-open' : '' }}">
+                <li class="nav-item {{ request()->routeIs('backoffice.static.about.us.*') ? 'menu-open' : '' }}">
                     <a href="#"
                         class="nav-link {{ request()->routeIs('backoffice.static.about.us.*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-home"></i>
@@ -138,86 +139,65 @@
                                 class="nav-link {{ request()->routeIs('backoffice.static.about.us.content.index') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Content</p>
-							</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item {{ request()->routeIs('backoffice.static.privacy.*') ? 'menu-open' : '' }}">
-                    <a href="#"
-                        class="nav-link {{ request()->routeIs('backoffice.static.privacy.*') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-home"></i>
-                        <p>
-                            Privacy Policy
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('backoffice.static.privacy.edit') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.static.privacy.edit') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Privacy</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item {{ request()->routeIs('backoffice.static.terms.*') ? 'menu-open' : '' }}">
-                    <a href="#"
-                        class="nav-link {{ request()->routeIs('backoffice.static.terms.*') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-home"></i>
-                        <p>
-                            Terms and Conditions
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('backoffice.static.terms.edit') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.static.terms.edit') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Terms and Conditions</p>
                             </a>
                         </li>
                     </ul>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.static.privacy.edit') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.static.privacy.edit') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Privacy Policy</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.static.terms.edit') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.static.terms.edit') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Terms and Conditions</p>
+                    </a>
+                </li>
 
-				<li class="nav-header">SECTIONS</li>
-				<li class="nav-item">
-					<a href="{{ route('backoffice.section.footer.subtitle') }}"
-						class="nav-link {{ request()->routeIs('backoffice.section.footer.subtitle') ? 'active' : '' }}">
-						<i class="far fa-circle nav-icon"></i>
-						<p>Footer</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="{{ route('backoffice.section.have.project.idea') }}"
-						class="nav-link {{ request()->routeIs('backoffice.section.have.project.idea') ? 'active' : '' }}">
-						<i class="far fa-circle nav-icon"></i>
-						<p>Have Project Idea</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="{{ route('backoffice.section.insight.case.study') }}"
-						class="nav-link {{ request()->routeIs('backoffice.section.insight.case.study') ? 'active' : '' }}">
-						<i class="far fa-circle nav-icon"></i>
-						<p>Insights - Case Studies</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="{{ route('backoffice.section.join.the.team') }}"
-						class="nav-link {{ request()->routeIs('backoffice.section.join.the.team') ? 'active' : '' }}">
-						<i class="far fa-circle nav-icon"></i>
-						<p>Join The Team</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="{{ route('backoffice.section.subscribe') }}"
-						class="nav-link {{ request()->routeIs('backoffice.section.subscribe') ? 'active' : '' }}">
-						<i class="far fa-circle nav-icon"></i>
-						<p>Subscribe</p>
-					</a>
-				</li>
+
+
+
+                <li class="nav-header">SECTIONS</li>
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.section.footer.subtitle') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.section.footer.subtitle') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Footer</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.section.have.project.idea') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.section.have.project.idea') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Have Project Idea</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.section.insight.case.study') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.section.insight.case.study') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Insights - Case Studies</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.section.join.the.team') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.section.join.the.team') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Join The Team</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('backoffice.section.subscribe') }}"
+                        class="nav-link {{ request()->routeIs('backoffice.section.subscribe') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Subscribe</p>
+                    </a>
+                </li>
 
 				<li class="nav-header">DYNAMIC</li>
 				<li class="nav-item">
@@ -241,6 +221,22 @@
 						class="nav-link {{ request()->routeIs('backoffice.setting.edit') ? 'active' : '' }}">
 						<i class="far fa-circle nav-icon"></i>
 						<p>Setting</p>
+					</a>
+				</li>
+
+				<li class="nav-header">REPORTS</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.reports.subscriber') }}"
+						class="nav-link {{ request()->routeIs('backoffice.reports.subscriber') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Subscribers</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.reports.contact.us') }}"
+						class="nav-link {{ request()->routeIs('backoffice.reports.contact.us') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Contact Us</p>
 					</a>
 				</li>
             </ul>

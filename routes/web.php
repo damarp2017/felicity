@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\BackOffice\Report\ContactUsController;
 use Illuminate\Support\Facades\{Auth, Route};
 use App\Http\Controllers\BackOffice\SettingController;
+use App\Http\Controllers\BackOffice\Report\SubscriberController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticTermsController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticPrivacyController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\ContentController;
@@ -13,17 +15,17 @@ use App\Http\Controllers\BackOffice\Section\{FooterController, HaveProjectIdeaCo
 
 // Route::group(['middleware'=>'App\Http\Middleware\CheckForMaintena'],function(){
 Route::get('/coming-soon', function () {
-	return view('coming-soon');
+    return view('coming-soon');
 });
 Route::post('/have-a-project', function () {
-	$fullname = request()->input('fullname');
-	$email = request()->input('email');
-	$phone = request()->input('phone');
-	$reason = request()->input('reason');
-	$subject = "New Leads! | " . $fullname . " | FelicityMedia";
-	$to = 'hello@felicitymedia.in';
-	// $to = 'official.rifkidermawan@gmail.com';
-	$content = "
+    $fullname = request()->input('fullname');
+    $email = request()->input('email');
+    $phone = request()->input('phone');
+    $reason = request()->input('reason');
+    $subject = "New Leads! | " . $fullname . " | FelicityMedia";
+    $to = 'hello@felicitymedia.in';
+    // $to = 'official.rifkidermawan@gmail.com';
+    $content = "
 		<!DOCTYPE html>
 		<html>
 		<body>
@@ -36,24 +38,24 @@ Route::post('/have-a-project', function () {
 		</body>
 		</html>
 		";
-	$res = mail($to, $subject, $content, [
-		'From' => 'noreply@felicitymedia.in',
-		'MIME-Version' => '1.0',
-		'Content-type' => 'text/html; charset=iso-8859-1',
-		'X-Priority' => '1',
-		'Reply-To' => 'noreply@felicitymedia.in',
-		'X-Mailer' => 'PHP/' . phpversion(),
-	], '-fnoreply@felicitymedia.in');
+    $res = mail($to, $subject, $content, [
+        'From' => 'noreply@felicitymedia.in',
+        'MIME-Version' => '1.0',
+        'Content-type' => 'text/html; charset=iso-8859-1',
+        'X-Priority' => '1',
+        'Reply-To' => 'noreply@felicitymedia.in',
+        'X-Mailer' => 'PHP/' . phpversion(),
+    ], '-fnoreply@felicitymedia.in');
 
-	return response()->json(['res' => $res]);
+    return response()->json(['res' => $res]);
 });
 Route::post('/subscribe', function () {
-	$fullname = request()->input('fullname');
-	$email = request()->input('email');
-	$subject = "New Subscriber! | " . $fullname . " | FelicityMedia";
-	$to = 'hello@felicitymedia.in';
-	// $to = 'official.rifkidermawan@gmail.com';
-	$content = "
+    $fullname = request()->input('fullname');
+    $email = request()->input('email');
+    $subject = "New Subscriber! | " . $fullname . " | FelicityMedia";
+    $to = 'hello@felicitymedia.in';
+    // $to = 'official.rifkidermawan@gmail.com';
+    $content = "
 		<!DOCTYPE html>
 		<html>
 		<body>
@@ -64,22 +66,22 @@ Route::post('/subscribe', function () {
 		</body>
 		</html>
 		";
-	$res = mail($to, $subject, $content, [
-		'From' => 'noreply@felicitymedia.in',
-		'MIME-Version' => '1.0',
-		'Content-type' => 'text/html; charset=iso-8859-1',
-		'X-Priority' => '1',
-		'Reply-To' => 'noreply@felicitymedia.in',
-		'X-Mailer' => 'PHP/' . phpversion(),
-	], '-fnoreply@felicitymedia.in');
+    $res = mail($to, $subject, $content, [
+        'From' => 'noreply@felicitymedia.in',
+        'MIME-Version' => '1.0',
+        'Content-type' => 'text/html; charset=iso-8859-1',
+        'X-Priority' => '1',
+        'Reply-To' => 'noreply@felicitymedia.in',
+        'X-Mailer' => 'PHP/' . phpversion(),
+    ], '-fnoreply@felicitymedia.in');
 
-	return response()->json(['res' => $res]);
+    return response()->json(['res' => $res]);
 });
 Route::post('/coming-soon', function () {
-	if (request()->input('secret') == 'myfeli') {
-		session()->put('allow', true);
-	}
-	return redirect('/');
+    if (request()->input('secret') == 'myfeli') {
+        session()->put('allow', true);
+    }
+    return redirect('/');
 });
 Route::view('/', 'home');
 Route::view('home', 'home');
@@ -105,7 +107,6 @@ Route::view('case-studies-2', 'case_studies_2');
 Route::view('our-clients', 'our_clients');
 // });
 
-Route::post('home', [SubscribeController::class, 'insert'])->name('subscribe.insert');
 
 Auth::routes();
 
@@ -231,4 +232,14 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 		Route::put('update/site', [SettingController::class, 'updateSite'])->name('backoffice.setting.update.site');
 		Route::put('update/contact', [SettingController::class, 'updateContact'])->name('backoffice.setting.update.contact');
 	});
+
+    Route::prefix('reports')->group(function () {
+        Route::prefix('subscribers')->group(function () {
+            Route::get('list', [SubscriberController::class, 'list'])->name('backoffice.reports.subscriber');
+        });
+
+        Route::prefix('contacts')->group(function () {
+            Route::get('list', [ContactUsController::class, 'list'])->name('backoffice.reports.contact.us');
+        });
+    });
 });
