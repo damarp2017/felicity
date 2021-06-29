@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\BackOffice\SettingController;
 use App\Http\Controllers\BackOffice\StaticContent\HomeController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticAboutController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticCapabilityController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticOpportunityController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticPrivacyController;
 use App\Http\Controllers\BackOffice\StaticContent\StaticTermsController;
+use App\Http\Controllers\SubscribeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -102,6 +104,9 @@ Route::view('insights-inside', 'insights_inside');
 Route::view('case-studies-2', 'case_studies_2');
 Route::view('our-clients', 'our_clients');
 // });
+
+Route::post('home', [SubscribeController::class, 'insert'])->name('subscribe.insert');
+
 Auth::routes();
 
 Route::prefix('backoffice')->middleware('auth')->group(function () {
@@ -139,6 +144,9 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('', [StaticAboutController::class, 'title'])->name('backoffice.static.about');
 			Route::get('title', [StaticAboutController::class, 'title'])->name('backoffice.static.about.title');
 			Route::patch('updateTitle', [StaticAboutController::class, 'updateTitle'])->name('backoffice.static.about.updateTitle');
+
+            Route::get('visions', [StaticAboutController::class, 'visions'])->name('backoffice.static.about.visions');
+			Route::patch('updateVisions/{arrayIndex}', [StaticAboutController::class, 'updateVisions'])->name('backoffice.static.about.updateVisions');
 		});
         Route::prefix('privacy')->group(function () {
 			Route::get('', [StaticPrivacyController::class, 'edit'])->name('backoffice.static.privacy');
@@ -150,5 +158,12 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('edit', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms.edit');
 			Route::patch('update', [StaticTermsController::class, 'update'])->name('backoffice.static.terms.update');
 		});
+
+        Route::prefix('settings')->group(function () {
+			Route::get('', [SettingController::class, 'edit'])->name('backoffice.setting');
+			Route::get('edit', [SettingController::class, 'edit'])->name('backoffice.setting.edit');
+			Route::patch('edit', [SettingController::class, 'update'])->name('backoffice.setting.update');
+		});
+
 	});
 });

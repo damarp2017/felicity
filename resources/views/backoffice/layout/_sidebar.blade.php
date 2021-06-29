@@ -125,6 +125,13 @@
                                 <p>Title</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.static.about.visions') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.static.about.visions') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Visions</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item {{ request()->routeIs('backoffice.static.privacy.*') ? 'menu-open' : '' }}">
@@ -161,6 +168,25 @@
                                 class="nav-link {{ request()->routeIs('backoffice.static.terms.edit') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Terms and Conditions</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->routeIs('backoffice.setting.*') ? 'menu-open' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('backoffice.setting.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Settings
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('backoffice.setting.edit') }}"
+                                class="nav-link {{ request()->routeIs('backoffice.setting.edit') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Settings</p>
                             </a>
                         </li>
                     </ul>

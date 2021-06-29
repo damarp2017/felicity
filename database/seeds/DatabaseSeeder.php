@@ -136,39 +136,5 @@ class DatabaseSeeder extends Seeder
         $opportunity->status = "(No open positions currently. Check again later.)";
         $opportunity->save();
 
-        // $about = new StaticAbout();
-        // $about->title = "On a journey to take India to the world 🌏";
-
-        // $about->visions = [
-        //     [
-        //         'image' => Storage::url("images/about_us/1.png"),
-        //         'title' => "Vision",
-        //         'description' => "It is our constant endeavour to help businesses grow and evolve over time and to be able to achieve it, we want to work with people that synergise with the values that we strongly imbibe in every thing we do here at Felicity.",
-        //     ],
-        //     [
-        //         'image' => Storage::url("images/about_us/1.png"),
-        //         'title' => "For the Company",
-        //         'description' => "Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising.",
-        //     ],
-        //     [
-        //         'image' => Storage::url("images/about_us/2.png"),
-        //         'title' => "For the Team",
-        //         'description' => "We want to create world leaders who are willing to disrupt the Indian Advertising Industry and help our partners creatively share their products and services with the world.",
-        //     ],
-        // ];
-
-        // $about->excellences = [
-        //     [
-        //         'image' => Storage::url("images/about_us/4.png"),
-        //         'title' => "Conscious Advertising Network",
-        //         'description' => "The Conscious Advertising Network is a voluntary coalition of over 70 organisations set up to ensure that industry ethics catches up with the technology of modern advertising.",
-        //     ],
-        //     [
-        //         'image' => Storage::url("images/about_us/5.png"),
-        //         'title' => "Mentored By Schbang",
-        //         'description' => "With a common vision of taking India to the world, we are mentored by India’s fastest growing agency and are proud to be a part of the Schbang Network. With this, we continue to build a strong mesh of creative companies on a common mission.",
-        //     ],
-        // ];
-        // $about->save();
     }
 }
