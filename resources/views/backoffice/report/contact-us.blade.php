@@ -71,10 +71,10 @@
                                 @foreach ($contacts as $contact)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $subscriber->name }}</td>
-                                        <td>{{ $subscriber->email }}</td>
-                                        <td>{{ $subscriber->phone }}</td>
-                                        <td>{{ $subscriber->reason }}</td>
+                                        <td>{{ $contact->name }}</td>
+                                        <td>{{ $contact->email }}</td>
+                                        <td>{{ $contact->phone }}</td>
+                                        <td>{{ $contact->reason }}</td>
                                         <td><button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
