@@ -180,25 +180,6 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item {{ request()->routeIs('backoffice.setting.*') ? 'menu-open' : '' }}">
-                    <a href="#"
-                        class="nav-link {{ request()->routeIs('backoffice.setting.*') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-home"></i>
-                        <p>
-                            Settings
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('backoffice.setting.edit') }}"
-                                class="nav-link {{ request()->routeIs('backoffice.setting.edit') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Settings</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
 
 
 				<li class="nav-header">SECTIONS</li>
@@ -251,6 +232,15 @@
 						class="nav-link {{ request()->routeIs('backoffice.dynamic.our.value.index') ? 'active' : '' }}">
 						<i class="far fa-circle nav-icon"></i>
 						<p>Our Values</p>
+					</a>
+				</li>
+
+				<li class="nav-header">SETTINGS</li>
+				<li class="nav-item">
+					<a href="{{ route('backoffice.setting.edit') }}"
+						class="nav-link {{ request()->routeIs('backoffice.setting.edit') ? 'active' : '' }}">
+						<i class="far fa-circle nav-icon"></i>
+						<p>Setting</p>
 					</a>
 				</li>
             </ul>

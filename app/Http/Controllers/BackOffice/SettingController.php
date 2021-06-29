@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\BackOffice;
 
-use App\Http\Controllers\Controller;
 use App\Setting;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Hamcrest\Core\Set;
+use Illuminate\Support\Facades\Storage;
 
 class SettingController extends Controller
 {
@@ -16,34 +18,38 @@ class SettingController extends Controller
         ]);
     }
 
-    public function update(Request $request)
+	public function updateSite(Request $request)
 	{
+		$attr = $request->validate([
+			'link' => 'required',
+			'favicon' => 'image|mimes:jpg,png,jpeg,gif,svg|max:512',
+		]);
 		$data = Setting::first();
-		if(!$data){
-			Setting::create([
-				'link' => $request->link,
-				'favicon' => $request->favicon,
-				'company_name' => $request->company_name,
-				'email' => $request->email,
-				'facebook' => $request->facebook,
-				'twitter' => $request->twitter,
-				'instagram' => $request->instagram,
-				'linkedin' => $request->linkedin,
-				'youtube' => $request->youtube,
-			]);
+		if($request->favicon){
+			$favicon = $request->file('favicon')->store('images/settings');
+			$attr['favicon'] = Storage::url($favicon);
 		}else{
-			$data->update([
-				'link' => $request->link,
-                'favicon' => $request->favicon,
-				'company_name' => $request->company_name,
-				'email' => $request->email,
-				'facebook' => $request->facebook,
-				'twitter' => $request->twitter,
-				'instagram' => $request->instagram,
-				'linkedin' => $request->linkedin,
-				'youtube' => $request->youtube,
-			]);
+			$attr['favicon'] = $data->favicon;
 		}
+		$data ? $data->update($attr) : Setting::create($attr);
+
+		return redirect()->route('backoffice.setting')
+		->with(["success" => "Setting updated successfully."]);
+	}
+
+    public function updateContact(Request $request)
+	{
+		$attr = $request->validate([
+			'company_name' => 'required',
+			'email' => 'required',
+			'facebook' => 'required',
+			'twitter' => 'required',
+			'instagram' => 'required',
+			'linkedin' => 'required',
+			'youtube' => 'required',
+		]);
+		$data = Setting::first();
+		$data ? $data->update($attr) : Setting::create($attr);
 
 		return redirect()->route('backoffice.setting')
 		->with(["success" => "Setting updated successfully."]);

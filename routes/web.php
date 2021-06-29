@@ -168,17 +168,11 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('edit', [StaticPrivacyController::class, 'edit'])->name('backoffice.static.privacy.edit');
 			Route::patch('update', [StaticPrivacyController::class, 'update'])->name('backoffice.static.privacy.update');
 		});
-		
+
         Route::prefix('terms')->group(function () {
 			Route::get('', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms');
 			Route::get('edit', [StaticTermsController::class, 'edit'])->name('backoffice.static.terms.edit');
 			Route::patch('update', [StaticTermsController::class, 'update'])->name('backoffice.static.terms.update');
-		});
-
-        Route::prefix('settings')->group(function () {
-			Route::get('', [SettingController::class, 'edit'])->name('backoffice.setting');
-			Route::get('edit', [SettingController::class, 'edit'])->name('backoffice.setting.edit');
-			Route::patch('edit', [SettingController::class, 'update'])->name('backoffice.setting.update');
 		});
 		
 	});
@@ -229,5 +223,12 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::delete('/{id}/delete', [OurValueController::class, 'delete'])->name('backoffice.dynamic.our.value.delete');
 		});
 
+	});
+
+	Route::prefix('settings')->group(function () {
+		Route::get('', [SettingController::class, 'edit'])->name('backoffice.setting');
+		Route::get('edit', [SettingController::class, 'edit'])->name('backoffice.setting.edit');
+		Route::put('update/site', [SettingController::class, 'updateSite'])->name('backoffice.setting.update.site');
+		Route::put('update/contact', [SettingController::class, 'updateContact'])->name('backoffice.setting.update.contact');
 	});
 });
