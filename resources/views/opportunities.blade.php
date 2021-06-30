@@ -6,7 +6,7 @@
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" >
-				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> Join us in taking <br/>India to the world 🌏</h1>
+				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> {{ $datas ? $datas->title : '' }}</h1>
 				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
@@ -17,13 +17,13 @@
 	<section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40" >
 			<div class="flex flex-col items-center justify-center text-center md:mb-20">
-				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">Small initiatives to make your life <span class="text--blue">better</span>.</div>
+				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">{{ $datas ? $datas->subtitle : '' }}</div>
 				<!-- <div class="text-base md:font--size-18 font--poppins "
 				style="letter-spacing: 0.02em;
 				line-height: 185.3%;
 				color: rgba(0, 0, 0, 0.45);">for world-class brands to make your products to live for world-class brands to make <br> your products to live for world-class brands to make your products to</div> -->
 			</div>
-	
+
 			{{-- dekstop --}}
 			<div class="flex flex-wrap justify-between -mx-1">
 				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
@@ -34,7 +34,7 @@
 						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
 							<div class="font-bold">Flexible</div>
 							<div >Time Schedule</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 
@@ -100,7 +100,7 @@
 
 			<!-- {{-- mobile --}}
 			<div class="grid md:hidden grid-cols-2  gap-4">
-				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				<div class="bg-white py-8 flex flex-col items-center justify-center"
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;" >
 					<div class="flex items-center justify-center">
 						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
@@ -108,10 +108,10 @@
 					<div class="text--pink text-base md:font--size-30 md:line--height-124c34 text-center">
 						<div class="font--gilroy-bold">Flexible</div>
 						<div class="font--gilroy-reg">Time Schedule</div>
-					</div>	
+					</div>
 				</div>
 
-				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				<div class="bg-white py-8 flex flex-col items-center justify-center"
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
 					<div class="flex items-center justify-center">
 						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
@@ -122,7 +122,7 @@
 					</div>
 				</div>
 
-				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				<div class="bg-white py-8 flex flex-col items-center justify-center"
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
 					<div class="flex items-center justify-center">
 						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/love.png') }}" alt="">
@@ -133,7 +133,7 @@
 					</div>
 				</div>
 
-				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				<div class="bg-white py-8 flex flex-col items-center justify-center"
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
 					<div class="flex items-center justify-center">
 						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/headspace.png') }}" alt="">
@@ -143,7 +143,7 @@
 						<div class="font--gilroy-reg">Membership</div>
 					</div>
 				</div>
-				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				<div class="bg-white py-8 flex flex-col items-center justify-center"
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
 					<div class="flex items-center justify-center">
 						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/book.png') }}" alt="">
@@ -154,7 +154,7 @@
 					</div>
 				</div>
 
-				<div class="bg-white py-8 flex flex-col items-center justify-center" 
+				<div class="bg-white py-8 flex flex-col items-center justify-center"
 				style="box-shadow: 0px -9px 46px rgba(239, 239, 239, 0.25); border-radius: 19px;">
 					<div class="flex items-center justify-center">
 						<img class="mb-2 h-14 md:h-auto" src="{{ asset('images/opportunities/items/time.png') }}" alt="">
@@ -178,7 +178,7 @@
 					<h2 class="mb-2 md:mb-10 font-semibold text-2xl md:font--size-38">Why should you work with us?</h2>
 					<div class="text--gray line--height-160 text-base md:font--size-20 w-full">Our vision is simple, yet powerful - Take India to the World. We know the immense talent India has to offer and we want to partner with individuals that share and feel strongly about where we are headed as a company. It takes courage and discipline to break through and create something that represents us at a global level. We are up for the challenge. Are you?</div>
 				</div>
-			</div>	
+			</div>
 			<div class="block md:flex items-center justify-between mb-5 md:mb-20">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
@@ -246,6 +246,6 @@
 				e.preventDefault()
 			})
 		})
-		
+
 	</script>
 @endpush

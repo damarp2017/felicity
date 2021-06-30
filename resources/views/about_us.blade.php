@@ -6,7 +6,7 @@
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-96 md:h-screen justify-center items-center text-center" >
-				<h1 class="text-white font-semibold text-4xl md:line--height-97 md:font--size-100 mb-5 md:mb-0 text-center"> On a journey to take India to the world 🌏</h1>
+				<h1 class="text-white font-semibold text-4xl md:line--height-97 md:font--size-100 mb-5 md:mb-0 text-center">{{ $datas ? $datas->title_hero : '' }}</h1>
 				<!-- <div class="text-sm md:font--size-20 text-white opacity-50 w-3/4"></div> -->
 			</div>
 		</div>
@@ -15,8 +15,8 @@
 	<section class="bg--section w-full overflow-x-hidden py-10 md:pb-20 md:pt--137">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<h2 class="mb-6 text-3xl md:font--size-55 font-semibold">Vision</h2>
-				<div class="text-sm md:font--size-20 line--height-160 " style="color: #898989">It is our constant endeavour to help businesses grow and evolve over time and to be able to achieve it, we want to work with people that synergise with the values that we strongly imbibe in every thing we do here at Felicity.</div>
+				<h2 class="mb-6 text-3xl md:font--size-55 font-semibold">{{ $datas ? $datas->title : '' }}</h2>
+				<div class="text-sm md:font--size-20 line--height-160 " style="color: #898989">{{ $datas ? $datas->subtitle : '' }}</div>
 			</div>
 		</div>
 		<div class="mx-4 md:app-container">
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 
-			
+
 		</div>
 	</section>
 

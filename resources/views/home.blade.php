@@ -12,9 +12,8 @@
 			<!-- </div> -->
 			<h1
 				class="text-white font-semibold mb-10 md:mb-5 text-4xl  2xl:font--size-70 md:font--size-55 text-center leading-normal">
-				Your brand is a promise to your customers.</h1>
-			<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">We
-				help you keep it.</h1>
+				{{ $datas ? $datas->title : '' }}</h1>
+			<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">{{ $datas ? $datas->subtitle : '' }}</h1>
 
 			<!-- <div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div> -->
 			<!-- <div class="md:font--size-18  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div> -->
@@ -333,8 +332,6 @@
 
 @include('components.have-a-project-idea-section')
 
-
-
 <section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
 	<div class="mx-4 md:app-container 2xl:px-40  ">
 		<div class="block md:flex items-center">
@@ -363,7 +360,8 @@
 			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
 			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t
 				spam. Promise.</div>
-			<form method="post">
+			<form method="post" action="{{ route('home.subscribe') }}">
+                @csrf
 				<div class="block md:flex gap-x-4">
 					<div class="flex-1 mb-5 md:mb-0">
 						<input type="text" style="background: rgba(255, 255, 255, 0.15);

@@ -13,6 +13,13 @@ use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleSubtitleControlle
 use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, CapabilityDetailController, CapabilityTitleDetailSubtitleController, OurProcessController, OurValueController, WhatIncludeController};
 use App\Http\Controllers\BackOffice\StaticContent\{HomeController, StaticCapabilityController, StaticOpportunityController};
 use App\Http\Controllers\BackOffice\Section\{FooterController, HaveProjectIdeaController, InsightCaseStudyController, JoinTheTeamController, SubscribeController};
+use App\Http\Controllers\FrontEnd\AboutUsController;
+use App\Http\Controllers\FrontEnd\CapabilityController as FrontEndCapabilityController;
+use App\Http\Controllers\FrontEnd\ContactUsController as FrontEndContactUsController;
+use App\Http\Controllers\FrontEnd\HomeController as FrontEndHomeController;
+use App\Http\Controllers\FrontEnd\OpportunityController;
+use App\Http\Controllers\FrontEnd\PrivacyController;
+use App\Http\Controllers\FrontEnd\TermsController;
 
 // Route::group(['middleware'=>'App\Http\Middleware\CheckForMaintena'],function(){
 Route::get('/coming-soon', function () {
@@ -84,9 +91,24 @@ Route::post('/coming-soon', function () {
     }
     return redirect('/');
 });
-Route::view('/', 'home');
-Route::view('home', 'home');
-Route::view('capabilities', 'capabilities');
+Route::get('/', [FrontEndHomeController::class, 'index']);
+Route::post('/', [FrontEndHomeController::class, 'insertSubscribe'])->name('home.subscribe');
+
+Route::get('/contact-us', [FrontEndContactUsController::class, 'index'])->name('contact.index');
+Route::post('/contact-us', [FrontEndContactUsController::class, 'insertContact'])->name('contact.insert');
+
+Route::get('/capabilities', [FrontEndCapabilityController::class, 'index'])->name('capability.index');
+
+Route::get('/opportunities', [OpportunityController::class, 'index'])->name('opportunity.index');
+
+Route::get('/about-us', [AboutUsController::class, 'index'])->name('about.index');
+
+Route::get('/terms-and-conditions', [TermsController::class, 'index'])->name('terms.index');
+Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('privacy.index');
+
+// Route::view('/', 'home');
+// Route::view('home', 'home');
+// Route::view('capabilities', 'capabilities');
 
 Route::view('capabilities/marketing-strategy', 'capabilities.marketing-strategy');
 Route::view('capabilities/branding', 'capabilities.branding');
@@ -95,13 +117,13 @@ Route::view('capabilities/influencer-outreach', 'capabilities.influencer-outreac
 Route::view('capabilities/technology-design', 'capabilities.technology-design');
 
 Route::view('capabilities-inside', 'capabilities_inside');
-Route::view('opportunities', 'opportunities');
-Route::view('about-us', 'about_us');
+// Route::view('opportunities', 'opportunities');
+// Route::view('about-us', 'about_us');
 Route::view('case-studies', 'case_studies');
 Route::view('insights', 'insights');
-Route::view('terms-and-conditions', 'terms_and_conditions');
-Route::view('privacy', 'privacy');
-Route::view('contact-us', 'contact_us');
+// Route::view('terms-and-conditions', 'terms_and_conditions');
+// Route::view('privacy', 'privacy');
+// Route::view('contact-us', 'contact_us');
 Route::view('press-release', 'press_release');
 Route::view('insights-inside', 'insights_inside');
 Route::view('case-studies-2', 'case_studies_2');
@@ -144,7 +166,7 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('reasons', [StaticOpportunityController::class, 'reasons'])->name('backoffice.static.opportunities.reasons');
 			Route::patch('updateReasons/{arrayIndex}', [StaticOpportunityController::class, 'updateReasons'])->name('backoffice.static.opportunities.updateReasons');
 		});
-		
+
 		Route::prefix('about-us')->group(function () {
 			Route::prefix('title-hero')->group(function(){
 				Route::get('/', [TitleHeroController::class, 'edit'])->name('backoffice.static.about.us.title.hero');
@@ -186,7 +208,7 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('/{id}/map', [LocationController::class, 'map'])->name('backoffice.static.location.map');
 			Route::delete('/{id}/delete', [LocationController::class, 'delete'])->name('backoffice.static.location.delete');
 		});
-		
+
 	});
 
 	Route::prefix('sections')->group(function(){

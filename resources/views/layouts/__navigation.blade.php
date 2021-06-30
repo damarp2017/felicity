@@ -1,11 +1,11 @@
 <nav class="hidden md:block navbar items-start fixed z-20 w-full transition duration-300 ease-in-out md:px-20 py-10">
 	<div class="flex w-full justify-between">
-		<a href="{{ url('/home') }}">
+		<a href="{{ url('/') }}">
 			<img class="logo-white " style="height:55px" src="{{ asset('images/logo/logo.png?new') }}">
 			<!-- <img class="logo-black hidden " style="height:55px" src="{{ asset('images/logo/black.png?new') }}"> -->
 		</a>
 		<div class="flex items-center">
-			
+
 			@if (request()->is('insights') || request()->is('case-studies') || request()->is('our-clients'))
 			<a href="{{ url('capabilities') }}" class="navlink mr--32 text-white  font--size-15"> Capabilities </a>
 			<a href="{{ url('opportunities') }}" class="navlink mr--32 text-white  font--size-15"> Opportunities </a>
@@ -20,7 +20,7 @@
 				<a href="//www.behance.net/felicityhq" target="_blank" class="navlink mr--40 text-white  font--size-15"> Case Studies </a>
 				<!-- <a href="{{ url('insights') }}" class="navlink mr--40 text-white  font--size-15"> Insights </a> -->
 				<a href="//medium.com/@felicitymedia" target="_blank" class="navlink mr--40 text-white  font--size-15"> Insights </a>
-				<a href="{{ url('contact-us') }}" class="navlink mr--38 text-white  font--size-15"> Contact Us </a>
+				<a href="{{ route('contact.index') }}" class="navlink mr--38 text-white  font--size-15"> Contact Us </a>
 
 				<a href="//calendly.com/felicityhq/hello" target="_blank" class="bg-white py-4 px-8 rounded-full text--blue font--size-15 font-bold  hover:zoom">
 					Book A Free Consultation Call
@@ -122,7 +122,7 @@
 		// 	})
 		// 	logoBlack.classList.remove('hidden')
 		// 	logoBlackHeader.classList.remove('hidden')
-			
+
 		// 	menu.classList.add('border', 'border-red-500')
 		// } else {
 		// 	// navbar.classList.remove('bg-white');

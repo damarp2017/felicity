@@ -16,13 +16,4 @@ class SubscriberController extends Controller
 
     }
 
-    public function insert(Request $request)
-    {
-        Subscribe::create([
-            'email' => $request->email,
-            'name' => $request->name,
-        ]);
-        return redirect()->back()
-		->with(["success" => "Subscribe Felicity successfully."]);
-    }
 }

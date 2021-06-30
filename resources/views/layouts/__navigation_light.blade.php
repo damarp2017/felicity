@@ -1,6 +1,6 @@
-<nav class="navbar hidden md:flex shadow-lg bg-white padding-navbar-light z-20 w-full 
+<nav class="navbar hidden md:flex shadow-lg bg-white padding-navbar-light z-20 w-full
 transition duration-300 ease-in-out items-start justify-between">
-	<a href="{{ url('/home') }}">
+	<a href="{{ url('/') }}">
 		<img class="h-8" style="height:55px" src="{{ asset('images/logo/black.png?new') }}">
 	</a>
 	<div class="flex items-center gap-x-8">
