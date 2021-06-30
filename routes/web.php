@@ -10,7 +10,7 @@ use App\Http\Controllers\BackOffice\StaticContent\AboutUs\ContentController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleHeroController;
 use App\Http\Controllers\BackOffice\StaticContent\ContactUs\LocationController;
 use App\Http\Controllers\BackOffice\StaticContent\AboutUs\TitleSubtitleController;
-use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, OurValueController};
+use App\Http\Controllers\BackOffice\DynamicContent\{CapabilityController, CapabilityDetailController, CapabilityTitleDetailSubtitleController, OurProcessController, OurValueController, WhatIncludeController};
 use App\Http\Controllers\BackOffice\StaticContent\{HomeController, StaticCapabilityController, StaticOpportunityController};
 use App\Http\Controllers\BackOffice\Section\{FooterController, HaveProjectIdeaController, InsightCaseStudyController, JoinTheTeamController, SubscribeController};
 
@@ -224,6 +224,29 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 			Route::get('/{id}/edit', [CapabilityController::class, 'edit'])->name('backoffice.dynamic.capablities.edit');
 			Route::put('/{id}/edit', [CapabilityController::class, 'update']);
 			Route::delete('/{id}/delete', [CapabilityController::class, 'delete'])->name('backoffice.dynamic.capablities.delete');
+		});
+
+		Route::prefix('title-subtitle')->group(function() {
+			Route::get('/{capabilityId}/edit', [CapabilityDetailController::class, 'edit'])->name('backoffice.dynamic.capabilities.title.subtitle.edit');
+			Route::put('/{capabilityId}/edit', [CapabilityDetailController::class, 'update']);
+		});
+
+		Route::prefix('our_proccess')->group(function() {
+			Route::get('/{capabilityId}/get', [OurProcessController::class, 'index'])->name('backoffice.dynamic.our.process.index');
+			Route::get('/{capabilityId}/create', [OurProcessController::class, 'create'])->name('backoffice.dynamic.our.process.create');
+			Route::post('/{capabilityId}/create', [OurProcessController::class, 'store']);
+			Route::get('/{capabilityId}/{id}/edit', [OurProcessController::class, 'edit'])->name('backoffice.dynamic.our.process.edit');
+			Route::put('/{capabilityId}/{id}/edit', [OurProcessController::class, 'update']);
+			Route::delete('/{capabilityId}/{id}/delete', [OurProcessController::class, 'delete'])->name('backoffice.dynamic.our.process.delete');
+		});
+
+		Route::prefix('what_includes')->group(function() {
+			Route::get('/{capabilityId}/get', [WhatIncludeController::class, 'index'])->name('backoffice.dynamic.what.include.index');
+			Route::get('/{capabilityId}/create', [WhatIncludeController::class, 'create'])->name('backoffice.dynamic.what.include.create');
+			Route::post('/{capabilityId}/create', [WhatIncludeController::class, 'store']);
+			Route::get('/{capabilityId}/{id}/edit', [WhatIncludeController::class, 'edit'])->name('backoffice.dynamic.what.include.edit');
+			Route::put('/{capabilityId}/{id}/edit', [WhatIncludeController::class, 'update']);
+			Route::delete('/{capabilityId}/{id}/delete', [WhatIncludeController::class, 'delete'])->name('backoffice.dynamic.what.include.delete');
 		});
 
 		Route::prefix('our-values')->group(function() {

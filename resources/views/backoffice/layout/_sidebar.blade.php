@@ -208,6 +208,7 @@
                 </li>
 
 				<li class="nav-header">DYNAMIC</li>
+				
 				<li class="nav-item">
 					<a href="{{ route('backoffice.dynamic.capablities.index') }}"
 						class="nav-link {{ request()->routeIs('backoffice.dynamic.capablities.index') ? 'active' : '' }}">

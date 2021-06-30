@@ -94,6 +94,9 @@
 									<td>{{ $capability->link_button }}</td>
 									<td>{{ $capability->text_button }}</td>
 									<td>
+										<a href="{{ route('backoffice.dynamic.capabilities.title.subtitle.edit', $capability->id) }}" class="btn btn-outline-primary btn-sm">
+											Detail
+										</a>
 										<a data-img="{{ $capability->image }}" class="btn btn-image btn-outline-primary btn-sm">
 											<i class="fa fa-eye"></i>
 										</a>
