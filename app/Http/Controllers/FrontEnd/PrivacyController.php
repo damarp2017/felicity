@@ -11,10 +11,10 @@ class PrivacyController extends Controller
 {
     public function index()
     {
-        $datas = StaticPrivacy::all()->last();
-        $footer = SectionFooter::all()->last();
+        $data = StaticPrivacy::first();
+        $footer = SectionFooter::first();
         return view('privacy', [
-            'datas' => $datas,
+            'data' => $data,
             'footer' => $footer
         ]);
     }

@@ -11,10 +11,10 @@ class OpportunityController extends Controller
 {
     public function index()
     {
-        $datas = StaticOpportunity::all()->last();
-        $footer = SectionFooter::all()->last();
+        $data = StaticOpportunity::first();
+        $footer = SectionFooter::first();
         return view('opportunities', [
-            'datas' => $datas,
+            'data' => $data,
             'footer' => $footer
         ]);
     }

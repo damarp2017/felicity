@@ -7,7 +7,7 @@
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center text-center">
 				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
-				<h1 class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-100">{{ $datas ? $datas->title : '' }}</h1>
+				<h1 class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-100">{{ $data ? $data->title : '' }}</h1>
 
 				<!-- <div class="text-base md:font--size-20 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>

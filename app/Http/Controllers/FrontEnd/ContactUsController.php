@@ -11,10 +11,10 @@ class ContactUsController extends Controller
 {
     public function index()
     {
-        $datas = Contact::all()->last();
-        $footer = SectionFooter::all()->last();
+        $data = Contact::first();
+        $footer = SectionFooter::first();
         return view('contact_us', [
-            'datas' => $datas,
+            'data' => $data,
             'footer' => $footer
         ]);
     }

@@ -11,10 +11,10 @@ class CapabilityController extends Controller
 {
     public function index()
     {
-        $datas = StaticCapability::all()->last();
-        $footer = SectionFooter::all()->last();
+        $data = StaticCapability::first();
+        $footer = SectionFooter::first();
         return view('capabilities', [
-            'datas' => $datas,
+            'data' => $data,
             'footer' => $footer
         ]);
     }

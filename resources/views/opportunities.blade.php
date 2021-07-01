@@ -6,7 +6,7 @@
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" >
-				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> {{ $datas ? $datas->title : '' }}</h1>
+				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> {{ $data ? $data->title : '' }}</h1>
 				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
@@ -17,7 +17,7 @@
 	<section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40" >
 			<div class="flex flex-col items-center justify-center text-center md:mb-20">
-				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">{{ $datas ? $datas->subtitle : '' }}</div>
+				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">{{ $data ? $data->subtitle : '' }}</div>
 				<!-- <div class="text-base md:font--size-18 font--poppins "
 				style="letter-spacing: 0.02em;
 				line-height: 185.3%;
@@ -26,19 +26,23 @@
 
 			{{-- dekstop --}}
 			<div class="flex flex-wrap justify-between -mx-1">
-				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
-					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
-						<div class="flex items-center justify-center">
-							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/calendar.png') }}" alt="">
-						</div>
-						<div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
-							<div class="font-bold">Flexible</div>
-							<div >Time Schedule</div>
-						</div>
-					</div>
-				</div>
+                @if ($data)
+                    @foreach ($data->benefits as $benefits)
+                        <div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+                            <div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
+                                <div class="flex items-center justify-center">
+                                    <img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset($benefits['logo']) }}" alt="">
+                                </div>
+                                <div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
+                                    <div class="font-bold">{{ $benefits['title'] }}</div>
+                                    <div>{{ $benefits['subtitle'] }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+			    @endif
 
-				<div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
+				{{-- <div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
 					<div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
 						<div class="flex items-center justify-center">
 							<img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset('images/opportunities/items/learing.png') }}" alt="">
@@ -95,7 +99,7 @@
 							<div >Time</div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 
 			<!-- {{-- mobile --}}
@@ -170,16 +174,21 @@
 
 	<section class="tag bg-white w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40">
-			<div class="block md:flex items-center justify-between mb-5 md:mb-20">
-				<div class="w-full md:w-1/2 md:mr--84">
-					<img class="w-full" src="{{ asset('images/opportunities/1.png') }}" alt="">
-				</div>
-				<div class="w-full md:w-1/2">
-					<h2 class="mb-2 md:mb-10 font-semibold text-2xl md:font--size-38">Why should you work with us?</h2>
-					<div class="text--gray line--height-160 text-base md:font--size-20 w-full">Our vision is simple, yet powerful - Take India to the World. We know the immense talent India has to offer and we want to partner with individuals that share and feel strongly about where we are headed as a company. It takes courage and discipline to break through and create something that represents us at a global level. We are up for the challenge. Are you?</div>
-				</div>
-			</div>
-			<div class="block md:flex items-center justify-between mb-5 md:mb-20">
+            @if ($data)
+                @foreach ($data->reasons as $reasons)
+                    <div class="block md:flex items-center justify-between mb-5 md:mb-20">
+                        <div class="w-full md:w-1/2 md:mr--84">
+                            <img class="w-full" src="{{ asset($reasons['image']) }}" alt="">
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h2 class="mb-2 md:mb-10 font-semibold text-2xl md:font--size-38">{{ ($reasons['title']) }}</h2>
+                            <div class="text--gray line--height-160 text-base md:font--size-20 w-full">{{ ($reasons['description']) }}</div>
+                        </div>
+                    </div>
+                @endforeach
+            @endif
+
+			{{-- <div class="block md:flex items-center justify-between mb-5 md:mb-20">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
@@ -190,7 +199,7 @@
 				<div class="hidden md:block w-full md:w-1/2">
 					<img class="" src="{{ asset('images/opportunities/3.png') }}" alt="">
 				</div>
-			</div>
+			</div> --}}
 		</div>
 	</section>
 

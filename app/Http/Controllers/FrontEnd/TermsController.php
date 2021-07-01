@@ -11,10 +11,10 @@ class TermsController extends Controller
 {
     public function index()
     {
-        $datas = StaticTerms::all()->last();
-        $footer = SectionFooter::all()->last();
+        $data = StaticTerms::first();
+        $footer = SectionFooter::first();
         return view('terms_and_conditions', [
-            'datas' => $datas,
+            'data' => $data,
             'footer' => $footer
         ]);
     }
