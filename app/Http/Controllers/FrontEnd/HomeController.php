@@ -13,10 +13,10 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $datas = Home::all()->last();
-        $footer = SectionFooter::all()->last();
+        $data = Home::first();
+        $footer = SectionFooter::first();
         return view('home', [
-            'datas' => $datas,
+            'data' => $data,
             'footer' => $footer
         ]);
     }

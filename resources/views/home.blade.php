@@ -12,8 +12,8 @@
 			<!-- </div> -->
 			<h1
 				class="text-white font-semibold mb-10 md:mb-5 text-4xl  2xl:font--size-70 md:font--size-55 text-center leading-normal">
-				{{ $datas ? $datas->title : '' }}</h1>
-			<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">{{ $datas ? $datas->subtitle : '' }}</h1>
+				{{ $data ? $data->title : '' }}</h1>
+			<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">{{ $data ? $data->subtitle : '' }}</h1>
 
 			<!-- <div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div> -->
 			<!-- <div class="md:font--size-18  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div> -->
@@ -32,11 +32,9 @@
 		<div class="mb-10">
 			<div class="flex items-center mb-3 ">
 				<!-- <div class="mr-4"><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
-				<h2 class="text--blue text-3xl md:font--size-52 font-bold">Our Vision</h2>
+				<h2 class="text--blue text-3xl md:font--size-52 font-bold">{{ $data ? $data->vision : '' }}</h2>
 			</div>
-			<div class="text-base md:font--size-20 text--gray leading-normal ">Our vision is to take India to the world
-				- capture its culture, its people, its expertise, and its diversity to enable other markets to enrich
-				and inculcate Indian values; to make India a front-runner in advertising</div>
+			<div class="text-base md:font--size-20 text--gray leading-normal ">{{ $data ? $data->vision_description : '' }}</div>
 		</div>
 
 
@@ -46,29 +44,30 @@
 			<div class="w-full md:w-1/2">
 				<div class="flex items-center mb-3 md:mb-10">
 					<!-- <div class="mr-4 "><img class="w-8 md:w-10 h-1" src="{{ asset('images/utilities/hr.png') }}"></div> -->
-					<h2 class="text--blue text-3xl md:font--size-52 font-bold">Our Manifestos</h2>
+					<h2 class="text--blue text-3xl md:font--size-52 font-bold">{{ $data ? $data->manifesto : '' }}</h2>
 				</div>
-				<div class="text-base md:font--size-20 text--gray leading-normal ">Felicity was started out of sheer
-					love and admiration for the art of advertising. We believe that ideas can change the world and it is
-					our constant endeavour to help businesses grow and evolve over time. We want to work with brands
-					that synergise with the values that we strongly imbibe in every thing we do here at Felicity.</div>
+				<div class="text-base md:font--size-20 text--gray leading-normal ">{{ $data ? $data->manifesto_description : '' }}</div>
 			</div>
 			<div class="tag w-full md:w-1/2 p-5"><img class="w-full"
-					src="{{ asset('images/home/our_manifestos.png') }}"></div>
+					src="{{ $data ? asset($data->manifesto_image) : '' }}"></div>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-5 mb-5">
+			@if ($data)
+				@foreach ($data->missions as $mission)
+				<div class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
+					<img class="w-10 mr-5" src="{{ asset($mission['logo']) }}">
+					<div>
+						<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">{{ $mission['title'] }}</div>
+						<div class="text-base text--gray md:font--size-20">{{ $mission['subtitle'] }}</div>
+					</div>
+				</div>	
+			@endforeach	
+			@endif
+			
+			
 
-			<div
-				class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
-				<img class="w-10 mr-5" src="{{ asset('images/home/items/1.png?new') }}">
-				<div>
-					<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">Win-Win Situation</div>
-					<div class="text-base text--gray md:font--size-20">When you score, we score!</div>
-				</div>
-			</div>
-
-			<div
+			{{-- <div
 				class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
 				<img class="w-10 mr-5" src="{{ asset('images/home/items/2.png?new') }}">
 				<div>
@@ -115,20 +114,23 @@
 					<div class="text-base font-normal text--gray md:font--size-20">From consumer to customer, we help
 						you convert</div>
 				</div>
-			</div>
+			</div> --}}
 
 		</div>
 
-		<div class="flex justify-center gap-x-4 flex-wrap gap-y-4">
-			<a href="{{ url('about-us') }}"
-				class="w-full md:w-auto  md:h--68 bg--gradient-black p-4 md:py-5 md:px-10 text-white text-center text-base md:font--size-17 rounded-full hover:zoom">
-				Know More </a>
-			<a href="//docs.google.com/presentation/d/18FTqkjBucoyTOq9QmWR6yMUNFE4F6kEbvlio6IBuE_U/edit?usp=sharing"
-				target="_blank"
-				class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-center text-base md:font--size-17 rounded-full hover:zoom">
-				Download Company Deck </a>
-		</div>
-
+		@if ($data)
+			<div class="flex justify-center gap-x-4 flex-wrap gap-y-4">
+				<a href="{{ $data->button_1['link'] }}"
+					class="w-full md:w-auto  md:h--68 bg--gradient-black p-4 md:py-5 md:px-10 text-white text-center text-base md:font--size-17 rounded-full hover:zoom">
+					{{ $data->button_1['title'] }}
+				</a>
+				<a href="{{ $data->button_2['link'] }}"
+					target="_blank"
+					class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-center text-base md:font--size-17 rounded-full hover:zoom">
+					{{ $data->button_2['title'] }} </a>
+			</div>	
+		@endif
+		
 	</div>
 
 
