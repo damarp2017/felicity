@@ -20,7 +20,35 @@
 			</div>
 		</div>
 		<div class="mx-4 md:app-container">
-			<div class="block md:flex mb-10 md:mb-24 items-center">
+			@foreach ($contents as $content)
+                <div class="block md:flex mb-10 md:mb-24 items-center">
+                    <div class="block md:hidden w-full md:w-1/2">
+                        <img class="h-auto md:h-96" src="{{ asset($content['image']) }}">
+                    </div>
+					@if ($loop->odd)
+						<div class="hidden md:block md:w--459">
+							<img src="{{ asset($content['image']) }}">
+						</div>
+						<div class="hidden md:block md:w--186"></div>
+					@endif
+                    <div class="w-full md:w--549">
+                        <div class="mb-3 text-black ">
+                            <h2 class=" text-3xl md:font--size-70 font-bold md:mb-10 md:line--height-99c34">{{ ($content['title']) }}</h2>
+                        </div>
+                        <div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">{{ ($content['subtitle']) }}</div>
+                    </div>
+                    @if ($loop->even)
+                    <div class="hidden md:block md:w--186"></div>
+						<div class="hidden md:block md:w--459">
+							<img src="{{ asset($content['image']) }}">
+						</div>
+					@endif
+                </div>
+				@if (($contents->count() / $loop->iteration) == $loop->iteration)
+					@break
+				@endif
+            @endforeach
+			{{-- <div class="block md:flex mb-10 md:mb-24 items-center">
 				<div class="w-full md:w--475 md:h--490">
 					<img class="h-auto md:w-full" src="{{ asset('images/about_us/1.png') }}">
 				</div>
@@ -32,9 +60,9 @@
 					</div>
 					<div class="text-sm md:font--size-19 text--gray line--height-160 mb-4">Our vision is to take India to the world - capture its culture, its people, its expertise, and its diversity to enable other markets to enrich and inculcate Indian values; to make India a front-runner in advertising.</div>
 				</div>
-			</div>
+			</div> --}}
 
-			<div class="block md:flex mb-10 items-center">
+			{{-- <div class="block md:flex mb-10 items-center">
 				<div class="block md:hidden w-full md:w-1/2">
 					<img class="h-auto md:h-96" src="{{ asset('images/about_us/2.png') }}">
 				</div>
@@ -48,7 +76,7 @@
 				<div class="hidden md:block md:w--579">
 					<img class="md:h-full" src="{{ asset('images/about_us/2.png') }}">
 				</div>
-			</div>
+			</div> --}}
 		</div>
 	</section>
 
@@ -61,16 +89,24 @@
                     <div class="block md:hidden w-full md:w-1/2">
                         <img class="h-auto md:h-96" src="{{ asset($content['image']) }}">
                     </div>
+					@if ($loop->odd)
+						<div class="hidden md:block md:w--459">
+							<img src="{{ asset($content['image']) }}">
+						</div>
+						<div class="hidden md:block md:w--186"></div>
+					@endif
                     <div class="w-full md:w--549">
                         <div class="mb-3 text-black ">
                             <h2 class=" text-3xl md:font--size-70 font-bold md:mb-10 md:line--height-99c34">{{ ($content['title']) }}</h2>
                         </div>
                         <div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">{{ ($content['subtitle']) }}</div>
                     </div>
+                    @if ($loop->even)
                     <div class="hidden md:block md:w--186"></div>
-                    <div class="hidden md:block md:w--459">
-                        <img src="{{ asset('images/about_us/4.webp') }}">
-                    </div>
+						<div class="hidden md:block md:w--459">
+							<img src="{{ asset($content['image']) }}">
+						</div>
+					@endif
                 </div>
             @endforeach
 

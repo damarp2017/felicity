@@ -2,23 +2,26 @@
 
 namespace App\Http\Controllers\FrontEnd;
 
-use App\Http\Controllers\Controller;
-use App\Sections\SectionFooter;
-use App\StaticContent\StaticAboutUs;
-use App\StaticContent\StaticContentAboutUs;
 use Illuminate\Http\Request;
+use App\Sections\SectionFooter;
+use App\Http\Controllers\Controller;
+use App\StaticContent\StaticAboutUs;
+use App\DynamicContect\DynamicOurValue;
+use App\StaticContent\StaticContentAboutUs;
 
 class AboutUsController extends Controller
 {
     public function index()
     {
         $data = StaticAboutUs::first();
-        $contents = StaticContentAboutUs::first();
+        $contents = StaticContentAboutUs::all();
         $footer = SectionFooter::first();
+		$ourValues = DynamicOurValue::all();
         return view('about_us', [
             'data' => $data,
             'contents' => $contents,
-            'footer' => $footer
+            'footer' => $footer,
+			'ourValues' => $ourValues
         ]);
     }
 }

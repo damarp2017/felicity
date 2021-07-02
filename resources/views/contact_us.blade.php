@@ -1,4 +1,8 @@
 @extends('layouts.app')
+@push('styles')
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css">
+@endpush
 @section('content')
 	<header class="w-full overflow-x-hidden bg--blue relative ">
 	@include('layouts.__navigation')
@@ -24,13 +28,10 @@
 				color: rgba(55, 55, 55, 0.46);
 				opacity: 0.8;">Engineering technologies that bring people together in the real world is both inspiring and daunting. We're tackling challenges in search relevance, payments, fraud prevention, discrimination, and growth—all while maintaining a beautiful expe</div> -->
 				<div class="">
-					<div class="jaipur flex  cursor-pointer md:items-start">
-						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green  text-white rounded-full " onclick="jaipur()">Jaipur</button>
-						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200 text-white rounded-full " onclick="mumbai()">Mumbai</button>
-					</div>
-					<div class="mumbai flex  cursor-pointer md:items-start" style="display: none;">
-						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200  text-white rounded-full " onclick="jaipur()">Jaipur</button>
-						<button class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg--green text-white rounded-full " onclick="mumbai()">Mumbai</button>
+					<div class=" flex  cursor-pointer md:items-start">
+						@foreach ($locations as $loc)
+							<button data-loc="{{ json_encode($loc) }}" class="hover:zoom w-32 h-12 md:w--166 md:h--48 md:mr--22 md:font--size-16 bg-gray-200 text-white rounded-full city focus:outline-none">{{ $loc->city }}</button>
+						@endforeach
 					</div>
 				</div>
 			</div>
@@ -38,23 +39,25 @@
 			<div class="flex flex-col md:flex-row items-center gap-y-10 md:gap-y-0 gap-x-0 md:gap-x-14 mb-10 md:mb--53">
 				<div class="w-full md:w-auto">
 					<div class="text-md md:font--size-14 uppercase text-gray-400 font--gilroy-md">ADDRESS</div>
-					<div class="text-md md:font--size-19 text-gray-500 jaipur">Office 414, Mansarovar Plaza, Madhyam Marg, Mansarovar, Jaipur - 302020 </div>
-					<div class="text-md md:font--size-19 text-gray-500 mumbai" style="display: none;">Coming soon</div>
+					<div class="text-md md:font--size-19 text-gray-500 address"></div>
 				</div>
 				<div class="w-full md:w-auto">
 					<div class="text-md md:font--size-14 uppercase text-gray-400 font--gilroy-md">PHONE</div>
-					<div class="text-md md:font--size-19 text-gray-500">+91-7738180136</div>
+					<div class="text-md md:font--size-19 text-gray-500">{{ $data ? $data->phone : '' }}</div>
 				</div>
 				<div class="w-full md:w-auto">
 					<div class="text-md md:font--size-14 uppercase text-gray-400 font--gilroy-md">EMAIL</div>
-					<div class="text-md md:font--size-19 text-gray-500">hello@felicitymedia.in</div>
+					<div class="text-md md:font--size-19 text-gray-500">{{ $data ? $data->email : '' }}</div>
 				</div>
 			</div>
 
 			<div>
 				<div class="block md:flex items-stretch gap-x-4">
 					<div class="block md:hidden w-full md:w-1/2 mb-10">
-						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank"><img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""></a>
+						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank">
+							{{-- <div id="map"></div> --}}
+							{{-- <img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""> --}}
+						</a>
 						<div class="text--gray text-sm" style="opacity: .5;">*Click to open maps</div>
 					</div>
 					<div class="w-full md:w-1/2">
@@ -77,7 +80,10 @@
 						</form>
 					</div>
 					<div class="hidden md:block w-full md:w-1/2 ">
-						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank"><img class="h-96 w-full object-cover object-center rounded-2xl hover:zoom" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""></a>
+						<div id="map" style="height: 60vh; width: auto" class="bg-gray-700"></div>
+						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank">
+							{{-- <img class="h-96 w-full object-cover object-center rounded-2xl hover:zoom" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""> --}}
+						</a>
 						<!-- <div class="text--gray text-sm">*Click to view maps</div> -->
 					</div>
 				</div>
@@ -87,14 +93,63 @@
 	</section>
 @endsection
 @push('scripts')
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
 <script type="text/javascript">
-	function jaipur(){
-		$('.mumbai').hide();
-		$('.jaipur').show();
+
+	let defaultLocation = null
+	
+	$(document).ready(function () {  
+		let location = $('.city').data('loc')
+		console.log(location);
+		$('.address').text(location.address)
+		$('.city').first().addClass('bg--green').removeClass('bg-gray-200')
+
+		const lng = location.lng
+        const lat = location.lat
+		defaultLocation = [lng, lat]
+		map()
+		
+        //showMarker(lng, lat)
+	})
+
+	$(document).on('click', '.city', function (e) {
+		e.preventDefault()
+		let location = $(this).data('loc')
+		$('.address').text(location.address)
+
+		const lng = location.lng
+        const lat = location.lat
+		defaultLocation = [lng, lat]
+		map()
+        //showMarker(lng, lat)
+		if($(this).hasClass('bg--green')){
+			$('.city').removeClass('bg--green').addClass('bg-gray-200')
+		}else{
+			$('.city').removeClass('bg--green').addClass('bg-gray-200')
+			$(this).addClass('bg--green')
+		}
+	})
+
+    function map() {  
+		console.log(defaultLocation);
+		mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZmFuemFuYW5kYSIsImEiOiJja2FkaDdncnUwNnB4MnhxdDg1OXFoaHcyIn0.mCzqYrhyGh1PYqt2TUhgTQ';
+		let map = new mapboxgl.Map({
+			container: 'map',
+			center : defaultLocation,
+			zoom: 10,
+			style: 'mapbox://styles/mapbox/streets-v11'
+		});
+
+		map.addControl(new mapboxgl.NavigationControl())
+		new mapboxgl.Marker().setLngLat(defaultLocation).addTo(map);
+
 	}
-	function mumbai(){
-		$('.jaipur').hide();
-		$('.mumbai').show();
-	}
+	//let markers = [];
+
+	// function showMarker(lng, lat){
+	// 	let marker =  new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
+	// 	markers.push(marker);
+	// }
 </script>
 @endpush

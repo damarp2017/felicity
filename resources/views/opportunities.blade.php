@@ -6,7 +6,7 @@
 		<div class="mx-4 md:app-container">
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center" >
-				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> {{ $data ? $data->title : '' }}</h1>
+				<h1 class="text-white font-semibold text-3xl md:font--size-95 mb-5 text-center md:line--height-105c8"> {!! $data ? $data->title : '' !!}</h1>
 				<!-- <div class="text-base text-center md:font--size-20 text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
@@ -17,7 +17,7 @@
 	<section class="tag bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40" >
 			<div class="flex flex-col items-center justify-center text-center md:mb-20">
-				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">{{ $data ? $data->subtitle : '' }}</div>
+				<div class="text-2xl md:font--size-55 font-bold mb-3 md:line--height-99c34">{!! $data ? $data->subtitle : '' !!}</div>
 				<!-- <div class="text-base md:font--size-18 font--poppins "
 				style="letter-spacing: 0.02em;
 				line-height: 185.3%;
@@ -177,13 +177,21 @@
             @if ($data)
                 @foreach ($data->reasons as $reasons)
                     <div class="block md:flex items-center justify-between mb-5 md:mb-20">
-                        <div class="w-full md:w-1/2 md:mr--84">
-                            <img class="w-full" src="{{ asset($reasons['image']) }}" alt="">
-                        </div>
+						@if ($loop->odd)
+							<div class="w-full md:w-1/2 md:mr--84">
+								<img class="w-full" src="{{ asset($reasons['image']) }}" alt="">
+							</div>	
+						@endif
+                        
                         <div class="w-full md:w-1/2">
                             <h2 class="mb-2 md:mb-10 font-semibold text-2xl md:font--size-38">{{ ($reasons['title']) }}</h2>
                             <div class="text--gray line--height-160 text-base md:font--size-20 w-full">{{ ($reasons['description']) }}</div>
                         </div>
+						@if ($loop->even)
+							<div class="w-full md:w-1/2 md:mr--84">
+								<img class="w-full" src="{{ asset($reasons['image']) }}" alt="">
+							</div>	
+						@endif
                     </div>
                 @endforeach
             @endif

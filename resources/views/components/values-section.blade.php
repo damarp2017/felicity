@@ -7,7 +7,7 @@
 		</div>
 		<div class="2xl:px-40">
 			<div class="flex overflow-x-auto pt-5 slider" id="values-slider">
-				@php
+				{{-- @php
 					$items = [
 						[
 							'no'=>'01',
@@ -40,22 +40,22 @@
 							'desc'=>"When things happen on time the overall productivity of the team and output increases. Audit and optimize. Don't leave people hanging."
 						],
 					]
-				@endphp
-				@foreach($items as $item)
+				@endphp --}}
+				@foreach($ourValues as $item)
 				<div style="min-width: 100vw;">
 					<div class="block md:flex mx-4 md:app-container">
 						<div class="w-full md:w-1/2">
-							<img class="max-h-80 max-w-full" src="{{ asset('images/values/'.$item['no'].'.png') }}">
+							<img class="max-h-80 max-w-full" src="{{ asset($item->image) }}">
 						</div>
 						<div class="w-full md:w-1/2">
 							<div class="mb-3 text-black ">
 								<div class="flex gap-x-4 items-center">
-									<div class="text-2xl md:font--size-30">{{$item['no']}}</div>
+									<div class="text-2xl md:font--size-30">{{ $loop->iteration }}</div>
 									<div class="w-48"><hr></div>
 								</div>
-								<h2 class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item['title']}}</h2>
+								<h2 class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{$item->title}}</h2>
 							</div>
-							<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item['desc']}}</div>
+							<div class="text-base md:font--size-20 line--height-160 text--gray mb-4">{{$item->subtitle}}</div>
 						</div>
 					</div>
 				</div>
