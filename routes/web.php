@@ -93,6 +93,7 @@ Route::post('/coming-soon', function () {
 });
 Route::get('/', [FrontEndHomeController::class, 'index']);
 Route::post('/', [FrontEndHomeController::class, 'insertSubscribe'])->name('home.subscribe');
+Route::post('/have-idea', [FrontEndHomeController::class, 'insertHaveIdea'])->name('home.haveidea');
 
 Route::get('/contact-us', [FrontEndContactUsController::class, 'index'])->name('contact.index');
 Route::post('/contact-us', [FrontEndContactUsController::class, 'insertContact'])->name('contact.insert');

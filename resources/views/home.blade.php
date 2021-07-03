@@ -61,11 +61,11 @@
 						<div class="text-lg md:font--size-21 mb-0 md:mb-2 font-semibold text--blue">{{ $mission['title'] }}</div>
 						<div class="text-base text--gray md:font--size-20">{{ $mission['subtitle'] }}</div>
 					</div>
-				</div>	
-			@endforeach	
+				</div>
+			@endforeach
 			@endif
-			
-			
+
+
 
 			{{-- <div
 				class="tag card--about-home h-26 md:h-32 w-full   bg-white rounded-xl flex px-6 py-4 items-center mb-4 md:mb-8">
@@ -128,9 +128,9 @@
 					target="_blank"
 					class=" w-full md:w-auto bg--gradient-black p-4 md:py-5 md:px-10 md:h--68 text-white text-center text-base md:font--size-17 rounded-full hover:zoom">
 					{{ $data->button_2['title'] }} </a>
-			</div>	
+			</div>
 		@endif
-		
+
 	</div>
 
 
@@ -359,9 +359,8 @@
 <section class=" -mb-20  overflow-x-hidden bg--section">
 	<div class="z-10 relative mx-4 md:app-container 2xl:px-40  ">
 		<div class=" md:p-10 p-5 bg--blue rounded-xl">
-			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">Learn Something New</h2>
-			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">We share new insights every week. We don’t
-				spam. Promise.</div>
+			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">{{ $subscribe ? $subscribe->title : '' }}</h2>
+			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">{{ $subscribe ? $subscribe->subtitle : '' }}</div>
 			<form method="post" action="{{ route('home.subscribe') }}">
                 @csrf
 				<div class="block md:flex gap-x-4">

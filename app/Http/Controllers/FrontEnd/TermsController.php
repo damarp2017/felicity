@@ -4,6 +4,7 @@ namespace App\Http\Controllers\FrontEnd;
 
 use App\Http\Controllers\Controller;
 use App\Sections\SectionFooter;
+use App\Setting;
 use App\StaticContent\StaticTerms;
 use Illuminate\Http\Request;
 
@@ -13,9 +14,11 @@ class TermsController extends Controller
     {
         $data = StaticTerms::first();
         $footer = SectionFooter::first();
+        $setting = Setting::first();
         return view('terms_and_conditions', [
             'data' => $data,
-            'footer' => $footer
+            'footer' => $footer,
+            'setting' => $setting
         ]);
     }
 }

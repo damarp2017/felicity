@@ -13,13 +13,15 @@ class ContactUsController extends Controller
 {
     public function index()
     {
-        $data = Setting::first();
+        $data = Contact::first();
         $footer = SectionFooter::first();
 		$locations = Location::all();
+        $setting = Setting::first();
         return view('contact_us', [
             'data' => $data,
             'footer' => $footer,
-			'locations' => $locations
+			'locations' => $locations,
+            'setting' => $setting
         ]);
     }
 

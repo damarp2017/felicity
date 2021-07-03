@@ -19,11 +19,11 @@
 				</div>
 				<div class="flex flex-col mb-8 md:mb-0 md:mr--150">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">Social Media</div>
-					<a target="_blank" href="//instagram.com/felicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Instagram</a>
-					<a target="_blank" href="//fb.com/thefelicitymedia" class="text-white mb-2 md:font--size-18 font--poppins">Facebook</a>
-					<a target="_blank" href="//twitter.com/mediafelicity" class="text-white mb-2 md:font--size-18 font--poppins">Twitter</a>
-					<a target="_blank" href="//linkedin.com/company/felicity-media" class="text-white mb-2 md:font--size-18 font--poppins">Linkedin</a>
-					<a target="_blank" href="//www.youtube.com/channel/UCjKNT2-xOcOUw-_fAsrrVRA" class="text-white mb-2 md:font--size-18 font--poppins">Youtube</a>
+					<a target="_blank" href="{{ $setting ? $setting->instagram : '' }}" class="text-white mb-2 md:font--size-18 font--poppins">Instagram</a>
+					<a target="_blank" href="{{ $setting ? $setting->facebook : '' }}" class="text-white mb-2 md:font--size-18 font--poppins">Facebook</a>
+					<a target="_blank" href="{{ $setting ? $setting->twitter : '' }}" class="text-white mb-2 md:font--size-18 font--poppins">Twitter</a>
+					<a target="_blank" href="{{ $setting ? $setting->linkedin : '' }}" class="text-white mb-2 md:font--size-18 font--poppins">Linkedin</a>
+					<a target="_blank" href="{{ $setting ? $setting->youtube : '' }}" class="text-white mb-2 md:font--size-18 font--poppins">Youtube</a>
 				</div>
 				<div class="flex flex-col mb-8 md:mb-0">
 					<div style="color: #949494;" class="mb-2 md:font--size-17  font--poppins uppercase">About</div>
@@ -39,23 +39,23 @@
 			<div class="hidden md:flex justify-between items-center">
 				<div class="flex items-center gap-x-8">
 					<div class="text-white font--size-17 font--poppins">© {{ date('Y') }} Felicity Media Private Limited</div>
-					<div class="text-white font--size-17 font--poppins">hello@felicitymedia.in</div>
+					<div class="text-white font--size-17 font--poppins">{{ $setting ? $setting->email : '' }}</div>
 					<div class="text-white font--size-17 font--poppins">+91-7738180136</div>
 				</div>
 				<div class="flex items-center gap-x-8">
-					<a href="//twitter.com/mediafelicity" target="_blank" >
+					<a href="{{ $setting ? $setting->twitter : '' }}" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/twitter.png') }}" alt="">
 					</a>
-					<a href="//instagram.com/felicitymedia" target="_blank" >
+					<a href="{{ $setting ? $setting->instagram : '' }}" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/ig.png') }}" alt="">
 					</a>
-					<a href="//fb.com/thefelicitymedia" target="_blank" >
+					<a href="{{ $setting ? $setting->facebook : '' }}" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/fb.png') }}" alt="">
 					</a>
-					<a href="//linkedin.com/company/felicity-media" target="_blank" >
+					<a href="{{ $setting ? $setting->linkedin : '' }}" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
 					</a>
-					<a href="//www.youtube.com/channel/UCjKNT2-xOcOUw-_fAsrrVRA" target="_blank" >
+					<a href="{{ $setting ? $setting->youtube : '' }}" target="_blank" >
 						<img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
 					</a>
 				</div>
@@ -65,26 +65,26 @@
 			<div class="flex flex-col md:hidden gap-x-8 gap-y-4">
 				<div class="mb-2">
 					<div class="text-white font--poppins md:text-left text-center">© {{ date('Y') }} Felicity Media Private Limited</div>
-					<div class="text-white font--poppins md:text-left text-center">hello@felicitymedia.in</div>
+					<div class="text-white font--poppins md:text-left text-center">{{ $setting ? $setting->email : '' }}</div>
 					<div class="text-white font--poppins md:text-left text-center">+91-7738180136</div>
 				</div>
 				<div class="px-8">
 					<div class="flex items-center gap-x-8 justify-between ">
-						<a href="//twitter.com/mediafelicity" target="_blank">
-							<img src="{{ asset('images/utilities/sosmed/twitter.png') }}" alt="">
-						</a>
-						<a href="//instagram.com/felicitymedia" target="_blank">
-							<img src="{{ asset('images/utilities/sosmed/ig.png') }}" alt="">
-						</a>
-						<a href="//fb.com/thefelicitymedia" target="_blank">
-							<img src="{{ asset('images/utilities/sosmed/fb.png') }}" alt="">
-						</a>
-						<a href="//linkedin.com/company/felicity-media" target="_blank">
-							<img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
-						</a>
-						<a href="//www.youtube.com/channel/UCjKNT2-xOcOUw-_fAsrrVRA" target="_blank">
-							<img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
-						</a>
+						<a href="{{ $setting ? $setting->twitter : '' }}" target="_blank" >
+                            <img src="{{ asset('images/utilities/sosmed/twitter.png') }}" alt="">
+                        </a>
+                        <a href="{{ $setting ? $setting->instagram : '' }}" target="_blank" >
+                            <img src="{{ asset('images/utilities/sosmed/ig.png') }}" alt="">
+                        </a>
+                        <a href="{{ $setting ? $setting->facebook : '' }}" target="_blank" >
+                            <img src="{{ asset('images/utilities/sosmed/fb.png') }}" alt="">
+                        </a>
+                        <a href="{{ $setting ? $setting->linkedin : '' }}" target="_blank" >
+                            <img src="{{ asset('images/utilities/sosmed/ln.png') }}" alt="">
+                        </a>
+                        <a href="{{ $setting ? $setting->youtube : '' }}" target="_blank" >
+                            <img src="{{ asset('images/utilities/sosmed/yt.png') }}" alt="">
+                        </a>
 					</div>
 				</div>
 			</div>
