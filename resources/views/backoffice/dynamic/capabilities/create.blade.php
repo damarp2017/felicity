@@ -85,11 +85,6 @@
                         </div>
 
 						<div class="form-group">
-                            <label for="link_button">Link Button</label>
-                            <input type="text" class="form-control" id="link_button" name="link_button" required
-                                placeholder="Enter Link Button" value="{{ old('link_button') }}">
-                        </div>
-						<div class="form-group">
                             <label for="image">Image</label>
                             <input type="file" class="form-control" id="image" name="image" required
 							onchange="previewImage(this)" accept="image/*">

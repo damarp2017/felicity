@@ -18,13 +18,18 @@
 		<div class="mx-4 md:app-container 2xl:px-40">
 			@foreach ($capabilities as $capability)
 				<div class="tag block md:flex md:h-screen-3/4 justify-between items-center mb-20 ">
+					@if ($loop->odd)
+					<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ asset($capability->image) }}"></div>
+					@endif
 					<div class="block md:hidden w-full md:w-1/2 "><img class="h-auto  md:h-96" src="{{ asset($capability->image) }}"></div>
 					<div class="w-full md:w-1/2 ">
 						<h2 class="text-5xl md:font--size-70 font-bold mb-4 md:mb--23">{{ $capability->title }}</h2>
 						<div class="text-base md:font--size-20 text--gray line--height-160 mb-4 md:mb--28">{{ $capability->subtitle }}</div>
-						<a href="{{ url($capability->link_button) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">{{ $capability->text_button }}</a>
+						<a href="{{ route('capability.detail', $capability->link_button) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">{{ $capability->text_button }}</a>
 					</div>
+					@if ($loop->even)
 					<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ asset($capability->image) }}"></div>
+					@endif
 				</div>	
 			@endforeach
 			{{-- <div class="tag block md:flex md:h-screen-3/4 justify-between items-center mb-20 ">

@@ -99,6 +99,7 @@ Route::get('/contact-us', [FrontEndContactUsController::class, 'index'])->name('
 Route::post('/contact-us', [FrontEndContactUsController::class, 'insertContact'])->name('contact.insert');
 
 Route::get('/capabilities', [FrontEndCapabilityController::class, 'index'])->name('capability.index');
+Route::get('/capabilities/{slug}', [FrontEndCapabilityController::class, 'detail'])->name('capability.detail');
 
 Route::get('/opportunities', [OpportunityController::class, 'index'])->name('opportunity.index');
 
@@ -111,11 +112,11 @@ Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('privac
 // Route::view('home', 'home');
 // Route::view('capabilities', 'capabilities');
 
-Route::view('capabilities/marketing-strategy', 'capabilities.marketing-strategy');
-Route::view('capabilities/branding', 'capabilities.branding');
-Route::view('capabilities/content-production', 'capabilities.content-production');
-Route::view('capabilities/influencer-outreach', 'capabilities.influencer-outreach');
-Route::view('capabilities/technology-design', 'capabilities.technology-design');
+// Route::view('capabilities/marketing-strategy', 'capabilities.marketing-strategy');
+//Route::view('capabilities/branding', 'capabilities.branding');
+// Route::view('capabilities/content-production', 'capabilities.content-production');
+// Route::view('capabilities/influencer-outreach', 'capabilities.influencer-outreach');
+// Route::view('capabilities/technology-design', 'capabilities.technology-design');
 
 Route::view('capabilities-inside', 'capabilities_inside');
 // Route::view('opportunities', 'opportunities');

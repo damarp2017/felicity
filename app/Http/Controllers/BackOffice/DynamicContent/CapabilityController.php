@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\BackOffice\DynamicContent;
 
-use App\DynamicContect\DynamicCapability;
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\DynamicContect\DynamicCapability;
 
 class CapabilityController extends Controller
 {
@@ -36,12 +37,12 @@ class CapabilityController extends Controller
 			'title' => 'required',
 			'subtitle' => 'required',
 			'text_button' => 'required',
-			'link_button' => 'required',
 			'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
 		]);
 
 		$image = $request->file('image')->store('images/capabilities');
 		$attr['image'] = Storage::url($image);
+		$attr['link_button'] = Str::slug($attr['title'] .'-'. strtotime(now()));
 		DynamicCapability::create($attr);
 
 		return redirect()->route('backoffice.dynamic.capablities.index')
