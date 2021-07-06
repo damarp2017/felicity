@@ -54,7 +54,7 @@ class WhatIncludeController extends Controller
 		}
 		$attr['capability_detail_id'] = $capabilityId;
 		$image = $request->file('image')->store('images/what_includes');
-		$attr['image'] = Storage::url($image);
+		$attr['image'] = $image;
 		CapabilityDetailWhatsInclude::create($attr);
 		
 		return redirect()->route('backoffice.dynamic.what.include.index', $capabilityId)
@@ -71,7 +71,7 @@ class WhatIncludeController extends Controller
 		$whatInclude = CapabilityDetailWhatsInclude::whereId($id)->first();
 		if($request->image){
 			$image = $request->file('image')->store('images/what_includes');
-			$attr['image'] = Storage::url($image);
+			$attr['image'] = $image;
 		}else{
 			$attr['image'] = $whatInclude->image;
 		}

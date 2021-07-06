@@ -42,7 +42,7 @@
 						<div style="min-width: 50vw;" class="space-item-1 px-2 md:px-10 ">
 							<div class="mb-3 text-black ">
 								<div class="flex gap-x-4 items-center">
-									<div class="text-2xl md:font--size-30">{{ $loop->iteration }}</div>
+									<div class="text-2xl md:font--size-30">{{ str_pad($loop->iteration,2,STR_PAD_LEFT,'0') }}</div>
 									<div class="w-48"><hr></div>
 								</div>
 								<h2 class=" text-3xl mt-3 md:mt--11 mb-6 md:mb--34 md:font--size-65 font-bold md:line--height-107c84">{{ $item->title }}</h2>

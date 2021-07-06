@@ -27,7 +27,7 @@ class SettingController extends Controller
 		$data = Setting::first();
 		if($request->favicon){
 			$favicon = $request->file('favicon')->store('images/settings');
-			$attr['favicon'] = Storage::url($favicon);
+			$attr['favicon'] = $favicon;
 		}else{
 			$attr['favicon'] = $data->favicon;
 		}

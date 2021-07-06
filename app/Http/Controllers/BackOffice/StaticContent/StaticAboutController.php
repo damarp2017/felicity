@@ -52,7 +52,7 @@ class StaticAboutController extends Controller
         $about = StaticAbout::get()->first();
         if ($request->image) {
             // Storage::delete($home->benefits[$arrayIndex]['image']);
-            $image = Storage::url($request->file('image')->store('images/about_us/items'));
+            $image = $request->file('image')->store('images/about_us/items');
         } else {
             $image = $about->visions[$arrayIndex]['image'];
         }

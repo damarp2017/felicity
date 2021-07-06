@@ -41,8 +41,8 @@ class CapabilityController extends Controller
 		]);
 
 		$image = $request->file('image')->store('images/capabilities');
-		$attr['image'] = Storage::url($image);
-		$attr['link_button'] = Str::slug($attr['title'] .'-'. strtotime(now()));
+		$attr['image'] = $image;
+		$attr['link_button'] = Str::slug($attr['title']);
 		DynamicCapability::create($attr);
 
 		return redirect()->route('backoffice.dynamic.capablities.index')
@@ -55,14 +55,15 @@ class CapabilityController extends Controller
 			'title' => 'required',
 			'subtitle' => 'required',
 			'text_button' => 'required',
-			'link_button' => 'required',
+			// 'link_button' => 'required',
 			'image' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048',
 		]);
 
+		$attr['link_button'] = Str::slug($attr['title']);
 		$capability = DynamicCapability::whereId($id)->first();
 		if($request->image){
 			$image = $request->file('image')->store('images/capabilities');
-			$attr['image'] = Storage::url($image);
+			$attr['image'] = $image;
 		}else{
 			$attr['image'] = $capability->image;
 		}

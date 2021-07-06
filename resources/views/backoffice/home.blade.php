@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <img src="{{ asset($data->manifesto_image) }}" style="max-height: 300px; width: auto"
+                            <img src="{{ Storage::url($data->manifesto_image) }}" style="max-height: 300px; width: auto"
                                 alt="Manifesto Image">
                         </div>
                         <div class="form-group">
@@ -240,7 +240,7 @@
                 <form>
                     <div class="card-body">
                         <div class="form-group">
-                            <img src="{{ asset($mission['logo']) }}" alt="Mission Logo"
+                            <img src="{{ Storage::url($mission['logo']) }}" alt="Mission Logo"
                                 style="height: 60px; width: auto;">
                         </div>
                         <div class="form-group">

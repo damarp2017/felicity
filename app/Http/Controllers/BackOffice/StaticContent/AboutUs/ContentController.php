@@ -39,7 +39,7 @@ class ContentController extends Controller
 		]);
 
 		$image = $request->file('image')->store('images/about_us');
-		$attr['image'] = Storage::url($image);
+		$attr['image'] = $image;
 		StaticContentAboutUs::create($attr);
 
 		return redirect()->route('backoffice.static.about.us.content.index')
@@ -57,7 +57,7 @@ class ContentController extends Controller
 		$capability = StaticContentAboutUs::whereId($id)->first();
 		if($request->image){
 			$image = $request->file('image')->store('images/about_us');
-			$attr['image'] = Storage::url($image);
+			$attr['image'] = $image;
 		}else{
 			$attr['image'] = $capability->image;
 		}

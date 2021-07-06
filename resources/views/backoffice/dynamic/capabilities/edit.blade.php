@@ -89,7 +89,7 @@
                             <label for="image">Image</label>
                             <input type="file" class="form-control" id="image" name="image"
 							onchange="previewImage(this)" accept="image/*">
-							<img src="{{ $capability->image ? asset($capability->image) : '' }}" class="mt-2 preview-image" alt="" width="100" height="100"
+							<img src="{{ $capability->image ? Storage::url($capability->image) : '' }}" class="mt-2 preview-image" alt="" width="100" height="100"
 							style="object-fit: cover; object-position: center; display: {{ $capability->image ? '' : 'none' }}">
                         </div>
                     </div>

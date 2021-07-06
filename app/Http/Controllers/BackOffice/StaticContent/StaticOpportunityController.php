@@ -42,7 +42,7 @@ class StaticOpportunityController extends Controller
         $opportunity = StaticOpportunity::get()->first();
         if ($request->logo) {
             // Storage::delete($home->benefits[$arrayIndex]['logo']);
-            $logo = Storage::url($request->file('logo')->store('images/opportunities/items'));
+            $logo = $request->file('logo')->store('images/opportunities/items');
         } else {
             $logo = $opportunity->benefits[$arrayIndex]['logo'];
         }
@@ -72,7 +72,7 @@ class StaticOpportunityController extends Controller
         $opportunity = StaticOpportunity::get()->first();
         if ($request->image) {
             // Storage::delete($home->reasons[$arrayIndex]['image']);
-            $image = Storage::url($request->file('image')->store('images/opportunities'));
+            $image = $request->file('image')->store('images/opportunities');
         } else {
             $image = $opportunity->reasons[$arrayIndex]['image'];
         }

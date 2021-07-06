@@ -78,7 +78,7 @@ class HomeController extends Controller
         if ($request->manifesto_image) {
             // Storage::delete($home->manifesto_image);
             $image = $request->file('manifesto_image')->store('images/home');
-            $home->manifesto_image = Storage::url($image);
+            $home->manifesto_image = $image;
         }
         $home->manifesto_description = $request->manifesto_description;
         $home->update();
@@ -94,7 +94,7 @@ class HomeController extends Controller
         $logo = $request->file('logo')->store('images/home/items');
 
         $home->missions = collect($home->missions)->push(collect([
-            'logo' => Storage::url($logo),
+            'logo' => $logo,
             'sequence' => $request->sequence,
             'title' => $request->title,
             'subtitle' => $request->subtitle,
@@ -110,7 +110,7 @@ class HomeController extends Controller
         $home = Home::get()->first();
         if ($request->logo) {
             // Storage::delete($home->missions[$arrayIndex]['logo']);
-            $logo = Storage::url($request->file('logo')->store('images/home/items'));
+            $logo = $request->file('logo')->store('images/home/items');
         } else {
             $logo = $home->missions[$arrayIndex]['logo'];
         }

@@ -23,11 +23,11 @@
 			@foreach ($contents as $content)
                 <div class="block md:flex mb-10 md:mb-24 items-center">
                     <div class="block md:hidden w-full md:w-1/2">
-                        <img class="h-auto md:h-96" src="{{ asset($content['image']) }}">
+                        <img class="h-auto md:h-96" src="{{ Storage::url($content['image']) }}">
                     </div>
 					@if ($loop->odd)
 						<div class="hidden md:block md:w--459">
-							<img src="{{ asset($content['image']) }}">
+							<img src="{{ Storage::url($content['image']) }}">
 						</div>
 						<div class="hidden md:block md:w--186"></div>
 					@endif
@@ -40,7 +40,7 @@
                     @if ($loop->even)
                     <div class="hidden md:block md:w--186"></div>
 						<div class="hidden md:block md:w--459">
-							<img src="{{ asset($content['image']) }}">
+							<img src="{{ Storage::url($content['image']) }}">
 						</div>
 					@endif
                 </div>
@@ -87,11 +87,11 @@
             @foreach ($contents as $content)
                 <div class="block md:flex mb-10 md:mb-24 items-center">
                     <div class="block md:hidden w-full md:w-1/2">
-                        <img class="h-auto md:h-96" src="{{ asset($content['image']) }}">
+                        <img class="h-auto md:h-96" src="{{ Storage::url($content['image']) }}">
                     </div>
 					@if ($loop->odd)
 						<div class="hidden md:block md:w--459">
-							<img src="{{ asset($content['image']) }}">
+							<img src="{{ Storage::url($content['image']) }}">
 						</div>
 						<div class="hidden md:block md:w--186"></div>
 					@endif
@@ -104,7 +104,7 @@
                     @if ($loop->even)
                     <div class="hidden md:block md:w--186"></div>
 						<div class="hidden md:block md:w--459">
-							<img src="{{ asset($content['image']) }}">
+							<img src="{{ Storage::url($content['image']) }}">
 						</div>
 					@endif
                 </div>

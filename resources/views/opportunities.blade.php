@@ -31,7 +31,7 @@
                         <div class="w-1/2 md:w-1/3 px-1 py-2 md:px-10 md:py-5">
                             <div class="h-40 md:h-60 bg-white  flex flex-col items-center justify-center card--opportunities">
                                 <div class="flex items-center justify-center">
-                                    <img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ asset($benefits['logo']) }}" alt="">
+                                    <img class="mb-2 md:mb-9 h-7 md:h-20 " src="{{ Storage::url($benefits['logo']) }}" alt="">
                                 </div>
                                 <div class="text--blue text-base md:font--size-22 md:line--height-124c34 text-center">
                                     <div class="font-bold">{{ $benefits['title'] }}</div>
@@ -179,7 +179,7 @@
                     <div class="block md:flex items-center justify-between mb-5 md:mb-20">
 						@if ($loop->odd)
 							<div class="w-full md:w-1/2 md:mr--84">
-								<img class="w-full" src="{{ asset($reasons['image']) }}" alt="">
+								<img class="w-full" src="{{ Storage::url($reasons['image']) }}" alt="">
 							</div>	
 						@endif
                         
@@ -189,7 +189,7 @@
                         </div>
 						@if ($loop->even)
 							<div class="w-full md:w-1/2 md:mr--84">
-								<img class="w-full" src="{{ asset($reasons['image']) }}" alt="">
+								<img class="w-full" src="{{ Storage::url($reasons['image']) }}" alt="">
 							</div>	
 						@endif
                     </div>

@@ -137,7 +137,7 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <img src="{{ asset($mission['logo']) }}" alt="Mission Logo"
+                            <img src="{{ Storage::url($mission['logo']) }}" alt="Mission Logo"
                                 style="height: 60px; width: auto;">
                         </div>
                         <div class="form-group">

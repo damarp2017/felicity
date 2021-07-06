@@ -39,7 +39,7 @@ class OurValueController extends Controller
 		]);
 
 		$image = $request->file('image')->store('images/our_values');
-		$attr['image'] = Storage::url($image);
+		$attr['image'] = $image;
 		DynamicOurValue::create($attr);
 
 		return redirect()->route('backoffice.dynamic.our.value.index')
@@ -57,7 +57,7 @@ class OurValueController extends Controller
 		$ourValues = DynamicOurValue::whereId($id)->first();
 		if($request->image){
 			$image = $request->file('image')->store('images/our_values');
-			$attr['image'] = Storage::url($image);
+			$attr['image'] = $image;
 		}else{
 			$attr['image'] = $ourValues->image;
 		}

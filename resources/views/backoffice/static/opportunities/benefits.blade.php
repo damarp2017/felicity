@@ -60,7 +60,7 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <img src="{{ asset($benefits['logo']) }}" alt="benefits Logo"
+                            <img src="{{ Storage::url($benefits['logo']) }}" alt="benefits Logo"
                                 style="height: 60px; width: auto;">
                         </div>
                         <div class="form-group">
