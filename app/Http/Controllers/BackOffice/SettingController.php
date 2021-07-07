@@ -54,4 +54,18 @@ class SettingController extends Controller
 		return redirect()->route('backoffice.setting')
 		->with(["success" => "Setting updated successfully."]);
 	}
+
+    public function updateOthers(Request $request)
+	{
+		$attr = $request->validate([
+			'insights_link' => 'required',
+			'case_studies_link' => 'required',
+			'book_link' => 'required',
+		]);
+		$data = Setting::first();
+		$data ? $data->update($attr) : Setting::create($attr);
+
+		return redirect()->route('backoffice.setting')
+		->with(["success" => "Setting updated successfully."]);
+	}
 }

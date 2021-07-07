@@ -16,7 +16,7 @@ class CreateDynamicOurValuesTable extends Migration
         Schema::create('dynamic_our_values', function (Blueprint $table) {
             $table->id();
 			$table->string('title');
-			$table->string('subtitle');
+			$table->text('subtitle');
 			$table->string('image');
             $table->timestamps();
         });

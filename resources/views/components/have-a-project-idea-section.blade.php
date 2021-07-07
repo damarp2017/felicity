@@ -5,7 +5,7 @@
 				<div class="text-base md:font--size-17 font--poppins w-full md:w-10/12 "
 				style="letter-spacing: 0.02em;
 				color: rgba(55, 55, 55, 0.46);
-				opacity: 0.8;">{{ $haveIdea ? $haveIdea->subtitle : '' }}</div>
+				opacity: 0.8;">{!! $haveIdea ? $haveIdea->subtitle : '' !!}</div>
 			</div>
 
 			<form method="post" action="{{ route('home.haveidea') }}">

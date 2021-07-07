@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\FrontEnd;
 
 use App\Contact;
+use App\DynamicContect\DynamicCapability;
 use App\Home;
 use App\Http\Controllers\Controller;
 use App\Sections\SectionFooter;
 use App\Sections\SectionHaveProjectIdea;
 use App\Sections\SectionInsightCaseStudy;
+use App\Sections\SectionJoinTheTeam;
 use App\Sections\SectionSubscribe;
 use App\Setting;
 use App\Subscribe;
@@ -19,17 +21,21 @@ class HomeController extends Controller
     {
         $data = Home::first();
         $footer = SectionFooter::first();
+        $capabilities = DynamicCapability::all();
         $haveIdea = SectionHaveProjectIdea::first();
         $insightCaseStudy = SectionInsightCaseStudy::first();
         $subscribe = SectionSubscribe::first();
         $setting = Setting::first();
+        $joinTheTeam = SectionJoinTheTeam::first();
         return view('home', [
             'data' => $data,
             'footer' => $footer,
+            'capabilities' => $capabilities,
             'haveIdea' => $haveIdea,
             'insightCaseStudy' => $insightCaseStudy,
             'subscribe' => $subscribe,
-            'setting' => $setting
+            'setting' => $setting,
+            'joinTheTeam' => $joinTheTeam
         ]);
     }
 

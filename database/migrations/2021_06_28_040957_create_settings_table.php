@@ -24,6 +24,9 @@ class CreateSettingsTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('linkedin')->nullable();
             $table->string('youtube')->nullable();
+            $table->string('insights_link')->nullable();
+            $table->string('case_studies_link')->nullable();
+            $table->string('book_link')->nullable();
             $table->timestamps();
         });
     }

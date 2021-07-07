@@ -12,8 +12,8 @@
 			<!-- </div> -->
 			<h1
 				class="text-white font-semibold mb-10 md:mb-5 text-4xl  2xl:font--size-70 md:font--size-55 text-center leading-normal">
-				{{ $data ? $data->title : '' }}</h1>
-			<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">{{ $data ? $data->subtitle : '' }}</h1>
+				{!! $data ? $data->title : '' !!}</h1>
+			<h1 class="text-white font-semibold md:mb-5 text-3xl  2xl:font--size-55 md:font--size-45 text-center ">{!! $data ? $data->subtitle : '' !!}</h1>
 
 			<!-- <div class="md:font--size-24  text-xl text-white uppercase mb-10 text-center" style="letter-spacing: 2px">that next generation will witness</div> -->
 			<!-- <div class="md:font--size-18  text-base text-white text-center w-full opacity-50">Your brand is a promise to your customers. We help you keep it</div> -->
@@ -49,7 +49,7 @@
 				<div class="text-base md:font--size-20 text--gray leading-normal ">{{ $data ? $data->manifesto_description : '' }}</div>
 			</div>
 			<div class="tag w-full md:w-1/2 p-5"><img class="w-full"
-					src="{{ $data ? asset($data->manifesto_image) : '' }}"></div>
+					src="{{ Storage::url($data->manifesto_image) }}"></div>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-5 mb-5">
@@ -145,62 +145,61 @@
 		</div>
 	</div>
 	<div class="flex overflow-x-auto pt-5 slider" id="capabilities-slider">
-		@php
-		$items = [
-		[
-		'slug'=>'marketing-strategy',
-		'title'=>'Marketing<br />
-		<span class="text--blue">Strategy</span>',
-		'desc'=>"Think of us as your extended brains. It is important for all businesses to have an effective marketing
-		strategy to capitalize and capture larger market share and higher share of voice. We help you do that. Get in
-		touch with us to discuss your brand story and audit your brand to see if we are a good fit to work with each
-		other."
-		],[
-		'slug'=>'branding',
-		'title'=>'Branding',
-		'desc'=>"Branding is important because it makes a memorable impression on consumers and allows your customers
-		and clients to know what to expect from your company. It is a way of distinguishing yourself from the
-		competitors and clarifying what it is you offer that makes you the better choice."
-		],[
-		'slug'=>'content-production',
-		'title'=>'Content<br />
-		<span class="text--blue">Production</span>',
-		'desc'=>"Content production is a marketing strategy that focuses on developing and delivering valuable,
-		relevant, and consistent content in order to attract and maintain a specific audience – and, eventually, to
-		drive profitable consumer action."
-		],[
-		'slug'=>'influencer-outreach',
-		'title'=>'Influencer<br />
-		<span class="text--blue">Outreach</span>',
-		'desc'=>"The influencer marketing industry has grown to a staggering $1 Billion and is still in its nascent
-		stages. Content creators hold tremendous power and influence over specific target audiences that can be
-		leveraged to integrate brand products to reach potential customers."
-		],[
-		'slug'=>'technology-design',
-		'title'=>'Technology &<br />
-		<span class="text--blue">Design</span>',
-		'desc'=>"Technology is an enabler that allows us to solve complex problems in our business. In the context of
-		marketing, we help brands create scalable infrastructure that they can build their businesses on and reach their
-		desired customers."
-		],
-		];
-		@endphp
-		@foreach($items as $item)
+		{{-- @php
+            $items = [
+            [
+            'slug'=>'marketing-strategy',
+            'title'=>'Marketing<br />
+            <span class="text--blue">Strategy</span>',
+            'desc'=>"Think of us as your extended brains. It is important for all businesses to have an effective marketing
+            strategy to capitalize and capture larger market share and higher share of voice. We help you do that. Get in
+            touch with us to discuss your brand story and audit your brand to see if we are a good fit to work with each
+            other."
+            ],[
+            'slug'=>'branding',
+            'title'=>'Branding',
+            'desc'=>"Branding is important because it makes a memorable impression on consumers and allows your customers
+            and clients to know what to expect from your company. It is a way of distinguishing yourself from the
+            competitors and clarifying what it is you offer that makes you the better choice."
+            ],[
+            'slug'=>'content-production',
+            'title'=>'Content<br />
+            <span class="text--blue">Production</span>',
+            'desc'=>"Content production is a marketing strategy that focuses on developing and delivering valuable,
+            relevant, and consistent content in order to attract and maintain a specific audience – and, eventually, to
+            drive profitable consumer action."
+            ],[
+            'slug'=>'influencer-outreach',
+            'title'=>'Influencer<br />
+            <span class="text--blue">Outreach</span>',
+            'desc'=>"The influencer marketing industry has grown to a staggering $1 Billion and is still in its nascent
+            stages. Content creators hold tremendous power and influence over specific target audiences that can be
+            leveraged to integrate brand products to reach potential customers."
+            ],[
+            'slug'=>'technology-design',
+            'title'=>'Technology &<br />
+            <span class="text--blue">Design</span>',
+            'desc'=>"Technology is an enabler that allows us to solve complex problems in our business. In the context of
+            marketing, we help brands create scalable infrastructure that they can build their businesses on and reach their
+            desired customers."
+            ],
+            ];
+		@endphp --}}
+		@foreach($capabilities as $capability)
 		<div style="min-width: 100vw;">
 			<div class="block md:flex mx-4 md:app-container 2xl:px-40 ">
 				<div class="w-full md:w-1/2 text-center">
 					<img class="inline max-h-45 md:max-h-80 max-w-full"
-						src="{{ asset('images/capabilities/'.$item['slug'].'.png') }}">
+						src="{{ Storage::url($capability->image) }}">
 				</div>
 				<div class="w-full md:w-1/2">
 					<h2 class="text-black text-5xl md:font--size-70 font-bold mb-4 leading-none">
-						{!! $item['title'] !!}
+						{!! $capability->title !!}
 					</h2>
-					<div class="text-base md:font--size-20 text--gray mb-10 leading-normal ">{!! $item['desc'] !!}</div>
+					<div class="text-base md:font--size-20 text--gray mb-10 leading-normal ">{!! $capability->subtitle !!}</div>
 
-					<a href="{{ url('capabilities/'.$item['slug']) }}"
-						class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">See
-						More</a>
+					<a href="{{ route('capability.detail', $capability->link_button) }}"
+						class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">{{ $capability->text_button }}</a>
 				</div>
 			</div>
 		</div>
@@ -341,15 +340,10 @@
 				<img class="h-auto md:h-96" src="{{ asset('images/home/join.png') }}" alt="">
 			</div>
 			<div class="w-full md:w-1/2">
-				<h2 class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">Join the <span
-						class="text--blue">Team</span></h2>
-				<div class="text-base md:font--size-20 text--gray mb-10 md:mb-14" style="line-height: 160%;">Our vision
-					of taking India to the world is impossible without the help of honest, talented, and purpose driven
-					individuals. We are on a constant lookout for people that believe in the power of ideas and dare to
-					change the world with their own.</div>
+				<h2 class="text-3xl md:font--size-75 font-semibold mb-4 md:mb-10">{!! $joinTheTeam->title !!}</h2>
+				<div class="text-base md:font--size-20 text--gray mb-10 md:mb-14" style="line-height: 160%;">{!! $joinTheTeam->subtitle !!}</div>
 				<a href="{{ url('opportunities') }}"
-					class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60  hover:zoom">Explore
-					Profiles</a>
+					class="flex justify-center items-center bg--blue rounded-full text-sm md:font--size-18 text-white w-32 h-12 md:w--244 md:h--60  hover:zoom">{!! $joinTheTeam->text_button !!}</a>
 			</div>
 		</div>
 	</div>
@@ -359,8 +353,8 @@
 <section class=" -mb-20  overflow-x-hidden bg--section">
 	<div class="z-10 relative mx-4 md:app-container 2xl:px-40  ">
 		<div class=" md:p-10 p-5 bg--blue rounded-xl">
-			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">{{ $subscribe ? $subscribe->title : '' }}</h2>
-			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">{{ $subscribe ? $subscribe->subtitle : '' }}</div>
+			<h2 class="text-2xl md:font--size-45 font-semibold text-white mb--17 md:mb-10">{!! $subscribe ? $subscribe->title : '' !!}</h2>
+			<div class="text-white opacity-50 md:mb-20 mb-5 md:font--size-18">{!! $subscribe ? $subscribe->subtitle : '' !!}</div>
 			<form method="post" action="{{ route('home.subscribe') }}">
                 @csrf
 				<div class="block md:flex gap-x-4">

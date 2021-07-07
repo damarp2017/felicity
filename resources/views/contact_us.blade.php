@@ -54,10 +54,10 @@
 			<div>
 				<div class="block md:flex items-stretch gap-x-4">
 					<div class="block md:hidden w-full md:w-1/2 mb-10">
-						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank">
-							{{-- <div id="map"></div> --}}
-							{{-- <img class="h-96 w-full object-cover object-center rounded-2xl" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""> --}}
-						</a>
+						{{-- <a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank">
+
+
+						</a> --}}
 						<div class="text--gray text-sm" style="opacity: .5;">*Click to open maps</div>
 					</div>
 					<div class="w-full md:w-1/2">
@@ -80,10 +80,10 @@
 						</form>
 					</div>
 					<div class="hidden md:block w-full md:w-1/2 ">
-						<div id="map" style="height: 60vh; width: auto" class="bg-gray-700"></div>
-						<a href="https://goo.gl/maps/JCB8QrJizt94ThB58" target="_blank">
-							{{-- <img class="h-96 w-full object-cover object-center rounded-2xl hover:zoom" src="{{ asset('images/contact_us/maps.jpg') }}" title="Click to open map" alt=""> --}}
-						</a>
+						<div style="height: 60vh; width: auto" class="bg-gray-700">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12365.932184510551!2d75.75489122369524!3d26.85239652451462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db51e9b46a8d9%3A0xe051803a13e605c7!2sMansarover%20Plaza!5e1!3m2!1sid!2sid!4v1625647266345!5m2!1sid!2sid" width="590" height="400" allowfullscreen></iframe>
+                        </div>
+
 						<!-- <div class="text--gray text-sm">*Click to view maps</div> -->
 					</div>
 				</div>
@@ -93,13 +93,13 @@
 	</section>
 @endsection
 @push('scripts')
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+{{-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> --}}
+{{-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script> --}}
 <script type="text/javascript">
 
 	let defaultLocation = null
-	
-	$(document).ready(function () {  
+
+	$(document).ready(function () {
 		let location = $('.city').data('loc')
 		console.log(location);
 		$('.address').text(location.address)
@@ -109,7 +109,7 @@
         const lat = location.lat
 		defaultLocation = [lng, lat]
 		map()
-		
+
         //showMarker(lng, lat)
 	})
 
@@ -131,7 +131,7 @@
 		}
 	})
 
-    function map() {  
+    function map() {
 		console.log(defaultLocation);
 		mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZmFuemFuYW5kYSIsImEiOiJja2FkaDdncnUwNnB4MnhxdDg1OXFoaHcyIn0.mCzqYrhyGh1PYqt2TUhgTQ';
 		let map = new mapboxgl.Map({

@@ -16,7 +16,7 @@ class CreateDynamicCapabilitiesTable extends Migration
         Schema::create('dynamic_capabilities', function (Blueprint $table) {
             $table->id();
 			$table->string('title');
-			$table->string('subtitle');
+			$table->text('subtitle');
 			$table->string('image');
 			$table->string('link_button');
 			$table->string('text_button');

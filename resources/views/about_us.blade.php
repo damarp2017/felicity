@@ -15,38 +15,37 @@
 	<section class="bg--section w-full overflow-x-hidden py-10 md:pb-20 md:pt--137">
 		<div class="mx-4 md:app-container">
 			<div class="block md:flex mb-10 flex-col">
-				<h2 class="mb-6 text-3xl md:font--size-55 font-semibold">{{ $data ? $data->title : '' }}</h2>
-				<div class="text-sm md:font--size-20 line--height-160 " style="color: #898989">{{ $data ? $data->subtitle : '' }}</div>
+				<h2 class="mb-6 text-3xl md:font--size-55 font-semibold">{!! $data ? $data->title : '' !!}</h2>
+				<div class="text-sm md:font--size-20 line--height-160 " style="color: #898989">{!! $data ? $data->subtitle : '' !!}</div>
 			</div>
 		</div>
 		<div class="mx-4 md:app-container">
 			@foreach ($contents as $content)
-                <div class="block md:flex mb-10 md:mb-24 items-center">
-                    <div class="block md:hidden w-full md:w-1/2">
-                        <img class="h-auto md:h-96" src="{{ Storage::url($content['image']) }}">
-                    </div>
-					@if ($loop->odd)
-						<div class="hidden md:block md:w--459">
-							<img src="{{ Storage::url($content['image']) }}">
-						</div>
-						<div class="hidden md:block md:w--186"></div>
-					@endif
-                    <div class="w-full md:w--549">
-                        <div class="mb-3 text-black ">
-                            <h2 class=" text-3xl md:font--size-70 font-bold md:mb-10 md:line--height-99c34">{{ ($content['title']) }}</h2>
+				@if ($loop->iteration <=2)
+                    <div class="block md:flex mb-10 md:mb-24 items-center">
+                        <div class="block md:hidden w-full md:w-1/2">
+                            <img class="h-auto md:h-96" src="{{ Storage::url($content['image']) }}">
                         </div>
-                        <div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">{{ ($content['subtitle']) }}</div>
+                        @if ($loop->odd)
+                            <div class="hidden md:block md:w--459">
+                                <img src="{{ Storage::url($content['image']) }}">
+                            </div>
+                            <div class="hidden md:block md:w--186"></div>
+                        @endif
+                        <div class="w-full md:w--549">
+                            <div class="mb-3 text-black ">
+                                <h2 class=" text-3xl md:font--size-70 font-bold md:mb-10 md:line--height-99c34">{!! ($content['title']) !!}</h2>
+                            </div>
+                            <div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">{{ ($content['subtitle']) }}</div>
+                        </div>
+                        @if ($loop->even)
+                        <div class="hidden md:block md:w--186"></div>
+                            <div class="hidden md:block md:w--459">
+                                <img src="{{ Storage::url($content['image']) }}">
+                            </div>
+                        @endif
                     </div>
-                    @if ($loop->even)
-                    <div class="hidden md:block md:w--186"></div>
-						<div class="hidden md:block md:w--459">
-							<img src="{{ Storage::url($content['image']) }}">
-						</div>
-					@endif
-                </div>
-				@if (($contents->count() / $loop->iteration) == $loop->iteration)
-					@break
-				@endif
+                @endif
             @endforeach
 			{{-- <div class="block md:flex mb-10 md:mb-24 items-center">
 				<div class="w-full md:w--475 md:h--490">
@@ -85,29 +84,31 @@
 	<section class="bg--section w-full overflow-x-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container">
             @foreach ($contents as $content)
-                <div class="block md:flex mb-10 md:mb-24 items-center">
-                    <div class="block md:hidden w-full md:w-1/2">
-                        <img class="h-auto md:h-96" src="{{ Storage::url($content['image']) }}">
-                    </div>
-					@if ($loop->odd)
-						<div class="hidden md:block md:w--459">
-							<img src="{{ Storage::url($content['image']) }}">
-						</div>
-						<div class="hidden md:block md:w--186"></div>
-					@endif
-                    <div class="w-full md:w--549">
-                        <div class="mb-3 text-black ">
-                            <h2 class=" text-3xl md:font--size-70 font-bold md:mb-10 md:line--height-99c34">{{ ($content['title']) }}</h2>
+                @if ($loop->iteration > 2)
+                    <div class="block md:flex mb-10 md:mb-24 items-center">
+                        <div class="block md:hidden w-full md:w-1/2">
+                            <img class="h-auto md:h-96" src="{{ Storage::url($content['image']) }}">
                         </div>
-                        <div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">{{ ($content['subtitle']) }}</div>
+                        @if ($loop->odd)
+                            <div class="hidden md:block md:w--459">
+                                <img src="{{ Storage::url($content['image']) }}">
+                            </div>
+                            <div class="hidden md:block md:w--186"></div>
+                        @endif
+                        <div class="w-full md:w--549">
+                            <div class="mb-3 text-black ">
+                                <h2 class=" text-3xl md:font--size-70 font-bold md:mb-10 md:line--height-99c34">{!! ($content['title']) !!}</h2>
+                            </div>
+                            <div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">{{ ($content['subtitle']) }}</div>
+                        </div>
+                        @if ($loop->even)
+                        <div class="hidden md:block md:w--186"></div>
+                            <div class="hidden md:block md:w--459">
+                                <img src="{{ Storage::url($content['image']) }}">
+                            </div>
+                        @endif
                     </div>
-                    @if ($loop->even)
-                    <div class="hidden md:block md:w--186"></div>
-						<div class="hidden md:block md:w--459">
-							<img src="{{ Storage::url($content['image']) }}">
-						</div>
-					@endif
-                </div>
+                @endif
             @endforeach
 
 			{{-- <div class="block md:flex mb-10 md:mb-24 items-center">
@@ -122,7 +123,6 @@
 					<div class="text-sm md:font--size-20 line--height-160 text--gray mb-4">With a common vision of taking India to the world, we are mentored by India’s fastest growing agency and are proud to be a part of the Schbang Network. With this, we continue to build a strong mesh of creative companies on a common mission.</div>
 				</div>
 			</div> --}}
-
 
 		</div>
 	</section>

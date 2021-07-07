@@ -289,6 +289,7 @@ Route::prefix('backoffice')->middleware('auth')->group(function () {
 		Route::get('edit', [SettingController::class, 'edit'])->name('backoffice.setting.edit');
 		Route::put('update/site', [SettingController::class, 'updateSite'])->name('backoffice.setting.update.site');
 		Route::put('update/contact', [SettingController::class, 'updateContact'])->name('backoffice.setting.update.contact');
+		Route::put('update/others', [SettingController::class, 'updateOthers'])->name('backoffice.setting.update.others');
 	});
 
     Route::prefix('reports')->group(function () {

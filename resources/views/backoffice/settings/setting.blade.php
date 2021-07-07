@@ -19,11 +19,11 @@
 @endif
 
 <script>
-	function previewImage(input) {  
+	function previewImage(input) {
 		if (input.files && input.files[0]) {
 			$('.preview-image').css('display', '')
 			$('.preview-image').attr("src", URL.createObjectURL(event.target.files[0]));
-			$('.preview-image').on('load', function () {  
+			$('.preview-image').on('load', function () {
 				URL.revokeObjectURL($('.preview-image').attr("src"))
 			})
 		}
@@ -73,10 +73,13 @@
 							<a class="nav-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">
 								Contact Information
 							</a>
+                            <a class="nav-link" id="v-pills-other-tab" data-toggle="pill" href="#v-pills-other" role="tab" aria-controls="v-pills-other" aria-selected="false">
+								Others
+							</a>
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="col-md-9">
 				<div class="tab-content" id="v-pills-tabContent">
@@ -139,7 +142,7 @@
 											</div>
 										</div>
 									</div>
-									
+
 									<div class="row">
 										<div class="col-md-3">
 											<div class="form-group">
@@ -170,8 +173,39 @@
 											</div>
 										</div>
 									</div>
-									
-									
+
+
+								</div>
+								<div class="card-footer">
+									<button type="submit" class="btn btn-success">Update</button>
+								</div>
+							</form>
+						</div>
+					</div>
+                    <div class="tab-pane fade" id="v-pills-other" role="tabpanel" aria-labelledby="v-pills-other-tab">
+						<div class="card card-success">
+							<div class="card-header">
+								<h3 class="card-title">Others</h3>
+							</div>
+							<form action="{{ route('backoffice.setting.update.others') }}" method="post">
+								@method('put')
+								@csrf
+								<div class="card-body">
+									<div class="form-group">
+										<label for="insights_link">Insights Link</label>
+										<input type="text" class="form-control" id="insights_link" name="insights_link" required
+											placeholder="Enter Insights Link" value="{{ old('insights_link') ?? ($data ? $data->insights_link : '') }}">
+									</div>
+                                    <div class="form-group">
+										<label for="case_studies_link">Case Studies Link</label>
+										<input type="text" class="form-control" id="case_studies_link" name="case_studies_link" required
+											placeholder="Enter Case Studies Link" value="{{ old('case_studies_link') ?? ($data ? $data->case_studies_link : '') }}">
+									</div>
+                                    <div class="form-group">
+										<label for="book_link">Book A Free Consultation Call Link</label>
+										<input type="text" class="form-control" id="book_link" name="book_link" required
+											placeholder="Enter Book A Free Consultation Call Link" value="{{ old('book_link') ?? ($data ? $data->book_link : '') }}">
+									</div>
 								</div>
 								<div class="card-footer">
 									<button type="submit" class="btn btn-success">Update</button>
@@ -180,11 +214,11 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
-		
-        
+
+
     </section>
 </div>
 @endsection

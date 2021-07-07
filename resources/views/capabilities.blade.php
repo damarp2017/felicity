@@ -7,13 +7,13 @@
 			<!-- <img src="{{ asset('images/bg/circle-header.png') }}" class="absolute top-0 right-0 h-full"> -->
 			<div class="flex flex-col h-screen-2/3 md:h-screen justify-center items-center text-center">
 				<!-- <div class="block md:hidden text-lg text-white uppercase">We design the</div> -->
-				<h1 class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-100">{{ $data ? $data->title : '' }}</h1>
+				<h1 class="text-white font-semibold md:mb-5 text-5xl md:line--height-97 md:font--size-100">{!! $data ? $data->title : '' !!}</h1>
 
 				<!-- <div class="text-base md:font--size-20 text-white opacity-50 w-9/12 md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam elementum <br> arcu eu cras egestas ac adipiscing. Et arcu, elementum molestie sed bland</div> -->
 			</div>
 		</div>
 	</header>
-	
+
 	<section class=" bg--section w-full overflow-x-hidden overflow-y-hidden py-10 md:py-20">
 		<div class="mx-4 md:app-container 2xl:px-40">
 			@foreach ($capabilities as $capability)
@@ -23,14 +23,14 @@
 					@endif
 					<div class="block md:hidden w-full md:w-1/2 "><img class="h-auto  md:h-96" src="{{ Storage::url($capability->image) }}"></div>
 					<div class="w-full md:w-1/2 ">
-						<h2 class="text-5xl md:font--size-70 font-bold mb-4 md:mb--23">{{ $capability->title }}</h2>
-						<div class="text-base md:font--size-20 text--gray line--height-160 mb-4 md:mb--28">{{ $capability->subtitle }}</div>
+						<h2 class="text-5xl md:font--size-70 font-bold mb-4 md:mb--23">{!! $capability->title !!}</h2>
+						<div class="text-base md:font--size-20 text--gray line--height-160 mb-4 md:mb--28">{!! $capability->subtitle !!}</div>
 						<a href="{{ route('capability.detail', $capability->link_button) }}" class="w-32 h-12 md:w--315 md:h--64 bg--blue rounded-full text-center flex justify-center items-center text-white md:font--size-18 hover:zoom">{{ $capability->text_button }}</a>
 					</div>
 					@if ($loop->even)
 					<div class="hidden md:block w-full md:w-auto"><img class="h-auto md:h-96" src="{{ Storage::url($capability->image) }}"></div>
 					@endif
-				</div>	
+				</div>
 			@endforeach
 			{{-- <div class="tag block md:flex md:h-screen-3/4 justify-between items-center mb-20 ">
 				<div class="block md:hidden w-full md:w-1/2 "><img class="h-auto  md:h-96" src="{{ asset('images/capabilities/branding.png') }}"></div>

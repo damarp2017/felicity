@@ -16,7 +16,7 @@ class CreateStaticContentAboutUsTable extends Migration
         Schema::create('static_content_about_us', function (Blueprint $table) {
             $table->id();
 			$table->string('title');
-			$table->string('subtitle');
+			$table->text('subtitle');
 			$table->string('image');
             $table->timestamps();
         });

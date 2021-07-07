@@ -35,7 +35,7 @@ class ContentController extends Controller
 		$attr = $request->validate([
 			'title' => 'required',
 			'subtitle' => 'required',
-			'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+			'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg,webp|max:2048',
 		]);
 
 		$image = $request->file('image')->store('images/about_us');
