@@ -81,7 +81,9 @@
 					</div>
 					<div class="hidden md:block w-full md:w-1/2 ">
 						<div style="height: 60vh; width: auto" class="bg-gray-700">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12365.932184510551!2d75.75489122369524!3d26.85239652451462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db51e9b46a8d9%3A0xe051803a13e605c7!2sMansarover%20Plaza!5e1!3m2!1sid!2sid!4v1625647266345!5m2!1sid!2sid" width="590" height="400" allowfullscreen></iframe>
+                            {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12365.932184510551!2d75.75489122369524!3d26.85239652451462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db51e9b46a8d9%3A0xe051803a13e605c7!2sMansarover%20Plaza!5e1!3m2!1sid!2sid!4v1625647266345!5m2!1sid!2sid" width="590" height="400" allowfullscreen></iframe> --}}
+							{{-- <iframe id="maps" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="590" height="400" allowfullscreen frameborder="0" style="border:0"></iframe> --}}
+								<iframe id="maps" width="590" height="400" allowfullscreen frameborder="0" style="border:0"></iframe>
                         </div>
 
 						<!-- <div class="text--gray text-sm">*Click to view maps</div> -->
@@ -93,22 +95,16 @@
 	</section>
 @endsection
 @push('scripts')
-{{-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> --}}
-{{-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script> --}}
 <script type="text/javascript">
-
-	let defaultLocation = null
 
 	$(document).ready(function () {
 		let location = $('.city').data('loc')
-		console.log(location);
 		$('.address').text(location.address)
 		$('.city').first().addClass('bg--green').removeClass('bg-gray-200')
 
 		const lng = location.lng
         const lat = location.lat
-		defaultLocation = [lng, lat]
-		map()
+		$('#maps').attr('src', 'https://maps.google.com/maps?q='+lat+', '+lng+'&z=15&output=embed')
 
         //showMarker(lng, lat)
 	})
@@ -120,9 +116,7 @@
 
 		const lng = location.lng
         const lat = location.lat
-		defaultLocation = [lng, lat]
-		map()
-        //showMarker(lng, lat)
+		$('#maps').attr('src', 'https://maps.google.com/maps?q='+lat+', '+lng+'&z=15&output=embed')
 		if($(this).hasClass('bg--green')){
 			$('.city').removeClass('bg--green').addClass('bg-gray-200')
 		}else{
@@ -131,25 +125,5 @@
 		}
 	})
 
-    function map() {
-		console.log(defaultLocation);
-		mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZmFuemFuYW5kYSIsImEiOiJja2FkaDdncnUwNnB4MnhxdDg1OXFoaHcyIn0.mCzqYrhyGh1PYqt2TUhgTQ';
-		let map = new mapboxgl.Map({
-			container: 'map',
-			center : defaultLocation,
-			zoom: 10,
-			style: 'mapbox://styles/mapbox/streets-v11'
-		});
-
-		map.addControl(new mapboxgl.NavigationControl())
-		new mapboxgl.Marker().setLngLat(defaultLocation).addTo(map);
-
-	}
-	//let markers = [];
-
-	// function showMarker(lng, lat){
-	// 	let marker =  new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
-	// 	markers.push(marker);
-	// }
 </script>
 @endpush
