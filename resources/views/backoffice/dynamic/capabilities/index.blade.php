@@ -81,7 +81,7 @@
 								<th>Title</th>
 								<th>Subtitle</th>
 								<th>Text Button</th>
-								<th>Link Button</th>
+								{{-- <th>Link Button</th> --}}
 								<th>Action</th>
 							</tr>
 						</thead>
@@ -89,9 +89,9 @@
 							@foreach ($capabilities as $capability)
 								<tr>
 									<td>{{ $loop->iteration }}</td>
-									<td>{{ $capability->title }}</td>
+									<td>{!! $capability->title !!}</td>
 									<td>{{ $capability->subtitle }}</td>
-									<td>{{ $capability->link_button }}</td>
+									{{-- <td>{{ $capability->link_button }}</td> --}}
 									<td>{{ $capability->text_button }}</td>
 									<td>
 										<a href="{{ route('backoffice.dynamic.capabilities.title.subtitle.edit', $capability->id) }}" class="btn btn-outline-primary btn-sm">

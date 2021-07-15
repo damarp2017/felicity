@@ -33,7 +33,7 @@
 			<div class="flex flex-wrap">
 				<div class="w-full md:w-1/3">
 					<div >
-						<img class="max-h-80 max-w-full" src="{{ asset('images/capabilities/branding.png') }}">
+						<img class="max-h-80 max-w-full" src="{{ Storage::url($data->image) }}">
 					</div>
 				</div>
 				<div class="w-full md:w-2/3">
@@ -90,11 +90,11 @@
 					<div class="space-item " style="min-width:50vw;">
 						<div class="border-b md:border-b-0 border-r-0 md:border-r border-gray-200 px-5 py-5 md:py-10">
 							<div class="flex justify-center items-start md:py-10 py-5">
-								<img  src="{{ asset($item->image) }}" alt="">
+								<img  src="{{ Storage::url($item->image) }}" alt="">
 							</div>
 							<div class="flex flex-col justify-center text-center">
 								<div class="text-lg md:font--size-26 font-semibold mb-3">{{ $item->title }}</div>
-								<div class="md:font--size-17 text--gray">{{ $item->subtitle }}</div>
+								<div class="md:font--size-17 text--gray">{!! $item->subtitle !!}</div>
 							</div>
 						</div>
 					</div>
